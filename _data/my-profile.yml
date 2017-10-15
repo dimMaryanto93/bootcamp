@@ -1,0 +1,26 @@
+name: Dimas Maryanto
+message: Hi, perkenalkan nama saya Dimas Maryanto. Saya bekerja di PT. Tabel data Informatika sebagai Principal Software Engineer dan Research And Development. Di blog ini saya akan menulis semua tentang pengalaman saya bekerja di PT. Tabel Data Informatika mengenai Programming Language khsusnya Java (Spring Framework, Hibernate, JPA) selain itu juga seperti Development contohnya Version Control Sistem (GIT, SubVersion) dan lain-lain berkaitan dengan development perangkat lunak.
+email: engineer.dimmaryanto93@outlook.com
+donations:
+  - name: Bank Negara Indonesia (BNI)
+    account: 044-325-6641
+    owner: Dimas Maryanto
+  - name: Bank Central Asia (BCA)
+    account: 566-031-9736
+    owner: Dimas Maryanto
+sosials:
+  - name: Github
+    url: https://github.com/dimMaryanto93
+    icon: fa fa-github
+  - name: Facebook
+    url: https://www.facebook.com/dimMaryanto93
+    icon: fa fa-facebook
+  - name: Github
+    url: https://github.com/dimMaryanto93
+    icon: fa fa-github
+  - name: Instagram
+    url: https://www.instagram.com/dimmaryanto93/
+    icon: fa fa-instagram
+  - name: Youtube Channel
+    url: https://www.youtube.com/channel/UCNTS3BwsqzKwaOA0mOPLCgw
+    icon: fa fa-youtube
