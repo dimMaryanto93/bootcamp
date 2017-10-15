@@ -1,5 +1,7 @@
 - name: Java Core
   url: java-core
+  icon: "devicons devicons-java"
+  language: Java
   color:
   tags:
   - java

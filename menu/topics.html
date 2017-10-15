@@ -42,7 +42,10 @@ permalink: /menu/topics/
                 <i class="material-icons right">close</i>
             </span>
                     <p>{{topic.messages}}</p>
-                    <ul class="collection">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <strong>Daftar Materi: </strong>
+                        </li>
                         {% assign post_list = site.posts | where: "lang", topic.url %}
                         {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
