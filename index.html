@@ -81,24 +81,16 @@ layout: index
                     </span>
                     <p>{{topic.messages}}</p>
                     <ul class="collection">
+                        {% assign post_list = site.posts | where: "lang", topic.url %}
+                        {% assign post_list_sorted = post_list | sort:"date" %}
+                        {% for post in post_list_sorted %}
                         <li class="collection-item">
-                            Intro
-                            <a href="#!" class="secondary-content">
-                                <i class="material-icons">launch</i>
+                            {{post.title}}
+                            <a href="{{post.url}}" class="secondary-content">
+                                <i class="material-icons">call_made</i>
                             </a>
                         </li>
-                        <li class="collection-item">
-                            Intro
-                            <a href="#!" class="secondary-content">
-                                <i class="material-icons">launch</i>
-                            </a>
-                        </li>
-                        <li class="collection-item">
-                            Intro
-                            <a href="#!" class="secondary-content">
-                                <i class="material-icons">launch</i>
-                            </a>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
