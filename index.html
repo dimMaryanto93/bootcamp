@@ -55,8 +55,8 @@ layout: index
     <h5>Featured Topics</h5>
     <br>
     <div class="row">
-        {% assign pages_list = site.data.topics | sort:"publish" %}
-        {% for topic in pages_list reversed limit:3 %}
+        {% assign pages_list = site.data.topics | sort:"publish" | reverse %}
+        {% for topic in pages_list limit:3 %}
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light {{topic.color}}">
@@ -96,7 +96,5 @@ layout: index
             </div>
         </div>
         {% endfor %}
-
     </div>
-
 </div>

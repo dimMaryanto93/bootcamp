@@ -1,0 +1,67 @@
+---
+layout: index
+title: "Featured Topics"
+permalink: /menu/topics/
+---
+{% assign pages_list = site.data.topics | sort:"publish" | reverse %}
+<div class="container">
+    {% assign pages_list_count = pages_list.size %}
+    {% assign count_divided = pages_list_count | divided_by: 3 %}
+    {% assign count_divided = count_divided | plus: 1 %}
+
+    <div class="valign-wrapper">
+        <h5>Featured Topics <span class="new badge" data-badge-caption="topic">{{pages_list_count}}</span></h5>
+    </div>
+    <br>
+
+    {% for i in (1..count_divided) %}
+    <div class="row">
+        {% for topic in pages_list limit:3 offset: counter %}
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light {{topic.color}}">
+                    <img class="activator responsive-img" src="{{ "/resources/images/" | prepend:
+                    site.baseurl}}{{topic.url}}.png">
+                </div>
+                <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">
+                {{topic.name}}
+                <i class="material-icons right">more_vert</i>
+            </span>
+                    <p>
+                        {{topic.descriptions}}
+                    </p>
+                    <hr>
+                    {% for tag in topic.tags %}
+                    <div class="chip">{{tag}}</div>
+                    {% endfor %}
+                </div>
+                <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">
+                {{topic.name}}
+                <i class="material-icons right">close</i>
+            </span>
+                    <p>{{topic.messages}}</p>
+                    <ul class="collection">
+                        {% assign post_list = site.posts | where: "lang", topic.url %}
+                        {% assign post_list_sorted = post_list | sort:"date" %}
+                        {% for post in post_list_sorted %}
+                        <li class="collection-item">
+                            {{post.title}}
+                            <a href="{{post.url}}" class="secondary-content">
+                                <i class="material-icons">call_made</i>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% assign counter = i | times: 3 %}
+    </div>
+    {% endfor %}
+</div>
+
+
+
