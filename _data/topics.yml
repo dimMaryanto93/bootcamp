@@ -9,36 +9,3 @@
   messages:
     Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java, selain itu juga sedikit-demi-sedikit akan belajar algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
   publish: 2017-10-15T20:50:50+07:00
-- name: Java Swing / Desktop Application
-  url: java-swing
-  color:
-  tags:
-  - java
-  - basic
-  descriptions:
-   Temen-teman akan belajar tentang Java Core diantaranya Data Types, Variables, Scope Variables, Class, Object Oritented Programming etc.
-  messages:
-    Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java, selain itu juga sedikit-demi-sedikit akan belajar algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
-  publish: 2017-10-15T20:50:50+07:00
-- name: JavaFX / Beautiful Desktop Application
-  url: javafx
-  color:
-  tags:
-  - java
-  - basic
-  descriptions:
-   Temen-teman akan belajar tentang Java Core diantaranya Data Types, Variables, Scope Variables, Class, Object Oritented Programming etc.
-  messages:
-    Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java, selain itu juga sedikit-demi-sedikit akan belajar algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
-  publish: 2017-10-15T20:50:50+07:00
-- name: PostgreSQL
-  url: postgresql
-  color:
-  tags:
-  - java
-  - basic
-  descriptions:
-   Temen-teman akan belajar tentang Java Core diantaranya Data Types, Variables, Scope Variables, Class, Object Oritented Programming etc.
-  messages:
-    Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java, selain itu juga sedikit-demi-sedikit akan belajar algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
-  publish: 2017-10-25T20:50:50+07:00
