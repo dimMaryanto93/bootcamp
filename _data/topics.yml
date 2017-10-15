@@ -1,0 +1,11 @@
+- name: Java Core
+  url: java-core
+  color:
+  tags:
+  - java
+  - basic
+  descriptions:
+   Temen-teman akan belajar tentang Java Core diantaranya Data Types, Variables, Scope Variables, Class, Object Oritented Programming etc.
+  messages:
+    Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java Desktop, selain membuat aplikasi desktop temen-temen juga akan belajar sedikit-demi-sedikit algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
+  publish: 2017-10-15

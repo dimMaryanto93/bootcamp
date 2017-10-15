@@ -1,20 +1,22 @@
 <nav>
     <div class="nav-wrapper container">
-        <a href="{{ "/" | prepend : site.baseurl }}" class="brand-logo">Logo</a>
+        <a href="{{ "/" | prepend : site.baseurl }}" class="brand-logo">
+        <i class="material-icons left">home</i>
+        </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li>
                 <a href="{{ "/libs" | prepend: site.baseurl }}">
-                <i class="material-icons right">search</i>
-                Archives
+                    <i class="material-icons right">search</i>
+                    Archives
                 </a>
             </li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
             <li>
                 <a href="{{ "/libs" | prepend: site.baseurl }}">
-                <i class="material-icons left">search</i>
-                Archives
+                    <i class="material-icons left">search</i>
+                    Archives
                 </a>
             </li>
         </ul>
