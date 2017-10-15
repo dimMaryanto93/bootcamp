@@ -81,11 +81,13 @@ layout: index
                         {{topic.name}}<i class="material-icons right">close</i>
                     </span>
                     <p>{{topic.messages}}</p>
+                    {% assign post_list = site.posts | where: "lang", topic.url %}
+                    {% assign post_list_counted = post_list.size %}
+                    {% if post_list_counted >= 1 %}
                     <ul class="collection with-header">
                         <li class="collection-header">
                             <strong>Daftar Materi: </strong>
                         </li>
-                        {% assign post_list = site.posts | where: "lang", topic.url %}
                         {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
@@ -96,6 +98,16 @@ layout: index
                         </li>
                         {% endfor %}
                     </ul>
+                    {% else %}
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <strong>Daftar Materi: </strong>
+                        </li>
+                        <li class="collection-item blue lighten-5">
+                            <span class="">Belum tersedia materi...</span>
+                        </li>
+                    </ul>
+                    {% endif %}
                 </div>
             </div>
         </div>
