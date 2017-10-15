@@ -13,15 +13,27 @@ github_username:  dimMaryanto93
 
 # Build settings
 markdown: kramdown
+highliter: rouge
+paginate: 5
+gist:
+  noscript: false
+permalink: posts/:categories/:title/
+paginate_path: page-:num/
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-youtube
+  - jekyll-gist
+  - kramdown
+  - rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+  - vendor
 #   - Gemfile
-#   - Gemfile.lock
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
