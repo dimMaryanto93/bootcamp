@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pengenalan Pemograman Java"
+date: 2017-10-16T23:13:11+07:00
 lang: java-core
 categories:
 - java
