@@ -2,10 +2,10 @@
 layout: {{ layout }}
 title: "{{ title }}"
 date: {{ date }}
-lang: {{lang}}
+lang: {{ lang }}
 categories:
 - {{ category1 }}
 - {{ category2 }}
 - {{ category3 }}
-gist: "{{ gist_repo }}"
+gist: {{ gist }}
 ---
