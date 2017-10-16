@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="row container">
+    <div class="col s12 m12 l8">
+        {{content}}
+    </div>
+    <div class="col s12 m12 l4">
+        <div class="row">
+            {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}
+            <ul class="collection with-header">
+                <li class="collapsible-header">
+                    Materi Terkait
+                </li>
+                {% for post in post_list %}
+                <li class="collection-item">
+                    {{post.title}}
+                    <a href="{{post.url}}" class="secondary-content">
+                        <i class="material-icons">find_in_page</i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row container">
+
+</div>
