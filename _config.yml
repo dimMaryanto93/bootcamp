@@ -13,7 +13,10 @@ github_username:  dimMaryanto93
 
 # Build settings
 markdown: kramdown
-highliter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 paginate: 5
 gist:
   noscript: false

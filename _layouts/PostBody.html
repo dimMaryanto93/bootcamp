@@ -19,8 +19,10 @@ layout: default
                 </time>
             </h6>
         </div>
+        {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}
+        {% assign post_list_size = post_list.size %}
+        {% if post_list_size >= 1 %}
         <div class="row">
-            {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}
             <ul class="collection with-header">
                 <li class="collapsible-header">
                     Materi Terkait
@@ -35,6 +37,7 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
+        {% endif %}
         <div class="row">
             {% assign post_list = site.posts | sort:"date" | reverse %}
             <ul class="collection with-header">
