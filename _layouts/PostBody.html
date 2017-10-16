@@ -23,8 +23,24 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
+        <div class="row">
+            {% assign post_list = site.posts | sort:"date" | reverse %}
+            <ul class="collection with-header">
+                <li class="collapsible-header">
+                    Last Posting
+                </li>
+                {% for post in post_list limit:10 %}
+                <li class="collection-item">
+                    {{post.title}}
+                    <a href="{{post.url}}" class="secondary-content">
+                        <i class="material-icons">find_in_page</i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 <div class="row container">
-
+    comments
 </div>
