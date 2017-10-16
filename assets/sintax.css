@@ -298,3 +298,9 @@
     padding-left: 20px;
     list-style-type: circle;
 }
+
+strong {
+    font-size: large;
+    font-style: normal;
+    font-weight: bolder;
+}
