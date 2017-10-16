@@ -8,6 +8,18 @@ layout: default
     </div>
     <div class="col s12 m12 l4">
         <div class="row">
+            <h5>
+                <i class="material-icons">person</i>
+                {{site.author}}
+            </h5>
+            <h6>
+                <i class="material-icons">access_time</i>
+                <time datetime="{{page.date | date_to_xmlschema}}" itemscope="datePublished">
+                    {{page.date | date: "%-d %B %Y" }}
+                </time>
+            </h6>
+        </div>
+        <div class="row">
             {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}
             <ul class="collection with-header">
                 <li class="collapsible-header">
@@ -38,6 +50,40 @@ layout: default
                 </li>
                 {% endfor %}
             </ul>
+        </div>
+        <div class="row">
+            <div class="fixed-action-btn horizontal click-to-toggle">
+                <a class="btn-floating btn-large red">
+                    <i class="material-icons">share</i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating blue"
+                           href="https://twitter.com/intent/tweet?text={{ page.title }}&via={{ site.twitter_username }}&url={{ site.url }}{{ page.url }}">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue darken-1" target="_blank"
+                           href="https://www.facebook.com/dialog/share?app_id={{ site.fb_appid }}&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue"
+                           href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating red"
+                           href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}&hl=en-US"
+                           onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

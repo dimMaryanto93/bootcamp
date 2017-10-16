@@ -60,8 +60,7 @@ layout: default
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light {{topic.color}}">
-                    <img class="activator responsive-img" src="{{ "/resources/images/" | prepend: site.baseurl
-                    }}{{topic.url}}.png">
+                    <img class="activator responsive-img" src="{{ "/resources/images/" | prepend: site.baseurl}}{{topic.url}}.png">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">
@@ -71,7 +70,6 @@ layout: default
                         {{topic.descriptions}}
                     </p>
                     <hr>
-
                     {% for tag in topic.tags %}
                     <div class="chip">{{tag}}</div>
                     {% endfor %}

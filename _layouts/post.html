@@ -2,7 +2,13 @@
 layout: PostBody
 ---
 
-<h5 class="post-title">{{page.title}}</h5>
-<article class="post-content">
-    {{page.content}}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <section id="article-body">
+        <div class="center">
+            <h3>{{page.title}}</h3>
+        </div>
+        <div class="post-content row">
+            {{page.content}}
+        </div>
+    </section>
 </article>
