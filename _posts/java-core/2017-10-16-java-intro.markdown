@@ -41,4 +41,4 @@ Nah ok sekarang kita kembali lagi ke topic utama ya... kita khan lagi ngomongin 
     3. Map
 14. Membuat program sederhana dengan OOP di Java
 
-Nah dengan materi seperti atas, diharapkan temen-temen bisa memahami manfaat dari pemograman berorientasi object dan merubah pemikiran dari pemograman berorientasi struktural. klo kata anak jaman milenium (kekinian bangezzz) itu `MOVE ON`. i hope you enjoy with this lecture see you in next lecture.
+Nah dengan materi seperti atas, diharapkan temen-temen bisa memahami manfaat dari pemograman berorientasi object dan merubah pemikiran dari pemograman berorientasi struktural. klo kata anak jaman milenium (kekinian bangezzz) itu `MOVE ON`. i hope you enjoy with this lecture see you in next section.
