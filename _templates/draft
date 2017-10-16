@@ -7,4 +7,5 @@ categories:
 - {{ category2 }}
 - {{ category3 }}
 gist: {{ gist }}
+youtube: {{ youtube }}
 ---
