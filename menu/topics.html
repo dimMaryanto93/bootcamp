@@ -3,7 +3,7 @@ layout: default
 title: "Featured Topics"
 permalink: /menu/topics/
 ---
-{% assign pages_list = site.data.topics | sort:"publish" | reverse %}
+{% assign pages_list = site.data.topics | sort:"publish" %}
 <div class="container">
     {% assign pages_list_count = pages_list.size %}
     {% assign count_divided = pages_list_count | divided_by: 3 %}
