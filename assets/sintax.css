@@ -293,3 +293,8 @@
 .highlight {
     background-color: #f8f8f8;
 }
+
+#article-body ul {
+    padding-left: 20px;
+    list-style-type: circle;
+}
