@@ -83,120 +83,120 @@
   github: "https://github.com/log-rnd/java8.git"
   coming_soon: true
 
-- name: Java EE dengan Implementation Servlet API
-  url: servlet-api
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - web
-  - servlet
-  descriptions:
-   Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API yang akan diproses di Web Server Apache Tomcat.
-  messages:
-  publish: 2017-10-23T20:50:50+07:00
-  github: "https://github.com/log-rnd/servlet-api.git"
-  coming_soon: true
-
-- name: Java EE dengan Implementation JSP
-  url: jsp
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - web
-  - servlet
-  - jsp
-  descriptions:
-   Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API dan Java Server Pages yang akan diproses di Web Server Apache Tomcat.
-  messages:
-  publish: 2017-10-24T20:50:50+07:00
-  github: "https://github.com/log-rnd/jsp.git"
-  coming_soon: true
-
-- name: Springframework Core
-  url: spring-core
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - springframework
-  - dependency-injection
-  - inversion-of-control
-  descriptions:
-   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-  messages:
-  publish: 2017-10-25T20:50:50+07:00
-  github: "https://github.com/log-rnd/spring-core.git"
-  coming_soon: true
-
-- name: Spring Web MVC
-  url: spring-webmvc
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - springframework
-  - dependency-injection
-  - inversion-of-control
-  descriptions:
-   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-  messages:
-  publish: 2017-10-26T20:50:50+07:00
-  github: "https://github.com/log-rnd/spring-webmvc.git"
-  coming_soon: true
-
-- name: Spring Web Security
-  url: spring-security
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - springframework
-  - dependency-injection
-  - inversion-of-control
-  descriptions:
-   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-  messages:
-  publish: 2017-10-27T20:50:50+07:00
-  github: "https://github.com/log-rnd/spring-webmvc.git"
-  coming_soon: true
-
-- name: Template Engine with Thymeleaf
-  url: thymeleaf
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - springframework
-  - dependency-injection
-  - inversion-of-control
-  descriptions:
-   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-  messages:
-  publish: 2017-10-28T20:50:50+07:00
-  github: "https://github.com/log-rnd/spring-webmvc.git"
-  coming_soon: true
-
-- name: Speed Up development with Spring Boot
-  url: spring-boot
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - springframework
-  - dependency-injection
-  - inversion-of-control
-  descriptions:
-   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-  messages:
-  publish: 2017-10-28T20:50:50+07:00
-  github: "https://github.com/log-rnd/spring-webmvc.git"
-  coming_soon: true
+#- name: Java EE dengan Implementation Servlet API
+#  url: servlet-api
+#  icon: "devicons devicons-java"
+#  language: Java
+#  color:
+#  tags:
+#  - java
+#  - web
+#  - servlet
+#  descriptions:
+#   Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API yang akan diproses di Web Server Apache Tomcat.
+#  messages:
+#  publish: 2017-10-23T20:50:50+07:00
+#  github: "https://github.com/log-rnd/servlet-api.git"
+#  coming_soon: true
+#
+#- name: Java EE dengan Implementation JSP
+#  url: jsp
+#  icon: "devicons devicons-java"
+#  language: Java
+#  color:
+#  tags:
+#  - java
+#  - web
+#  - servlet
+#  - jsp
+#  descriptions:
+#   Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API dan Java Server Pages yang akan diproses di Web Server Apache Tomcat.
+#  messages:
+#  publish: 2017-10-24T20:50:50+07:00
+#  github: "https://github.com/log-rnd/jsp.git"
+#  coming_soon: true
+#
+#- name: Springframework Core
+#  url: spring-core
+#  icon: "devicons devicons-java"
+#  language: Java
+#  color:
+#  tags:
+#  - java
+#  - springframework
+#  - dependency-injection
+#  - inversion-of-control
+#  descriptions:
+#   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
+#  messages:
+#  publish: 2017-10-25T20:50:50+07:00
+#  github: "https://github.com/log-rnd/spring-core.git"
+#  coming_soon: true
+#
+#- name: Spring Web MVC
+#  url: spring-webmvc
+#  icon: "devicons devicons-java"
+#  language: Java
+#  color:
+#  tags:
+#  - java
+#  - springframework
+#  - dependency-injection
+#  - inversion-of-control
+#  descriptions:
+#   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
+#  messages:
+#  publish: 2017-10-26T20:50:50+07:00
+#  github: "https://github.com/log-rnd/spring-webmvc.git"
+#  coming_soon: true
+#
+#- name: Spring Web Security
+#  url: spring-security
+#  icon: "devicons devicons-java"
+#  language: Java
+#  color:
+#  tags:
+#  - java
+#  - springframework
+#  - dependency-injection
+#  - inversion-of-control
+#  descriptions:
+#   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
+#  messages:
+#  publish: 2017-10-27T20:50:50+07:00
+#  github: "https://github.com/log-rnd/spring-webmvc.git"
+#  coming_soon: true
+#
+#- name: Template Engine with Thymeleaf
+#  url: thymeleaf
+#  icon: "devicons devicons-java"
+#  language: Java
+#  color:
+#  tags:
+#  - java
+#  - springframework
+#  - dependency-injection
+#  - inversion-of-control
+#  descriptions:
+#   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
+#  messages:
+#  publish: 2017-10-28T20:50:50+07:00
+#  github: "https://github.com/log-rnd/spring-webmvc.git"
+#  coming_soon: true
+#
+#- name: Speed Up development with Spring Boot
+#  url: spring-boot
+#  icon: "devicons devicons-java"
+#  language: Java
+#  color:
+#  tags:
+#  - java
+#  - springframework
+#  - dependency-injection
+#  - inversion-of-control
+#  descriptions:
+#   Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
+#  messages:
+#  publish: 2017-10-28T20:50:50+07:00
+#  github: "https://github.com/log-rnd/spring-webmvc.git"
+#  coming_soon: true
