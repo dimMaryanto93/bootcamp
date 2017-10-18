@@ -89,9 +89,8 @@ layout: default
                         {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
-                            {{post.title}}
                             <a href="{{post.url}}" class="secondary-content">
-                                <i class="material-icons">call_made</i>
+                                {{post.title}}
                             </a>
                         </li>
                         {% endfor %}
