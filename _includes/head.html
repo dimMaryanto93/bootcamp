@@ -6,3 +6,10 @@
 
 <script src="{{ "/assets/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/materialize-css/js/materialize.min.js" | prepend: site.baseurl }} "></script>
+
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+        $('#article-body img').addClass('materialboxed').addClass('responsive-img');
+    });
+</script>
