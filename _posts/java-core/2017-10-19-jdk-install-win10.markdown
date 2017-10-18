@@ -8,6 +8,7 @@ categories:
 - core
 gist: 
 youtube: https://youtu.be/2zoPD2xRuIg
+comments: true
 ---
 
 Sekarang kita akan menginstall JDK atau Java Development Kit versi Oracle, nah sebenarnya JDK itu tidak hanya punya Oracle tapi ada komunitas juga ya yang megembangin JDK juga yaitu OpenJDK yang dulunya di buat oleh IBM sekarang lisencenya dikasihin ke Eclipse Fundation, nah sekarang (Oktober 2017) kebetulan `Oracle JDK 9` udah releash ya. tapi di artikel ini masih pake `JDK 8u101` ini tidak masalah ya. karena dalam materi ini kita masih mempelajari fundamental artinya core dari Java belum sampai fitur seperti `Lamda Expresion`, `Stream API`, `Modules` dan lain-lain. Nantinya akan saya buat kan materinya secara terpisah.

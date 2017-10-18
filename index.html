@@ -89,7 +89,7 @@ layout: default
                         {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
-                            <a href="{{post.url}}" class="secondary-content">
+                            <a href="{{post.url}}">
                                 {{post.title}}
                             </a>
                         </li>
