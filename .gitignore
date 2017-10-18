@@ -2,7 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 package-lock.json
-Gemfile.lock
 
 # intellij IDEA
 .idea/
