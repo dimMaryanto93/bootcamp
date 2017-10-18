@@ -4,14 +4,16 @@ title: "Featured Topics"
 permalink: /menu/topics/
 ---
 {% assign pages_list = site.data.topics | sort:"publish" %}
-<div>
+<div class="row">
+    <br>
     {% assign pages_list_count = pages_list.size %}
     {% assign count_divided = pages_list_count | divided_by: 3 %}
     {% assign count_divided = count_divided | plus: 1 %}
 
-    <div class="valign-wrapper">
-        <h5>Featured Topics <span class="new badge" data-badge-caption="topic">{{pages_list_count}}</span></h5>
-    </div>
+    <h5 class="container center">
+        <span class="new badge" data-badge-caption="topic">{{pages_list_count}}</span>
+        Featured Topics
+    </h5>
     <br>
 
     {% for i in (1..count_divided) %}
@@ -52,9 +54,9 @@ permalink: /menu/topics/
                         {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
-                            {{post.title}}
-                            <a href="{{post.url}}" class="secondary-content">
-                                <i class="material-icons">call_made</i>
+                            <a href="{{post.url}}">
+                                <span class="new badge" data-badge-caption="">{{post.date | date: '%d %b %y'}}</span>
+                                {{post.title}}
                             </a>
                         </li>
                         {% endfor %}

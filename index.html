@@ -52,15 +52,15 @@ layout: default
 </div>
 <hr>
 <div>
-    <h5>Featured Topics</h5>
-    <br>
+    <h5 class="center">Featured Topics</h5>
     <div class="row">
         {% assign pages_list = site.data.topics | sort:"publish" | reverse %}
         {% for topic in pages_list limit:3 %}
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light {{topic.color}}">
-                    <img class="activator responsive-img" src="{{ "/resources/images/" | prepend: site.baseurl}}{{topic.url}}.png">
+                    <img class="activator responsive-img" src="{{ "/resources/images/" | prepend:
+                    site.baseurl}}{{topic.url}}.png">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">

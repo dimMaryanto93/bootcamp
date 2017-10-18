@@ -8,31 +8,43 @@ layout: default
     </div>
     <div class="col s12 m12 l4">
         <div class="row">
-            <h5>
+            <h2>
                 <i class="material-icons">person</i>
                 {{site.author}}
-            </h5>
-            <h6>
+            </h2>
+            <h2>
                 <i class="material-icons">access_time</i>
                 <time datetime="{{page.date | date_to_xmlschema}}" itemscope="datePublished">
                     {{page.date | date: "%-d %B %Y" }}
                 </time>
-            </h6>
+            </h2>
         </div>
         {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}
         {% assign post_list_size = post_list.size %}
         {% if post_list_size >= 1 %}
         <div class="row">
             <ul class="collection with-header">
-                <li class="collapsible-header">
-                    Materi Terkait
+                <li class="collection-item avatar">
+                    <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{page.lang}}.png" alt=""
+                    class="circle">
+                    <span>Daftar materi</span>
+                    {% assign post_page = site.data.topics | where: "url", page.lang | first %}
+                    <p class="title">{{post_page.name | upcase}}</p>
+                    <a href="#!" class="secondary-content">
+                        <i class="material-icons">grade</i>
+                    </a>
                 </li>
                 {% for post in post_list %}
                 <li class="collection-item">
+                    {% if post.url == page.url %}
+                    <span class="badge">{{post.date | date: '%d %b %y'}}</span>
                     {{post.title}}
-                    <a href="{{post.url}}" class="secondary-content">
-                        <i class="material-icons">find_in_page</i>
+                    {% else %}
+                    <a href="{{post.url}}">
+                        <span class="badge">{{post.date | date: '%d %b %y'}}</span>
+                        {{post.title}}
                     </a>
+                    {% endif %}
                 </li>
                 {% endfor %}
             </ul>
@@ -46,9 +58,9 @@ layout: default
                 </li>
                 {% for post in post_list limit:10 %}
                 <li class="collection-item">
-                    {{post.title}}
-                    <a href="{{post.url}}" class="secondary-content">
-                        <i class="material-icons">find_in_page</i>
+                    <a href="{{post.url}}">
+                        <span class="badge">{{post.date | date: '%d %b %y'}}</span>
+                        {{post.title}}
                     </a>
                 </li>
                 {% endfor %}
