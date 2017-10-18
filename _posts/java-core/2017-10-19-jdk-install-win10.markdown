@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Install Java Development Kit di Windows 10"
+date: 2017-10-19T00:04:45+07:00
 lang: java-core
 categories:
 - java
