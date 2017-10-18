@@ -1,24 +1,24 @@
-h1 {
+#postBody h1 {
     font-size: x-large;
     font-weight: bolder;
 }
 
-h2 {
+#postBody h2 {
     font-size: large;
     font-weight: bold;
 }
 
-h3 {
+#postBody h3 {
     font-size: medium;
     font-weight: bold;
 }
 
-h4 {
+#postBody h4 {
     font-size: small;
     font-weight: bold;
 }
 
-h5 {
+#postBody h5 {
     font-size: smaller;
     font-weight: bold;
 }
