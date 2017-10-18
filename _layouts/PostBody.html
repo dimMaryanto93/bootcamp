@@ -37,8 +37,10 @@ layout: default
                 {% for post in post_list %}
                 <li class="collection-item">
                     {% if post.url == page.url %}
-                    <span class="badge">{{post.date | date: '%d %b %y'}}</span>
-                    {{post.title}}
+                    <div>
+                        <span class="badge">{{post.date | date: '%d %b %y'}}</span>
+                        {{post.title}}
+                    </div>
                     {% else %}
                     <a href="{{post.url}}">
                         <span class="badge">{{post.date | date: '%d %b %y'}}</span>

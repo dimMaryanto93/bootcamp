@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Software Development for Java Users"
+date: 2017-10-18T21:36:55+07:00
 lang: java-core
 categories:
 - java
@@ -54,25 +55,25 @@ public class HaloWorld{
 
 Kemudian saya akan compile menggunakan tools `javac` dan menjalankannya dengan perintah `java` tapi sebelum itu saya mau buat folder dulu namanya `out`
 
- {% highlight sh %}
- # dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$
- mkdir out
- {% endhighlight %}
+```sh
+# dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$
+mkdir out
+```
 
 setelah folder terbuat jadi hasil compilenya saya mau di buat di folder `out/` seperti berikut:
 
 ## Perintah `javac`
 
-{% highlight sh %}
+```sh
 # dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$
 javac src/main/java/com/maryanto/dimas/HaloWorld.java -d out/
-{% endhighlight %}
+```
 
 *penjelasanya jadi dengan perintah `javac namafile.java` kita melakukan compile terhadap `namafile.java` sedangkan parameter `-d out/` artinya hasil compilenya diarahkan ke folder `out`
 
 Setelah dijalankan akan menghasilkan bytecode `.class` seperti berikut:
 
-{% highlight sh %}
+```sh
 # dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$
 # works only on linux if you windows user `tree` (without dot)
 tree .
@@ -90,17 +91,17 @@ tree .
                 └── maryanto
                     └── dimas
                         └── HaloWorld.java # <<< java source code
-{% endhighlight %}
+```
 
 ## Perintah `java`
 
 Setelah berhasil seperti diatas file `.class` terbuat maka tahap selanjutnya kita bisa running the application with command `java`
 
-{% highlight sh %}
+```sh
 # dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$
 java -cp out/ com.maryanto.dimas.HaloWorld
 Halo World # <<< the result printed to the console
-{% endhighlight %}
+```
 
 *penjelasananya dengan menggunakan perintah `java` kita bisa menjalankan aplikasi Java. tapi yang perlu diingat adalah perintah `java` hanya bisa bekerja jika di dalam filenya ada method atau fungsi seperti berikut:
 
@@ -116,6 +117,8 @@ kalo gak ada method atau fungsi seperti diatas makan akan muncul pesan error di 
 java -cp src/main/java/ com.maryanto.dimas.HaloWorld
 Error: Could not find or load main class com.maryanto.dimas.HaloWorld #<<< error logs
 ```
+
+Mungkin temen-temen blum bisa ngoba untuk lakukan compile dan execute seperti yang saya lakukan tadi, yah... kenapa gak bisa? jawabanya sederhana karena seperti yang saya ceritakan diawal klo belum install JDK atau Java Development Kit gak bisa ngalakuin compilasi dan eksekusi koding yang kita tulis. Ok saya akan balik lagi bagaimana cara install Oracle JDK di Windows 10, Linux UBuntu, Linux Fedora dan untuk MacOs maaf blum bisa ya karena blum punya `MacBook`nya semoga suatu saat bisa bisa terwujud `#laptopImpian` `#amin....`
 
 
 
