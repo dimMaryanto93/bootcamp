@@ -105,7 +105,5 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.91-b15, mixed mode)
 C:\Users\softw>
 ```
 
-Nah untuk setting di Windows udah selesai atau klo masih kurang jelas anda bisa melihat vidoenya:
-
-{% youtube page.youtube %}
+Nah untuk setting di Windows udah selesai.
 
