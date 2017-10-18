@@ -20,7 +20,7 @@ kramdown:
 paginate: 5
 gist:
   noscript: false
-permalink: posts/:categories/:title/
+permalink: posts/:categories/:title
 paginate_path: page-:num/
 plugins:
   - jekyll-feed
