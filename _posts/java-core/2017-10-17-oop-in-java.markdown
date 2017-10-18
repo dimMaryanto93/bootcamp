@@ -8,6 +8,7 @@ categories:
 - core
 gist: 
 youtube:
+comments: true
 ---
 
 Hi, welcome back into this lecture 'Java Core'. Nah ini saya gak tau harus ngomong apa ya karena biasanya klo saya gak terlalu banyak ngomongnya `just do it #coding`. Tapi sekarang saya mau mencoba untuk menjelaskan ke temen-temen klo jadi programmer itu komunikasi, penting ya~. jadi gimana mau jadi programmer yang bisa **kerja sama team** kalo gak bisa komunikasi dengan programmer lain ya #ehMalahCurhat

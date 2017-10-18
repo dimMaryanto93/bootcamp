@@ -8,6 +8,7 @@ categories:
 - core
 gist: 
 youtube:
+comments: true
 ---
 
 Hi, in this section atau Materi 'Java Core' ini temen-temen akan berkenalan dengan salah satu Bahasa Pemograman yang sedang Hits saat ini `(Oktober/2017)`, mungkin ada beberapa ada juga yang udah tau kalau mendengar issue `Wah jadi Java Programmer pasti gajinya gede?` ya itu memang menang tidak salah. berdasarkan pengalaman saya pribadi rate gaji untuk junior Java Programmer di daerah Jakarta Selatan kisaran `4 s/d 7jt/bulan` gimana lumayan khan ya....

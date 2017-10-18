@@ -9,4 +9,5 @@ categories:
 - {{ category3 }}
 gist: {{ gist }}
 youtube: {{ youtube }}
+comments: true
 ---

@@ -7,6 +7,7 @@ categories:
 - intro
 gist: 
 youtube:
+comments: false
 ---
 
 Halo ini adalah halaman pertama, perkenalkan nama saya **Dimas Maryanto**, teman-teman bisa panggil saya **'Dimas'** ato **'Dim'**, soalnya kenapa saya nulis gini karena gak tau kenapa semenjak lulus kuliah banyak yang manggil saya 'pak' bahkan 'om' haduh!! emang sih muka saya terlihat **tua** tapi umurku belum setua itu loh hahha `#curcol`.
