@@ -60,12 +60,23 @@ layout: default
                     Last Posting
                 </li>
                 {% for post in post_list limit:10 %}
+                {% if post.lang %}
+                <li class="collection-item avatar">
+                    <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{post.lang}}.png" alt=""
+                    class="circle">
+                    <a href="{{post.url}}">
+                        <span class="badge">{{post.date | date: '%d %b %y'}}</span>
+                        {{post.title}}
+                    </a>
+                </li>
+                {% else %}
                 <li class="collection-item">
                     <a href="{{post.url}}">
                         <span class="badge">{{post.date | date: '%d %b %y'}}</span>
                         {{post.title}}
                     </a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
