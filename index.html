@@ -85,6 +85,7 @@ layout: default
                     <ul class="collection with-header">
                         <li class="collection-header">
                             <strong>Daftar Materi: </strong>
+                            <span class="badge new blue" data-badge-caption="materi">{{post_list_counted}}</span>
                         </li>
                         {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}

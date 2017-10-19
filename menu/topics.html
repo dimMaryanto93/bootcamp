@@ -50,12 +50,13 @@ permalink: /menu/topics/
                     <ul class="collection with-header">
                         <li class="collection-header">
                             <strong>Daftar Materi: </strong>
+                            <span class="new badge blue" data-badge-caption="materi">{{post_list_counted}}</span>
                         </li>
                         {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
                             <a href="{{post.url}}">
-                                <span class="new badge" data-badge-caption="">{{post.date | date: '%d %b %y'}}</span>
+                                <span class="badge">{{post.date | date: '%d %b %y'}}</span>
                                 {{post.title}}
                             </a>
                         </li>

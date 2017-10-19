@@ -27,12 +27,13 @@ layout: default
                 <li class="collection-item avatar">
                     <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{page.lang}}.png" alt=""
                     class="circle">
-                    <span>Daftar materi</span>
+                    <span>Daftar materi
+                        <span class="badge new blue" data-badge-caption="materi">{{post_list_size}}</span>
+                    </span>
                     {% assign post_page = site.data.topics | where: "url", page.lang | first %}
-                    <p class="title">{{post_page.name | upcase}}</p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
+                    <p class="title">
+                        {{post_page.name | upcase}}
+                    </p>
                 </li>
                 {% for post in post_list %}
                 <li class="collection-item">
