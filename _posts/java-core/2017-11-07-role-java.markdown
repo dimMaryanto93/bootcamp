@@ -26,7 +26,10 @@ public class Halo {}
 
 ## Penulisan nama `variable`
 
-1. Penulisan nama variable biasanya diawali dengan tipe data contohnya `java.lang.Integer`, `java.lang.Double`, `java.util.Date` dll kemudian diikuti dengan nama variablenya contohnya
+### Menggunakan Tipe Data
+
+Penulisan nama variable biasanya diawali dengan tipe data contohnya `java.lang.Integer`, `java.lang.Double`, `java.util.Date` dll kemudian diikuti dengan nama variablenya contohnya
+
 {% highlight java %}
 java.lang.Integer bilanganBulat;
 java.util.Date tanggalLahir;
@@ -34,7 +37,9 @@ java.sql.Timestamp createdDate;
 java.math.BigDecimal saldo;
 {% endhighlight %}
 
-2. Penulisan nama variable menggunakan sistem _camel-case_ sama seperti penulisan nama `class` **hanya perbedaanya adalah kalimat pertama menggunakan huruf kecil dan kalimat ke 2 dst menggunakan huruf besar** seperti yang dicontohkah diatas.
+### Sistem Camel Case
+
+Penulisan nama variable menggunakan sistem _camel-case_ sama seperti penulisan nama `class` **hanya perbedaanya adalah kalimat pertama menggunakan huruf kecil dan kalimat ke 2 dst menggunakan huruf besar** seperti yang dicontohkah diatas.
 
 ## Strong Data type
 
@@ -42,7 +47,7 @@ Java adalah bahasa yang memiliki fitur **strong data type** artinya menbedakan a
 
 Nah itu mungkin sebagian yang perlu diperhatikan dari cara penulisan bahasa pemograman Java. dan mungkin dari temen-temen akan bertanya mengapa penaaman file harus besar dan variable harus kecil? ok, pertanyaan bagus. Jadi misalnya saya punya file dengan nama `Konstanta.java` dan memiliki variable seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.training.java.core;
 
 public class Konstanta{
@@ -53,7 +58,7 @@ public class Konstanta{
 
 Nah sekarang misalnya kelas java tersebut dipanggil dari kelas lainnya contohnya saya punya file lagi dengan nama `MainApplication.java` seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.training.java.core;
 
 import com.maryanto.dimas.training.java.core.Konstanta;
@@ -69,7 +74,7 @@ public class MainApplication{
 
 Nah bagaimana terlihat lebih mudah di baca khan ya!. Ok supaya terlihat bedanya klo saya rename filenya seperti berikut dengan nama `konstanta.java` berarti nama kelasnya seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 public class konstanta{
     public static final Integer sisipersegi = 20;
     public static final Double phy = 20.0;
@@ -78,7 +83,7 @@ public class konstanta{
 
 Nah sekarang jadi seperti berikut cara aksesnya:
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.training.java.core;
 
 import com.maryanto.dimas.training.java.core.Konstanta;

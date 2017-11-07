@@ -20,7 +20,7 @@ Bilangan bulat baik itu negatif maupun positif dibagi lagi menjadi 4 yaitu
 ### `java.lang.Byte` 
 
 Digunakan untuk yang memiliki nilai tidak kurang dari `-128` hinga `127` atau sama dengan `1 btye` contohnya:
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.tdi.training.java.core;
 
 import java.lang.Byte;
@@ -43,7 +43,7 @@ public class BilanganBulatKecil{
 ### `java.lang.Short` 
 
 Digunakan untuk yang memiliki nilai tidak kurang dari `-32,768` hinga `32,767` atau `2 byte` contohnya seperti berikut:
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.tdi.training.java.core;
 
 public class BilanganBulatMenengah {
@@ -64,7 +64,7 @@ public class BilanganBulatMenengah {
 
 Digunakan untuk memiliki nilai tidak kurang dari `-2,147,483,648` hinga `2,147,483,647` atau `4 byte` contohnya seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.tdi.training.java.core;
 
 publi class BilanganBulatBesar{
@@ -85,7 +85,7 @@ publi class BilanganBulatBesar{
 
 Digunakan untuk memiliki nilai tidak kurang dari `-9,223,372,036,854,775,808` hinga `9,223,372,036,854,775,807` atau `8 byte` contohnya seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.tdi.training.java.core;
 
 publi class BilanganBulatSangatBesar{
@@ -110,7 +110,7 @@ Bilangan pecahan pada dasarnya ada 2 yaitu `java.lang.Float` dan `java.lang.Doub
 
 Tipe data float ini lebih besar dari tipe data yang ada di atasnya yaitu `byte`, `short`, `int`, dan `long` karena dia bisa menerima bilangan pecahanan contohnya `0.50123` dst. contohnya:
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.tdi.training.java.core;
 
 publi class BilanganBulatSangatBesar{
@@ -131,7 +131,7 @@ publi class BilanganBulatSangatBesar{
 
 Tipe data yang terakhir dari yang paling besar dari semua tipe data untuk number adalah `java.lang.Double` contohnya seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 package com.maryanto.dimas.tdi.training.java.core;
 
 publi class BilanganBulatSangatBesar{
