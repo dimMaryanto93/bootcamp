@@ -33,3 +33,47 @@ public class KonversiTipeDataOtomatis{
     }
 }
 {% endhighlight %}
+
+Contoh lebih detailnya lagi berdasarkan gambar diatas:
+
+{% highlight java linenos %}
+package com.maryanto.dimas.tdi.training.java.core;
+
+public class TipeDataKonversiFlow {
+
+	public static void main(String[] args){
+		byte varByte = 100;
+		System.out.println("var byte adalah " + varByte);
+		short varShort = varByte;
+		System.out.println("var byte ke short adalah " + varShort);
+		int varInt = varShort;
+		System.out.println("var short ke int adalah " + varInt);
+		long varLong = varInt;
+		System.out.println("var int ke long adalah " + varLong);
+		float varIntToFloat = varInt;		
+		System.out.println("var int ke float adalah " + varIntToFloat);
+		float varLongToFloat = varLong;
+		System.out.println("var long ke float adalah " + varLongToFloat);
+		double varFloatToDouble = varLongToFloat;
+		System.out.println("var float ke double adalah " + varFloatToDouble);
+		double varIntToDouble = varInt;
+		System.out.println("var int ke double adalah " + varIntToDouble);
+		double varLongToDouble = varLong;
+		System.out.println("var long ke double adalah " + varLongToDouble);		
+	}
+}
+{% endhighlight %}
+
+Jika di jalankan hasilnya seperti berikut:
+
+```sh
+var byte adalah 100
+var byte ke short adalah 100
+var short ke int adalah 100
+var int ke long adalah 100
+var int ke float adalah 100.0
+var long ke float adalah 100.0
+var float ke double adalah 100.0
+var int ke double adalah 100.0
+var long ke double adalah 100.0
+```
