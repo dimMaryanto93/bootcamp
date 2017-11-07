@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Tipe data Number"
-lang: java-core
+title: "Tipe-data-string"
+lang: 
 categories:
-- Java
-- Core
+- 
+- 
+- 
 gist: 
 youtube: 
 comments: true
