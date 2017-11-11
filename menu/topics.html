@@ -22,14 +22,26 @@ permalink: /menu/topics/
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light {{topic.color}}">
-                    <img class="activator responsive-img" src="{{ "/resources/images/" | prepend:
+                    {% if topic.coming_soon == false %}
+                        <img class="activator responsive-img" src="{{ "/resources/images/" | prepend:
                     site.baseurl}}{{topic.url}}.png">
+                    {% else %}
+                        <img class="responsive-img" src="{{ "/resources/images/" | prepend:
+                    site.baseurl}}{{topic.url}}.png">
+                    {% endif %}
                 </div>
                 <div class="card-content">
+            {% if topic.coming_soon == false %}
             <span class="card-title activator grey-text text-darken-4">
                 {{topic.name}}
                 <i class="material-icons right">more_vert</i>
             </span>
+            {% else %}
+            <span class="card-title grey-text text-darken-4">
+                {{topic.name}}
+                <span class="new badge yellow black-text" data-badge-caption="comming soon"></span>
+            </span>
+            {% endif %}                
                     <p>
                         {{topic.descriptions}}
                     </p>
@@ -38,11 +50,12 @@ permalink: /menu/topics/
                     <div class="chip">{{tag}}</div>
                     {% endfor %}
                 </div>
+                {% if topic.coming_soon == false %}
                 <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-                {{topic.name}}
-                <i class="material-icons right">close</i>
-            </span>
+                    <span class="card-title grey-text text-darken-4">
+                        {{topic.name}}
+                        <i class="material-icons right">close</i>
+                    </span>
                     <p>{{topic.messages}}</p>
                     {% assign post_list = site.posts | where: "lang", topic.url %}
                     {% assign post_list_counted = post_list.size %}
@@ -73,6 +86,7 @@ permalink: /menu/topics/
                     </ul>
                     {% endif %}
                 </div>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
