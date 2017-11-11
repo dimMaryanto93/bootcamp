@@ -24,8 +24,8 @@ comments: true
     1. Buatlah variable dengan nama `jariJari` dan beri nilai 15
     2. Buat variable dengan nama `diameter` kemudian berinilai dari hasil perkalian variable `jariJari` x `2`
     3. Untuk nilai Phi (\pi) gunakan kelas `java.math`
-    4. Hitunglah luas lingkaran tersebut. Tampilkan di console seperti berikut `Luas lingkaran dengan diamter {diamter} maka hasilnya adalah { luas }`
+    4. Hitunglah keliling lingkaran tersebut. Tampilkan di console seperti berikut `Nilai PI {nilai}, maka kelilingnya adalah {keliling}`
   
 **keterangan** ==> `{ ket }` ubah menjadi nilai sebenarnya contohnya `Tinggi {tinggi}cm` ==> `Tinggi 30cm`
 
-Jika ada pertanyaan silahkan isi di kolom komentar ya..., dan untuk solusinya tersedia [di sini](not-found.txt). tapi sebaiknya kerjaan dulu sebelum melihat jawabanya setelah itu baru di compare ya.
+Jika ada pertanyaan silahkan isi di kolom komentar ya..., dan untuk solusinya tersedia [di sini]({{ site.baseurl }}/resources/downloads/file/java-core.quis-1.zip). tapi **sebaiknya kerjaan dulu sebelum melihat jawabanya** setelah itu baru di compare ya.
