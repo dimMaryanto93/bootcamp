@@ -12,7 +12,7 @@ comments: true
 ---
 Sebelum kita koding dengan bahasa pemograman berorientasi object ini (Java), kita harus install dulu Software Development Kit atau SDK yaitu JDK kependekan dari _Java Development Kit_. JDK bertujuan untuk menyediakan sekumpulan tools handal yang disediakan oleh para insyinyur Java (gelar) contoh diantarnya sebagai berikut
 
-![JDK vs JRE](/resources/downloads/java-arc.png)
+![JDK vs JRE](/resources/downloads/imgs/java-core/java-arc.png)
 
 ### Level Tools & Tools APIs
 1. `javac` untuk melakukan compilasi
@@ -120,8 +120,3 @@ Error: Could not find or load main class com.maryanto.dimas.HaloWorld #<<< error
 ```
 
 Mungkin temen-temen blum bisa ngoba untuk lakukan compile dan execute seperti yang saya lakukan tadi, yah... kenapa gak bisa? jawabanya sederhana karena seperti yang saya ceritakan diawal klo belum install JDK atau Java Development Kit gak bisa ngalakuin compilasi dan eksekusi koding yang kita tulis. Ok saya akan balik lagi bagaimana cara install Oracle JDK di Windows 10, Linux UBuntu, Linux Fedora dan untuk MacOs maaf blum bisa ya karena blum punya `MacBook`nya semoga suatu saat bisa bisa terwujud `#laptopImpian` `#amin....`
-
-
-
-
-

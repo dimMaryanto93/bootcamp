@@ -11,9 +11,9 @@ youtube:
 comments: true
 ---
 
-Untuk install Oracle JDK di Fedora 25 sebenarnya ada banyak cara, salah satunya menggunakan software `Fedy`, `Fedy` adalah penyedia software-software yang digunakan untuk mempermudah proses installasi sama halnya seperti via `ppa:repository` klo di Ubuntu. tpi disini saya tidak akan menggunakan `Fedy` tapi menggunakan cara manual saja supaya apa? supaya anda tau proses mengginstallnya menggunakan package management fedora yaitu `rpm`. OK sekarang kita download dulu file installernya sama seperti di Windows masuk ke [website oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html) kemudian pilih sesuai platform, karena saya pake Fedora version 64bit jadi saya pilih yang ```linux-x64.rpm``` pilih yang extensionnya ``.rpm` ya!. seperti gambar berikut:
+Untuk install Oracle JDK di Fedora 25 sebenarnya ada banyak cara, salah satunya menggunakan software `Fedy`, `Fedy` adalah penyedia software-software yang digunakan untuk mempermudah proses installasi sama halnya seperti via `ppa:repository` klo di Ubuntu. tpi disini saya tidak akan menggunakan `Fedy` tapi menggunakan cara manual saja supaya apa? supaya anda tau proses mengginstallnya menggunakan package management fedora yaitu `rpm`. OK sekarang kita download dulu file installernya sama seperti di Windows masuk ke [website oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html) kemudian pilih sesuai platform, karena saya pake Fedora version 64bit jadi saya pilih yang ```linux-x64.rpm``` pilih yang extensionnya `.rpm` ya!. seperti gambar berikut:
 
-![Download Oracle JDK Fedora](/resources/downloads/jdk-win10/download-jdk-2.png)
+![Download Oracle JDK Fedora](/resources/downloads/imgs/java-core/jdk-win10/download-jdk-2.png)
 
 Setelah selesai di download silahkan anda buka terminalnya kemudian arahkan ke hasil download seperti berikut:
 
