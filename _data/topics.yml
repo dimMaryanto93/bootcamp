@@ -13,6 +13,21 @@
   publish: 2017-10-15T20:50:50+07:00
   github: "https://github.com/log-rnd/java-core.git"
   coming_soon: false
+
+- name: PostgreSQL
+  url: psql
+  icon: "devicons devicons-postgresql"
+  language: Database
+  color:
+  tags:
+  - PostgreSQL
+  - Database
+  descriptions:
+    Temen-teman akan belajar menggunakan database dengan PostgreSQL, query untuk mengambil data dari database atau melakukan manipulasi data ke database.
+  messages:
+  publish: 2017-11-20T20:50:50+07:00
+  github: "https://github.com/log-rnd/spring-webmvc.git"
+  coming_soon: true
 #
 #- name: Java Desktop Application (Swing)
 #  url: java-swing
@@ -133,7 +148,7 @@
 #  github: "https://github.com/log-rnd/spring-core.git"
 #  coming_soon: true
 #
-#- name: Spring Web MVC
+#- name: Springframework Web MVC
 #  url: spring-webmvc
 #  icon: "devicons devicons-java"
 #  language: Java
@@ -150,7 +165,7 @@
 #  github: "https://github.com/log-rnd/spring-webmvc.git"
 #  coming_soon: true
 #
-#- name: Spring Web Security
+#- name: Springframework Web Security
 #  url: spring-security
 #  icon: "devicons devicons-java"
 #  language: Java
@@ -200,3 +215,4 @@
 #  publish: 2017-10-28T20:50:50+07:00
 #  github: "https://github.com/log-rnd/spring-webmvc.git"
 #  coming_soon: true
+
