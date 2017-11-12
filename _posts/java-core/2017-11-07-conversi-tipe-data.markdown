@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Conversi Tipe data Otomatis di Java"
+title: "Konversi tipe data otomatis di Java"
 date: 2017-11-07T23:40:58+07:00
 lang: java-core
 categories:

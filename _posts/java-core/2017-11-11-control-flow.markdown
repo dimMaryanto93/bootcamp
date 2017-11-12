@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flow Controlling in Java"
+title: "Flow control in Java"
 date: 2017-11-11T20:29:17+07:00
 lang: java-core
 categories:

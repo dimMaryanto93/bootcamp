@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deep dive in IF statement decision"
+title: "Deep dive making decision in IF statement"
 date: 2017-11-11T22:25:36+07:00
 lang: java-core
 categories:

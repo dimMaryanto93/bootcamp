@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deep dive in SWITCH-CASE statement decision"
+title: "Deep dive making decision in SWITCH-CASE statement"
 date: 2017-11-11T23:07:06+07:00
 lang: java-core
 categories:

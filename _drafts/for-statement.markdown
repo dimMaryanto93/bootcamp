@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deep dive in For statement loop"
+title: "Deep dive in loop For statement"
 lang: java-core
 categories:
 - Java

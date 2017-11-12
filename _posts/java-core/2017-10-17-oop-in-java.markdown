@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pemrograman berorientasi objek dengan Java"
+title: "Bahasa Pemograman berorientasi objek dengan Java"
 date: 2017-10-17T00:40:09+07:00
 lang: java-core
 categories:
