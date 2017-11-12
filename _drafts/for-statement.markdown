@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deep dive in loop For statement"
+title: "Looping menggunakan For statement"
 lang: java-core
 categories:
 - Java

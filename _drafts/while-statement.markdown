@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deep dive in while and do-while statement loop"
+title: "Looping menggunakan WHILE dan DO-WHILE statement"
 lang: java-core
 categories:
 - Java
