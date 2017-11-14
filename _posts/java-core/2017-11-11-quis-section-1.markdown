@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Latihan Java Core part 1"
+title: "Time is your practice"
 date: 2017-11-11T14:31:35+07:00
 lang: java-core
 categories:
