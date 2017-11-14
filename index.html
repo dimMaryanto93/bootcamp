@@ -64,8 +64,13 @@ layout: default
                     site.baseurl}}{{topic.url}}.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">
-                        {{topic.name}} <i class="material-icons right">more_vert</i>
+                    {% assign post_list = site.posts | where: "lang", topic.url %}
+                    {% assign post_list_counted = post_list.size %}
+                    {% assign post_list_sorted = post_list | sort:"date" %}
+                    <span class="card-title grey-text text-darken-4">
+                        <a href="{{ post_list_sorted.first.url }}">
+                            {{topic.name}} <i class="material-icons right">more_vert</i>
+                        </a>
                     </span>
                     <p>
                         {{topic.descriptions}}
@@ -80,15 +85,12 @@ layout: default
                         {{topic.name}}<i class="material-icons right">close</i>
                     </span>
                     <p>{{topic.messages}}</p>
-                    {% assign post_list = site.posts | where: "lang", topic.url %}
-                    {% assign post_list_counted = post_list.size %}
                     {% if post_list_counted >= 1 %}
                     <ul class="collection with-header">
                         <li class="collection-header">
                             <strong>Daftar Materi: </strong>
                             <span class="badge new blue" data-badge-caption="materi">{{post_list_counted}}</span>
                         </li>
-                        {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
                             <a href="{{post.url}}">
