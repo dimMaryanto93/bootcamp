@@ -35,8 +35,16 @@ Buatlah tampilan seperti berikut menggunakan perintah perulangan atau percabanga
 4. Buatlah program untuk menghitung jika baris ganjil `1,3,5, dst` tampilan perkalian dari `index` dalam perulangan tersebut dan jika dibaris yang bernilai genap `2,4,5 dst` tampilkan bilangan dari hasil perpangkatan dari `index` dalam perulangan tersebut seperti berikut:
 ```sh
 0       0       0       0       0 
-1.0     1.0     4.0     27.0    256.0 
+1.0     1.0     1.0     1.0     1.0 
 0       2       4       6       8 
+1.0     3.0     9.0     27.0    81.0 
+0       4       8       12      16 
+1.0     5.0     25.0    125.0   625.0 
+0       6       12      18      24 
+1.0     7.0     49.0    343.0   2401.0 
+0       8       16      24      32 
+1.0     9.0     81.0    729.0   6561.0 
+0       10      20      30      40 
 ```
 5. Buatlah program menggunakan perulangan untuk menampilkan, tampilan di console seperti berikut:
 ```sh
