@@ -48,9 +48,7 @@ Java adalah bahasa yang memiliki fitur **strong data type** artinya menbedakan a
 Nah itu mungkin sebagian yang perlu diperhatikan dari cara penulisan bahasa pemograman Java. dan mungkin dari temen-temen akan bertanya mengapa penaaman file harus besar dan variable harus kecil? ok, pertanyaan bagus. Jadi misalnya saya punya file dengan nama `Konstanta.java` dan memiliki variable seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.training.java.core;
-
-public class Konstanta{
+public class Konstanta {
     public static final Integer sisiPersegi = 20;
     public static final Double phy = 20.0;
 }
@@ -59,10 +57,6 @@ public class Konstanta{
 Nah sekarang misalnya kelas java tersebut dipanggil dari kelas lainnya contohnya saya punya file lagi dengan nama `MainApplication.java` seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.training.java.core;
-
-import com.maryanto.dimas.training.java.core.Konstanta;
-
 public class MainApplication{
     
     public static void main(String[] x){
@@ -84,10 +78,6 @@ public class konstanta{
 Nah sekarang jadi seperti berikut cara aksesnya:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.training.java.core;
-
-import com.maryanto.dimas.training.java.core.Konstanta;
-
 public class MainApplication{
     
     public static void main(String[] x){

@@ -14,9 +14,7 @@ comments: true
 Dimateri [sebelumnya]({% post_url java-core/2017-11-11-control-flow %}) saya udah singung tentang penggunaan `if` statement, di section ini kita akan belajar lebih dalam lagi tentang `if` statement supaya lebih paham lagi tentang konsep dan cara penggunaanya. Nah jadi sebelumnya kita hanya punya **satu kondisi** saja bagaimana jika punya **dua kondisi**. Tentunya bahasa Java telah menyediakannya ya, yaitu dengan menggunakan `if-else` berikut contoh penggunaanya
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class DeepIfElse{
+public class DeepIfElse {
     
     public static void main(String[] args){
         String word = "Halo";
@@ -32,8 +30,6 @@ public class DeepIfElse{
 Jadi dengan adanya keyword `else` atau artinya statement pengecualian magsud dari pengecualian ini bukan berarti diabaikan, tapi jika semua kondisi tidak ada yang terpenuhi maka statement `else` yang akan di jalankan. Contoh berikutnya bagaimana jika ada lebih dari 2 kondisi, untuk kasus tersebut kita bisa menggunakan keyword `if-else-if` seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.java.core;
-
 public class DeepIfElseIf {
 
     public static void main(String[] args){
@@ -65,9 +61,7 @@ Berikut penjelasannya:
 Nah sekarang kita akan coba studi kasus yang lain, berikut codingannya:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class DeepIfTwoValidCondition{
+public class DeepIfTwoValidCondition {
     
     public void static void main(String[] args){
         int bil = 10;

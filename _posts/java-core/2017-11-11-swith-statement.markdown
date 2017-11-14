@@ -14,9 +14,7 @@ comments: true
 Percabagan ```switch-case``` sebenarnya tidak jauh berbeda tpi disini kita akan lihat bagaimana cara kerja dari percabagan ini, berikut adalah contoh kasus sederhaan dari kodingnya sering kita jumpai yaitu seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class DeepSwichCaseStatement{
+public class DeepSwichCaseStatement {
 
     public static void main(String[] args){
         Integer ip = 4;

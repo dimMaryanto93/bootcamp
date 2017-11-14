@@ -16,9 +16,7 @@ Coba kalo temen-temen perhatikan dari materi-materi sebelumya sampe sekarang mun
 Modularisasi tidak hanya sebatas dipisahkan dalam _method_ atau _function_ yang saling panggil-memanggil tetepi juga kita bisa pisahkan secara _file_ atau _class_ dengan tujuan lebih teroranisir dan memisahkan function yang tidak berhubungan langsung di _file_ atau _class_ tersebut. Contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class AplikasiBankBNI{
+public class AplikasiBankBNI {
 
     public BigDecimal hitungBungaTabungan(Integer idNasabah){
         // proses bisnis untuk menghitung bunga per-nasabah
@@ -49,9 +47,7 @@ Dengan kita pisahkan permodul (3 _class_) yaitu dengan `AplikasiTabungan`, `Apli
 ### Aplikasi Tabungan
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class AplikasiTabungan{
+public class AplikasiTabungan {
 
     public BigDecimal hitungBunga(Integer idNasabah){
         // proses bisnis untuk menghitung bunga per-nasabah untuk tabungan
@@ -64,9 +60,7 @@ public class AplikasiTabungan{
 ### Aplikasi Kredit
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class AplikasiKredit{
+public class AplikasiKredit {
 
     public BigDecimal hitungBunga(Integer idNasabah){
         // proses bisnis untuk menghitung bunga per-nasabah untuk kredit
@@ -79,9 +73,7 @@ public class AplikasiKredit{
 ### Aplikasi Deposito
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class AplikasiDeposito{
+public class AplikasiDeposito {
 
     public BigDecimal hitungBunga(Integer idNasabah){
         // proses bisnis untuk menghitung bunga per-nasabah untuk deposito
@@ -94,9 +86,7 @@ public class AplikasiDeposito{
 ### Aplikasi BNI
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class AplikasiBNI{
+public class AplikasiBNI {
 
     public static void main(String[] args){
         // cara memanggil method hitungBunga yang ada di file Aplikasi Deposito

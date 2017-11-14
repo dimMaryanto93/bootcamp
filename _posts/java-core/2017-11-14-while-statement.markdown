@@ -14,8 +14,6 @@ comments: true
 Tidak jauh berbeda dengan perulangan dengan `for` statement di [materi sebelumnya]({% post_url java-core/2017-11-14-for-statement-2 %}). Sekarang kita lihat cara bekerja untuk perulangan menggunakan `do-while` terlebih dahulu. berikut contohnya:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 public class DoWhileStatement{
 
     public static void main(String[] args){
@@ -54,9 +52,7 @@ Sekarang ada di index ke 9
 Setelah menggunakan yang `do-while` statement, sekarang kita menggunakan yang `while`.
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class WhileStatement{
+public class WhileStatement {
 
     public static void main(String[] args){
         Integer i = 0;

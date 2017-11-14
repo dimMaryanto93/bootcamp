@@ -15,8 +15,6 @@ comments: true
 Di materi [sebelumnya]({% post_url java-core/2017-11-12-for-statement %}) kita udah mengetahui bagaimana perulangan dengan perintah `for` statement. Sekarang kita, akan coba membuat satu kasus yaitu `for` dalam `for` atau didalam perulangan ada perlulangan contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 public class LoopingInnerLoop {
 
     public static void main(String[] args){
@@ -33,8 +31,6 @@ public class LoopingInnerLoop {
 Selain itu juga kita bisa kombinasikan antara looping dengan seleksi. contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 public class IfIntoForStatement{
 
     public static void main(String[] args){
@@ -50,8 +46,6 @@ public class IfIntoForStatement{
 Atau kita bisa juga, di dalam selekasi ada perulangan. contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 public class ForIntoIfStatement{
 
     public static void main(String[] args){
@@ -69,8 +63,6 @@ public class ForIntoIfStatement{
 Selain kombinasi juga kita bisa main-main dengan indexing dalam perulangan tersebit contohnya di sebelumnya hasil yang dikeluarkan index `[0, 1, 2, 3, ....]` dan seterusnya ya nah sekarang mau saya balik jadi `[...., 4, 3, 2, 1, 0]` contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 public class ForReverseIndex {
 
     public static void main(String[] args){

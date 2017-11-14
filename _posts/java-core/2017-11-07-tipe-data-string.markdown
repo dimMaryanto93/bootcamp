@@ -18,9 +18,7 @@ Tipe data untuk karakter diaktegorikan ada 2 jenis yaitu single karakter dan mul
 Tipe data ini pada dasarnya sama seperti pendahulunya `C/C++` yaitu menggunakan `char` atau `Character` kharakter ini merepresentasikan huruf, angka dan simbol. Biasanya tipe data ini hanya dapat menyimpan single word, yang di simpan diatara `'` (single quotes) contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class TipeDataCharacter{
+public class TipeDataCharacter {
     public static void main(String[] args){
         Character var = 'A';
         System.out.println("Nilai dari variable var adalah " + var);
@@ -33,9 +31,7 @@ public class TipeDataCharacter{
 Kalo dulu jika belajar bahasa pemograman `C/C++` atau `pascal` tipe data string ini pasti menggunakan `char[]` character tetapi menggunakan sistem array. Nah di Java tidak seperti itu ya. tipe data multiple karater ini di Java dinamakan dengan `java.lang.String`. Tipe data `String` ini bisa digunakan untuk menyimpan karakter yang sangat besar atau banyak, dengan menggunkan `"` (double quotes) contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class TipeDataString{
+public class TipeDataString {
 
     publis static void main(String[] args){
         String namaSaya = "Dimas Maryanto";
@@ -49,9 +45,7 @@ public class TipeDataString{
 Untuk tipe data String kita bisa konversi menjadi `char`, karena tipe data String memiliki banyak karakter sedangkan di char hanya boleh menyimpan satu karakter saja jadi contohnya saya mau mengambil huruf `D` dari kalimat `Dimas Maryanto` jadi seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class AmbilKaracterDariString{
+public class AmbilKaracterDariString {
 
     public static void main(String[] a){
         String namaAnda = "Dimas Maryanto";

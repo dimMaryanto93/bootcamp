@@ -22,9 +22,7 @@ Sebanyak 100x seperti ini:
 Nah jadi sama halnya di bahasa pemograman jika saya terjemahkan ke bahasa Java jadi seperti ini ya:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class HukumanBuatAnakSD(){
+public class HukumanBuatAnakSD {
 
     public static void main(String[] args){
         System.out.println("Saya minta maaf, saya akan lebih rajin dalam bejar dan tidak akan bolos lagi");
@@ -41,10 +39,7 @@ public class HukumanBuatAnakSD(){
 If you'r programmer, use the loop statement. like this
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class HukumanBuatPrgrammer(){
-
+public class HukumanBuatPrgrammer {
     public static void main(String[] args){
         Integer times = 100;
         for(int i = 0; i < times ; i++)

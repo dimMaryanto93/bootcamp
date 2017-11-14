@@ -21,8 +21,6 @@ Untuk konversi tipe data di Java, pada dasarnya otomatis tpi ada beberapa syarat
 Implementasinya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 public class KonversiTipeDataOtomatis{
 
     public static void main(String[] args){
@@ -37,8 +35,6 @@ public class KonversiTipeDataOtomatis{
 Contoh lebih detailnya lagi berdasarkan gambar diatas:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 public class TipeDataKonversiFlow {
 
 	public static void main(String[] args){

@@ -14,9 +14,7 @@ comments: true
 Tipe data logika ini pada dasarnya adalah yang mengembalikan nilai boolean. Boolean hanya bernilai `true` or `false`. contohnya basicnya 
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class TipeDataLogika{
+public class TipeDataLogika {
     public static void main(String[] x){
         Boolean isValid = true;
         System.out.println(
@@ -30,9 +28,7 @@ public class TipeDataLogika{
 Selain itu kita juga bisa menggunakan operator `==` sebagai perbadingan seperti berikut contohnya: 
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class PerbandinganDenganOperator{
+public class PerbandinganDenganOperator {
     publis static void main(String[] args){
         Integer bilanganBulat = 10;
         Boolean isZero = (bilanganBulat == 10);

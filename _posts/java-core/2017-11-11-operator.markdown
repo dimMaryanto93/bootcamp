@@ -54,9 +54,7 @@ Operasi ini biasanya digunakan untuk melakukan perhitungan matematis seperti per
 Berikut adalah contoh penggunaannya
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class SumOperation{
+public class SumOperation {
     public static void main(String[] args){
         Integer value = 10 + 20;
         System.out.println("10 + 20 = "+ value);
@@ -72,9 +70,7 @@ Maka jika dijalankan akan menghasilkan output seperti berikut:
 ```
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class SubstractOperation{
+public class SubstractOperation {
     public static void main(String[] args){
         Integer value = 10 - 20;
         System.out.println("10 - 20 = "+ value);
@@ -107,9 +103,7 @@ Sebutanya aja udah perbandingan jadi, di operator ini untuk melakukan perbanding
 Berikut adalah beberapa contoh penggunaanya:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class EqualityOperation{
+public class EqualityOperation {
     public static void main(String[] args){
         Integer value = 10 - 20;
         System.out.println("Apakah 10 - 20 hasilnya -10 ? " + (value == -10));
@@ -125,9 +119,7 @@ Apakah 10 - 20 hasilnya -10 ? true
 ```
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class EqualityOperation{
+public class EqualityOperation {
     public static void main(String[] args){
         Integer value = 10 + 20;
         System.out.println("Apakah 10 + 20 hasilnya 40 ? " + ((value == 40) ? "Benar" : "Salah!"));
@@ -147,9 +139,7 @@ Apakah 10 + 20 hasilnya 40 ? Salah!
 Untuk konversi tipe data, ini juga merupakan operator juga. Jadi klo di materi [sebelumya]({% post_url java-core/2017-11-07-conversi-tipe-data %}) Semua dilakukan secara otomatis tapi jika tidak ada dalam flow conversion kita bisa override it, do it manualy. using operator `()`. Berikut contohnya
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class EqualityOperation{
+public class EqualityOperation {
     public static void main(String[] args){
         Integer value = 10;
         Double valueConverted =(java.lang.Double) value;

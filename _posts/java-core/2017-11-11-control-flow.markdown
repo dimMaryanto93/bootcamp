@@ -29,9 +29,7 @@ Berikut adalah Sample penggunaan percabangan
 If statement, biasanya ada 2 statement yaitu `control` dan `statement`. Dimana `control` merupakan atau berisi logika atau nilai pembanding sedangkan `statement` merupakan blok yang akan di eksekusi jika `control` terpenuhi atau bernilai `true` contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class FlowIfStatement{
+public class FlowIfStatement {
 
     public static void main(String[] args){
         Integer bil1 = 10;
@@ -47,9 +45,7 @@ public class FlowIfStatement{
 Switch statement serupa dengan if, hanya berbeda dengan sintaxnya contohnya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class FlowSwitchStatement{
+public class FlowSwitchStatement {
     
     public static void main(String[] args){
         Integer value = 20;
@@ -77,9 +73,7 @@ Untuk loop statement initnya ada 3 hal yang perlu di ingat yaitu `index`, `contr
 Perulangan yang satu ini, paling banyak ditemukan dibandingkan dengan perlulangan yang lainnya karena dari secara sintax paling sederhana dan paling mudah dibaca. Format umum dari for sebagai berikut 
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class FlowForStatement{
+public class FlowForStatement {
 
     for(int i = 1; i < 11; i++){
         System.out.println("Saya berulang sebangak " + i);
@@ -92,9 +86,7 @@ public class FlowForStatement{
 Selain perluangan `for` ada juga menggunakan `while`, Perlulangan while ini biasaya digunakan untuk kasus yang lebih sepesifik contohnya tidak memiliki kepastian akan `index` atau biasanya digunakan untuk me-loop suatu event yang tertentu misalnya data yang diambil dari database, file ataupun dari hal lainnya. Contoh penggunaannya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class FlowWhileStatement{
+public class FlowWhileStatement {
 
     public static void main(String[] args){
         Integer i = 0;
@@ -111,9 +103,7 @@ public class FlowWhileStatement{
 Perulangan tipe ini serupa dengan `while` tetapi bedanya adalah klo `while` itu kodisinya di cek dulu sebelum di lakukan, nah sedangkan dengan `do-while` di kerjakan dulu baru di cek kondisinya. Berikut contoh penggunaanya:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
-public class FlowDoWhileStatement{
+public class FlowDoWhileStatement {
 
     public static void main(String[] args){
         Integer i = 0;

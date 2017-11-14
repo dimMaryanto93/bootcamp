@@ -18,8 +18,6 @@ Tipe data yang tidak terlupakan adalah untuk mengimpan tanggal dan waktu, di Jav
 Untuk tipe data tanggal dengan sudah ada sejak dulu yaitu `java.util.Date`, Tipe data ini merepresentasikan tahun, bulan, hari, jam, menit dan second yang bisa diformat ke pattern tertentu dengan menggunakan object `SimpleDateFormat` yang di import dari `java.text.SimpleDateFormat`. Untuk tipe data ini udah ada sejak JDK 1.0. cara Penggunaannya adalah sebagai berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 import java.util.Date;
 
 public class TipeDataDatePrimitif{
@@ -72,8 +70,6 @@ Saat ini menggunakan operasi tanggal biasa menggunakan yang ada dalam package `j
 Untuk implementasinya seperti berikut:
 
 {% highlight java linenos %}
-package com.maryanto.dimas.tdi.training.java.core;
-
 import java.time.LocalDate;
 
 public class TipeDataJava8Date{
