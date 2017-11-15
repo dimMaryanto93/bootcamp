@@ -117,7 +117,7 @@ public class MahasiswaService extends Service{
 
 ## Encapsulation
 
-Encapsulation pada dasarnya kita harus mengembunyikan sesuatu, supaya tidak bisa diexpose ke luar kelas tersebut dengan menggunakan keyword `private`, `protected` dan `public`. Tetapi biasanya orang-orang menyembunyikan variable supaya tidak bisa diakses secara langsung.
+Encapsulation pada dasarnya kita harus mengembunyikan sesuatu, supaya tidak bisa diexpose ke luar kelas tersebut dengan menggunakan keyword `private`, `protected` dan `public`. Tetapi biasanya orang-orang menyembunyikan variable supaya tidak bisa diakses secara langsung untuk aksesnya biasanya menggunakan method yaitu `setter & getter` _approach_.
 
 ### Private
 
@@ -130,3 +130,26 @@ Akses _modifier protected_ itu jadi intinya hampir sama dengan keyword _private_
 ### Public
 
 Akses _modifier public_ itu jadi intinya kebalikan dari akses _modifier private_ atau bisa digunakan / **diakses ke luar _class_**.
+
+### Setter & Getter
+
+Method _setter & getter_ pada dasarnya method biasa hanya fungsinya untuk _inject value_ ke _variable_ mengunakan method _setter_ dan untuk mengeluarkan nilai menggunakan method namanya _getter_ contohnya seperti berikut:
+
+{% highlight java linenos %}
+package tdi.training.java.core;
+
+public class EncapsulationExcample{
+
+    private String nama;
+
+    // ini method getter
+    public String getNama(){
+        return this.nama;
+    }
+
+    // ini method setter
+    public void setNama(String nama){
+        this.nama = nama;
+    }
+}
+{% endhighlight %}
