@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Object Oriented Approach (Inheritance, Polymorpism, Encapsulation)"
+title: "Object Oriented Approach"
 date: 2017-11-15T18:47:26+07:00
 lang: java-core
 categories:
