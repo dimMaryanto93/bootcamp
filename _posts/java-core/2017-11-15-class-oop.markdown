@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Object oriented dengan Java class"
+date: 2017-11-15T14:15:18+07:00
+lang: java-core
+categories:
+- Java
+- Core
+gist: 
+youtube: 
+comments: true
+---
+
+Mungkin dari temen-tement masih bingung apa itu _class_, klo misalnya kita googling pasti jawabanya
+
+> _class is blueprint_ blablabal...
+
+Tapi pasti diantara temen-temen klo ditanya apa itu blueprint belum tentu ngerti khan ya?
+
+## What is _class_
+
+Nah jadi klo menurut saya pribadi _class_ itu sama seperti tipe data yang kita buat sendiri. Kenapa saya bilang tipe data nah coba perhatikan `java.lang.Integer`, `java.lang.String` dan lain-lain, dari tipe data build-in yang sebutkan itu mereka adalah sebuah kelas tapi yang dibuat oleh Java itu sendiri atau bawaan JDK. Nah karena _class_ yang kita buat itu kita buat sendiri jadi ya saya bilang tipe data yang saya buat sendiri.
+
+Didalam sebuah _class_ biasanya terdiri dari _function_ dan _variables_, selain itu dengan menggunakan _class_ kita bisa mereprentasikan sebuah _object_ contohnya sebuah sepeda. Sepeda ini jadi dia memiliki sifat dan prilaku, sifat dan prilaku ini lah yang disebut _variables_ dan _functions_. Contohnya `roda`, `speed`, `mengikatkanKecepatan()`, `menurunkanKecepatan()`, `jumlahPenumpang` jadi klo saya buat _class_ seperti berikut:
+
+{% highlight java linenos %}
+package tdi.training.java.core;
+
+public class Sepeda {
+
+    private Integer roda = 2;
+    private Integer kecepatan = 0;
+
+    public void meningkatkanSpeed(Integer value) {
+        this.kecepatan = this.kecepatan + value;
+    }
+
+    public void turunkanSpeed(Integer value) {
+        this.kecepatan = this.kecepatan - value;
+    }
+
+    public Integer kecepatanSekarang() {
+        return this.kecepatan;
+    }
+
+}
+{% endhighlight %}
+
+## Inisialisasi object
+
+Setiap object itu merepresentasikan kehidupan nyata, nah jadi kita tadi udah membuat kerangka objek jadi sekarang bagaimana supaya object itu hidup. Caranya dengan inisialisasi object. Inisialisasi object biasanya menggunakan keyword `new` kemudian diikuti dengan nama _class_ yang mau digunakan contohnya:
+
+{% highlight java linenos %}
+package tdi.training.java.core;
+
+public class MainAplikasi{
+
+    public static void main(String[] args){
+        Sepeda ontel = new Sepeda();
+        ontel.meningkatkanSpeed(20);
+        System.out.println("Kecepatan sepeda ontol saat ini adalah " + ontel.kecepatanSekarang());
+
+        Sepeda balap = new Sepeda();
+        balap.meningkatkanSpeed(120);
+        System.out.println("Kecepatan sepeda balap saat ini adalah " + balap.kecepatanSekarang());
+    }
+}
+{% endhighlight %}
