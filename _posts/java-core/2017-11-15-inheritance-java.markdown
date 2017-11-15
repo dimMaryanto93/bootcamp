@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mengenal inheritance lebih dalam"
+title: "Mengenal lebih jauh tentang inheritance"
 date: 2017-11-15T20:19:57+07:00
 lang: java-core
 categories:
