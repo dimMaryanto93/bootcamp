@@ -77,7 +77,7 @@ Polimorpism adalah kembar tapi tidak sama, magsudnya jadi kita khan punya behavi
 
 Berikut implementasi kodingnya:
 
-## Service
+### Service
 
 {% highlight java linenos %}
 package tdi.training.java.core;
@@ -92,7 +92,7 @@ public class Service{
 }
 {% endhighlight %}
 
-## MahasiswaService
+### MahasiswaService
 
 {% highlight java linenos %}
 package tdi.training.java.core;
