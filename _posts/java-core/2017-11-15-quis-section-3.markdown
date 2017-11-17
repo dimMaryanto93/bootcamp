@@ -35,4 +35,6 @@ comments: true
 Nama lengkap saya adalah Dimas Maryanto
 ```
 
-this is for [my solution](/resources/downloads/file/java-core.quis-3.zip)
+## My Solution
+
+Seperti biasa berikut solusi dari soal diatas, [download disini](/resources/downloads/file/java-core.quis-3.zip)

@@ -55,4 +55,6 @@ Buatlah tampilan seperti berikut menggunakan perintah perulangan atau percabanga
 5
 ```
 
+## My Solution
+
 Berikut ini adalah [solusinya](/resources/downloads/file/java-core.quis-2.zip) yang saya buat, seperti biasa sebelum di download sebaiknya coba terlebih dahulu.

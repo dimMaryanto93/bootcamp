@@ -5,3 +5,6 @@ package-lock.json
 
 # intellij IDEA
 .idea/
+
+# visual paradigm
+*.bak*
