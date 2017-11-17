@@ -11,11 +11,7 @@ youtube:
 comments: true
 ---
 
-Hi, in this section atau Materi 'Java Core' ini temen-temen akan berkenalan dengan salah satu Bahasa Pemograman yang sedang Hits saat ini `(Oktober/2017)`, mungkin ada beberapa ada juga yang udah tau kalau mendengar issue `Wah jadi Java Programmer pasti gajinya gede?` ya itu memang menang tidak salah. berdasarkan pengalaman saya pribadi rate gaji untuk junior Java Programmer di daerah Jakarta Selatan kisaran `4 s/d 7jt/bulan` gimana lumayan khan ya....
-
-Wah kok diawal pengenalan udah nyuguhan gaji... heheheh. ini supaya temen-temen lebih tertarik ya. sebenarnya bukan karena gaji ya `(Bukan sok alim)` tapi jujur klo saya belajar Java itu karena `fun to code!!!` biasanya klo udah interesting sama sesuatu biasanya bakalan ditekuni meski gak digaji `#ehh #code`.
-
-Nah ok sekarang kita kembali lagi ke topic utama ya... kita khan lagi ngomongin `Pengenalan bahasa pemograman Java` bukan gaji ya. Nah langsung aja jadi di BAB ini kita belajar tentang:
+Hi, in this section 'Java Core' ini temen-temen akan berkenalan dengan salah satu Bahasa Pemograman yang sedang Hits saat ini `(Oktober/2017)` Nah langsung aja jadi di BAB ini kita belajar tentang:
 
 1. Bahasa Pemogramanan Berorientasi Object
 2. Setup Development Environtment
@@ -42,4 +38,4 @@ Nah ok sekarang kita kembali lagi ke topic utama ya... kita khan lagi ngomongin 
     3. Map
 14. Membuat program sederhana dengan OOP di Java
 
-Nah dengan materi seperti atas, diharapkan temen-temen bisa memahami manfaat dari pemograman berorientasi object dan merubah pemikiran dari pemograman berorientasi struktural. klo kata anak jaman milenium (kekinian bangezzz) itu `MOVE ON`. i hope you enjoy with this lecture see you in next section.
+Nah dengan materi seperti atas, diharapkan temen-temen bisa memahami manfaat dari pemograman berorientasi object dan merubah pemikiran dari pemograman berorientasi struktural. klo kata anak jaman milenium (kekinian bangezzz) itu `MOVE ON`. _i hope you enjoy with this lecture see you in next section_.
