@@ -47,72 +47,89 @@
   github: "https://github.com/log-rnd/maven.git"
   coming_soon: true
 
-# - name: Java EE dengan Implementation Servlet API
-#   url: servlet-api
-#   icon: "devicons devicons-java"
-#   language: Java
-#   color:
-#   tags:
-#   - java
-#   - web
-#   - servlet
-#   descriptions:
-#     Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API yang akan diproses di Web Server Apache Tomcat.
-#   messages:
-#   publish: 2017-10-23T20:50:50+07:00
-#   github: "https://github.com/log-rnd/servlet-api.git"
-#   coming_soon: true
+- name: VCS dengan GIT
+  url: git
+  icon: "devicons devicons-git"
+  language: VCS
+  color:
+  tags:
+  - git
+  - logs
+  - version
+  descriptions:
+    Temen-temen akan belajar menggunakan salah satu implementation dari version of control system atau lebih sering dikenal vcs dengan menggunakan git.
+  messages:
+    Temen-temen diharapkan bisa mengimplementasikan dan menerapkan penggunaan git dalam system development baik single development maupun team works. Selain itu juga temen-temen belajar menggunakan dan menggunakan fitur dari central repository seperti github.com, bitbucket.com atau gitlab.com.
+  publish: 2017-10-22T20:50:50+07:00
+  github: "https://github.com/log-rnd/maven.git"
+  coming_soon: true
 
-# - name: Java EE dengan Implementation JSP
-#   url: jsp
-#   icon: "devicons devicons-java"
-#   language: Java
-#   color:
-#   tags:
-#   - java
-#   - web
-#   - servlet
-#   - jsp
-#   descriptions:
-#     Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API dan Java Server Pages yang akan diproses di Web Server Apache Tomcat.
-#   messages:
-#   publish: 2017-10-24T20:50:50+07:00
-#   github: "https://github.com/log-rnd/jsp.git"
-#   coming_soon: true
+- name: Java EE dengan Implementation Servlet API
+  url: servlet-api
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - web
+  - servlet
+  descriptions:
+    Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API yang akan diproses di Web Server Apache Tomcat.
+  messages:
+  publish: 2017-10-23T20:50:50+07:00
+  github: "https://github.com/log-rnd/servlet-api.git"
+  coming_soon: true
 
-# - name: Springframework Core
-#   url: spring-core
-#   icon: "devicons devicons-java"
-#   language: Java
-#   color:
-#   tags:
-#   - java
-#   - springframework
-#   - dependency-injection
-#   - inversion-of-control
-#   descriptions:
-#     Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-#   messages:
-#   publish: 2017-10-25T20:50:50+07:00
-#   github: "https://github.com/log-rnd/spring-core.git"
-#   coming_soon: true
+- name: Java EE dengan Implementation JSP
+  url: jsp
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - web
+  - servlet
+  - jsp
+  descriptions:
+    Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API dan Java Server Pages yang akan diproses di Web Server Apache Tomcat.
+  messages:
+  publish: 2017-10-24T20:50:50+07:00
+  github: "https://github.com/log-rnd/jsp.git"
+  coming_soon: true
 
-# - name: Springframework Web MVC
-#   url: spring-webmvc
-#   icon: "devicons devicons-java"
-#   language: Java
-#   color:
-#   tags:
-#   - java
-#   - springframework
-#   - dependency-injection
-#   - inversion-of-control
-#   descriptions:
-#     Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-#   messages:
-#   publish: 2017-10-26T20:50:50+07:00
-#   github: "https://github.com/log-rnd/spring-webmvc.git"
-#   coming_soon: true
+- name: Springframework Core
+  url: spring-core
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - springframework
+  - dependency-injection
+  - inversion-of-control
+  descriptions:
+    Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
+  messages:
+  publish: 2017-10-25T20:50:50+07:00
+  github: "https://github.com/log-rnd/spring-core.git"
+  coming_soon: true
+
+- name: Springframework Web MVC
+  url: spring-webmvc
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - springframework
+  - dependency-injection
+  - inversion-of-control
+  descriptions:
+    Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
+  messages:
+  publish: 2017-10-26T20:50:50+07:00
+  github: "https://github.com/log-rnd/spring-webmvc.git"
+  coming_soon: true
 
 # - name: Springframework Web Security
 #   url: spring-security
@@ -146,7 +163,7 @@
 #  publish: 2017-10-18T20:50:50+07:00
 #  github: "https://github.com/log-rnd/java-swing.git"
 #  coming_soon: true
-#
+
 #- name: Java Desktop Application (JavaFX) with MVC Pattern
 #  url: javafx
 #  icon: "devicons devicons-java"
@@ -165,27 +182,24 @@
 #  github: "https://github.com/log-rnd/javafx.git"
 #  coming_soon: true
 
-#
-#- name: Java8 Lamda expresion dan Stream API
-#  url: java8
-#  icon: "devicons devicons-java"
-#  language: Java
-#  color:
-#  tags:
-#  - java
-#  - lamda
-#  - stream
-#  - localdate
-#  - localdatetime
-#  descriptions:
-#   Temen-teman akan belajar lebih lanjut di penggunaan Java8 tentang Lamda Expresion dan Stream API selain itu juga java8 ini menambahkan package java.time sebagai default kelas Date yang sebelumnya java.util.Date.
-#  messages:
-#  publish: 2017-10-22T20:50:50+07:00
-#  github: "https://github.com/log-rnd/java8.git"
-#  coming_soon: true
-
-
-#
+- name: Java8 Lamda expresion dan Stream API
+  url: java8
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - lamda
+  - stream
+  - localdate
+  - localdatetime
+  descriptions:
+    Temen-teman akan belajar lebih lanjut di penggunaan Java8 tentang Lamda Expresion dan Stream API selain itu juga java8 ini menambahkan package java.time sebagai default kelas Date yang sebelumnya java.util.Date.
+  messages:
+  publish: 2017-10-22T20:50:50+07:00
+  github: "https://github.com/log-rnd/java8.git"
+  coming_soon: true
+  
 #- name: Template Engine with Thymeleaf
 #  url: thymeleaf
 #  icon: "devicons devicons-java"
