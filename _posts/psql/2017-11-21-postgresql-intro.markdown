@@ -15,7 +15,7 @@ Hi, di materi ini 'PostgreSQL' temen-temen akan belajar menggunakan Relational D
 
 Materi yang akan dibahas pada modul ini diantarnya sebagai berikut:
 
-1. Pengenalan SQL dengan PostgreSQl
+1. Pengenalan SQL dengan PostgreSQL
 2. Setup Development Environtment
     1. Install Database PostgreSQL Engine
     2. Install [PgAdmin3 / PgAdmin4](https://www.pgadmin.org/download/)
