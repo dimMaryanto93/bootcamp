@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Menyimpan multiple value dalam sebuah variable"
+date: 2017-11-08T21:14:38+07:00
 lang: java-core
 categories:
 - Java

@@ -23,11 +23,12 @@
   - PostgreSQL
   - Database
   descriptions:
-    Temen-teman akan belajar menggunakan database dengan PostgreSQL, query untuk mengambil data dari database atau melakukan manipulasi data ke database.
+    Temen-temen akan belajar menggunakan database PostgreSQL diantaranya, berinteraksi dengan database menggunakan perintah SQL seperti Data manipulation language (DML), Data Definition Language (DDL), dan Transaction Control Language (TCL) 
   messages:
+    Temen-temen akan di pandu untuk menguasai perintah SQL dengan salah satu Relational Database Management System (RDBMS) yaitu dengan PostgreSQL. Dengan menggunakan Relational Database Management Sistem kita dengan mudah dapat melakukan baca-tulis data dengan mudah dan cepat tidak seperti menggunakan baca-tulis di file.
   publish: 2017-10-16T20:50:50+07:00
   github: "https://github.com/log-rnd/spring-webmvc.git"
-  coming_soon: true
+  coming_soon: false
 
 - name: Apache Maven
   url: maven
