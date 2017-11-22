@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Array 2 dimensi"
-date: 2017-11-09T21:18:54+07:00
+date: 2017-11-21T21:18:54+07:00
 lang: java-core
 categories:
 - Java
