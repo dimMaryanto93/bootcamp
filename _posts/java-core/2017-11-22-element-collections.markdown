@@ -133,7 +133,7 @@ package tdi.training.java.core.data;
 import java.util.Map;
 import java.util.HashMap;
 
-public class MahasiswaSet{
+public class MahasiswaSet {
 
     public static void main(String[] args){
         Map<Integer, String> daftarMahasiswa = new HashMap<>();
@@ -156,4 +156,4 @@ public class MahasiswaSet{
 }
 {% endhighlight %}
 
-Untuk lebih lengkapnya bisa baca [disini](https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html)
+Untuk lebih lengkapnya bisa baca [di sini](https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html)
