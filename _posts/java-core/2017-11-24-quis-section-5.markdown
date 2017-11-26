@@ -28,3 +28,7 @@ Index ke 0 adalah 1, index ke 1 adalah 3, dan index ke 3 adalah 10
 ![class kelas](/resources/downloads/imgs/java-core/quis-5/kelas-mahasiswa.png)
 6. Kemudian buatlah _list_ untuk menampung tipe data `Mahasiswa`, Kemudian masukan data kedalam _list_ tersebut dengan data sebagai berikut:
 ![data mahasiswa](/resources/downloads/imgs/java-core/quis-5/data-mahasiswa.png)
+
+## My solution
+
+Berikut adalah solusi yang saya buat, download [disini](/resources/downloads/file/java-core.quis-5.zip)

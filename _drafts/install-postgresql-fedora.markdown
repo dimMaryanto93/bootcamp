@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install PostgreSQL Database di Fedora 25"
+title: "How install PostgreSQL & PgAdmin3 in Fedora 25"
 lang: psql
 categories:
 - RDBMS
