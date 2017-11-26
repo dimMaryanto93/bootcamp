@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to install PostgreSQL in Windows10"
+date: 2017-11-26T19:54:13+07:00
 lang: psql
 categories:
 - RDBMS
