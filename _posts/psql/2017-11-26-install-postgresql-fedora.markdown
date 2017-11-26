@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How install PostgreSQL & PgAdmin3 in Fedora 25"
+date: 2017-11-26T19:55:50+07:00
 lang: psql
 categories:
 - RDBMS
