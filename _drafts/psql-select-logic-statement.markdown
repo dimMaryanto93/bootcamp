@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-logic-statement"
-lang: 
+title: "Logical statement di PostgreSQl"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

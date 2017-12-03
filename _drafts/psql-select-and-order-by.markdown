@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-and-order-by"
-lang: 
+title: "Klausa order by dalam select (ordering)"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

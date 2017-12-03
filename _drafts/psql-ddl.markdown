@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-ddl"
-lang: 
+title: "Data Definition Language (DDL) di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

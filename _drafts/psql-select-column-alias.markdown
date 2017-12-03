@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Sql-select-column-alias"
-lang: 
+title: "Pemberian alias pada kolom atau tabel"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

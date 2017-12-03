@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-inner-join"
-lang: 
+title: "Memahami perintah Inner Join di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

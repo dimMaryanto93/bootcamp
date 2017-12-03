@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-join"
-lang: 
+title: "Menggabungkan data dari beberapa tabel dengan Join"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

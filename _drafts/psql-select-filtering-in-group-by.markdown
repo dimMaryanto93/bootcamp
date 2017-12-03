@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-filtering-in-group-by"
-lang: 
+title: "Klausa having dan where dalam select"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

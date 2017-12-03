@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-single-row-function"
-lang: 
+title: "Single Row Function di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

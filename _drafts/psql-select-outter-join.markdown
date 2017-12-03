@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-outter-join"
-lang: 
+title: "Memahami perintah outer join di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

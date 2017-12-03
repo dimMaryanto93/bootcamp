@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Quis-section-3"
-lang: 
+title: "Time is your to practice part 3"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-with-grouping"
-lang: 
+title: "Klausa Group By di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

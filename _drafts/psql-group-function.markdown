@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-group-function"
-lang: 
+title: "Group Function di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

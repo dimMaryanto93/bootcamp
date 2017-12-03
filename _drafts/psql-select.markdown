@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Sql-select"
-lang: 
+title: "Perintah select dalam SQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

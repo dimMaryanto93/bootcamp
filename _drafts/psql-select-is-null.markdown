@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-select-is-null"
-lang: 
+title: "Null != string kosong di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

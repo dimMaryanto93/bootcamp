@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Sql-select-math-operations"
-lang: 
+title: "Operasi matematika di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

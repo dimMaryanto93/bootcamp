@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Psql-sequance"
-lang: 
+title: "Menggunakan sequance sebagai primary key"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true

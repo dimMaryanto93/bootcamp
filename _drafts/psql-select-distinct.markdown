@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Sql-select-distinct"
-lang: 
+title: "Klausa distinct di PostgreSQL"
+lang: psql
 categories:
-- 
-- 
-- 
+- RDBMS
+- PostgreSQL
 gist: 
 youtube: 
 comments: true
