@@ -19,4 +19,8 @@ comments: true
 6. Buatlah _query_ untuk menampilkan **kode department** apa saja yang ada di **tabel employees** secara _unique_
 7. Buatlah _query_ untuk menampilkan **nama lengkap karyawan, kode jabatan, gaji setahun** dari **table employees** yang **kode manager** sama dengan `100`.
 8. Buatlah _query_ untuk menampilkan **nama belakang, gaji perbulan, kode jabatan** dari **table employees** yang **tidak memiliki komisi**
-9. Buatlah _query_ untuk menampilkan data karyawan **yang bukan** dari department `IT_PROG` dan `SH_CLERK`.
+9. Buatlah _query_ untuk menampilkan data karyawan **yang bukan** dari jabatan `IT_PROG` dan `SH_CLERK`.
+
+## My Solution
+
+This is my way, download [disini](/resources/downloads/file/psql.quis-1.zip)

@@ -33,3 +33,7 @@ Ketentuannya:
 ![Hasil no 4](/resources/downloads/imgs/psql/quis-2/soal4.png)
 5. Buatlah sebuah query untuk menampilkan semua data karyawan yang memiliki gaji lebih besar sama dengan nilai maximum setiap karyawan yang bekerja di department `IT_PROG` contohnya seperti berikut:
 ![hasil no 5](/resources/downloads/imgs/psql/quis-2/soal5.png)
+
+## My Solutions
+
+This is my way, download [disini](/resources/downloads/file/psql.quis-2.zip)
