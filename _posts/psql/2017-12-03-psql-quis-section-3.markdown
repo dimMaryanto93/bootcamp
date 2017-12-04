@@ -34,4 +34,4 @@ comments: true
 
 ## My Solution
 
-not available...
+This is my way, download [disini](/resources/downloads/file/psql.quis-3.zip)
