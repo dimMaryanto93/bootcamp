@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Operasi matematika di PostgreSQL"
+date: 2017-11-27T11:06:09+07:00
 lang: psql
 categories:
 - RDBMS
@@ -99,4 +100,59 @@ Jika di jalankan maka hasilnya sebagai berikut:
 {% endhighlight %}
 
 ## Operasi pada Date
+
+Operasi matematika pada tanggal juga bisa dilakukan, diantaranya seperti berikut:
+
+### Date
+
+{% highlight postgresql linenos %}
+select 
+    date '2017-03-28' - 2 as lusa, 
+    date '2017-03-28' - interval '2 hour' as waktu, 
+    date '2017-03-28' + 1 as besok,
+    date '2017-03-30' - date '2017-03-15' as jumlah_hari_kerja;
+{% endhighlight %}
+
+Jika dijalankan maka hasilnya seperti berikut:
+
+{% highlight postgresql %}
+    lusa    |        waktu        |   besok    | jumlah_hari_kerja 
+------------+---------------------+------------+-------------------
+ 2017-03-26 | 2017-03-27 22:00:00 | 2017-03-29 |                15
+(1 row)
+{% endhighlight %}
+
+### Timestamp
+
+{% highlight postgresql linenos %}
+select 
+    timestamp '2017-03-28 18:20:00' - interval '15 hour' as waktu, 
+    date '2017-03-28' + interval '26 day' as deadline, 
+    timestamp '2017-03-02 00:04:30' + interval '5 minutes' as makan_siang;
+{% endhighlight %}
+
+Jika dijalankan maka hasilnya seperti berikut:
+
+{% highlight postgresql %}
+        waktu        |      deadline       |     makan_siang     
+---------------------+---------------------+---------------------
+ 2017-03-28 03:20:00 | 2017-04-23 00:00:00 | 2017-03-02 00:09:30
+(1 row)
+{% endhighlight %}
+
+### Operasi yang tidak diperbolehkan
+
+Operasi yang tidak diperbolehkan di tanggal yaitu melakukan pertambahan antara tanggal dengan tanggal contohnya seperti berikut:
+
+{% highlight postgresql linenos %}
+select 
+    date '2017-03-28' + 
+    date '2017-05-28' as hari_kerja;
+{% endhighlight %}
+
+Jika dijalankan maka hasilnya seperti berikut:
+
+{% highlight postgresql %}
+No operator matches the given name and argument type(s). You might need to add explicit type casts.
+{% endhighlight %}
 
