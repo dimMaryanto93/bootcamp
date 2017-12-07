@@ -10,3 +10,6 @@ package-lock.json
 *.bak*
 
 sources
+
+# macbook
+.DS_Store
