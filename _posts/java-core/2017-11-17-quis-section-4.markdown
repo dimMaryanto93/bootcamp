@@ -30,4 +30,7 @@ nasabah [noIdentitas: 621234, status: false, namaLengkap: Muhamad Yusuf, saldo t
 
 ## My Solution
 
-Seperti biasa, [download disini](/resources/downloads/file/java-core.quis-4.zip) untuk melihat solusi dari pertanyaan diatas.
+Seperti biasa, 
+<!-- [download disini](/resources/downloads/file/java-core.quis-4.zip)  -->
+[download disini](#)
+untuk melihat solusi dari pertanyaan diatas.

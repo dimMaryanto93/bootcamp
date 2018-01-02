@@ -37,4 +37,5 @@ Nama lengkap saya adalah Dimas Maryanto
 
 ## My Solution
 
-Seperti biasa berikut solusi dari soal diatas, [download disini](/resources/downloads/file/java-core.quis-3.zip)
+Seperti biasa berikut solusi dari soal diatas, 
+<!-- [download disini](/resources/downloads/file/java-core.quis-3.zip) -->

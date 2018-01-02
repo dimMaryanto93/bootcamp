@@ -30,4 +30,7 @@ comments: true
 
 ## My Solution
 
-Jika ada pertanyaan silahkan isi di kolom komentar ya..., dan untuk solusinya tersedia [di sini]({{ site.baseurl }}/resources/downloads/file/java-core.quis-1.zip). tapi **sebaiknya kerjaan dulu sebelum melihat jawabanya** setelah itu baru di compare ya.
+Jika ada pertanyaan silahkan isi di kolom komentar ya..., dan untuk solusinya tersedia 
+<!-- [di sini]({{ site.baseurl }}/resources/downloads/file/java-core.quis-1.zip).  -->
+[di sini](#)
+tapi **sebaiknya kerjaan dulu sebelum melihat jawabanya** setelah itu baru di compare ya.

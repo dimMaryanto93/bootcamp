@@ -57,4 +57,7 @@ Buatlah tampilan seperti berikut menggunakan perintah perulangan atau percabanga
 
 ## My Solution
 
-Berikut ini adalah [solusinya](/resources/downloads/file/java-core.quis-2.zip) yang saya buat, seperti biasa sebelum di download sebaiknya coba terlebih dahulu.
+Berikut ini adalah 
+<!-- [solusinya](/resources/downloads/file/java-core.quis-2.zip)  -->
+[solusinya](#)
+yang saya buat, seperti biasa sebelum di download sebaiknya coba terlebih dahulu.
