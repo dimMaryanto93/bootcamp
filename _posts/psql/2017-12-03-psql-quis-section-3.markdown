@@ -34,4 +34,4 @@ comments: true
 
 ## My Solution
 
-This is my way, download [disini](/resources/downloads/file/psql.quis-3.zip)
+This is my way, download [disini]({{ site.baseurl }}/resources/downloads/file/file/psql.quis-3.zip)
