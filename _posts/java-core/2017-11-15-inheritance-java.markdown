@@ -13,11 +13,11 @@ comments: true
 
 Mungkin _inheritance_ di Java agak _anti-mainstream_ artinya beda dari teknologi pesaingnya seperti `.NET`, `PHP` dan lain-lain, yang menerapkan _single extends_. Seperti di konsep sebelumya yaitu seperti berikut:
 
-![Single extends](/resources/downloads/imgs/java-core/konsep-oop/inheritance.jpg)
+![Single extends]({{ site.baseurl }}/resources/downloads/imgs/java-core/konsep-oop/inheritance.jpg)
 
 Sedangkan untuk _multiple extends_ di Java digantikan dengan sistem _interface_ atau lebih dikenal dengan _abstract class_. Kalau digambarkan jadi seperti berikut:
 
-![Multiple extends](/resources/downloads/imgs/java-core/inherintance/multi-inherintance.jpg)
+![Multiple extends]({{ site.baseurl }}/resources/downloads/imgs/java-core/inherintance/multi-inherintance.jpg)
 
 Di Java tidak mengenal _multiple inherintace_ dalam _class_ sebagai gantinya menggunakan sebuah _interface_ seperti berikut contohnya:
 

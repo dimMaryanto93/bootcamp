@@ -49,7 +49,7 @@ public class DeepIfElseIf {
 
 Pada dasarnya seleksi dengan IF ini kalo digambarkan ke diagram UML dengan activity diagram berdasarkan koding diatas jadi seperti berikut:
 
-![ Statement if basic ](/resources/downloads/imgs/java-core/if-statement/if-basic.jpg)
+![ Statement if basic ]({{ site.baseurl }}/resources/downloads/imgs/java-core/if-statement/if-basic.jpg)
 
 Berikut penjelasannya:
 
@@ -80,7 +80,7 @@ Sekarang coba tebak apa ouput yang dihasilkan dari statement diatas?
 
 Ok, nah jadi jawabanya seperti berikut supaya lebih gampang kita buat dulu activity diagramnya dulu seperti berikut:
 
-![If statement with two valid condition](/resources/downloads/imgs/java-core/if-statement/if-aneh.jpg)
+![If statement with two valid condition]({{ site.baseurl }}/resources/downloads/imgs/java-core/if-statement/if-aneh.jpg)
 
 Berikut penjelasannya:
 

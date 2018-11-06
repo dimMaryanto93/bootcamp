@@ -13,7 +13,7 @@ comments: true
 
 Perintah / klausa `select` pada dasarnya adalah perintah yang dilakukan _query_ terhadap _database_ untuk mengambil atau mendapatkan data berupa baris (_rows_) dan kolom (_columns_) dalam sebuah _table_ seperti berikut:
 
-![sql to db](/resources/downloads/imgs/psql/select/sql-to-db.jpg)
+![sql to db]({{ site.baseurl }}/resources/downloads/imgs/psql/select/sql-to-db.jpg)
 
 Nah seperti yang kita tahu kalo dalam **sebuah _database_** bisa terdiri dari **banyak _tables_**, dalam **sebuah _table_** terdiri **banyak _rows_ dan _colums_**, dalam **satu _row_ dan _column_** terdiri dari **sebuah nilai**.
 

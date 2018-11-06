@@ -91,4 +91,4 @@ Maka jika salah buat query hasilnya seperti berikut:
 
 ## My Solution
 
-[download disini](/resources/downloads/file/java-core.quis-6.zip)
+[download disini]({{ site.baseurl }}/resources/downloads/file/java-core.quis-6.zip)

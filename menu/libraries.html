@@ -26,7 +26,7 @@ permalink: /menu/libs/
                             </div>
                             {% endfor %}
                             <div class="card-action right">
-                                <a href="{{post.url}}">Read more...</a>
+                                <a href="{{post.url | prepend: site.baseurl}}">Read more...</a>
                             </div>
                         </li>
                         {% endfor %}

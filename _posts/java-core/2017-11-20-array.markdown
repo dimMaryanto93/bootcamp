@@ -13,7 +13,7 @@ comments: true
 
 Setelah mengelesaikan, [task]({% post_url java-core/2017-11-17-quis-section-4 %}) tentang _class_, _object oriented programming_ dan _package_. Sekarang saatnya move on ke materi selanjutnya yaitu _Array_. Tujuan penggunaan _array_ yaitu kita bisa menyimpan data yang jumlahnya bisa kita tentukan dalam sebuah _variable_. Jadi klo saya gambarkan atau perbedaan _variable single value_ dengan _variable multiple values_ seperti berikut:
 
-![Perbedaan single vs multiple value](/resources/downloads/imgs/java-core/array/array-1.jpg)
+![Perbedaan single vs multiple value]({{ site.baseurl }}/resources/downloads/imgs/java-core/array/array-1.jpg)
 
 Berikut adalah contoh implementasinya:
 

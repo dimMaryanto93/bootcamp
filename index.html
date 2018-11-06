@@ -93,7 +93,7 @@ layout: default
                         </li>
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
-                            <a href="{{post.url}}">
+                            <a href="{{ post.url | prepend: site.baseurl }}">
                                 {{post.title}}
                             </a>
                         </li>

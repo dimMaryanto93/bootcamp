@@ -31,7 +31,7 @@ public class DeepSwichCaseStatement {
 
 Supaya gampang menjelaskannya seperti biasa kita visualisaksikan menggunakan diagram activity seperti berikut:
 
-![Switch case statement basic](/resources/downloads/imgs/java-core/switch-case-statement/switch-basic.jpg)
+![Switch case statement basic]({{ site.baseurl }}/resources/downloads/imgs/java-core/switch-case-statement/switch-basic.jpg)
 
 Nah jadi hasilnya adalah ```A```, kenapa A jadi gini penjelasnnya:
 
@@ -62,7 +62,7 @@ Nah sekarang apa outputnya?
 
 Seperti biasa kita gunakan diagram activity untuk mempermudah memvisualisasikan dari koding diatas seperti berikut:
 
-![Switch case statement basic without break](/resources/downloads/imgs/java-core/switch-case-statement/switch-modif.jpg)
+![Switch case statement basic without break]({{ site.baseurl }}/resources/downloads/imgs/java-core/switch-case-statement/switch-modif.jpg)
 
 Berikut penjelasannya
 
