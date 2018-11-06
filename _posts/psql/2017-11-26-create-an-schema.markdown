@@ -43,4 +43,4 @@ Setelah login sebagai `hr` kemudian kita buat satu database dengan nama yang sam
 CREATE DATABASE hr WITH OWNER hr;
 {% endhighlight %}
 
-Setelah database terbuat, kemudian download [file ini]({{ site.baseurl }}/resources/downloads/file/file/psql-schema.sql) setelah itu jalankan querynya dengan connection user `hr`.
+Setelah database terbuat, kemudian download [file ini]({{ site.baseurl }}/resources/downloads/file/psql-schema.sql) setelah itu jalankan querynya dengan connection user `hr`.

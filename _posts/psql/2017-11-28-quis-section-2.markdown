@@ -36,4 +36,4 @@ Ketentuannya:
 
 ## My Solutions
 
-This is my way, download [disini]({{ site.baseurl }}/resources/downloads/file/file/psql.quis-2.zip)
+This is my way, download [disini]({{ site.baseurl }}/resources/downloads/file/psql.quis-2.zip)
