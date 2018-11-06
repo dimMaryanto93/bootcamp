@@ -64,14 +64,14 @@ layout: default
                 <li class="collection-item avatar">
                     <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{post.lang}}.png" alt=""
                     class="circle">
-                    <a href="{{post.url}}">
+                    <a href="{{post.url | prepend : site.baseurl }}">
                         <span class="badge">{{post.date | date: '%d %b %y'}}</span>
                         {{post.title}}
                     </a>
                 </li>
                 {% else %}
                 <li class="collection-item">
-                    <a href="{{post.url}}">
+                    <a href="{{post.url | prepend : site.baseurl }}">
                         <span class="badge">{{post.date | date: '%d %b %y'}}</span>
                         {{post.title}}
                     </a>
