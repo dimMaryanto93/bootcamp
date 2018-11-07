@@ -79,7 +79,7 @@
   messages:
   publish: 2017-10-23T20:50:50+07:00
   github: "https://github.com/log-rnd/maven.git"
-  coming_soon: false
+  coming_soon: true
 
 - name: Java EE dengan Implementation Servlet API
   url: servlet-api
