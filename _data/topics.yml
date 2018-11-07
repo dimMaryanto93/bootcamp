@@ -30,23 +30,6 @@
   github: "https://github.com/log-rnd/spring-webmvc.git"
   coming_soon: false
 
-- name: Apache Maven
-  url: maven
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - buildtools
-  - maven
-  descriptions:
-    Temen-teman akan belajar tentang Optimalisasi sistem development menggunakan Project Apache Maven3, yaitu digunakan untuk Build Tools magsudnya kita melakukan compile, package, running dan testing menggunakan project Java di Maven.
-  messages:
-    Temen-temen diharapkan memahami cara penggunaan salah satu tools yang paling sering digunakan di dunia Java Programming yaitu maven atau di singkat mvn. Dengan maven ini kita dapat dengan mudah melakukan compile tanpa perlu pusing-pusing mikirin classpath, hapus hasil compilenya (.class), include lib ke classpath dll.
-  publish: 2017-10-21T20:50:50+07:00
-  github: "https://github.com/log-rnd/maven.git"
-  coming_soon: true
-
 - name: VCS dengan GIT
   url: git
   icon: "devicons devicons-git"
@@ -60,9 +43,43 @@
     Temen-temen akan belajar menggunakan salah satu implementation dari version of control system atau lebih sering dikenal vcs dengan menggunakan git.
   messages:
     Temen-temen diharapkan bisa mengimplementasikan dan menerapkan penggunaan git dalam system development baik single development maupun team works. Selain itu juga temen-temen belajar menggunakan dan menggunakan fitur dari central repository seperti github.com, bitbucket.com atau gitlab.com.
+  publish: 2017-10-21T20:50:50+07:00
+  github: "https://github.com/log-rnd/maven.git"
+  coming_soon: true
+
+- name: Apache Maven
+  url: maven
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - buildtools
+  - maven
+  descriptions:
+    Temen-teman akan belajar tentang Optimalisasi sistem development menggunakan Project Apache Maven3, yaitu digunakan untuk Build Tools magsudnya kita melakukan compile, package, running dan testing menggunakan project Java di Maven.
+  messages:
+    Temen-temen diharapkan memahami cara penggunaan salah satu tools yang paling sering digunakan di dunia Java Programming yaitu maven atau di singkat mvn. Dengan maven ini kita dapat dengan mudah melakukan compile tanpa perlu pusing-pusing mikirin classpath, hapus hasil compilenya (.class), include lib ke classpath dll.
   publish: 2017-10-22T20:50:50+07:00
   github: "https://github.com/log-rnd/maven.git"
   coming_soon: true
+
+- name: JDBC with Postgresql
+  url: java-jdbc-psql
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - jdbc
+  - maven
+  - PostgreSQL
+  descriptions: 
+    Temen-teman akan belajar tentang bagaimana koneksi ke database, interaksi dengan database menggunakan Java Database Connectivity (JDBC)
+  messages:
+  publish: 2017-10-23T20:50:50+07:00
+  github: "https://github.com/log-rnd/maven.git"
+  coming_soon: false
 
 - name: Java EE dengan Implementation Servlet API
   url: servlet-api
@@ -76,7 +93,7 @@
   descriptions:
     Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API yang akan diproses di Web Server Apache Tomcat.
   messages:
-  publish: 2017-10-23T20:50:50+07:00
+  publish: 2017-10-24T20:50:50+07:00
   github: "https://github.com/log-rnd/servlet-api.git"
   coming_soon: true
 
@@ -93,7 +110,7 @@
   descriptions:
     Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API dan Java Server Pages yang akan diproses di Web Server Apache Tomcat.
   messages:
-  publish: 2017-10-24T20:50:50+07:00
+  publish: 2017-10-25T20:50:50+07:00
   github: "https://github.com/log-rnd/jsp.git"
   coming_soon: true
 
@@ -110,7 +127,7 @@
   descriptions:
     Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
   messages:
-  publish: 2017-10-25T20:50:50+07:00
+  publish: 2017-10-26T20:50:50+07:00
   github: "https://github.com/log-rnd/spring-core.git"
   coming_soon: true
 
@@ -127,7 +144,7 @@
   descriptions:
     Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
   messages:
-  publish: 2017-10-26T20:50:50+07:00
+  publish: 2017-10-27T20:50:50+07:00
   github: "https://github.com/log-rnd/spring-webmvc.git"
   coming_soon: true
 
@@ -196,7 +213,7 @@
   descriptions:
     Temen-teman akan belajar lebih lanjut di penggunaan Java8 tentang Lamda Expresion dan Stream API selain itu juga java8 ini menambahkan package java.time sebagai default kelas Date yang sebelumnya java.util.Date.
   messages:
-  publish: 2017-10-22T20:50:50+07:00
+  publish: 2017-10-28T20:50:50+07:00
   github: "https://github.com/log-rnd/java8.git"
   coming_soon: true
   
