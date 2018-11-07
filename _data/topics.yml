@@ -77,9 +77,10 @@
   descriptions: 
     Temen-teman akan belajar tentang bagaimana koneksi ke database, interaksi dengan database menggunakan Java Database Connectivity (JDBC)
   messages:
+    Temen-temen diharapkan mampu dan memahami fitur jdbc seperti fungsi-fungsi statement, prepared-statement, result-set, batch prcessiong, transactional dan lain-lain.
   publish: 2017-10-23T20:50:50+07:00
   github: "https://github.com/log-rnd/maven.git"
-  coming_soon: true
+  coming_soon: false
 
 - name: Java EE dengan Implementation Servlet API
   url: servlet-api
