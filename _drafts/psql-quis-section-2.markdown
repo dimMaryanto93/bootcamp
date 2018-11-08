@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Time is your practice part 2"
-date: 2017-11-28T09:40:59+07:00
 lang: psql
 categories:
 - RDBMS
