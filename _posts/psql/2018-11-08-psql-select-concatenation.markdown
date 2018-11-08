@@ -47,7 +47,10 @@ Referenced by:
 Nah saya mau mengambil semua data dari table `employees` untuk menampilkan `kode karyawan` dan `nama depan + nama belakang` digabungkan menjadi satu kolom. Berikut adalah contoh querynya: 
 
 {% highlight sql linenos %}
-select employee_id as id, first_name || ' ' || last_name as nama_lengkap from employees;
+select 
+    employee_id as id, 
+    first_name || ' ' || last_name as nama_lengkap
+from employees;
 {% endhighlight %}
 
 Berikut hasilnya:

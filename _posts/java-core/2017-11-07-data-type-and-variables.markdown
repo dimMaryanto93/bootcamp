@@ -23,7 +23,7 @@ Pemberian nilai ke variable tertentu disebut, instilahnya inisialisasi sedangkan
 
 Dekarasi variable di Java sangat ketat, magsugnya ketat apa nih? ambigu ya!!!. nah jadi karena Java adalah _strong typing_ jadi setiap variable harus memiliki tipe data. Untuk tipe data akan saya bahas di bawah ya. jadi tipe data yang sama mau pakai yaitu `Integer` kemudian membuat variable dengan nama `serverPort` seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 public class DataTypeDeclaration {
 
     // inilah yang disebut deklarasi
@@ -35,7 +35,7 @@ public class DataTypeDeclaration {
 
 Inisialisasi seperti yang dikatakan diatas tadi, jadi inisialisasi adalah pemberian nilai terhadap suatu variable seperti berikut:
 
-{% highlight java %}
+{% highlight java linenos %}
 public class DataTypeDeclaration {
 
     // inilah yang disebut deklarasi
