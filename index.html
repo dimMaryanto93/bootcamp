@@ -2,76 +2,45 @@
 layout: default
 ---
 
-<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-        <br><br>
-        <h3 class="header center orange-text">{{site.title}}</h3>
-        <div class="row center">
-            <h5 class="header col s12 light">Hi, introduce my name is <strong>{{site.data.my-profile.name |
-                upcase}}</strong>. I'm a {{site.subTitle}} work at {{site.data.my-profile.company}}</h5>
-        </div>
-    </div>
-</div>
+{% assign pages_list = site.data.topics | sort:"publish" %}
+<div class="row">
+    <br>
+    {% assign pages_list_count = pages_list.size %}
+    {% assign count_divided = pages_list_count | divided_by: 3 %}
+    {% assign count_divided = count_divided | plus: 1 %}
 
-<div class="section">
+    <h5 class="container center">
+        <span class="new badge" data-badge-caption="topic">{{pages_list_count}}</span>
+        Explore
+        <br/>
+        <small>Browse by topic and view available courses</small>
+    </h5>
+    <br>
+
+    {% for i in (1..count_divided) %}
     <div class="row">
+        {% for topic in pages_list limit:3 offset: counter %}
         <div class="col s12 m4">
-            <div class="icon-block">
-                <h1 class="center light-blue-text"><i class="material-icons">flash_on</i></h1>
-                <h5 class="center">Speeds up development</h5>
-
-                <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate
-                    our custom components. Additionally, we refined animations and transitions to provide a smoother
-                    experience for developers.</p>
-            </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="icon-block">
-                <h1 class="center light-blue-text"><i class="material-icons">group</i></h1>
-                <h5 class="center">User Experience Focused</h5>
-
-                <p class="light">By utilizing elements and principles of Material Design, we were able to create a
-                    framework that incorporates components and animations that provide more feedback to users.
-                    Additionally, a single underlying responsive system across all platforms allow for a more unified
-                    user experience.</p>
-            </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="icon-block">
-                <h1 class="center light-blue-text"><i class="material-icons">settings</i></h1>
-                <h5 class="center">Easy to work with</h5>
-
-                <p class="light">We have provided detailed documentation as well as specific code examples to help new
-                    users get started. We are also always open to feedback and can answer any questions a user may have
-                    about Materialize.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<hr>
-<div>
-    <h5 class="center">Featured Topics</h5>
-    <div class="row">
-        {% assign pages_list = site.data.topics | sort:"publish" | reverse %}
-        {% assign pages_query_active = pages_list | where : "coming_soon", false %}
-        {% for topic in pages_query_active limit:3 %}
-        <div class="col s12 m12 l4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light {{topic.color}}">
-                    <img class="activator responsive-img" src="{{ "/resources/images/" | prepend:
-                    site.baseurl}}{{topic.url}}.png">
+                    {% if topic.coming_soon == false %}
+                        <img class="activator responsive-img" src="{{ "/resources/images/" | prepend: site.baseurl}}{{topic.url}}.png">
+                    {% else %}
+                        <img class="responsive-img" src="{{ "/resources/images/" | prepend: site.baseurl}}{{topic.url}}.png">
+                    {% endif %}
                 </div>
                 <div class="card-content">
-                    {% assign post_list = site.posts | where: "lang", topic.url %}
-                    {% assign post_list_counted = post_list.size %}
-                    {% assign post_list_sorted = post_list | sort:"date" %}
-                    <span class="card-title grey-text text-darken-4">
-                        <a href="{{ post_list_sorted.first.url }}">
-                            {{topic.name}} <i class="material-icons right">more_vert</i>
-                        </a>
-                    </span>
+            {% if topic.coming_soon == false %}
+            <span class="card-title activator grey-text text-darken-4">
+                {{topic.name}}
+                <i class="material-icons right">more_vert</i>
+            </span>
+            {% else %}
+            <span class="card-title grey-text text-darken-4">
+                {{topic.name}}
+                <span class="new badge yellow black-text" data-badge-caption="comming soon"></span>
+            </span>
+            {% endif %}                
                     <p>
                         {{topic.descriptions}}
                     </p>
@@ -80,20 +49,26 @@ layout: default
                     <div class="chip">{{tag}}</div>
                     {% endfor %}
                 </div>
+                {% if topic.coming_soon == false %}
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">
-                        {{topic.name}}<i class="material-icons right">close</i>
+                        {{topic.name}}
+                        <i class="material-icons right">close</i>
                     </span>
                     <p>{{topic.messages}}</p>
+                    {% assign post_list = site.posts | where: "lang", topic.url %}
+                    {% assign post_list_counted = post_list.size %}
                     {% if post_list_counted >= 1 %}
                     <ul class="collection with-header">
                         <li class="collection-header">
                             <strong>Daftar Materi: </strong>
-                            <span class="badge new blue" data-badge-caption="materi">{{post_list_counted}}</span>
+                            <span class="new badge blue" data-badge-caption="materi">{{post_list_counted}}</span>
                         </li>
+                        {% assign post_list_sorted = post_list | sort:"date" %}
                         {% for post in post_list_sorted %}
                         <li class="collection-item">
-                            <a href="{{ post.url | prepend: site.baseurl }}">
+                            <a href="{{post.url | prepend: site.baseurl }}">
+                                <span class="badge">{{post.date | date: '%d %b %y'}}</span>
                                 {{post.title}}
                             </a>
                         </li>
@@ -110,8 +85,11 @@ layout: default
                     </ul>
                     {% endif %}
                 </div>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
+        {% assign counter = i | times: 3 %}
     </div>
+    {% endfor %}
 </div>
