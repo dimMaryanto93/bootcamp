@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Jdbc-psql-transactional"
-lang: 
+lang: java-jdbc-psql
 categories:
-- 
-- 
 - 
 gist: 
 youtube: 

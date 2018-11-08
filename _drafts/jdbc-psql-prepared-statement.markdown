@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Jdbc-psql-prepared-statement"
-lang: 
+lang: java-jdbc-psql
 categories:
-- 
-- 
-- 
+-  
 gist: 
 youtube: 
 comments: true

@@ -12,3 +12,4 @@ comments: true
 
 Apa itu concatenation?, Concatenation biasanya digunakan untuk mengkombinasikan, menyambungkan beberapa kolom dalam suatu query menjadi satu. seperti berikut ilustrasinya:
 
+![konsep]({{site.baseurl}}/resources/posts/psql-concatenation/konsep-concatenation.png)

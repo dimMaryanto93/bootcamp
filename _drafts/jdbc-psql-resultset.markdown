@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Jdbc-psql-resultset"
-lang: 
+lang: java-jdbc-psql
 categories:
-- 
-- 
 - 
 gist: 
 youtube: 
