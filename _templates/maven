@@ -1,0 +1,12 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: maven
+categories:
+- build-tools
+- java
+- maven
+gist: {{ gist }}
+youtube: {{ youtube }}
+comments: true
+---

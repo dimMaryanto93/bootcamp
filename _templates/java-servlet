@@ -1,0 +1,12 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: servlet-api
+categories:
+- java
+- web
+- servlet
+gist: {{ gist }}
+youtube: {{ youtube }}
+comments: true
+---

@@ -1,0 +1,12 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: jsp
+categories:
+- java
+- web
+- jsp
+gist: {{ gist }}
+youtube: {{ youtube }}
+comments: true
+---

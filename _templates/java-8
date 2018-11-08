@@ -1,0 +1,11 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: java8
+categories:
+- java
+- lamda
+gist: {{ gist }}
+youtube: {{ youtube }}
+comments: true
+---
