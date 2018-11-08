@@ -1,0 +1,11 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: psql
+categories:
+- RDBMS
+- PostgreSQL
+gist: {{ gist }}
+youtube: {{ youtube }}
+comments: true
+---

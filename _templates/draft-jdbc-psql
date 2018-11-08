@@ -1,13 +1,12 @@
 ---
-layout: post
-title: "Jdbc-psql-intro"
+layout: {{ layout }}
+title: "{{ title }}"
 lang: java-jdbc-psql
 categories:
 - Java
 - JDBC
 - Postgresql
-gist: 
-youtube: 
+gist: {{ gist }}
+youtube: {{ youtube }}
 comments: true
 ---
-
