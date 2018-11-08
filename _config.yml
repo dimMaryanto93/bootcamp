@@ -17,13 +17,10 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-paginate: 5
 gist:
   noscript: false
 permalink: /:categories/:title
-paginate_path: page-:num/
 plugins:
-  - jekyll-paginate
   - jekyll-gist
   - kramdown
   - rouge
@@ -32,6 +29,7 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - docker-compose.yml
   - vendor
 #   - Gemfile
   - Gemfile.lock
