@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Klausa where dalam select (filter)"
+title: "Operator pada klausa where di PostgreSQL"
 lang: psql
 categories:
 - RDBMS
