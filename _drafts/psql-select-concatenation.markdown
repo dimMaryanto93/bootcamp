@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Menggabunkan 2 column atau lebih menjadi satu"
+title: "Perintah select dengan Concatenation"
 lang: psql
 categories:
 - RDBMS
@@ -9,4 +9,6 @@ gist:
 youtube: 
 comments: true
 ---
+
+Apa itu concatenation?, Concatenation biasanya digunakan untuk mengkombinasikan, menyambungkan beberapa kolom dalam suatu query menjadi satu. seperti berikut ilustrasinya:
 

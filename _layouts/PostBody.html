@@ -4,7 +4,36 @@ layout: default
 
 <div id="postBody" class="row container">
     <div class="col s12 m12 l8">
-        {{content}}
+        <div>
+            {{content}}
+        </div>
+        <hr/>
+        <div>
+            {% if page.comments %}
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                    this.page.url = '{{ site.url }}{{ site.baseurl }}';  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://dimas-maryanto.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by
+                    Disqus.</a></noscript>
+            <script id="dsq-count-scr" src="//dimas-maryanto.disqus.com/count.js" async></script>
+            {% endif %}
+        </div>
     </div>
     <div class="col s12 m12 l4">
         <div class="row">
@@ -25,8 +54,7 @@ layout: default
         <div class="row">
             <ul class="collection with-header">
                 <li class="collection-item avatar">
-                    <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{page.lang}}.png" alt=""
-                    class="circle">
+                    <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{page.lang}}.png" alt="" class="circle">
                     <span>Daftar materi
                         <span class="badge new blue" data-badge-caption="materi">{{post_list_size}}</span>
                     </span>
@@ -62,8 +90,7 @@ layout: default
                 {% for post in post_list limit:10 %}
                 {% if post.lang %}
                 <li class="collection-item avatar">
-                    <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{post.lang}}.png" alt=""
-                    class="circle">
+                    <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{post.lang}}.png" alt="" class="circle">
                     <a href="{{post.url | prepend : site.baseurl }}">
                         <span class="badge">{{post.date | date: '%d %b %y'}}</span>
                         {{post.title}}
@@ -87,27 +114,23 @@ layout: default
                 </a>
                 <ul>
                     <li>
-                        <a class="btn-floating blue"
-                           href="https://twitter.com/intent/tweet?text={{ page.title }}&via={{ site.twitter_username }}&url={{ site.url }}{{ page.url }}">
+                        <a class="btn-floating blue" href="https://twitter.com/intent/tweet?text={{ page.title }}&via={{ site.twitter_username }}&url={{ site.url }}{{ page.url }}">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="btn-floating blue darken-1" target="_blank"
-                           href="https://www.facebook.com/dialog/share?app_id={{ site.fb_appid }}&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}">
+                        <a class="btn-floating blue darken-1" target="_blank" href="https://www.facebook.com/dialog/share?app_id={{ site.fb_appid }}&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="btn-floating blue"
-                           href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}">
+                        <a class="btn-floating blue" href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="btn-floating red"
-                           href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}&hl=en-US"
-                           onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                        <a class="btn-floating red" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}&hl=en-US"
+                            onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
                             <i class="fa fa-google-plus" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -115,29 +138,4 @@ layout: default
             </div>
         </div>
     </div>
-</div>
-<div class="row container">
-    {% if page.comments %}
-    <div id="disqus_thread"></div>
-    <script>
-
-        /**
-         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-        var disqus_config = function () {
-            this.page.url = '{{ site.url }}';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://dimas-maryanto.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-    <script id="dsq-count-scr" src="//dimas-maryanto.disqus.com/count.js" async></script>
-    {% endif %}
 </div>

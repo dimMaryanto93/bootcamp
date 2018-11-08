@@ -17,7 +17,7 @@ Mungkin temen-temen dulu pernah mengalami kejadian dihukum sama guru atau dosen 
 
 Sebanyak 100x seperti ini:
 
-![Meme anak SD di hukum]({{ site.baseurl }}/resources/downloads/imgs/java-core/for-statement/meme-anak-sd.jpg)
+![Meme anak SD di hukum]({{ site.baseurl }}/resources/posts/java-for-statement/meme-anak-sd.jpg)
 
 Nah jadi sama halnya di bahasa pemograman jika saya terjemahkan ke bahasa Java jadi seperti ini ya:
 
@@ -52,7 +52,7 @@ Gimana keren khan ya!... because i'm a lazy person wkwkwkwkk.
 
 ## What happened inside for loop?
 
-![For loop basic annimate]({{ site.baseurl }}/resources/downloads/imgs/java-core/for-statement/for-loop-basic.gif)
+![For loop basic annimate]({{ site.baseurl }}/resources/posts/java-for-statement/for-loop-basic.gif)
 
 Nah dari ilustrasi di atas, jadi penjelasanya lebih detailnya seperti berikut:
 

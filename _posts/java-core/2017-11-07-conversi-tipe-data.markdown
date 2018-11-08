@@ -16,7 +16,7 @@ Untuk konversi tipe data di Java, pada dasarnya otomatis tpi ada beberapa syarat
 1. Sesuai dengan hirarki tipe data tersebut
 2. Sesuai dengan tipe data, contohnya jika tipe data `Byte` tidak bisa di konversi ke `boolean` jadi harus ke tipe data yang sifatnya number dan hirarcki yang lebih tinggi seperti gambar berikut:
 
-![Flow conversi otomatis]({{ site.baseurl}}/resources/downloads/imgs/java-core/convert-data/flow.jpg)
+![Flow conversi otomatis]({{ site.baseurl}}/resources/posts/java-convert-data/flow.jpg)
 
 Implementasinya seperti berikut:
 

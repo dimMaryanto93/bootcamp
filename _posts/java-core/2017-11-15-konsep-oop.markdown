@@ -21,7 +21,7 @@ Object Oriented Approach pada dasarnya ada 3 konsep yang bisa diimplementasikan.
 
 Konsep ini adalah mewariskan objek yang ada didalam _class_ induk ke kelas turunannya, sedangkan _class child_ juga memiliki _variable_ dan _method_ tetapi tidak dapat digunakan oleh _class parent_
 
-![Inheritance konsep]({{ site.baseurl }}/resources/downloads/imgs/java-core/konsep-oop/inheritance.jpg)
+![Inheritance konsep]({{ site.baseurl }}/resources/posts/java-konsep-oop/inheritance.jpg)
 
 berikut implementasi di Javanya:
 

@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-![Class diagram]({{ site.baseurl }}/resources/downloads/imgs/java-core/quis-4/classes.jpg)
+![Class diagram]({{ site.baseurl }}/resources/posts/java-quis-4/classes.jpg)
 
 1. Buatlah _class_ sesuai dengan perancangan _class diagram_ diatas, Untuk _class_ `Nasabah`, `NasabahPerorangan` dan `NasabahBadanUsaha` simpan dalam package `tdi.training.java.core.model.nasabah`, Sedangkan untuk _class_ `Tabungan` simpan dalam package `tdi.training.java.core.model.aplikasi`
 
