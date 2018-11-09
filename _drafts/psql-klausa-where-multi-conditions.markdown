@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Klausa where dengan multiple condition logika OR dan AND"
+title: "Klausa where dengan multiple condition logika OR, AND dan NOT"
 lang: psql
 categories:
 - RDBMS
