@@ -37,11 +37,15 @@ Berikut hasilnya:
 
 Atau klo kita gambarin ke tabel seperti ini:
 
+Operator `AND` dan `OR`
+
 | Operator  | true x false  | false x false | true x true   |
 |:----------|:--------------|:--------------|:--------------|
 | AND       | false         | false         | true          |
 | OR        | true          | false         | true          |
 {:.bordered .striped}
+
+Operator `NOT`
 
 | Operator  | false         | true          |
 |:----------|:--------------|:--------------|
