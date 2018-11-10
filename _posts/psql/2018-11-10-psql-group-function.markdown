@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Group Function di PostgreSQL"
+date: 2018-11-10T20:50:22+07:00
 lang: psql
 categories:
 - RDBMS
