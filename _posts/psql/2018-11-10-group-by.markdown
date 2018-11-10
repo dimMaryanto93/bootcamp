@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Klausa Group By di PostgreSQL"
+date: 2018-11-10T21:22:44+07:00
+lang: psql
+categories:
+- RDBMS
+- PostgreSQL
+gist: 
+youtube: 
+comments: true
+---
+
+Lanjutan dari group function, yaitu group by. fungsi group by adalah untuk membreak down atau mengkatagerikan kemudian di buatlah group function. Seperti berikut ilustrasinya:
+
+![group by]({{site.baseurl}}/resources/posts/psql-group-by/konsep-group-by.png)
+
+Biasanya query ini akan berguna untuk aplikasi yang bermotif penjualan karena kita bisa mengkategirikan penjualan produk berdasarkan kategori tertentu contohnya jumlah penjulaan produk A per bulan, pertahun dan lain-lain. Ok sekarang saya contohkan studi kasusnya. 
+
+Saya mau mencari jumlah setiap karyawan dan total `salary` setahun per `department_id`. Berikut querynya:
+
+{% highlight sql linenos %}
+select 
+    department_id as kode,
+    count(*) as jumlah_karyawan,
+    (sum(salary) * 12) as total_salary
+from employees
+group by kode
+order by kode;
+{% endhighlight %}
+
+Berikut hasilnya:
+
+```postgresql-console
+ kode | jumlah_karyawan | total_salary 
+------+-----------------+--------------
+   10 |               1 |     52800.00
+   20 |               2 |    228000.00
+   30 |               6 |    298800.00
+   40 |               1 |     78000.00
+   50 |              45 |   1876800.00
+   60 |               5 |    345600.00
+   70 |               1 |    120000.00
+   80 |              34 |   3654000.00
+   90 |               3 |    696000.00
+  100 |               6 |    619200.00
+  110 |               2 |    243600.00
+      |               1 |     84000.00
+(12 rows)
+```
+
+Kasus lainnya, yaitu multiple kategories seperti per `department_id` dan `manager_id`
+
+{% highlight sql linenos %}
+select 
+    department_id as divisi,
+    manager_id as manager,
+    count(*) as jumlah_karyawan,
+    (sum(salary) * 12) as total_salary
+from employees
+group by divisi, manager
+order by divisi;
+{% endhighlight %}
+
+Berikut hasilnya:
+
+```postgresql-console
+ divisi | manager | jumlah_karyawan | total_salary 
+--------+---------+-----------------+--------------
+     10 |     101 |               1 |     52800.00
+     20 |     201 |               1 |     72000.00
+     20 |     100 |               1 |    156000.00
+     30 |     114 |               5 |    166800.00
+     30 |     100 |               1 |    132000.00
+     40 |     101 |               1 |     78000.00
+     90 |     100 |               2 |    408000.00
+    100 |     101 |               1 |    144000.00
+    100 |     108 |               5 |    475200.00
+    110 |     101 |               1 |    144000.00
+    110 |     205 |               1 |     99600.00
+...
+(28 rows)
+```
