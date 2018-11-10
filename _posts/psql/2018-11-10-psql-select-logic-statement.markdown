@@ -37,7 +37,6 @@ Berikut hasilnya:
 
 Atau klo kita gambarin ke tabel seperti ini:
 
-Operator `AND` dan `OR`
 
 | Operator  | true x false  | false x false | true x true   |
 |:----------|:--------------|:--------------|:--------------|
@@ -45,7 +44,7 @@ Operator `AND` dan `OR`
 | OR        | true          | false         | true          |
 {:.bordered .striped}
 
-Operator `NOT`
+<hr/>
 
 | Operator  | false         | true          |
 |:----------|:--------------|:--------------|
