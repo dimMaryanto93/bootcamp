@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Klausa order by dalam select (ordering)"
+title: "Mengurutkan data menggunakan Order By di PostgreSQL"
 lang: psql
 categories:
 - RDBMS
