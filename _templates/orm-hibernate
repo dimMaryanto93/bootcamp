@@ -4,7 +4,7 @@ title: "{{ title }}"
 lang: java-orm-hibernate
 categories:
 - Java
-- JDBC
+- ORM
 - Hibernate
 - PostgreSQL
 gist: {{ gist }}
