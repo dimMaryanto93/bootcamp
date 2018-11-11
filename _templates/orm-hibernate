@@ -1,0 +1,13 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: java-orm-hibernate
+categories:
+- Java
+- JDBC
+- Hibernate
+- PostgreSQL
+gist: {{ gist }}
+youtube: {{ youtube }}
+comments: true
+---

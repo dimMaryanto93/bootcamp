@@ -11,7 +11,7 @@
   messages:
     Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java, selain itu juga sedikit-demi-sedikit akan belajar algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
   publish: 2017-10-15T20:50:50+07:00
-  github: "https://github.com/log-rnd/java-core.git"
+  github: 
   coming_soon: false
 
 - name: PostgreSQL
@@ -27,7 +27,7 @@
   messages:
     Temen-temen akan di pandu untuk menguasai perintah SQL dengan salah satu Relational Database Management System (RDBMS) yaitu dengan PostgreSQL. Dengan menggunakan Relational Database Management Sistem kita dengan mudah dapat melakukan baca-tulis data dengan mudah dan cepat tidak seperti menggunakan baca-tulis di file.
   publish: 2017-10-16T20:50:50+07:00
-  github: "https://github.com/log-rnd/spring-webmvc.git"
+  github: 
   coming_soon: false
 
 - name: VCS dengan GIT
@@ -44,7 +44,7 @@
   messages:
     Temen-temen diharapkan bisa mengimplementasikan dan menerapkan penggunaan git dalam system development baik single development maupun team works. Selain itu juga temen-temen belajar menggunakan dan menggunakan fitur dari central repository seperti github.com, bitbucket.com atau gitlab.com.
   publish: 2017-10-21T20:50:50+07:00
-  github: "https://github.com/log-rnd/maven.git"
+  github: 
   coming_soon: true
 
 - name: Apache Maven
@@ -61,7 +61,7 @@
   messages:
     Temen-temen diharapkan memahami cara penggunaan salah satu tools yang paling sering digunakan di dunia Java Programming yaitu maven atau di singkat mvn. Dengan maven ini kita dapat dengan mudah melakukan compile tanpa perlu pusing-pusing mikirin classpath, hapus hasil compilenya (.class), include lib ke classpath dll.
   publish: 2017-10-22T20:50:50+07:00
-  github: "https://github.com/log-rnd/maven.git"
+  github: 
   coming_soon: true
 
 - name: JDBC with Postgresql
@@ -79,7 +79,26 @@
   messages:
     Temen-temen diharapkan mampu dan memahami fitur jdbc seperti fungsi-fungsi statement, prepared-statement, result-set, batch prcessiong, transactional dan lain-lain.
   publish: 2017-10-23T20:50:50+07:00
-  github: "https://github.com/log-rnd/maven.git"
+  github: 
+  coming_soon: true
+
+- name: ORM dengan Hibernate
+  url: java-orm-hibernate
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - jdbc
+  - maven
+  - PostgreSQL
+  - Hiberate
+  descriptions: 
+    Temen-teman akan belajar tentang menggunakan hibernate, serta memahami konsep ORM
+  messages:
+    Temen-temen diharapkan mampu dan memahami fitur yang diberikan oleh ORM Hibernate seperti sebelumnya kita belajar JDBC yaitu CRUD, Transaction management, HQL, dan lain-lain.
+  publish: 2017-10-23T20:59:50+07:00
+  github: 
   coming_soon: true
 
 - name: Java EE dengan Implementation Servlet API
