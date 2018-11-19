@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Menggabungkan data dari beberapa tabel dengan Join"
+date: 2018-11-19T20:58:17+07:00
+lang: psql
+categories:
+- RDBMS
+- PostgreSQL
+gist: 
+youtube: 
+comments: true
+---
+
+Klausa `join` pada dasarnya untuk menghubungkan tabel yang terpisah menjadi satu berdasarkan `foreign key` contoh ilustrasinya seperti berikut:
+
+![ilustrasi join]({{site.baseurl}}/resources/posts/psql-join/join-tables.png)
+
+Perintah join bisa di lakukan dengan beberapa cara yaitu
+
+1. Natural JOIN
+2. Inner JOIN
+3. Outter JOIN
+4. Self JOIN
