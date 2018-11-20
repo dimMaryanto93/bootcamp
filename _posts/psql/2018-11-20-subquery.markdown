@@ -153,24 +153,6 @@ Atau sebenarnya ini kita bisa menggunakan operator `IN`.
 
 **Penempatan pada `where ...` (lanjutan) menggunakan Operator > Any**
 
-{% highlight sql linenos %}
-select
-    e.employee_id as nik,
-    e.first_name as nama,
-    e.salary as gaji_sebulan
-from 
-    employees e
-where 
-    e.salary > any (
-        select 
-            round(avg(j.max_salary)) as gaji_rata 
-        from jobs j 
-        group by j.job_id
-    );
-{% endhighlight %}
-
-**Penempatan pada `where ...` (lanjutan) menggunakan Operator < Any**
-
 ```sql
 select 
     round(avg(j.max_salary)) as gaji_rata 
