@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Memahami perintah Inner Join di PostgreSQL"
+title: "Psql-optional-case"
 lang: psql
 categories:
 - RDBMS

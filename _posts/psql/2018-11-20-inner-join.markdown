@@ -1,0 +1,60 @@
+---
+layout: post
+title: "Memahami perintah Inner Join di PostgreSQL"
+date: 2018-11-20T10:50:33+07:00
+lang: psql
+categories:
+- RDBMS
+- PostgreSQL
+gist: 
+youtube: 
+comments: true
+---
+
+Selain menggunakan `Natural join` kita bisa menggunakan klausa `on` dan juga `where` atau lebih dikenal dengan **Inner JOIN**. Dengan menggunakan klausa `on` atau `whare` kita bisa bebas menentukan column mana yang akan di relasikan contohnya seperti berikut:
+
+Contoh kasusnya, saya mau mencari data setiap department dan tampilkan siapa nama managernya. Berikut querynya:
+
+**Menggunakan klausa `on`**
+
+{% highlight sql linenose %}
+select
+    d.department_id as kode,
+    d.department_name as nama_divisi,
+    d.manager_id as kode_manager,
+    concat(e.first_name, ' ', e.last_name) as nama_manager
+from 
+    departments d join employees e on (d.manager_id = e.employee_id); 
+{% endhighlight %}
+
+**Menggunakan klausa `where`**
+
+{% highlight sql linenose %}
+select
+    d.department_id as kode,
+    d.department_name as nama_divisi,
+    d.manager_id as kode_manager,
+    concat(e.first_name, ' ', e.last_name) as nama_manager
+from 
+    departments d, employees e 
+where d.manager_id = e.employee_id; 
+{% endhighlight %}
+
+Berikut hasilnya:
+
+```postgresq-console
+ kode |   nama_divisi    | kode_manager |   nama_manager    
+------+------------------+--------------+-------------------
+   10 | Administration   |          200 | Jennifer Whalen
+   20 | Marketing        |          201 | Michael Hartstein
+   30 | Purchasing       |          114 | Den Raphaely
+   40 | Human Resources  |          203 | Susan Mavris
+   50 | Shipping         |          121 | Adam Fripp
+   60 | IT               |          103 | Alexander Hunold
+   70 | Public Relations |          204 | Hermann Baer
+   80 | Sales            |          145 | John Russell
+   90 | Executive        |          100 | Steven King
+  100 | Finance          |          108 | Nancy Greenberg
+  110 | Accounting       |          205 | Shelley Higgins
+(11 rows)
+```
