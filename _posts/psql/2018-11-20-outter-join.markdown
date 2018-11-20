@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Memahami perintah outer join di PostgreSQL"
+title: "Memahami perintah Outer Join di PostgreSQL"
 date: 2018-11-20T12:15:12+07:00
 lang: psql
 categories:
