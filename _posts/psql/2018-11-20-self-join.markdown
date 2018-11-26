@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Memahami perintah Self Join di PostgreSQL"
+date: 2018-11-20T12:43:22+07:00
+lang: psql
+categories:
+- RDBMS
+- PostgreSQL
+gist: 
+youtube: 
+comments: true
+---
+
+Selain `inner join`, `natural join` dan `outter join` ada juga `self join` yaitu merelasikan ke tabel dirinya sendiri, berikut ilustrasinya:
+
+![gambar self join]({{site.baseurl}}/resources/posts/psql-join/self-join.png)
+
+Contoh kasusnya, saya ingin mencari semua karyawan dan berserta nama managernya. Berikut querynya:
+
+{% highlight sql linenos %}
+select 
+    e.employee_id as kode_karyawan,
+    concat(e.first_name, ' ', e.last_name) as nama_karyawan,
+    m.employee_id as kode_manager,
+    concat(m.first_name, ' ', m.last_name) as nama_manager
+from 
+    employees e left join employees m on (e.manager_id = m.employee_id);
+{% endhighlight %}
+
+Berikut hasilnya:
+
+```postgresql-console
+ kode_karyawan |   nama_karyawan   | kode_manager |   nama_manager   
+---------------+-------------------+--------------+-------------------
+           100 | Steven King       |              |  
+           101 | Neena Kochhar     |          100 | Steven King
+           102 | Lex De Haan       |          100 | Steven King
+           103 | Alexander Hunold  |          102 | Lex De Haan
+           104 | Bruce Ernst       |          103 | Alexander Hunold
+           105 | David Austin      |          103 | Alexander Hunold
+           106 | Valli Pataballa   |          103 | Alexander Hunold
+           125 | Julia Nayer       |          120 | Matthew Weiss
+           126 | Irene Mikkilineni |          120 | Matthew Weiss
+           127 | James Landry      |          120 | Matthew Weiss
+           128 | Steven Markle     |          120 | Matthew Weiss
+           129 | Laura Bissot      |          121 | Adam Fripp
+           130 | Mozhe Atkinson    |          121 | Adam Fripp
+           131 | James Marlow      |          121 | Adam Fripp
+           132 | TJ Olson          |          121 | Adam Fripp
+...
+(107 rows)
+```
