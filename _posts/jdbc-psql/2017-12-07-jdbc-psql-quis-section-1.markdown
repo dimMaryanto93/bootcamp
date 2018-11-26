@@ -88,7 +88,3 @@ Maka jika salah buat query hasilnya seperti berikut:
 | 4             | "Dimas Maryanto"  | 2           | Tabungan Mapan      | 200000    | 0         | 400000    | "2017-03-23"      |
 | 5             | "Dimas Maryanto"  | 2           | Tabungan Mapan      | 0         | 400000    | 0         | "2017-03-24"      |
 | 6             | "Hilman Ramadhan" | 3           | Tabungan Umroh      | 500000    | 0         | 500000    | "2017-03-25"      |
-
-## My Solution
-
-[download disini]({{ site.baseurl }}/resources/downloads/file/java-core.quis-6.zip)
