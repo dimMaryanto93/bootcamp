@@ -78,7 +78,7 @@ Buatlah untuk menyimpan data berdasarkan perancangan data tersebut, sehingga ter
 | 5     | 2                 | 0         | 400000    | 0         | "2017-03-24"      |
 | 6     | 3                 | 500000    | 0         | 500000    | "2017-03-25"      |
 
-Maka jika salah buat query hasilnya seperti berikut:
+Buat query hasilnya seperti berikut:
 
 | transaksi_id  | nama_nasabah      | tabungan_id | nama_tabungan       | debet     | kredit    | saldo     | tanggal_transaksi |
 | :--           | :---              | :------     | :---                | :----     | :---      | :--       | :--               |
