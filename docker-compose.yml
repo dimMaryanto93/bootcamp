@@ -1,12 +1,21 @@
 version: '3.6'
 services:
-  db_engine:
-    image: postgres:10.4
+  postgresql:
+    image: postgres:9.6
     ports:
-      - "5432:5432"
+      - 5432:5432
     volumes:
       - pg_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PASSWORD=bootcamp
+      - POSTGRES_USER=bootcamp
+      - POSTGRES_DB=bootcamp
+  flyway: 
+    image: boxfuse/flyway
+    command: -url=jdbc:postgresql://postgresql:5432/bootcamp -schemas=bootcamp -user=bootcamp -password=bootcamp -connectRetries=60 migrate
+    volumes:
+      - ./resources/sql:/flyway/sql
+    depends_on:
+      - postgresql
 volumes:
   pg_data:
