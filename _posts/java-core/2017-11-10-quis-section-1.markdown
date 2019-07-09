@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Time is your practice"
-date: 2017-11-11T14:31:35+07:00
+date: 2017-11-10T14:31:35+07:00
 lang: java-core
 categories:
 - Java

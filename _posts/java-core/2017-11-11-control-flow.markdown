@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Setelah mengelesaikan [latihan pertama]({% post_url java-core/2017-11-11-quis-section-1 %}), materi selajutnya adalah tentang flow atau alur control. Flow Control ini pada dasarnya ada 2 macem yaitu
+Setelah mengelesaikan [latihan pertama]({% post_url java-core/2017-11-10-quis-section-1 %}), materi selajutnya adalah tentang flow atau alur control. Flow Control ini pada dasarnya ada 2 macem yaitu
 
 1. Decision making (Percabangan) statement
 2. Looping (Perulangan) statement
