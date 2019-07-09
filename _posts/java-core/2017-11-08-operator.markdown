@@ -136,7 +136,7 @@ Apakah 10 + 20 hasilnya 40 ? Salah!
 
 ## Konversi tipe data
 
-Untuk konversi tipe data, ini juga merupakan operator juga. Jadi klo di  [materi]({% post_url java-core/2017-11-09-conversi-tipe-data %}) Semua dilakukan secara otomatis tapi jika tidak ada dalam flow conversion kita bisa override it, do it manualy. using operator `()`. Berikut contohnya
+Untuk konversi tipe data, ini juga merupakan operator juga. Semua dilakukan secara otomatis tapi jika tidak ada dalam flow conversion kita bisa override it, do it manualy. using operator `()`. Berikut contohnya
 
 {% highlight java linenos %}
 public class EqualityOperation {
