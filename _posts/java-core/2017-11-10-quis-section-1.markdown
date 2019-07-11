@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-1. Buat project Java dengan nama `java-core.quis-1`, yang didalamnya terdapat folder `src` dan `out`. Kemudian didalam folder `src` buat folder lagi `com/tabledata/bootcamp/java/core`
+1. Buat project Java dengan nama `java-core-quis1`, yang didalamnya terdapat folder `src` dan `out`. Kemudian didalam folder `src` buat package `com/tabledata/bootcamp/java/core`
 
 2. buat kelas dengan nama `Persegi` dalam package `com.tabeldata.bootcamp.java.core` Program menghitung persegi
     1. Buatlah variable dengan nama `sisi` dengan tipe data `java.lang.Double` kemudian berikan nilai `50`
