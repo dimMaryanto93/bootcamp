@@ -30,9 +30,3 @@ comments: true
     4. Hitunglah keliling lingkaran tersebut. Tampilkan di console seperti berikut `Nilai PI {nilai}, maka kelilingnya adalah {keliling}`
   
 **keterangan** ==> `{ ket }` ubah menjadi nilai sebenarnya contohnya `Tinggi {tinggi}cm` ==> `Tinggi 30cm`
-
-## My Solution
-
-Jika ada pertanyaan silahkan isi di kolom komentar ya..., dan untuk solusinya [download files]({{ site.baseurl }}/resources/downloads/file/java-core.quis-1.zip). 
-
-tapi **sebaiknya kerjaan dulu sebelum melihat jawabanya** setelah itu baru di compare ya.
