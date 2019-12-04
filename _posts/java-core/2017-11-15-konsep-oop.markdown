@@ -73,7 +73,7 @@ public class Mobil extends Sepeda {
 
 Polimorpism adalah kembar tapi tidak sama, magsudnya jadi kita khan punya behavier atau prilaku atau method dengan nama yang sama nilai kembalian yang sama tapi yang menjadi pembedanya adalah dia memiliki nilai masukan atau parameter yang berbeda seperti gambar berikut:
 
-![Polymorpism konsep]({{ site.baseurl }}/resources/downloads/imgs/java-core/konsep-oop/polymorpism.jpg)
+![Polymorpism konsep]({{ site.baseurl }}/resources/posts/java-konsep-oop/polymorpism.jpg)
 
 Berikut implementasi kodingnya:
 
