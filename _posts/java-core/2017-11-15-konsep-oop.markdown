@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Object Oriented Approach"
+title: "Object Oriented Approach di Java8"
 date: 2017-11-15T18:47:26+07:00
 lang: java-core
 categories:
