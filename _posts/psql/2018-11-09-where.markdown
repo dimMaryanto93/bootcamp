@@ -61,17 +61,17 @@ where region_id = 1;
 Berikut hasilnya:
 
 ```sql
---  id |      name      
--- ----+----------------
---  BE | Belgium
---  CH | Switzerland
---  DE | Germany
---  DK | Denmark
---  FR | France
---  IT | Italy
---  NL | Netherlands
---  UK | United Kingdom
--- (8 rows)
+ id |      name      
+----+----------------
+ BE | Belgium
+ CH | Switzerland
+ DE | Germany
+ DK | Denmark
+ FR | France
+ IT | Italy
+ NL | Netherlands
+ UK | United Kingdom
+(8 rows)
 ```
 
 Nah sekarang tinggal anda check aja, benar gak atau sesuaikan datanya dengan data diatas klo `region_id = 1`?
