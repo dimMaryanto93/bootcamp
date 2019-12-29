@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   postgresql:
-    image: postgres:9.6
+    image: repository.dimas-maryanto.com:8086/postgres:12.1
     ports:
       - 5432:5432
     volumes:
