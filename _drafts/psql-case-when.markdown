@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Percabangan di PostgreSQL dengan menggunakan case-else"
+title: "Percabangan di PostgreSQL dengan menggunakan case-when"
 lang: psql
 categories:
 - RDBMS

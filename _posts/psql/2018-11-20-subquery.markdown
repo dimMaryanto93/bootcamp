@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SubQuery dalam PostgreSQL"
+title: "Sub Query dalam PostgreSQL"
 date: 2018-11-20T14:25:44+07:00
 lang: psql
 categories:

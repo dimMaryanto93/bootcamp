@@ -7,7 +7,7 @@ categories:
 - java
 - core
 gist: 
-youtube:
+youtube: 
 comments: true
 ---
 
