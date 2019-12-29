@@ -17,7 +17,7 @@ Di SQL juga mengenal yang namanya gerbang logica, do you remember??
 select
     (true and true) "AND -> true x true",
     (true and false) "AND -> true x false",
-    (false and false) "AND -> true x true",
+    (false and false) "AND -> false x false",
     (true or true) "OR -> true x true",
     (true or false) "OR -> true x false",
     (false or false) "OR -> false x false",
@@ -28,7 +28,7 @@ select
 Berikut hasilnya:
 
 ```bash
- AND -> true x true | AND -> true x false | AND -> true x true | OR -> true x true | OR -> true x false | OR -> false x false | NOT -> false | NOT -> true 
+ AND -> true x true | AND -> true x false | AND -> false x false | OR -> true x true | OR -> true x false | OR -> false x false | NOT -> false | NOT -> true 
 --------------------+---------------------+--------------------+-------------------+--------------------+---------------------+--------------+-------------
  t                  | f                   | f                  | t                 | t                  | f                   | t            | f
 (1 row)
