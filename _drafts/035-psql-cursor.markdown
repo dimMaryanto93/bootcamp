@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "034-cursor"
+title: "Cursor di PostgreSQL"
 lang: psql
 categories:
 - RDBMS

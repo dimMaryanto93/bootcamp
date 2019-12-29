@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "034-store-procedure"
+title: "Membuat Store Procedure di PostgreSQL"
 lang: psql
 categories:
 - RDBMS
