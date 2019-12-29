@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Transaction Control Language di PostgreSQL"
+date: 2019-12-29T20:07:46+07:00
 lang: psql
 categories:
 - RDBMS
