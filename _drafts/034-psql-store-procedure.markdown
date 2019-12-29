@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Menggunakan sequance sebagai primary key"
+title: "034-store-procedure"
 lang: psql
 categories:
 - RDBMS
