@@ -2,7 +2,7 @@
 layout: post
 title: "Time is your to practice part 6"
 date: 2017-12-07T13:50:20+07:00
-lang: java-core
+lang: java-jdbc-psql
 categories:
 - Java
 - Core
