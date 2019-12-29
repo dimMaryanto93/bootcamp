@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-prepared-statement"
+title: "Mengenal class PreparedStatement"
 lang: java-jdbc-psql
 categories:
 - Java

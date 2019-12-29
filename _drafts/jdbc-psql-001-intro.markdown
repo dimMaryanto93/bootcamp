@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-intro"
+title: "Pengenalan JDBC dengan PostgreSQL Database"
 lang: java-jdbc-psql
 categories:
 - Java

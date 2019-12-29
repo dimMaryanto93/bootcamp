@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-batch"
+title: "Batch processing dengan JDBC"
 lang: java-jdbc-psql
 categories:
 - Java

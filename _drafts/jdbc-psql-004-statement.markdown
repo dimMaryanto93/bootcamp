@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-statement"
+title: "Mengenal class Statement"
 lang: java-jdbc-psql
 categories:
 - Java

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-create-connection"
+title: "Membuat connection ke Database via JDBC"
 lang: java-jdbc-psql
 categories:
 - Java

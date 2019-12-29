@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-transactional"
+title: "Mengenal Transactional dengan JDBC"
 lang: java-jdbc-psql
 categories:
 - Java

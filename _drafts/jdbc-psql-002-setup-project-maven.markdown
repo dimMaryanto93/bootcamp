@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-setup-firsttime"
+title: "Setup Project maven untuk JDBC PostgreSQL"
 lang: java-jdbc-psql
 categories:
 - Java

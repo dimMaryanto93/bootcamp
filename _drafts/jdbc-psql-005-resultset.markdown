@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jdbc-psql-resultset"
+title: "Mengenal class ResultSet"
 lang: java-jdbc-psql
 categories:
 - Java
