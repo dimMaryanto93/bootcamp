@@ -10,11 +10,10 @@ youtube:
 comments: true
 ---
 
-Data Definition Language, atau singkatan dari DDL biasanya digunakan untuk membuat, memodifikasi struktur database contohnya yaitu 
+Data Definition Language, atau singkatan dari DDL yaitu perintah sql yang digunakan untuk membuat, memodifikasi struktur data pada object dalam Database. DDL dibagi menjadi 5 yaitu
 
-1. Membuat `User Authentication`, Membuat `Database`, Membuat `Schema`
-2. memberikan ijin untuk akses / `Privileges`
-3. Membuat `Table`, Merubah struktur table, Merubah nama table, Menambahkan `Constraints` pada sebuah kolom
-4. Membuat `Sequance`, Merubah properti pada sequance
-5. Membuat `Views` dll.
-
+1. **CREATE**, digunakan untuk membuat object pada database seperti table, view, sequence, schema dan lain-lain.
+2. **DROP**, digunakan untuk menghapus object pada database seperti table, view, sequence, schema dan lain-lain.
+3. **ALTER**, digunakan untuk memodifikasi object pada database seperti menambahkan kolom pada table, menambahkan constraint pada kolom terntentu.
+4. **TRUNCATE**, digunakan untuk menghapus semua record dalam suatu table.
+5. **RENAME**, digunakan untuk mengubah nama database yang ada.
