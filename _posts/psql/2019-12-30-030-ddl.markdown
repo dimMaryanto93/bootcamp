@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Data Definition Language (DDL) di PostgreSQL"
+date: 2019-12-30T14:55:30+07:00
 lang: psql
 categories:
 - RDBMS
