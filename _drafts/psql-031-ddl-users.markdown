@@ -16,6 +16,7 @@ Perintah ddl untuk management user authentication di PostgreSQL terdiri dari:
 2. **DROP**, untuk menghapus Authentication User
 3. **ALTER**, untuk merubah role, password, dan lain-lain yang berkaitan tentang role user tersebut.
 4. **GRANT**, untuk memberikan ijin akses terhadap object di database, contohnya klo kita punya table dalam sebuah database tetapi usernya kita gunakan tidak bisa melihat tabelnya maka kita harus meminta ijin kepada pemilik table tersebut untuk grant user kita supaya bisa baca atau tulis ke table tersebut.
+5. **REVOKE**, untuk mencabut ijik akses terhadap object di dalam user tersebut;
 
 Contoh penggunaan:
 
