@@ -11,7 +11,7 @@
   messages:
     Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java, selain itu juga sedikit-demi-sedikit akan belajar algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
   publish: 2017-10-15T20:50:50+07:00
-  github: 
+  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/java-core
   coming_soon: false
 
 - name: PostgreSQL
@@ -27,7 +27,7 @@
   messages:
     Temen-temen akan di pandu untuk menguasai perintah SQL dengan salah satu Relational Database Management System (RDBMS) yaitu dengan PostgreSQL. Dengan menggunakan Relational Database Management Sistem kita dengan mudah dapat melakukan baca-tulis data dengan mudah dan cepat tidak seperti menggunakan baca-tulis di file.
   publish: 2017-10-16T20:50:50+07:00
-  github: 
+  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/psql
   coming_soon: false
 
 - name: VCS dengan GIT
@@ -101,22 +101,6 @@
   github: 
   coming_soon: true
 
-- name: Java EE dengan Implementation Servlet API
-  url: servlet-api
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - web
-  - servlet
-  descriptions:
-    Temen-teman akan belajar basic membuat aplikasi Web di Java dengan menggunakan Teknologi Servlet API yang akan diproses di Web Server Apache Tomcat.
-  messages:
-  publish: 2017-10-24T20:50:50+07:00
-  github: "https://github.com/log-rnd/servlet-api.git"
-  coming_soon: true
-
 - name: Springframework Core
   url: spring-core
   icon: "devicons devicons-java"
@@ -132,73 +116,4 @@
   messages:
   publish: 2017-10-26T20:50:50+07:00
   github: "https://github.com/log-rnd/spring-core.git"
-  coming_soon: true
-
-# - name: Springframework Web Security
-#   url: spring-security
-#   icon: "devicons devicons-java"
-#   language: Java
-#   color:
-#   tags:
-#   - java
-#   - springframework
-#   - dependency-injection
-#   - inversion-of-control
-#   descriptions:
-#     Temen-teman akan belajar salah satu pattern yaitu Dependency Injection dan Inversion of Control dengan menggunakan framework namanya Spring Framework.
-#   messages:
-#   publish: 2017-10-27T20:50:50+07:00
-#   github: "https://github.com/log-rnd/spring-webmvc.git"
-#   coming_soon: true
-
-#- name: Java Desktop Application (Swing)
-#  url: java-swing
-#  icon: "devicons devicons-java"
-#  language: Java
-#  color:
-#  tags:
-#  - java
-#  - swing
-#  descriptions:
-#   Temen-teman akan belajar tentang Membuat Aplikasi berbasis GUI (Graphic User Interfaces) dengan menggunakan Teknologi Java Swing dengan Text Editor Netbeans.
-#  messages:
-#    Temen-teman setelah menguasai Java Fundamental atau Java Core lecture ini adalah langkah yang tepat untuk mempelajari teknologi Java Lebih Dalam lagi karena disini kita akan menggunakan semua component yang telah kita pelajar di materi sebelum-sebelumnya seperti penggunaan OOP di Aplikasi berbasis Desktop di Java.
-#  publish: 2017-10-18T20:50:50+07:00
-#  github: "https://github.com/log-rnd/java-swing.git"
-#  coming_soon: true
-
-#- name: Java Desktop Application (JavaFX) with MVC Pattern
-#  url: javafx
-#  icon: "devicons devicons-java"
-#  language: Java
-#  color:
-#  tags:
-#  - java
-#  - javafx
-#  - scenebuilder
-#  - fxml
-#  descriptions:
-#   Temen-teman akan belajar tentang Membuat Aplikasi berbasis GUI (Graphic User Interfaces) dengan menggunakan Teknologi JavaFX, Dengan menggunakan JavaFX kita bisa mendesign tampilannya lebih baik lagi karena kita bisa integrasikan dengan Stylesheet versi JavaFX
-#  messages:
-#    Temen-teman setelah menguasai Java Pemograman GUI dengan Swing tidak ada salahnya untuk mempelajari materi yang satu ini, karena ini akan membuat aplikasi desktop kita lebih terlihat lebih indah dibandingkan sebelumnya dan lebih mudah untuk di developnya karena menggunakan konsep MVC.
-#  publish: 2017-10-19T20:50:50+07:00
-#  github: "https://github.com/log-rnd/javafx.git"
-#  coming_soon: true
-
-- name: Java8 Lamda expresion dan Stream API
-  url: java8
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - lamda
-  - stream
-  - localdate
-  - localdatetime
-  descriptions:
-    Temen-teman akan belajar lebih lanjut di penggunaan Java8 tentang Lamda Expresion dan Stream API selain itu juga java8 ini menambahkan package java.time sebagai default kelas Date yang sebelumnya java.util.Date.
-  messages:
-  publish: 2017-10-28T20:50:50+07:00
-  github: "https://github.com/log-rnd/java8.git"
   coming_soon: true
