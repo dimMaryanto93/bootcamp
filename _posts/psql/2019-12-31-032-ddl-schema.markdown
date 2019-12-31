@@ -69,5 +69,5 @@ CREATE SCEHAMA your_schema;
 Perintah DROP pada schema, digunakan untuk menghapus schema dalam database dengan perintah seperti berikut:
 
 ```sql
-DROP SCHEME IF EXIST your_schema;
+DROP SCHEME IF EXISTS your_schema;
 ```
