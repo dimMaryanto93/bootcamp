@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Macam - Macam Constraint pada Database PostgreSQL"
+title: "DDL - Macam-macam Constraint pada Database PostgreSQL"
 lang: psql
 categories:
 - RDBMS

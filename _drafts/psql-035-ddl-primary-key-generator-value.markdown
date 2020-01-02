@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Menggunakan Sequance sebagai primary key"
+title: "Generator default value untuk Primary Key"
 lang: psql
 categories:
 - RDBMS
