@@ -6,7 +6,7 @@ categories:
 - Java
 - JDBC
 - Postgresql
-gist: {{ gist }}
+refs: []
 youtube: {{ youtube }}
 comments: true
 ---

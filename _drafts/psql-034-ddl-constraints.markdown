@@ -5,7 +5,8 @@ lang: psql
 categories:
 - RDBMS
 - PostgreSQL
-gist: 
+refs: 
+- https://www.postgresql.org/docs/9.6/ddl-constraints.html
 youtube: 
 comments: true
 ---

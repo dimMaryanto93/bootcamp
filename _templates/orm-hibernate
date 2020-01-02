@@ -7,7 +7,7 @@ categories:
 - ORM
 - Hibernate
 - PostgreSQL
-gist: {{ gist }}
+refs: []
 youtube: {{ youtube }}
 comments: true
 ---

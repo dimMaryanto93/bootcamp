@@ -5,7 +5,7 @@ lang: java8
 categories:
 - java
 - lamda
-gist: {{ gist }}
+refs: []
 youtube: {{ youtube }}
 comments: true
 ---

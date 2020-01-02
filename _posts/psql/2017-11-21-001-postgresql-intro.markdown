@@ -6,7 +6,7 @@ lang: psql
 categories:
 - RDBMS
 - PostgreSQL 
-gist: 
+refs: []
 youtube: 
 comments: true
 ---

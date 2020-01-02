@@ -6,7 +6,7 @@ categories:
 - java
 - web
 - servlet
-gist: {{ gist }}
+refs: []
 youtube: {{ youtube }}
 comments: true
 ---

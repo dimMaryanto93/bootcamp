@@ -6,7 +6,7 @@ lang: java-core
 categories:
 - java
 - core
-gist: 
+refs: []
 youtube: https://youtu.be/2zoPD2xRuIg
 comments: true
 ---

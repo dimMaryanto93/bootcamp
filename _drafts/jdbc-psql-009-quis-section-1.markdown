@@ -6,7 +6,7 @@ lang: java-jdbc-psql
 categories:
 - Java
 - Core
-gist: 
+refs: []
 youtube: 
 comments: true
 ---

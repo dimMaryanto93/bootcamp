@@ -6,7 +6,7 @@ categories:
 - build-tools
 - java
 - maven
-gist: {{ gist }}
+refs: []
 youtube: {{ youtube }}
 comments: true
 ---
