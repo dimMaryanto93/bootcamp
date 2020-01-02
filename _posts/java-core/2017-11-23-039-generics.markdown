@@ -6,7 +6,8 @@ lang: java-core
 categories:
 - Java
 - Core
-refs: []
+refs: 
+- https://docs.oracle.com/javase/tutorial/java/generics/types.html
 youtube: 
 comments: true
 ---

@@ -6,7 +6,12 @@ lang: java-core
 categories:
 - Java
 - Core
-refs: []
+refs: 
+- https://docs.oracle.com/javase/7/docs/api/java/sql/Date.html
+- https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html
+- https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html
+- https://docs.oracle.com/javase/8/docs/api/java/sql/Timestamp.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/Date.html
 youtube: 
 comments: true
 ---

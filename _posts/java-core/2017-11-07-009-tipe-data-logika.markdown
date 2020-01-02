@@ -6,7 +6,8 @@ lang: java-core
 categories:
 - Java
 - Core
-refs: []
+refs: 
+- https://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html
 youtube: 
 comments: true
 ---

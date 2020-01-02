@@ -9,6 +9,10 @@ categories:
 refs: 
 - https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html
 - https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html
+- https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
+- https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html
+- https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
+- https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html
 youtube: 
 comments: true
 ---

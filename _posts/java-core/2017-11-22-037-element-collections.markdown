@@ -6,7 +6,10 @@ lang: java-core
 categories:
 - Java
 - Core
-refs: []
+refs: 
+- https://docs.oracle.com/javase/7/docs/api/java/util/List.html
+- https://docs.oracle.com/javase/7/docs/api/java/util/Map.html
+- https://docs.oracle.com/javase/7/docs/api/java/util/Set.html
 youtube: 
 comments: true
 ---
