@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Mungkin dari temen-temen masih agak bingung apa sih yang membedakan antara _super_ dan _this_ dan juga mungkin melihat dari [materi sebelumnya]({% post_url java-core/2017-11-15-konsep-oop %}) bagian inherintace dan bagian encapsulation tapi belum dijelaskan apa magsud dan tujuannya. Ok nah masilnya saya punya contoh seperti berikut:
+Mungkin dari temen-temen masih agak bingung apa sih yang membedakan antara _super_ dan _this_ dan juga mungkin melihat dari materi sebelumnya bagian inherintace dan bagian encapsulation tapi belum dijelaskan apa magsud dan tujuannya. Ok nah masilnya saya punya contoh seperti berikut:
 
 ### ParentClass
 

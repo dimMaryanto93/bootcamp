@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Coba kalo temen-temen perhatikan dari materi-materi sebelumya sampe sekarang mungkin klo kita gabungkan kemungkinan _source code_ yang kita tulis udah lumayan banyak ya dan lumayan besar juga khan. Karena topik kita dari [materi sebelumya]({% post_url java-core/2017-11-14-function %}) yaitu modularisasi. 
+Coba kalo temen-temen perhatikan dari materi-materi sebelumya sampe sekarang mungkin klo kita gabungkan kemungkinan _source code_ yang kita tulis udah lumayan banyak ya dan lumayan besar juga khan. Karena topik kita dari materi sebelumya yaitu modularisasi. 
 
 Modularisasi tidak hanya sebatas dipisahkan dalam _method_ atau _function_ yang saling panggil-memanggil tetepi juga kita bisa pisahkan secara _file_ atau _class_ dengan tujuan lebih teroranisir dan memisahkan function yang tidak berhubungan langsung di _file_ atau _class_ tersebut. Contohnya seperti berikut:
 

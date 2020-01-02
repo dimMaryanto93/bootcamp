@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Dari [materi sebelumnya]({% post_url java-core/2017-11-22-element-collections %}) temen-temen ada yang bingung? tentang di materi _element collection_ kok beda cara penulisannya dengan _array_ biasa yaitu seperti berikut:
+Dari materi sebelumnya temen-temen ada yang bingung? tentang di materi _element collection_ kok beda cara penulisannya dengan _array_ biasa yaitu seperti berikut:
 
 {% highlight java linenos %}
 package tdi.training.java.core.data;

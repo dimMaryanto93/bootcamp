@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Di [materi sebelumya]({% post_url java-core/2017-11-15-konsep-oop %}) kita tau klo _polymorpism_ ini merupakan salah satu fitur _Object Oriented Programming_. Beberapa fitur diataranya yaitu _Override_ dan _Overload_
+Di materi sebelumya kita tau klo _polymorpism_ ini merupakan salah satu fitur _Object Oriented Programming_. Beberapa fitur diataranya yaitu _Override_ dan _Overload_
 
 ## _Override_
 

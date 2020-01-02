@@ -6,7 +6,9 @@ lang: java-core
 categories:
 - Java
 - Core
-refs: []
+refs: 
+- https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html
+- https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html
 youtube: 
 comments: true
 ---

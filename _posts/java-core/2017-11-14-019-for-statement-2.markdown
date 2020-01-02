@@ -12,7 +12,7 @@ comments: true
 ---
 
 
-Di materi [sebelumnya]({% post_url java-core/2017-11-12-for-statement %}) kita udah mengetahui bagaimana perulangan dengan perintah `for` statement. Sekarang kita, akan coba membuat satu kasus yaitu `for` dalam `for` atau didalam perulangan ada perlulangan contohnya seperti berikut:
+Di materi sebelumnya kita udah mengetahui bagaimana perulangan dengan perintah `for` statement. Sekarang kita, akan coba membuat satu kasus yaitu `for` dalam `for` atau didalam perulangan ada perlulangan contohnya seperti berikut:
 
 {% highlight java linenos %}
 public class LoopingInnerLoop {

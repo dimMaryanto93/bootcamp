@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Statement `break` dan `continue` mungkin dari temen-temen udah agak familiar, mungkin jika temen-temen masih ingat di [materi seleksi]({% post_url java-core/2017-11-11-swith-statement %}) menggunakan `switch-case` pasti ada statement `break;` nah jadi selain di seleksi di perulangan pun bisa diterapkan untuk statement `break` dan `continue`, jadi tujuannya adalah untuk menghentikan atau skip suatu iterasi pada perlulangan contohnya seperti berikut:
+Statement `break` dan `continue` mungkin dari temen-temen udah agak familiar, mungkin jika temen-temen masih ingat di materi seleksi menggunakan `switch-case` pasti ada statement `break;` nah jadi selain di seleksi di perulangan pun bisa diterapkan untuk statement `break` dan `continue`, jadi tujuannya adalah untuk menghentikan atau skip suatu iterasi pada perlulangan contohnya seperti berikut:
 
 {% highlight java linenos %}
 public class BreakLoopStatement {

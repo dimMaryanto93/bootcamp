@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Di [materi sebelumnya]({% post_url java-core/2017-11-14-function %}) kita udah belajar membuat function atau method, Jadi di function atau method pada dasarnya bisa mengeluarkan data `return` atau menerima data `parameterize`, Untuk menerima data ada istilah yang namanya `parameter` atau katalainnya `arguments` seperti berikut contohnya:
+Di materi sebelumnya kita udah belajar membuat function atau method, Jadi di function atau method pada dasarnya bisa mengeluarkan data `return` atau menerima data `parameterize`, Untuk menerima data ada istilah yang namanya `parameter` atau katalainnya `arguments` seperti berikut contohnya:
 
 {% highlight java linenos %}
 public class FunctionWithArgs {

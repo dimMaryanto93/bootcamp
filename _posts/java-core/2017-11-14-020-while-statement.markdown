@@ -11,7 +11,7 @@ youtube:
 comments: true
 ---
 
-Tidak jauh berbeda dengan perulangan dengan `for` statement di [materi sebelumnya]({% post_url java-core/2017-11-14-for-statement-2 %}). Sekarang kita lihat cara bekerja untuk perulangan menggunakan `do-while` terlebih dahulu. berikut contohnya:
+Tidak jauh berbeda dengan perulangan dengan `for` statement di materi sebelumnya. Sekarang kita lihat cara bekerja untuk perulangan menggunakan `do-while` terlebih dahulu. berikut contohnya:
 
 {% highlight java linenos %}
 public class DoWhileStatement{
