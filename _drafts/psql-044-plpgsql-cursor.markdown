@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cursor di PostgreSQL"
+title: "Pg/PlSQL Cursor di PostgreSQL"
 lang: psql
 categories:
 - RDBMS

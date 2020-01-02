@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Membuat Store Procedure di PostgreSQL"
+title: "Pg/PlSQL Membuat Store Procedure di PostgreSQL"
 lang: psql
 categories:
 - RDBMS

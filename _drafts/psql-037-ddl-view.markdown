@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Membuat view di PostgreSQL"
+title: "DDL - Membuat view di PostgreSQL"
 lang: psql
 categories:
 - RDBMS
