@@ -6,7 +6,8 @@ lang: psql
 categories:
 - RDBMS
 - PostgreSQL
-refs: []
+refs: 
+- https://www.postgresql.org/docs/9.3/queries-limit.html
 youtube: 
 comments: true
 ---

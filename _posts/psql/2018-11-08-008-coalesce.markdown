@@ -6,7 +6,8 @@ lang: psql
 categories:
 - RDBMS
 - PostgreSQL
-refs: []
+refs: 
+- https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL
 youtube: 
 comments: true
 ---

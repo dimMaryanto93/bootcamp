@@ -6,7 +6,8 @@ lang: psql
 categories:
 - RDBMS
 - PostgreSQL
-refs: []
+refs: 
+- https://www.postgresql.org/docs/9.5/functions-aggregate.html
 youtube: 
 comments: true
 ---
