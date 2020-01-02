@@ -7,7 +7,7 @@ categories:
 - java
 - core
 refs: []
-youtube: https://youtu.be/2zoPD2xRuIg
+youtube: https://www.youtube.com/watch?v=DtucedMOSts&list=PLV1-tdmPblvz0NCFYgVQaQEOTWJCjjucO&index=5
 comments: true
 ---
 

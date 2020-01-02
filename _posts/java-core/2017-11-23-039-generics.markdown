@@ -8,7 +8,7 @@ categories:
 - Core
 refs: 
 - https://docs.oracle.com/javase/tutorial/java/generics/types.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=6TasUzsbQ90&list=PLV1-tdmPblvz0NCFYgVQaQEOTWJCjjucO&index=36
 comments: true
 ---
 

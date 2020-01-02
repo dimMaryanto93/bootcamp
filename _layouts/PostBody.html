@@ -61,6 +61,14 @@ layout: default
                     {{page.date | date: "%-d %B %Y" }}
                 </time>
             </h2>
+            <h2>
+                {% if page.youtube %}
+                <i class="fa fa-youtube-play"></i>
+                <a href="{{page.youtube}}" class="" target="_blank" rel="noopener noreferrer">
+                Play di youtube
+                </a>
+                {% endif %}
+            </h2>
         </div>
         {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}
         {% assign post_list_size = post_list.size %}

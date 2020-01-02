@@ -12,7 +12,7 @@ refs:
 - https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html
 - https://docs.oracle.com/javase/8/docs/api/java/sql/Timestamp.html
 - https://docs.oracle.com/javase/8/docs/api/java/util/Date.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=p3bgdxugicA&list=PLV1-tdmPblvz0NCFYgVQaQEOTWJCjjucO&index=16
 comments: true
 ---
 

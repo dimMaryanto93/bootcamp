@@ -7,7 +7,7 @@ categories:
 - java
 - core
 refs: []
-youtube:
+youtube: https://www.youtube.com/watch?v=hTKaYzh8OMM&list=PLV1-tdmPblvz0NCFYgVQaQEOTWJCjjucO&index=4
 comments: true
 ---
 Sebelum kita koding dengan bahasa pemograman berorientasi object ini (Java), kita harus install dulu Software Development Kit atau SDK yaitu JDK kependekan dari _Java Development Kit_. JDK bertujuan untuk menyediakan sekumpulan tools handal yang disediakan oleh para insyinyur Java (gelar) contoh diantarnya sebagai berikut

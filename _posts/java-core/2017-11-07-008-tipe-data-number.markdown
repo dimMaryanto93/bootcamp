@@ -13,7 +13,7 @@ refs:
 - https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html
 - https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
 - https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=weZ5N5Aq1M4&list=PLV1-tdmPblvz0NCFYgVQaQEOTWJCjjucO&index=13
 comments: true
 ---
 

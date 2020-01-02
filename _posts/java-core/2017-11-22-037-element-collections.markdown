@@ -10,7 +10,7 @@ refs:
 - https://docs.oracle.com/javase/7/docs/api/java/util/List.html
 - https://docs.oracle.com/javase/7/docs/api/java/util/Map.html
 - https://docs.oracle.com/javase/7/docs/api/java/util/Set.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=RIRgyGkEd7g&list=PLV1-tdmPblvz0NCFYgVQaQEOTWJCjjucO&index=35
 comments: true
 ---
 
