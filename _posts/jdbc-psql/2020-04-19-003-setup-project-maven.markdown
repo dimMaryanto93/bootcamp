@@ -10,6 +10,7 @@ categories:
 refs: 
 - https://flywaydb.org
 - https://search.maven.org/artifact/org.postgresql/postgresql/42.2.12.jre7/bundle
+- https://github.com/brettwooldridge/HikariCP
 - https://maven.apache.org/plugins/maven-compiler-plugin/
 - https://projectlombok.org
 youtube: 
@@ -116,11 +117,18 @@ Untuk menghubungkan antara Java dengan Database yang kita inginkan contohnya Pos
     <!-- config project -->
 
     <dependencies>
+    <!-- jdbc driver for postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.12.jre7</version>
             <scope>runtime</scope>
+        </dependency>
+        <!-- database pooling connection -->
+         <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>3.4.2</version>
         </dependency>
 
         <!-- other dependencies -->
