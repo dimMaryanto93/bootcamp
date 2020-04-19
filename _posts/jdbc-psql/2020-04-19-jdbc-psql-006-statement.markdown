@@ -7,7 +7,12 @@ categories:
 - Java
 - JDBC
 - Postgresql
-refs: []
+refs: 
+- https://id.wikipedia.org/wiki/Injeksi_SQL
+- https://en.wikipedia.org/wiki/Software_design_pattern#Creational_patterns
+- https://en.wikipedia.org/wiki/Dependency_injection
+- https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm
+- https://www.oracle.com/technetwork/java/dataaccessobject-138824.html
 youtube: 
 comments: true
 ---
