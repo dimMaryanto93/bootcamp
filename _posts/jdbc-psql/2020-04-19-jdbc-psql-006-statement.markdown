@@ -1,0 +1,190 @@
+---
+layout: post
+title: "Mengenal class Statement"
+date: 2020-04-19T22:48:03+07:00
+lang: java-jdbc-psql
+categories:
+- Java
+- JDBC
+- Postgresql
+refs: []
+youtube: 
+comments: true
+---
+
+Hi, setelah kita membuat connection, menyiapkan database schema dengan menggunakan flyway database migration. Sekarang kita akan mengambil data dari table yang ada di database. Tapi sebelum itu ada beberapa yang harus kita siapkan karena disini saya menggunakan Design pattern. Nah temen-temen mungkin binggung apa itu design pattern ya khan?...
+
+Ok design pattern in software engineering simple wordnya itu solusi untuk meminimalisir duplication (menulis hal yang sama dengan satu tujuan). tapi gak usah di pusingin dulu perlahan-lahan dengan pengalan menulis koding dan memahami isinya pasti nanti akan paham dengan sendirinya.
+
+Back to topic, seperti yang saya katakan tadi saya mau membuat sebuah interface dulu sebagai template dengan nama `CrudRepository` yang saya simpan di package `com.maryanto.dimas.bootcamp.dao` seperti berikut:
+
+{% highlight java linenos %}
+package com.maryanto.dimas.bootcamp.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Optional;
+
+public interface CrudRepository<T, ID> {
+
+    public T save(T value) throws SQLException;
+
+    public T update(T value) throws SQLException;
+
+    public Boolean removeById(ID value) throws SQLException;
+
+    public Optional<T> findById(ID value) throws SQLException;
+
+    public List<T> findAll() throws SQLException;
+
+    public List<T> findAll(Long start, Long limit, Long orderIndex, String orderDirection, T param) throws SQLException;
+}
+{% endhighlight %}
+
+Ok setelah itu kita buat kelas baru dengan nama `ExampleTable` yang di simpan di package `com.maryanto.dimas.bootcamp.entity` seperti berikut:
+
+{% highlight java linenos %}
+package com.maryanto.dimas.bootcamp.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.sql.Date;
+import java.sql.Timestamp;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ExampleTable {
+
+    private String id;
+    private String name;
+    private Date createdDate;
+    private Timestamp createdTime;
+    private Boolean active;
+    private Long counter;
+    private BigDecimal currency;
+    private String description;
+    private Float floating;
+}
+{% endhighlight %}
+
+Jadi class `ExampleTable` tersebut merepresentasikan columns yang ada pada table `example_table` pada database `bootcamp`. ok tahap selanjutnya adalah kita membuat repository / Data Access Object atau singkatannya DAO. buat kelas dengan nama `ExampleTableDao` pada package `com.maryanto.dimas.dao` seperti berikut:
+
+{% highlight java linenos %}
+package com.maryanto.dimas.bootcamp.dao;
+
+import com.maryanto.dimas.bootcamp.entity.ExampleTable;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+public class ExampleTableDao implements CrudRepository<ExampleTable, String> {
+
+    private Connection connection;
+
+    public ExampleTableDao(Connection connection) {
+        this.connection = connection;
+    }
+
+    @Override
+    public List<ExampleTable> findAll() throws SQLException {
+        List<ExampleTable> list = new ArrayList<>();
+        //language=PostgreSQL
+        String query = "select id           as id,\n" +
+                "       name         as name,\n" +
+                "       created_date as createdDate,\n" +
+                "       created_time as createdTime,\n" +
+                "       is_active    as active,\n" +
+                "       counter      as counter,\n" +
+                "       currency     as currency,\n" +
+                "       description  as description,\n" +
+                "       floating     as floating\n" +
+                "from example_table";
+        Statement statement = connection.createStatement();
+        ResultSet resultSet = statement.executeQuery(query);
+        while (resultSet.next()) {
+            ExampleTable data = new ExampleTable(
+                    resultSet.getString("id"),
+                    resultSet.getString("name"),
+                    resultSet.getDate("createdDate"),
+                    resultSet.getTimestamp("createdTime"),
+                    resultSet.getObject("active", Boolean.class),
+                    resultSet.getLong("counter"),
+                    resultSet.getBigDecimal("currency"),
+                    resultSet.getString("description"),
+                    resultSet.getFloat("floating")
+            );
+            list.add(data);
+        }
+
+        resultSet.close();
+        statement.close();
+        return list;
+    }
+
+    // other method goes here
+}
+{% endhighlight %}
+
+Nah jadi dari sample koding diatas, itu kita melakukan execute query sebagai berikut:
+
+```sql
+select  id           as id,
+        name         as name,
+        created_date as createdDate,
+        created_time as createdTime,
+        is_active    as active,
+        counter      as counter,
+        currency     as currency,
+        description  as description,
+        floating     as floating
+from example_table
+```
+
+yang di simpan dalam kelas String kemudian di execute menggunakan object `java.sql.Statement`. perintah menggunakan object statement biasanya digunakan untuk query yang tidak membutuhkan parameter / argument contohnya query seperti berikut:
+
+```sql
+select  id           as id,
+        name         as name,
+        created_date as createdDate,
+        created_time as createdTime,
+        is_active    as active,
+        counter      as counter,
+        currency     as currency,
+        description  as description,
+        floating     as floating
+from example_table 
+where id = '001'
+```
+
+Nah dengan query tersebut klo misalnya nilai `id = '001'` bernilai statis itu tidak jadi masalah, tetapi jika  nilainya bisa ber-ubah-ubah sebaiknya jangan menggunakan object `Statement`. Terkadang saya menemukan koding yang klo di tulis di dengan menggunakan JDBC seperti berikut:
+
+```java
+import java.sql.*;
+
+public class ExampleYangSalah  {
+
+    public ExampleTable findById(String id) throws SQLException {
+        // ini adalah contoh yang salah
+        String query = "select id           as id,\n" +
+                "       name         as name,\n" +
+                "       created_date as createdDate,\n" +
+                "       created_time as createdTime,\n" +
+                "       is_active    as active,\n" +
+                "       counter      as counter,\n" +
+                "       currency     as currency,\n" +
+                "       description  as description,\n" +
+                "       floating     as floating\n" +
+                "from example_table\n" +
+                "where id = '" + id + "'";
+        }
+    }
+}
+```
+
+Nah kenapa saya bilang salah, karena ini bisa kena serangan yang namanya SQL Injection. buat yang belum paham silahkan [baca di sini](https://id.wikipedia.org/wiki/Injeksi_SQL). Akan lebih baik jika kita menggunakan object `PreparedStatement`.
