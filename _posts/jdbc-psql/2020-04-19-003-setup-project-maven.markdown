@@ -90,11 +90,23 @@ Kemudian setelah project tergenerate oleh apache maven, kita update dependency u
 
     <!-- config project -->
 
-    <dependencies>        
+    <dependencies> 
+        <!-- enabled setter & getter method automaticly generated -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.10</version>
+        </dependency>
+        <!-- enabled logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.5</version>
         </dependency>
 
         <!-- other dependecy -->
