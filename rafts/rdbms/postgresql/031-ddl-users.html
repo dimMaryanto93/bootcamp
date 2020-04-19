@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Bootcamp to be a Software Engineer - DDL - Membuat User pada Database PostgreSQL </title>
+    <meta name="description" content="Perintah ddl untuk management user authentication di PostgreSQL terdiri dari:">
+    <meta property="og:url" content="/bootcamp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bootcamp to be a Software Engineer" />
+    <meta property="og:description" content="Perintah ddl untuk management user authentication di PostgreSQL terdiri dari:"
+/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/bootcamp/assets/materialize-css/css/materialize.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/devicons/css/devicons.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/bootcamp/assets/sintax.css" />
+
+<script src="/bootcamp/assets/jquery.min.js"></script>
+<script src="/bootcamp/assets/materialize-css/js/materialize.min.js "></script>
+
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+        $('#article-body img').addClass('materialboxed').addClass('responsive-img');
+    });
+</script>
+</head>
+<body>
+<header>
+    <nav class="red darken-3">
+    <div class="nav-wrapper container">
+        <a href="/bootcamp/" class="brand-logo">
+            <i class="material-icons left">home</i> Bootcamp to be a Software Engineer
+        </a>
+    </div>
+</nav>
+<script>
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $('.materialboxed').materialbox();
+    });
+</script>
+</header>
+
+<section>
+    <div id="postBody" class="row container">
+    <div class="col s12 m12 l8">
+        <div>
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section id="article-body">
+        <div class="center">
+            <h1>
+                DDL - Membuat User pada Database PostgreSQL
+            </h1>
+        </div>
+        <div>
+            <div class="post-content"
+                 style="font-family: 'Source Code Pro', 'Times New Roman', 'Arial'; text-align: justify; font-size: large">
+                <p>Perintah ddl untuk management user authentication di PostgreSQL terdiri dari:</p>
+
+<ol>
+  <li><strong>CREATE</strong>, untuk membuat Authentication user agar dapat mengkases Object yang terdapat di PostgreSQL.</li>
+  <li><strong>DROP</strong>, untuk menghapus Authentication User</li>
+  <li><strong>ALTER</strong>, untuk merubah role, password, dan lain-lain yang berkaitan tentang role user tersebut.</li>
+  <li><strong>GRANT</strong>, untuk memberikan ijin akses terhadap object di database, contohnya klo kita punya table dalam sebuah database tetapi usernya kita gunakan tidak bisa melihat tabelnya maka kita harus meminta ijin kepada pemilik table tersebut untuk grant user kita supaya bisa baca atau tulis ke table tersebut.</li>
+  <li><strong>REVOKE</strong>, untuk mencabut ijik akses terhadap object di dalam user tersebut;</li>
+</ol>
+
+<p>Contoh penggunaan:</p>
+
+<h2 id="create">Create</h2>
+
+<p>Perintah <code class="highlighter-rouge">create</code> digunakan Untuk membuat user yang digunakan untuk login dari Database client editor seperti <code class="highlighter-rouge">psql</code>, <code class="highlighter-rouge">DataGrip</code>, <code class="highlighter-rouge">PgAdmin</code>, dan lain-lain. Kita bisa menggunakan perintah:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">USER</span> <span class="n">role_name</span> <span class="k">WITH</span> <span class="n">LOGIN</span> <span class="n">PASSWORD</span> <span class="s1">'your-password'</span> <span class="k">CREATEDB</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Dengan perintah tersebut kita membuat user dengan nama <code class="highlighter-rouge">role_name</code> dan passwordnya <code class="highlighter-rouge">your-password</code> hanya dapat login dan membuat database saja.</p>
+
+<h2 id="drop">DROP</h2>
+
+<p>Perintah <code class="highlighter-rouge">drop</code> digunakan untuk menghapus data user, kita bisa menggunakan perintah:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">USER</span> <span class="n">role_name</span>
+</code></pre></div></div>
+
+<p>dengan perintah tersebut kita menghapus user dengan username <code class="highlighter-rouge">role_name</code>.</p>
+
+<h2 id="alter">ALTER</h2>
+
+<p>Perintah <code class="highlighter-rouge">alter</code> digunakan untuk merubah role dari user tersebut contohnya merubah password</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">USER</span> <span class="n">role_name</span> <span class="n">identified</span> <span class="k">by</span> <span class="s1">'your-new-password`
+</span></code></pre></div></div>
+
+<h2 id="grant">GRANT</h2>
+
+<p>Perintah <code class="highlighter-rouge">grant</code> digunakan untuk memberikan ijin user tersebut mengkases database/table yang dimiliki oleh orang lain. Contohnya seperti berikut:</p>
+
+<pre><code class="language-postgresql-console"># login using user 'postgres' database 'bootcamp'
+psql -h localhost -U postgres bootcamp
+
+psql (12.1)
+Type "help" for help.
+
+# create user 
+bootcamp=# create user role_name with login password 'admin';
+CREATE ROLE
+
+# show tables using user 'postgres'
+bootcamp=# \d
+                       List of relations
+  Schema  |             Name              |   Type   |  Owner   
+----------+-------------------------------+----------+----------
+ bootcamp | countries                     | table    | postgres
+ bootcamp | departments                   | table    | postgres
+ bootcamp | departments_department_id_seq | sequence | postgres
+ bootcamp | employees                     | table    | postgres
+ bootcamp | employees_employee_id_seq     | sequence | postgres
+ bootcamp | flyway_schema_history         | table    | postgres
+ bootcamp | job_history                   | table    | postgres
+ bootcamp | jobs                          | table    | postgres
+ bootcamp | locations                     | table    | postgres
+ bootcamp | locations_location_id_seq     | sequence | postgres
+ bootcamp | regions                       | table    | postgres
+ bootcamp | regions_region_id_seq         | sequence | postgres
+(12 rows)
+
+# logout
+bootcamp=# \q
+
+# login using new user 'role_name' use database 'bootcamp'
+➜  ~ psql -h localhost -U role_name bootcamp
+Password for user role_name: 
+psql (12.1)
+Type "help" for help.
+
+# show tables using user 'role_name' in database 'bootcamp'
+bootcamp=&gt; \dt bootcamp.*
+                  List of relations
+  Schema  |         Name          | Type  |  Owner   
+----------+-----------------------+-------+----------
+ bootcamp | countries             | table | bootcamp
+ bootcamp | departments           | table | bootcamp
+ bootcamp | employees             | table | bootcamp
+ bootcamp | flyway_schema_history | table | bootcamp
+ bootcamp | job_history           | table | bootcamp
+ bootcamp | jobs                  | table | bootcamp
+ bootcamp | locations             | table | bootcamp
+ bootcamp | regions               | table | bootcamp
+(8 rows)
+
+bootcamp=&gt; select * from bootcamp.employees;
+ERROR:  permission denied for schema bootcamp
+LINE 1: select * from bootcamp.employees;
+</code></pre>
+
+<p>Untuk mengijikan melihat, menulis, dan update data ke semua table yang ada di database <code class="highlighter-rouge">bootcamp</code> kita berikan ijin menggunakan user superuser yaitu <code class="highlighter-rouge">postgres</code> seperti berikut perintahnya:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- ijikan untuk akses database ke user</span>
+<span class="k">grant</span> <span class="k">connect</span> <span class="k">on</span> <span class="k">database</span> <span class="n">bootcamp</span> <span class="k">to</span> <span class="n">role_name</span><span class="p">;</span>
+
+<span class="c1">-- ijinkan untuk akses schema ke user</span>
+<span class="k">grant</span> <span class="k">usage</span> <span class="k">on</span> <span class="k">schema</span> <span class="n">bootcamp</span> <span class="k">to</span> <span class="n">role_name</span><span class="p">;</span>
+
+<span class="c1">-- ijinkan select, insert, update, delete, REFERENCES semua table ke user</span>
+<span class="k">grant</span> <span class="k">all</span> <span class="k">privileges</span> <span class="k">on</span> <span class="k">all</span> <span class="n">tables</span> <span class="k">in</span> <span class="k">schema</span> <span class="n">bootcamp</span> <span class="k">to</span> <span class="n">role_name</span><span class="p">;</span>
+
+<span class="c1">-- ijiknan USAGE | SELECT | UPDATE  semua sequence ke user</span>
+<span class="k">grant</span> <span class="k">all</span> <span class="k">privileges</span> <span class="k">on</span> <span class="k">all</span> <span class="n">sequences</span> <span class="k">in</span> <span class="k">schema</span> <span class="n">bootcamp</span> <span class="k">to</span> <span class="n">role_name</span><span class="p">;</span>
+
+<span class="c1">-- ijinkan EXECUTE semua function ke user</span>
+<span class="k">grant</span> <span class="k">all</span> <span class="k">privileges</span> <span class="k">on</span> <span class="k">all</span> <span class="n">functions</span> <span class="k">in</span> <span class="k">schema</span> <span class="n">bootcamp</span> <span class="k">to</span> <span class="n">role_name</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>berikut hasilnya;</p>
+
+<pre><code class="language-postgresql-console"># login using user 'postgres' database 'bootcamp'
+psql -h localhost -U postgres bootcamp
+
+bootcamp=# grant connect on database bootcamp to role_name;
+GRANT
+
+bootcamp=# grant usage on schema bootcamp to role_name;
+GRANT
+
+bootcamp=# grant all privileges on all tables in schema bootcamp to role_name;
+GRANT
+
+bootcamp=# grant all privileges on all sequences in schema bootcamp to role_name;
+GRANT
+
+
+bootcamp=# \q
+psql -h localhost -U role_name bootcamp
+Password for user role_name: 
+psql (12.1)
+Type "help" for help.
+
+bootcamp=&gt; select * from bootcamp.employees;
+ employee_id | first_name  |  last_name  |  email   |    phone_number    |   job_id   |  salary  | commission_pct | manager_id | department_id 
+-------------+-------------+-------------+----------+--------------------+------------+----------+----------------+------------+---------------
+         100 | Steven      | King        | SKING    | 515.123.4567       | AD_PRES    | 24000.00 |                |            |            90
+         101 | Neena       | Kochhar     | NKOCHHAR | 515.123.4568       | AD_VP      | 17000.00 |                |        100 |            90
+         102 | Lex         | De Haan     | LDEHAAN  | 515.123.4569       | AD_VP      | 17000.00 |                |        100 |            90
+         103 | Alexander   | Hunold      | AHUNOLD  | 590.423.4567       | IT_PROG    |  9000.00 |                |        102 |            60
+         104 | Bruce       | Ernst       | BERNST   | 590.423.4568       | IT_PROG    |  6000.00 |                |        103 |            60
+         105 | David       | Austin      | DAUSTIN  | 590.423.4569       | IT_PROG    |  4800.00 |                |        103 |            60
+         106 | Valli       | Pataballa   | VPATABAL | 590.423.4560       | IT_PROG    |  4800.00 |                |        103 |            60
+(107 rows)
+</code></pre>
+
+            </div>
+        </div>
+    </section>
+</article>
+
+        </div>
+        <hr />
+        <div>
+            
+                <div>
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h2>Referensi</h2>
+                        </li>
+                                               
+                            <a class="collection-item" href="https://www.postgresql.org/docs/10/sql-createuser.html" target="_blank">https://www.postgresql.org/docs/10/sql-createuser.html</a>
+                        
+                    </ul>                    
+                </div>
+            
+        </div>
+        <div>
+            
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                
+                var disqus_config = function () {
+                    this.page.url = 'http://localhost:4000/bootcamp/rdbms/postgresql/031-ddl-users';
+                    this.page.identifier = '/bootcamp/rdbms/postgresql/031-ddl-users';
+                    console.debug(this.page);
+                };
+                
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://materi-bootcamp.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+            
+        </div>
+    </div>
+    <div class="col s12 m12 l4">
+        <div class="row">
+            <h2>
+                <i class="material-icons">person</i>
+                Dimas Maryanto
+            </h2>
+            <h2>
+                <i class="material-icons">access_time</i>
+                <time datetime="2019-12-30T17:26:24+07:00" itemscope="datePublished">
+                    30 December 2019
+                </time>
+            </h2>
+            <h2>
+                
+            </h2>
+        </div>
+        
+        
+        
+        <div class="row">
+            <ul class="collection with-header">
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <span>Daftar materi
+                        <span class="badge new blue" data-badge-caption="materi">38</span>
+                    </span>
+                    
+                    <p class="title">
+                        POSTGRESQL
+                    </p>
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/001-postgresql-intro">
+                        <span class="badge">21 Nov 17</span>
+                        Pengenalan RDBMS PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/004-sql-intro">
+                        <span class="badge">26 Nov 17</span>
+                        Pengenalan Structural Query Language (SQL)
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/003-install-postgresql-win10">
+                        <span class="badge">26 Nov 17</span>
+                        How to install PostgreSQL in Windows10
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/003-install-postgresql-fedora">
+                        <span class="badge">26 Nov 17</span>
+                        How install PostgreSQL & PgAdmin3 in Fedora 25
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/002-create-an-schema">
+                        <span class="badge">26 Nov 17</span>
+                        Persiapan belajar PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/005-select">
+                        <span class="badge">27 Nov 17</span>
+                        Perintah select dalam SQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/006-column-alias">
+                        <span class="badge">27 Nov 17</span>
+                        Pemberian alias pada kolom atau tabel
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/007-math-operations">
+                        <span class="badge">27 Nov 17</span>
+                        Operasi matematika di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/009-concatenation">
+                        <span class="badge">08 Nov 18</span>
+                        Perintah select dengan Concatenation
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/010-distinct">
+                        <span class="badge">08 Nov 18</span>
+                        Klausa distinct pada SQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/008-coalesce">
+                        <span class="badge">08 Nov 18</span>
+                        Using coalesce to handle Null value on PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/010-where">
+                        <span class="badge">09 Nov 18</span>
+                        Filtering data dengan where klausa di SQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/011-where-operator">
+                        <span class="badge">09 Nov 18</span>
+                        Operator pada klausa where di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/012-logic-statement">
+                        <span class="badge">10 Nov 18</span>
+                        Logical statement di PostgreSQl
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/013-order-by">
+                        <span class="badge">10 Nov 18</span>
+                        Mengurutkan data menggunakan Order By di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/014-limit-offset">
+                        <span class="badge">10 Nov 18</span>
+                        Limit dan Offset data di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/015-quis-section-1">
+                        <span class="badge">10 Nov 18</span>
+                        Time is your practice
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/016-single-row-function">
+                        <span class="badge">10 Nov 18</span>
+                        Single Row Function di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/017-group-function">
+                        <span class="badge">10 Nov 18</span>
+                        Group Function di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/018-group-by">
+                        <span class="badge">10 Nov 18</span>
+                        Klausa Group By di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/019-group-by-having">
+                        <span class="badge">12 Nov 18</span>
+                        Klausa having dan where dalam select
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/020-join">
+                        <span class="badge">19 Nov 18</span>
+                        Menggabungkan data dari beberapa tabel dengan Join
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/021-natural-join">
+                        <span class="badge">19 Nov 18</span>
+                        Mamahami perintah Natural Join di PostgreSQl
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/022-inner-join">
+                        <span class="badge">20 Nov 18</span>
+                        Memahami perintah Inner Join di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/023-outter-join">
+                        <span class="badge">20 Nov 18</span>
+                        Memahami perintah Outer Join di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/024-self-join">
+                        <span class="badge">20 Nov 18</span>
+                        Memahami perintah Self Join di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/026-case-when-else">
+                        <span class="badge">20 Nov 18</span>
+                        Seleksi dengan Case When di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/025-subquery">
+                        <span class="badge">20 Nov 18</span>
+                        Sub Query dalam PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/027-quis-section-2">
+                        <span class="badge">21 Nov 18</span>
+                        Time is your practice part 2
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/028-dml">
+                        <span class="badge">29 Dec 19</span>
+                        Data Manipulation Language (DML) di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/029-tcl">
+                        <span class="badge">29 Dec 19</span>
+                        Transaction Control Language di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/030-ddl">
+                        <span class="badge">30 Dec 19</span>
+                        Data Definition Language (DDL) di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <div>
+                        <span class="badge">30 Dec 19</span>
+                        DDL - Membuat User pada Database PostgreSQL
+                    </div>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/032-ddl-schema">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management schema di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/033-ddl-tables">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management Tabel di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/034-ddl-constraints">
+                        <span class="badge">02 Jan 20</span>
+                        DDL - Macam-macam Constraint pada Database PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/035-ddl-primary-key-generator-value">
+                        <span class="badge">03 Jan 20</span>
+                        DDL - Generator default value untuk Primary Key
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/037-quis-section-3">
+                        <span class="badge">06 Jan 20</span>
+                        Time is your to practice part 3
+                    </a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="row">
+            
+            <ul class="collection with-header">
+                <li class="collapsible-header">
+                    Last Posting
+                </li>
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/java-jdbc-psql.png" alt="" class="circle">
+                    <a href="/bootcamp/java/jdbc/postgresql/jdbc-psql-001-intro">
+                        <span class="badge">14 Apr 20</span>
+                        Pengenalan JDBC dengan PostgreSQL Database
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/037-quis-section-3">
+                        <span class="badge">06 Jan 20</span>
+                        Time is your to practice part 3
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/035-ddl-primary-key-generator-value">
+                        <span class="badge">03 Jan 20</span>
+                        DDL - Generator default value untuk Primary Key
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/034-ddl-constraints">
+                        <span class="badge">02 Jan 20</span>
+                        DDL - Macam-macam Constraint pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/033-ddl-tables">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management Tabel di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/032-ddl-schema">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management schema di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/031-ddl-users">
+                        <span class="badge">30 Dec 19</span>
+                        DDL - Membuat User pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/030-ddl">
+                        <span class="badge">30 Dec 19</span>
+                        Data Definition Language (DDL) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/029-tcl">
+                        <span class="badge">29 Dec 19</span>
+                        Transaction Control Language di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/028-dml">
+                        <span class="badge">29 Dec 19</span>
+                        Data Manipulation Language (DML) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+        <div class="row">
+            <div class="fixed-action-btn horizontal click-to-toggle">
+                <a class="btn-floating btn-large red">
+                    <i class="material-icons">share</i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating blue" href="https://twitter.com/intent/tweet?text=DDL - Membuat User pada Database PostgreSQL&via=dimMaryanto93&url=http://localhost:4000/rdbms/postgresql/031-ddl-users">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue darken-1" target="_blank" href="https://www.facebook.com/dialog/share?app_id=&display=popup&href=http://localhost:4000/rdbms/postgresql/031-ddl-users&redirect_uri=http://localhost:4000/rdbms/postgresql/031-ddl-users">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue" href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/rdbms/postgresql/031-ddl-users&title=DDL - Membuat User pada Database PostgreSQL&source=Bootcamp to be a Software Engineer">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating red" href="https://plus.google.com/share?url=http://localhost:4000/rdbms/postgresql/031-ddl-users&hl=en-US"
+                            onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>

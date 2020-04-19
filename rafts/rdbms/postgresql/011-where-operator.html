@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Bootcamp to be a Software Engineer - Operator pada klausa where di PostgreSQL </title>
+    <meta name="description" content="Operator kondisi pada where di PostgreSQL teridiri dari:">
+    <meta property="og:url" content="/bootcamp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bootcamp to be a Software Engineer" />
+    <meta property="og:description" content="Operator kondisi pada where di PostgreSQL teridiri dari:"
+/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/bootcamp/assets/materialize-css/css/materialize.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/devicons/css/devicons.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/bootcamp/assets/sintax.css" />
+
+<script src="/bootcamp/assets/jquery.min.js"></script>
+<script src="/bootcamp/assets/materialize-css/js/materialize.min.js "></script>
+
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+        $('#article-body img').addClass('materialboxed').addClass('responsive-img');
+    });
+</script>
+</head>
+<body>
+<header>
+    <nav class="red darken-3">
+    <div class="nav-wrapper container">
+        <a href="/bootcamp/" class="brand-logo">
+            <i class="material-icons left">home</i> Bootcamp to be a Software Engineer
+        </a>
+    </div>
+</nav>
+<script>
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $('.materialboxed').materialbox();
+    });
+</script>
+</header>
+
+<section>
+    <div id="postBody" class="row container">
+    <div class="col s12 m12 l8">
+        <div>
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section id="article-body">
+        <div class="center">
+            <h1>
+                Operator pada klausa where di PostgreSQL
+            </h1>
+        </div>
+        <div>
+            <div class="post-content"
+                 style="font-family: 'Source Code Pro', 'Times New Roman', 'Arial'; text-align: justify; font-size: large">
+                <p>Operator kondisi pada where di PostgreSQL teridiri dari:</p>
+
+<table class="bordered striped">
+  <tbody>
+    <tr>
+      <td>Symbol</td>
+      <td>Keterangan</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">=</code></td>
+      <td>Melakukan perbandingan dengan nilai yang <strong>bernilai sama</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">!=</code></td>
+      <td>Melakukan perbandingan dengan nilai yang <strong>bernilai tidak sama</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&lt;&gt;</code></td>
+      <td>Melakukan perbandingan dengan nilai yang <strong>bernilai tidak sama</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&gt;</code></td>
+      <td>Melakukan perbandingan terhadap 2 variable apakah variable yang satu <strong>lebih besar</strong> dari variable lainnya</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&gt;=</code></td>
+      <td>Melakukan perbandingna terhadap 2 variable apakah variable yang satu <strong>lebih besar atau sama dengan</strong> variable lainnya</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&lt;</code></td>
+      <td>Kebalikan dari symbol <code class="highlighter-rouge">&gt;</code> yaitu <strong>lebih kecil</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&lt;=</code></td>
+      <td>Kebalikan dari symbol <code class="highlighter-rouge">&gt;=</code> yaitu <strong>lebih kecil atau sama dengan</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">LIKE</code></td>
+      <td>Melakukan perbadingan dengan nilai yang bernilai sama menggunakan expresion seperti <code class="highlighter-rouge">%</code>, <code class="highlighter-rouge">_</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">IN</code></td>
+      <td>Melakukan perbandingan terhadap multi data</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">BETWEEN ... AND ...</code></td>
+      <td>Melakukan perbandingan diantara nilai terbesar dan terkecil</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">IS NULL</code></td>
+      <td>Mencari nilai yang <strong>bernilai null</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ok sekarang kita bahas satu persatu operator-operator yang telah saya jabarkan diatas untuk memperjelas dan cara bagimana contoh kasusnya.</p>
+
+<h1 id="operator-equals">Operator equals</h1>
+
+<p>Berikut contoh kasus, untuk mencari data pegawai dengan kode yang sama dengan <code class="highlighter-rouge">100</code> berikut querynya:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">employee_id</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut ini hasilnya:</p>
+
+<pre><code class="language-postgresql-console"> employee_id | first_name | last_name | email | phone_number | job_id  |  salary  | 
+-------------+------------+-----------+-------+--------------+---------+----------+
+         100 | Steven     | King      | SKING | 515.123.4567 | AD_PRES | 24000.00 |
+(1 row)
+</code></pre>
+
+<h1 id="operator-not-equals">Operator not equals</h1>
+
+<p>Berikut contoh kasus, untuk mencari data pegawai dengan jabatan yang bukan merupakan <code class="highlighter-rouge">IT_PROG</code>. berikut querynya:</p>
+
+<p>Menggunakan operator <code class="highlighter-rouge">&lt;&gt;</code></p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">job_id</span> <span class="o">&lt;&gt;</span> <span class="s1">'IT_PROG'</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Menggunakan operator <code class="highlighter-rouge">!=</code></p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">job_id</span> <span class="o">!=</span> <span class="s1">'IT_PROG'</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut ini hasilnya:</p>
+
+<pre><code class="language-postgresql-console"> employee_id | first_name  |  last_name  |  email   |    phone_number    |   job_id   |  salary  |
+-------------+-------------+-------------+----------+--------------------+------------+----------+
+         100 | Steven      | King        | SKING    | 515.123.4567       | AD_PRES    | 24000.00 |
+         101 | Neena       | Kochhar     | NKOCHHAR | 515.123.4568       | AD_VP      | 17000.00 |
+         102 | Lex         | De Haan     | LDEHAAN  | 515.123.4569       | AD_VP      | 17000.00 |
+         108 | Nancy       | Greenberg   | NGREENBE | 515.124.4569       | FI_MGR     | 12000.00 |
+         109 | Daniel      | Faviet      | DFAVIET  | 515.124.4169       | FI_ACCOUNT |  9000.00 |
+         110 | John        | Chen        | JCHEN    | 515.124.4269       | FI_ACCOUNT |  8200.00 |
+         111 | Ismael      | Sciarra     | ISCIARRA | 515.124.4369       | FI_ACCOUNT |  7700.00 |
+         112 | Jose Manuel | Urman       | JMURMAN  | 515.124.4469       | FI_ACCOUNT |  7800.00 |
+         113 | Luis        | Popp        | LPOPP    | 515.124.4567       | FI_ACCOUNT |  6900.00 |
+         114 | Den         | Raphaely    | DRAPHEAL | 515.127.4561       | PU_MAN     | 11000.00 |
+         115 | Alexander   | Khoo        | AKHOO    | 515.127.4562       | PU_CLERK   |  3100.00 |
+         116 | Shelli      | Baida       | SBAIDA   | 515.127.4563       | PU_CLERK   |  2900.00 |
+         117 | Sigal       | Tobias      | STOBIAS  | 515.127.4564       | PU_CLERK   |  2800.00 |
+         118 | Guy         | Himuro      | GHIMURO  | 515.127.4565       | PU_CLERK   |  2600.00 |
+         119 | Karen       | Colmenares  | KCOLMENA | 515.127.4566       | PU_CLERK   |  2500.00 |
+...
+(102 rows)
+</code></pre>
+
+<h1 id="operator-more-than">Operator more than</h1>
+
+<p>Berikut contoh kasus, untuk mencari data pegawai dengan gaji yang lebih besar dari <code class="highlighter-rouge">12000</code>. berikut querynya:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">salary</span> <span class="o">&gt;</span> <span class="mi">12000</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut hasilnya:</p>
+
+<pre><code class="language-postgresql-console"> employee_id | first_name | last_name |  email   |    phone_number    | job_id  |  salary  
+-------------+------------+-----------+----------+--------------------+---------+----------
+         100 | Steven     | King      | SKING    | 515.123.4567       | AD_PRES | 24000.00
+         101 | Neena      | Kochhar   | NKOCHHAR | 515.123.4568       | AD_VP   | 17000.00
+         102 | Lex        | De Haan   | LDEHAAN  | 515.123.4569       | AD_VP   | 17000.00
+         145 | John       | Russell   | JRUSSEL  | 011.44.1344.429268 | SA_MAN  | 14000.00
+         146 | Karen      | Partners  | KPARTNER | 011.44.1344.467268 | SA_MAN  | 13500.00
+         201 | Michael    | Hartstein | MHARTSTE | 515.123.5555       | MK_MAN  | 13000.00
+(6 rows)
+</code></pre>
+
+<h1 id="operator-bigger-equals-to">Operator bigger equals to</h1>
+
+<p>Berikut contoh kasus, untuk mencari data pegawai dengan gaji yang lebih besar dari <code class="highlighter-rouge">24000</code>. in case gaji <code class="highlighter-rouge">24000</code> adalah gaji paling besar jika di cari dengan menggunakan operator <code class="highlighter-rouge">&gt;</code> maka hasilnya <code class="highlighter-rouge">(0 rows)</code> berikut querynya:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">salary</span> <span class="o">&gt;=</span> <span class="mi">24000</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut hasilnya:</p>
+
+<pre><code class="language-postgresql-console"> employee_id | first_name | last_name | email | phone_number | job_id  |  salary  |
+-------------+------------+-----------+-------+--------------+---------+----------+
+         100 | Steven     | King      | SKING | 515.123.4567 | AD_PRES | 24000.00 |
+(1 row)
+</code></pre>
+
+<h1 id="operator-less-then--smaller-equal-to">Operator less then &amp; smaller equal to</h1>
+
+<p>Untuk operator <code class="highlighter-rouge">&lt;</code> dan <code class="highlighter-rouge">&lt;=</code> ini kurang lebih sama seperti operator <code class="highlighter-rouge">&gt;</code> hanya kebalikannya saja yaitu yang lebih kecil.</p>
+
+<h1 id="operator-like">Operator like</h1>
+
+<p>Operator like biasanya digunakan untuk tipe data <code class="highlighter-rouge">varchar</code> atau string, ada 2 expresion yang kita bisa gunakan di operator ini yaitu</p>
+
+<ol>
+  <li><code class="highlighter-rouge">_</code> atau underscore, digunakan untuk mewakili expresion satu karakter.</li>
+  <li><code class="highlighter-rouge">%</code> atau persent, digunakan untuk mewakili expresion beberapa karakter.</li>
+</ol>
+
+<p>Contoh kasus untuk expresion <code class="highlighter-rouge">%</code>, saya ingin mencari nama depan karyawan yang diawali oleh huruf <code class="highlighter-rouge">A</code>. Berikut querynya:</p>
+
+<figure class="highlight"><pre><code class="language-sqll" data-lang="sqll"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>select employee_id, first_name, last_name, email, phone_number, job_id, salary
+from employees 
+where last_name like 'A%;</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut hasilnya:</p>
+
+<pre><code class="language-postgresql-console"> employee_id | first_name | last_name |  email   |    phone_number    |  job_id  |  salary  
+-------------+------------+-----------+----------+--------------------+----------+----------
+         105 | David      | Austin    | DAUSTIN  | 590.423.4569       | IT_PROG  |  4800.00
+         130 | Mozhe      | Atkinson  | MATKINSO | 650.124.6234       | ST_CLERK |  2800.00
+         166 | Sundar     | Ande      | SANDE    | 011.44.1346.629268 | SA_REP   |  6400.00
+         174 | Ellen      | Abel      | EABEL    | 011.44.1644.429267 | SA_REP   | 11000.00
+(4 rows)
+
+hr=# 
+</code></pre>
+
+<p>Contoh kasus untuk expresion <code class="highlighter-rouge">_</code>, saya ingin mencari huruf ke 2 dari kolom <code class="highlighter-rouge">job_id</code> di tabel <code class="highlighter-rouge">jobs</code> mengadung <code class="highlighter-rouge">T</code>. Berikut querynya:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="o">*</span> 
+<span class="k">from</span> <span class="n">jobs</span> 
+<span class="k">where</span> <span class="n">job_id</span> <span class="k">like</span> <span class="s1">'_T%'</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut hasilnya:</p>
+
+<pre><code class="language-postgresql-console">  job_id  |   job_title   | min_salary | max_salary 
+----------+---------------+------------+------------
+ ST_MAN   | Stock Manager |       5500 |       8500
+ ST_CLERK | Stock Clerk   |       2000 |       5000
+ IT_PROG  | Programmer    |       4000 |      10000
+(3 rows)
+</code></pre>
+
+<h1 id="operator-in">Operator IN</h1>
+
+<p>Operator ini, agak berbeda dari sebelumnya jadi membandingkan banyak nilai contoh kasusnya seperti berikut, Jadi saya ingin mencari data karyawan yang bekerja di <code class="highlighter-rouge">department_id = [10, 20, 90]</code> biasanya cara simple untuk solusi seperti dilakuan satu persatu yaitu dengan <code class="highlighter-rouge">select .... where departement_id = 10</code>, kemudian <code class="highlighter-rouge">select ... where departement_id = 20</code> dan seterusnya. Alangkah baiknya kita menggunakan operator <code class="highlighter-rouge">IN</code> seperti berikut:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span> <span class="n">department_id</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">department_id</span> <span class="k">IN</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">90</span><span class="p">);</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut hasilnya:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">employee_id</span> <span class="o">|</span> <span class="n">first_name</span> <span class="o">|</span> <span class="n">last_name</span> <span class="o">|</span>  <span class="n">email</span>   <span class="o">|</span> <span class="n">phone_number</span> <span class="o">|</span> <span class="n">job_id</span>  <span class="o">|</span>  <span class="n">salary</span>  <span class="o">|</span> <span class="n">department_id</span> 
+<span class="c1">-------------+------------+-----------+----------+--------------+---------+----------+---------------</span>
+         <span class="mi">100</span> <span class="o">|</span> <span class="n">Steven</span>     <span class="o">|</span> <span class="n">King</span>      <span class="o">|</span> <span class="n">SKING</span>    <span class="o">|</span> <span class="mi">515</span><span class="p">.</span><span class="mi">123</span><span class="p">.</span><span class="mi">4567</span> <span class="o">|</span> <span class="n">AD_PRES</span> <span class="o">|</span> <span class="mi">24000</span><span class="p">.</span><span class="mi">00</span> <span class="o">|</span>            <span class="mi">90</span>
+         <span class="mi">101</span> <span class="o">|</span> <span class="n">Neena</span>      <span class="o">|</span> <span class="n">Kochhar</span>   <span class="o">|</span> <span class="n">NKOCHHAR</span> <span class="o">|</span> <span class="mi">515</span><span class="p">.</span><span class="mi">123</span><span class="p">.</span><span class="mi">4568</span> <span class="o">|</span> <span class="n">AD_VP</span>   <span class="o">|</span> <span class="mi">17000</span><span class="p">.</span><span class="mi">00</span> <span class="o">|</span>            <span class="mi">90</span>
+         <span class="mi">102</span> <span class="o">|</span> <span class="n">Lex</span>        <span class="o">|</span> <span class="n">De</span> <span class="n">Haan</span>   <span class="o">|</span> <span class="n">LDEHAAN</span>  <span class="o">|</span> <span class="mi">515</span><span class="p">.</span><span class="mi">123</span><span class="p">.</span><span class="mi">4569</span> <span class="o">|</span> <span class="n">AD_VP</span>   <span class="o">|</span> <span class="mi">17000</span><span class="p">.</span><span class="mi">00</span> <span class="o">|</span>            <span class="mi">90</span>
+         <span class="mi">200</span> <span class="o">|</span> <span class="n">Jennifer</span>   <span class="o">|</span> <span class="n">Whalen</span>    <span class="o">|</span> <span class="n">JWHALEN</span>  <span class="o">|</span> <span class="mi">515</span><span class="p">.</span><span class="mi">123</span><span class="p">.</span><span class="mi">4444</span> <span class="o">|</span> <span class="n">AD_ASST</span> <span class="o">|</span>  <span class="mi">4400</span><span class="p">.</span><span class="mi">00</span> <span class="o">|</span>            <span class="mi">10</span>
+         <span class="mi">201</span> <span class="o">|</span> <span class="n">Michael</span>    <span class="o">|</span> <span class="n">Hartstein</span> <span class="o">|</span> <span class="n">MHARTSTE</span> <span class="o">|</span> <span class="mi">515</span><span class="p">.</span><span class="mi">123</span><span class="p">.</span><span class="mi">5555</span> <span class="o">|</span> <span class="n">MK_MAN</span>  <span class="o">|</span> <span class="mi">13000</span><span class="p">.</span><span class="mi">00</span> <span class="o">|</span>            <span class="mi">20</span>
+         <span class="mi">202</span> <span class="o">|</span> <span class="n">Pat</span>        <span class="o">|</span> <span class="n">Fay</span>       <span class="o">|</span> <span class="n">PFAY</span>     <span class="o">|</span> <span class="mi">603</span><span class="p">.</span><span class="mi">123</span><span class="p">.</span><span class="mi">6666</span> <span class="o">|</span> <span class="n">MK_REP</span>  <span class="o">|</span>  <span class="mi">6000</span><span class="p">.</span><span class="mi">00</span> <span class="o">|</span>            <span class="mi">20</span>
+<span class="p">(</span><span class="mi">6</span> <span class="k">rows</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="operator-between">Operator between</h1>
+
+<p>Operator <code class="highlighter-rouge">BETWEEN</code> digunakan untuk memfilter dengan interval/rentang tertentu diantar nilai terkecil dan terbesar. contoh kasusnya, Saya mau menampilkan data yang karywan yang memiliki gaji dari <code class="highlighter-rouge">4000</code> s/d <code class="highlighter-rouge">6000</code>. Berikut querynya:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span> <span class="n">department_id</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">salary</span> <span class="k">between</span> <span class="mi">4000</span> <span class="k">and</span> <span class="mi">6000</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut hasilnya:</p>
+
+<pre><code class="language-postgresql-console"> employee_id | first_name | last_name |  email   | phone_number |  job_id  | salary  | department_id 
+-------------+------------+-----------+----------+--------------+----------+---------+---------------
+         104 | Bruce      | Ernst     | BERNST   | 590.423.4568 | IT_PROG  | 6000.00 |            60
+         105 | David      | Austin    | DAUSTIN  | 590.423.4569 | IT_PROG  | 4800.00 |            60
+         106 | Valli      | Pataballa | VPATABAL | 590.423.4560 | IT_PROG  | 4800.00 |            60
+         107 | Diana      | Lorentz   | DLORENTZ | 590.423.5567 | IT_PROG  | 4200.00 |            60
+         124 | Kevin      | Mourgos   | KMOURGOS | 650.123.5234 | ST_MAN   | 5800.00 |            50
+         184 | Nandita    | Sarchand  | NSARCHAN | 650.509.1876 | SH_CLERK | 4200.00 |            50
+         185 | Alexis     | Bull      | ABULL    | 650.509.2876 | SH_CLERK | 4100.00 |            50
+         192 | Sarah      | Bell      | SBELL    | 650.501.1876 | SH_CLERK | 4000.00 |            50
+         200 | Jennifer   | Whalen    | JWHALEN  | 515.123.4444 | AD_ASST  | 4400.00 |            10
+         202 | Pat        | Fay       | PFAY     | 603.123.6666 | MK_REP   | 6000.00 |            20
+(10 rows)
+</code></pre>
+
+<h1 id="operator-is-null">Operator is null</h1>
+
+<p>Operator <code class="highlighter-rouge">IS NULL</code> digunakan untuk memfiter data yang bernilai null. Contoh kasusnya, saya mau menampilkan data karywan yang tidak memiliki manager. Berikut querynya:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">select</span> <span class="n">employee_id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span> <span class="n">department_id</span>
+<span class="k">from</span> <span class="n">employees</span> 
+<span class="k">where</span> <span class="n">manager_id</span> <span class="k">is</span> <span class="k">null</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Berikut hasilnya:</p>
+
+<pre><code class="language-postgresql-console"> employee_id | first_name | last_name | email | phone_number | job_id  |  salary  | department_id 
+-------------+------------+-----------+-------+--------------+---------+----------+---------------
+         100 | Steven     | King      | SKING | 515.123.4567 | AD_PRES | 24000.00 |            90
+(1 row)
+</code></pre>
+
+            </div>
+        </div>
+    </section>
+</article>
+
+        </div>
+        <hr />
+        <div>
+            
+        </div>
+        <div>
+            
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                
+                var disqus_config = function () {
+                    this.page.url = 'http://localhost:4000/bootcamp/rdbms/postgresql/011-where-operator';
+                    this.page.identifier = '/bootcamp/rdbms/postgresql/011-where-operator';
+                    console.debug(this.page);
+                };
+                
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://materi-bootcamp.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+            
+        </div>
+    </div>
+    <div class="col s12 m12 l4">
+        <div class="row">
+            <h2>
+                <i class="material-icons">person</i>
+                Dimas Maryanto
+            </h2>
+            <h2>
+                <i class="material-icons">access_time</i>
+                <time datetime="2018-11-09T20:40:04+07:00" itemscope="datePublished">
+                    9 November 2018
+                </time>
+            </h2>
+            <h2>
+                
+            </h2>
+        </div>
+        
+        
+        
+        <div class="row">
+            <ul class="collection with-header">
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <span>Daftar materi
+                        <span class="badge new blue" data-badge-caption="materi">38</span>
+                    </span>
+                    
+                    <p class="title">
+                        POSTGRESQL
+                    </p>
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/001-postgresql-intro">
+                        <span class="badge">21 Nov 17</span>
+                        Pengenalan RDBMS PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/004-sql-intro">
+                        <span class="badge">26 Nov 17</span>
+                        Pengenalan Structural Query Language (SQL)
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/003-install-postgresql-win10">
+                        <span class="badge">26 Nov 17</span>
+                        How to install PostgreSQL in Windows10
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/003-install-postgresql-fedora">
+                        <span class="badge">26 Nov 17</span>
+                        How install PostgreSQL & PgAdmin3 in Fedora 25
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/002-create-an-schema">
+                        <span class="badge">26 Nov 17</span>
+                        Persiapan belajar PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/005-select">
+                        <span class="badge">27 Nov 17</span>
+                        Perintah select dalam SQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/006-column-alias">
+                        <span class="badge">27 Nov 17</span>
+                        Pemberian alias pada kolom atau tabel
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/007-math-operations">
+                        <span class="badge">27 Nov 17</span>
+                        Operasi matematika di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/009-concatenation">
+                        <span class="badge">08 Nov 18</span>
+                        Perintah select dengan Concatenation
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/010-distinct">
+                        <span class="badge">08 Nov 18</span>
+                        Klausa distinct pada SQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/008-coalesce">
+                        <span class="badge">08 Nov 18</span>
+                        Using coalesce to handle Null value on PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/010-where">
+                        <span class="badge">09 Nov 18</span>
+                        Filtering data dengan where klausa di SQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <div>
+                        <span class="badge">09 Nov 18</span>
+                        Operator pada klausa where di PostgreSQL
+                    </div>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/012-logic-statement">
+                        <span class="badge">10 Nov 18</span>
+                        Logical statement di PostgreSQl
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/013-order-by">
+                        <span class="badge">10 Nov 18</span>
+                        Mengurutkan data menggunakan Order By di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/014-limit-offset">
+                        <span class="badge">10 Nov 18</span>
+                        Limit dan Offset data di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/015-quis-section-1">
+                        <span class="badge">10 Nov 18</span>
+                        Time is your practice
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/016-single-row-function">
+                        <span class="badge">10 Nov 18</span>
+                        Single Row Function di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/017-group-function">
+                        <span class="badge">10 Nov 18</span>
+                        Group Function di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/018-group-by">
+                        <span class="badge">10 Nov 18</span>
+                        Klausa Group By di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/019-group-by-having">
+                        <span class="badge">12 Nov 18</span>
+                        Klausa having dan where dalam select
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/020-join">
+                        <span class="badge">19 Nov 18</span>
+                        Menggabungkan data dari beberapa tabel dengan Join
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/021-natural-join">
+                        <span class="badge">19 Nov 18</span>
+                        Mamahami perintah Natural Join di PostgreSQl
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/022-inner-join">
+                        <span class="badge">20 Nov 18</span>
+                        Memahami perintah Inner Join di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/023-outter-join">
+                        <span class="badge">20 Nov 18</span>
+                        Memahami perintah Outer Join di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/024-self-join">
+                        <span class="badge">20 Nov 18</span>
+                        Memahami perintah Self Join di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/026-case-when-else">
+                        <span class="badge">20 Nov 18</span>
+                        Seleksi dengan Case When di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/025-subquery">
+                        <span class="badge">20 Nov 18</span>
+                        Sub Query dalam PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/027-quis-section-2">
+                        <span class="badge">21 Nov 18</span>
+                        Time is your practice part 2
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/028-dml">
+                        <span class="badge">29 Dec 19</span>
+                        Data Manipulation Language (DML) di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/029-tcl">
+                        <span class="badge">29 Dec 19</span>
+                        Transaction Control Language di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/030-ddl">
+                        <span class="badge">30 Dec 19</span>
+                        Data Definition Language (DDL) di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/031-ddl-users">
+                        <span class="badge">30 Dec 19</span>
+                        DDL - Membuat User pada Database PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/032-ddl-schema">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management schema di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/033-ddl-tables">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management Tabel di PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/034-ddl-constraints">
+                        <span class="badge">02 Jan 20</span>
+                        DDL - Macam-macam Constraint pada Database PostgreSQL
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/035-ddl-primary-key-generator-value">
+                        <span class="badge">03 Jan 20</span>
+                        DDL - Generator default value untuk Primary Key
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/rdbms/postgresql/037-quis-section-3">
+                        <span class="badge">06 Jan 20</span>
+                        Time is your to practice part 3
+                    </a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="row">
+            
+            <ul class="collection with-header">
+                <li class="collapsible-header">
+                    Last Posting
+                </li>
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/java-jdbc-psql.png" alt="" class="circle">
+                    <a href="/bootcamp/java/jdbc/postgresql/jdbc-psql-001-intro">
+                        <span class="badge">14 Apr 20</span>
+                        Pengenalan JDBC dengan PostgreSQL Database
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/037-quis-section-3">
+                        <span class="badge">06 Jan 20</span>
+                        Time is your to practice part 3
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/035-ddl-primary-key-generator-value">
+                        <span class="badge">03 Jan 20</span>
+                        DDL - Generator default value untuk Primary Key
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/034-ddl-constraints">
+                        <span class="badge">02 Jan 20</span>
+                        DDL - Macam-macam Constraint pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/033-ddl-tables">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management Tabel di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/032-ddl-schema">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management schema di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/031-ddl-users">
+                        <span class="badge">30 Dec 19</span>
+                        DDL - Membuat User pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/030-ddl">
+                        <span class="badge">30 Dec 19</span>
+                        Data Definition Language (DDL) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/029-tcl">
+                        <span class="badge">29 Dec 19</span>
+                        Transaction Control Language di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/028-dml">
+                        <span class="badge">29 Dec 19</span>
+                        Data Manipulation Language (DML) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+        <div class="row">
+            <div class="fixed-action-btn horizontal click-to-toggle">
+                <a class="btn-floating btn-large red">
+                    <i class="material-icons">share</i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating blue" href="https://twitter.com/intent/tweet?text=Operator pada klausa where di PostgreSQL&via=dimMaryanto93&url=http://localhost:4000/rdbms/postgresql/011-where-operator">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue darken-1" target="_blank" href="https://www.facebook.com/dialog/share?app_id=&display=popup&href=http://localhost:4000/rdbms/postgresql/011-where-operator&redirect_uri=http://localhost:4000/rdbms/postgresql/011-where-operator">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue" href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/rdbms/postgresql/011-where-operator&title=Operator pada klausa where di PostgreSQL&source=Bootcamp to be a Software Engineer">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating red" href="https://plus.google.com/share?url=http://localhost:4000/rdbms/postgresql/011-where-operator&hl=en-US"
+                            onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>

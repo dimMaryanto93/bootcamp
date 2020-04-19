@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Bootcamp to be a Software Engineer - Pengenalan JDBC dengan PostgreSQL Database </title>
+    <meta name="description" content="Hi in this section JDBC dengan PostgreSQL, temen-temen akan belajar mengintegrasikan database PostgreSQL dengan Java untuk mengakses data pada sebuah Tabel d...">
+    <meta property="og:url" content="/bootcamp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bootcamp to be a Software Engineer" />
+    <meta property="og:description" content="Hi in this section JDBC dengan PostgreSQL, temen-temen akan belajar mengintegrasikan database PostgreSQL dengan Java untuk mengakses data pada sebuah Tabel d..."
+/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/bootcamp/assets/materialize-css/css/materialize.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/devicons/css/devicons.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/bootcamp/assets/sintax.css" />
+
+<script src="/bootcamp/assets/jquery.min.js"></script>
+<script src="/bootcamp/assets/materialize-css/js/materialize.min.js "></script>
+
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+        $('#article-body img').addClass('materialboxed').addClass('responsive-img');
+    });
+</script>
+</head>
+<body>
+<header>
+    <nav class="red darken-3">
+    <div class="nav-wrapper container">
+        <a href="/bootcamp/" class="brand-logo">
+            <i class="material-icons left">home</i> Bootcamp to be a Software Engineer
+        </a>
+    </div>
+</nav>
+<script>
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $('.materialboxed').materialbox();
+    });
+</script>
+</header>
+
+<section>
+    <div id="postBody" class="row container">
+    <div class="col s12 m12 l8">
+        <div>
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section id="article-body">
+        <div class="center">
+            <h1>
+                Pengenalan JDBC dengan PostgreSQL Database
+            </h1>
+        </div>
+        <div>
+            <div class="post-content"
+                 style="font-family: 'Source Code Pro', 'Times New Roman', 'Arial'; text-align: justify; font-size: large">
+                <p>Hi in this section <code class="highlighter-rouge">JDBC dengan PostgreSQL</code>, temen-temen akan belajar mengintegrasikan database PostgreSQL dengan Java untuk mengakses data pada sebuah Tabel dalam Database dengan menggunakan teknologi JDBC atau singkatan dari <strong>Java Database Conectivity</strong>.</p>
+
+<p>Adapun materi yang akan kita bahas yaitu,</p>
+
+<ol>
+  <li>Pengenalan JDBC</li>
+  <li>Setup Development Environment
+    <ol>
+      <li>Membuat project dengan Apache Maven</li>
+      <li>Download JDBC client untuk database PostgreSQL</li>
+      <li>Include jar lib ke project</li>
+    </ol>
+  </li>
+  <li>Membuat koneksi ke database menggunakan authentication (user/password)
+    <ol>
+      <li>Memahami fungsi dari object Connection, JDBC URL, DriverClassName</li>
+      <li>Memahami fungsi dari object DataSource</li>
+    </ol>
+  </li>
+  <li>Select dengan object Statement</li>
+  <li>Select dengan object PreparedStatement</li>
+  <li>Transactional dengan JDBC</li>
+  <li>Batch Processing</li>
+  <li>Call store-procedure</li>
+</ol>
+
+<p>Ya dengan materi dasar yang telah paparkan di atas, diharapkan temen-temen bisa memahami pengunaan JDBC dengan PostgreSQL. i hope you enjoy with this course see you in next section.</p>
+
+            </div>
+        </div>
+    </section>
+</article>
+
+        </div>
+        <hr />
+        <div>
+            
+        </div>
+        <div>
+            
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                
+                var disqus_config = function () {
+                    this.page.url = 'http://localhost:4000/bootcamp/java/jdbc/postgresql/jdbc-psql-001-intro';
+                    this.page.identifier = '/bootcamp/java/jdbc/postgresql/jdbc-psql-001-intro';
+                    console.debug(this.page);
+                };
+                
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://materi-bootcamp.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+            
+        </div>
+    </div>
+    <div class="col s12 m12 l4">
+        <div class="row">
+            <h2>
+                <i class="material-icons">person</i>
+                Dimas Maryanto
+            </h2>
+            <h2>
+                <i class="material-icons">access_time</i>
+                <time datetime="2020-04-14T19:38:52+07:00" itemscope="datePublished">
+                    14 April 2020
+                </time>
+            </h2>
+            <h2>
+                
+            </h2>
+        </div>
+        
+        
+        
+        <div class="row">
+            <ul class="collection with-header">
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/java-jdbc-psql.png" alt="" class="circle">
+                    <span>Daftar materi
+                        <span class="badge new blue" data-badge-caption="materi">1</span>
+                    </span>
+                    
+                    <p class="title">
+                        JDBC WITH POSTGRESQL
+                    </p>
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <div>
+                        <span class="badge">14 Apr 20</span>
+                        Pengenalan JDBC dengan PostgreSQL Database
+                    </div>
+                    
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="row">
+            
+            <ul class="collection with-header">
+                <li class="collapsible-header">
+                    Last Posting
+                </li>
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/java-jdbc-psql.png" alt="" class="circle">
+                    <a href="/bootcamp/java/jdbc/postgresql/jdbc-psql-001-intro">
+                        <span class="badge">14 Apr 20</span>
+                        Pengenalan JDBC dengan PostgreSQL Database
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/037-quis-section-3">
+                        <span class="badge">06 Jan 20</span>
+                        Time is your to practice part 3
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/035-ddl-primary-key-generator-value">
+                        <span class="badge">03 Jan 20</span>
+                        DDL - Generator default value untuk Primary Key
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/034-ddl-constraints">
+                        <span class="badge">02 Jan 20</span>
+                        DDL - Macam-macam Constraint pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/033-ddl-tables">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management Tabel di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/032-ddl-schema">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management schema di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/031-ddl-users">
+                        <span class="badge">30 Dec 19</span>
+                        DDL - Membuat User pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/030-ddl">
+                        <span class="badge">30 Dec 19</span>
+                        Data Definition Language (DDL) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/029-tcl">
+                        <span class="badge">29 Dec 19</span>
+                        Transaction Control Language di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/028-dml">
+                        <span class="badge">29 Dec 19</span>
+                        Data Manipulation Language (DML) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+        <div class="row">
+            <div class="fixed-action-btn horizontal click-to-toggle">
+                <a class="btn-floating btn-large red">
+                    <i class="material-icons">share</i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating blue" href="https://twitter.com/intent/tweet?text=Pengenalan JDBC dengan PostgreSQL Database&via=dimMaryanto93&url=http://localhost:4000/java/jdbc/postgresql/jdbc-psql-001-intro">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue darken-1" target="_blank" href="https://www.facebook.com/dialog/share?app_id=&display=popup&href=http://localhost:4000/java/jdbc/postgresql/jdbc-psql-001-intro&redirect_uri=http://localhost:4000/java/jdbc/postgresql/jdbc-psql-001-intro">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue" href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/java/jdbc/postgresql/jdbc-psql-001-intro&title=Pengenalan JDBC dengan PostgreSQL Database&source=Bootcamp to be a Software Engineer">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating red" href="https://plus.google.com/share?url=http://localhost:4000/java/jdbc/postgresql/jdbc-psql-001-intro&hl=en-US"
+                            onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>

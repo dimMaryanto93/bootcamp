@@ -1,0 +1,22 @@
+---
+layout: post
+title: "What is Java Database Connectivity"
+date: 2020-04-19T11:08:29+07:00
+lang: java-jdbc-psql
+categories:
+- Java
+- JDBC
+- Postgresql 
+refs: []
+youtube: 
+comments: true
+---
+
+JDBC atau Java Database Connectivity itu berfungsi sebagai jembatan atau penghubung antara Bahasa Pemograman Java dengan software Database, Dengan JDBC kita bisa terhubung dengan RDBMS atau Relational Database Management seperti PostgreSQL, Microsoft SQL Server, MySQL, Oracle dan lain-lain.
+
+Dengan menggunakan JDBC, kita bisa melakukan select, insert, update, delete dan execute perintah SQL dari Java yang dikirim melalui network ke Relational Database Management.
+
+Before we jump in to it, this course requires some basic of Java Core and PostgreSQL database Query. We recommend you to checkout previous lesson.
+
+- [Tutorial Java Core]({{site.baseurl}}{% post_url /java-core/2017-10-16-001-java-intro %})
+- [Tutorial PostgreSQL]({{site.baseurl}}{% post_url /psql/2017-11-21-001-postgresql-intro %})

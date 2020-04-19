@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Bootcamp to be a Software Engineer - Software Development for Java Users </title>
+    <meta name="description" content="Sebelum kita koding dengan bahasa pemograman berorientasi object ini (Java), kita harus install dulu Software Development Kit atau SDK yaitu JDK kependekan d...">
+    <meta property="og:url" content="/bootcamp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bootcamp to be a Software Engineer" />
+    <meta property="og:description" content="Sebelum kita koding dengan bahasa pemograman berorientasi object ini (Java), kita harus install dulu Software Development Kit atau SDK yaitu JDK kependekan d..."
+/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/bootcamp/assets/materialize-css/css/materialize.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/devicons/css/devicons.min.css" />
+<link rel="stylesheet" type="text/css"  href="/bootcamp/assets/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/bootcamp/assets/sintax.css" />
+
+<script src="/bootcamp/assets/jquery.min.js"></script>
+<script src="/bootcamp/assets/materialize-css/js/materialize.min.js "></script>
+
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+        $('#article-body img').addClass('materialboxed').addClass('responsive-img');
+    });
+</script>
+</head>
+<body>
+<header>
+    <nav class="red darken-3">
+    <div class="nav-wrapper container">
+        <a href="/bootcamp/" class="brand-logo">
+            <i class="material-icons left">home</i> Bootcamp to be a Software Engineer
+        </a>
+    </div>
+</nav>
+<script>
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $('.materialboxed').materialbox();
+    });
+</script>
+</header>
+
+<section>
+    <div id="postBody" class="row container">
+    <div class="col s12 m12 l8">
+        <div>
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+    <section id="article-body">
+        <div class="center">
+            <h1>
+                Software Development for Java Users
+            </h1>
+        </div>
+        <div>
+            <div class="post-content"
+                 style="font-family: 'Source Code Pro', 'Times New Roman', 'Arial'; text-align: justify; font-size: large">
+                <p>Sebelum kita koding dengan bahasa pemograman berorientasi object ini (Java), kita harus install dulu Software Development Kit atau SDK yaitu JDK kependekan dari <em>Java Development Kit</em>. JDK bertujuan untuk menyediakan sekumpulan tools handal yang disediakan oleh para insyinyur Java (gelar) contoh diantarnya sebagai berikut</p>
+
+<p><img src="/bootcamp/resources/posts/java-intro/java-arc.png" alt="JDK vs JRE" /></p>
+
+<h3 id="level-tools--tools-apis">Level Tools &amp; Tools APIs</h3>
+<ol>
+  <li><code class="highlighter-rouge">javac</code> untuk melakukan compilasi</li>
+  <li><code class="highlighter-rouge">java</code> untuk menjalankan hasil compilasi atau bytecode</li>
+  <li><code class="highlighter-rouge">javadoc</code> untuk membuat Dokumentasi di dalam koding Java</li>
+  <li><code class="highlighter-rouge">jar</code>, <code class="highlighter-rouge">war</code>, <code class="highlighter-rouge">ejb</code> dan <code class="highlighter-rouge">ear</code> hasil akhir project Java, defaultnya <code class="highlighter-rouge">jar</code> untuk aplikasi desktop dan <code class="highlighter-rouge">war</code> untuk aplikasi web atau Java EE.</li>
+</ol>
+
+<h3 id="level-development">Level Development</h3>
+
+<ol>
+  <li><code class="highlighter-rouge">Java Web</code>, web development di Java biasanya menggunakan teknologi <code class="highlighter-rouge">Servlet</code> &amp; <code class="highlighter-rouge">JSP</code></li>
+  <li><code class="highlighter-rouge">Applet</code>, Aplikasi desktop yang bisa berjalan di Browser</li>
+  <li><code class="highlighter-rouge">JavaFX</code>, Aplikasi desktop yang modern sebelumya sebagai pengganti <code class="highlighter-rouge">Java Swing</code></li>
+  <li><code class="highlighter-rouge">Java Swing</code>, Aplikasi desktop yang berfokus pada component</li>
+</ol>
+
+<h3 id="level-base-libraries">Level Base Libraries</h3>
+
+<ol>
+  <li><code class="highlighter-rouge">JDBC</code>, API yang digunakan untuk mengakses Database Relational seperti MySQL, Oracle, PostgreSQL dan lain-lain.</li>
+  <li><code class="highlighter-rouge">RMI</code>, Remote Method Invocation untuk mengakses resourse server (Client-Server Application)</li>
+  <li><code class="highlighter-rouge">Networking</code>, Java API untuk Jaringan.</li>
+  <li><code class="highlighter-rouge">Date &amp; Time</code>, Java API untuk mengakses waktu dan date di system (Operation System)</li>
+  <li><code class="highlighter-rouge">Internationalization</code>, digunakan untuk membuat aplikasi multi bahasa contohnya ingin membuat aplikasi yang menggunakan bahasa indonesia, bahasa arab dll.</li>
+  <li><code class="highlighter-rouge">Math</code>, Java API untuk melakukan perhitungan matematika, fisika dll</li>
+  <li><code class="highlighter-rouge">Collections</code>, Java API untuk menyimpan nilai yang multi value (Array)</li>
+  <li>dll masih banyak lagi ya… gak bisa disebutin satu-satu karena kebanyakan wkwkw</li>
+</ol>
+
+<p>Nah semua teknologi diatas mulai dari level tools &amp; tools API, development, dan base libraries itu berjalan di atas Java Virtual Machine atau yang bisa disebut JVM. OK nah mungkin dari temen-temen agak pusing kok banyak banget ya… ya teknologi Java itu memang luas banget blum lagi klo integrasi sama teknologi lain atau frameworknya Java seperti <code class="highlighter-rouge">Spring Framework</code>, <code class="highlighter-rouge">Play Framework</code>, <code class="highlighter-rouge">ZKoss</code>, <code class="highlighter-rouge">Vaadin</code> dll.</p>
+
+<p>Udah mulai penasaran khan bagaimana Teknologi Java ini… ok baiklah <code class="highlighter-rouge">#showMeTheCode</code></p>
+
+<p>Contohnya saya punya file dengan nama <code class="highlighter-rouge">HaloWorld.java</code> di dalam folder <code class="highlighter-rouge">~/Blogs/java-core/src/main/java/com/maryanto/dimas/</code> isinya seperti berikut:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">maryanto</span><span class="o">.</span><span class="na">dimas</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HaloWorld</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Halo World"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Kemudian saya akan compile menggunakan tools <code class="highlighter-rouge">javac</code> dan menjalankannya dengan perintah <code class="highlighter-rouge">java</code> tapi sebelum itu saya mau buat folder dulu namanya <code class="highlighter-rouge">out</code></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$</span>
+<span class="nb">mkdir </span>out
+</code></pre></div></div>
+
+<p>setelah folder terbuat jadi hasil compilenya saya mau di buat di folder <code class="highlighter-rouge">out/</code> seperti berikut:</p>
+
+<h2 id="perintah-javac">Perintah <code class="highlighter-rouge">javac</code></h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$</span>
+javac src/main/java/com/maryanto/dimas/HaloWorld.java <span class="nt">-d</span> out/
+</code></pre></div></div>
+
+<p>*penjelasanya jadi dengan perintah <code class="highlighter-rouge">javac namafile.java</code> kita melakukan compile terhadap <code class="highlighter-rouge">namafile.java</code> sedangkan parameter <code class="highlighter-rouge">-d out/</code> artinya hasil compilenya diarahkan ke folder <code class="highlighter-rouge">out</code></p>
+
+<p>Setelah dijalankan akan menghasilkan bytecode <code class="highlighter-rouge">.class</code> seperti berikut:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$</span>
+<span class="c"># works only on linux if you windows user `tree` (without dot)</span>
+tree <span class="nb">.</span>
+<span class="c"># will show like this</span>
+<span class="nb">.</span>
+├── out
+│   └── com
+│       └── maryanto
+│           └── dimas
+│               └── HaloWorld.class <span class="c"># &lt;&lt;&lt; that's bytecode</span>
+└── src
+    └── main
+        └── java
+            └── com
+                └── maryanto
+                    └── dimas
+                        └── HaloWorld.java <span class="c"># &lt;&lt;&lt; java source code</span>
+</code></pre></div></div>
+
+<h2 id="perintah-java">Perintah <code class="highlighter-rouge">java</code></h2>
+
+<p>Setelah berhasil seperti diatas file <code class="highlighter-rouge">.class</code> terbuat maka tahap selanjutnya kita bisa running the application with command <code class="highlighter-rouge">java</code></p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$</span>
+java <span class="nt">-cp</span> out/ com.maryanto.dimas.HaloWorld
+Halo World <span class="c"># &lt;&lt;&lt; the result printed to the console</span>
+</code></pre></div></div>
+
+<p>*penjelasananya dengan menggunakan perintah <code class="highlighter-rouge">java</code> kita bisa menjalankan aplikasi Java. tapi yang perlu diingat adalah perintah <code class="highlighter-rouge">java</code> hanya bisa bekerja jika di dalam filenya ada method atau fungsi seperti berikut:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="c1">// statements</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>kalo gak ada method atau fungsi seperti diatas makan akan muncul pesan error di console seperti berikut:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># dimmaryanto93@Aspire-E5-473G:~/Blogs/java-core$</span>
+java <span class="nt">-cp</span> src/main/java/ com.maryanto.dimas.HaloWorld
+Error: Could not find or load main class com.maryanto.dimas.HaloWorld <span class="c">#&lt;&lt;&lt; error logs</span>
+</code></pre></div></div>
+
+<p>Mungkin temen-temen blum bisa ngoba untuk lakukan compile dan execute seperti yang saya lakukan tadi, yah… kenapa gak bisa? jawabanya sederhana karena seperti yang saya ceritakan diawal klo belum install JDK atau Java Development Kit gak bisa ngalakuin compilasi dan eksekusi koding yang kita tulis. Ok saya akan balik lagi bagaimana cara install Oracle JDK di Windows 10, Linux UBuntu, Linux Fedora dan untuk MacOs maaf blum bisa ya karena blum punya <code class="highlighter-rouge">MacBook</code>nya semoga suatu saat bisa bisa terwujud <code class="highlighter-rouge">#laptopImpian</code> <code class="highlighter-rouge">#amin....</code></p>
+
+            </div>
+        </div>
+    </section>
+</article>
+
+        </div>
+        <hr />
+        <div>
+            
+        </div>
+        <div>
+            
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                
+                var disqus_config = function () {
+                    this.page.url = 'http://localhost:4000/bootcamp/java/core/003-java-dev';
+                    this.page.identifier = '/bootcamp/java/core/003-java-dev';
+                    console.debug(this.page);
+                };
+                
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://materi-bootcamp.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+            
+        </div>
+    </div>
+    <div class="col s12 m12 l4">
+        <div class="row">
+            <h2>
+                <i class="material-icons">person</i>
+                Dimas Maryanto
+            </h2>
+            <h2>
+                <i class="material-icons">access_time</i>
+                <time datetime="2017-10-18T21:36:55+07:00" itemscope="datePublished">
+                    18 October 2017
+                </time>
+            </h2>
+            <h2>
+                
+                <i class="fa fa-youtube-play"></i>
+                <a href="https://www.youtube.com/watch?v=hTKaYzh8OMM&list=PLV1-tdmPblvz0NCFYgVQaQEOTWJCjjucO&index=4" class="" target="_blank" rel="noopener noreferrer">
+                Play di youtube
+                </a>
+                
+            </h2>
+        </div>
+        
+        
+        
+        <div class="row">
+            <ul class="collection with-header">
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/java-core.png" alt="" class="circle">
+                    <span>Daftar materi
+                        <span class="badge new blue" data-badge-caption="materi">42</span>
+                    </span>
+                    
+                    <p class="title">
+                        JAVA CORE
+                    </p>
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/001-java-intro">
+                        <span class="badge">16 Oct 17</span>
+                        Pengenalan Pemograman Java
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/002-oop-in-java">
+                        <span class="badge">17 Oct 17</span>
+                        Bahasa Pemograman berorientasi objek dengan Java
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <div>
+                        <span class="badge">18 Oct 17</span>
+                        Software Development for Java Users
+                    </div>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/004-jdk-install-win10">
+                        <span class="badge">19 Oct 17</span>
+                        Install Java Development Kit di Windows 10
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/004-jdk-install-deb">
+                        <span class="badge">19 Oct 17</span>
+                        Install Oracle JDK 8 di Linux Debian Based (UBuntu 16.04 dan 17.04)
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/004-jdk-install-rpm">
+                        <span class="badge">19 Oct 17</span>
+                        Install Oracle JDK 8 di RedHad based (Fedora 25)
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/005-jdk-vs-jre">
+                        <span class="badge">19 Oct 17</span>
+                        Perbedaan Java Development Kit dan Java Runtime Environment
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/007-role-java">
+                        <span class="badge">07 Nov 17</span>
+                        Standarisasi penulisan coding di Java
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/006-data-type-and-variables">
+                        <span class="badge">07 Nov 17</span>
+                        Variabel dan Tipe Data
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/008-tipe-data-number">
+                        <span class="badge">07 Nov 17</span>
+                        Tipe data yang bernilai Number
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/009-tipe-data-logika">
+                        <span class="badge">07 Nov 17</span>
+                        Tipe data logika (true of false)
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/010-tipe-data-string">
+                        <span class="badge">07 Nov 17</span>
+                        Tipe data untuk bernilai Karakter
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/011-tipe-data-tanggal">
+                        <span class="badge">07 Nov 17</span>
+                        Tipe data untuk menyimpan Tanggal
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/012-operator">
+                        <span class="badge">08 Nov 17</span>
+                        Macam macam Operator di Java
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/013-conversi-tipe-data">
+                        <span class="badge">09 Nov 17</span>
+                        Konversi tipe data otomatis di Java
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/014-quis-section-1">
+                        <span class="badge">10 Nov 17</span>
+                        Time is your practice
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/015-control-flow">
+                        <span class="badge">11 Nov 17</span>
+                        Flow control in Java
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/016-if-statement">
+                        <span class="badge">11 Nov 17</span>
+                        Making decision menggunakan IF statement
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/017-swith-statement">
+                        <span class="badge">11 Nov 17</span>
+                        Making decision menggunakan SWITCH-CASE statement
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/018-for-statement">
+                        <span class="badge">12 Nov 17</span>
+                        Looping menggunakan For statement
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/019-for-statement-2">
+                        <span class="badge">14 Nov 17</span>
+                        Looping menggunakan For statement part 2
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/020-while-statement">
+                        <span class="badge">14 Nov 17</span>
+                        Looping menggunakan WHILE dan DO-WHILE statement
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/021-break-or-continue">
+                        <span class="badge">14 Nov 17</span>
+                        Break dan Continue statement dalam perulangan
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/022-quis-section-2">
+                        <span class="badge">14 Nov 17</span>
+                        Time is your for practice part 2
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/023-function">
+                        <span class="badge">14 Nov 17</span>
+                        Modularisasi menggunakan method atau function
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/024-params-at-method">
+                        <span class="badge">14 Nov 17</span>
+                        Menerima data dari paramenter ke dalam function
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/025-class-java">
+                        <span class="badge">14 Nov 17</span>
+                        Grouping source code dengan class
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/026-package-import">
+                        <span class="badge">14 Nov 17</span>
+                        Organisasi class file dengan package
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/027-quis-section-3">
+                        <span class="badge">15 Nov 17</span>
+                        Time is your for practice part 3
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/028-class-oop">
+                        <span class="badge">15 Nov 17</span>
+                        Object oriented dengan Java class
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/029-konsep-oop">
+                        <span class="badge">15 Nov 17</span>
+                        Object Oriented Approach di Java8
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/030-inheritance-java">
+                        <span class="badge">15 Nov 17</span>
+                        Mengenal lebih jauh tentang inheritance
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/031-polymorpism-java">
+                        <span class="badge">15 Nov 17</span>
+                        Mengenal lebih jauh tentang polymorpism
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/032-keyword-super-this">
+                        <span class="badge">15 Nov 17</span>
+                        Mengenal keyword super dan this
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/033-contructor-java">
+                        <span class="badge">16 Nov 17</span>
+                        Contructor adalah method
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/034-quis-section-4">
+                        <span class="badge">17 Nov 17</span>
+                        Time is your practice part 4
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/035-array">
+                        <span class="badge">20 Nov 17</span>
+                        Menyimpan multiple value dalam sebuah variable
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/036-array-2-dimension">
+                        <span class="badge">21 Nov 17</span>
+                        Array 2 dimensi
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/037-element-collections">
+                        <span class="badge">22 Nov 17</span>
+                        Element Collection
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/038-foreach">
+                        <span class="badge">22 Nov 17</span>
+                        Perulangan for untuk Array, List, Set dan Map
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/039-generics">
+                        <span class="badge">23 Nov 17</span>
+                        Why Use Generics?
+                    </a>
+                    
+                </li>
+                
+                <li class="collection-item">
+                    
+                    <a href="/bootcamp/java/core/040-quis-section-5">
+                        <span class="badge">24 Nov 17</span>
+                        Time to your practice part 5
+                    </a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="row">
+            
+            <ul class="collection with-header">
+                <li class="collapsible-header">
+                    Last Posting
+                </li>
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/java-jdbc-psql.png" alt="" class="circle">
+                    <a href="/bootcamp/java/jdbc/postgresql/jdbc-psql-001-intro">
+                        <span class="badge">14 Apr 20</span>
+                        Pengenalan JDBC dengan PostgreSQL Database
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/037-quis-section-3">
+                        <span class="badge">06 Jan 20</span>
+                        Time is your to practice part 3
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/035-ddl-primary-key-generator-value">
+                        <span class="badge">03 Jan 20</span>
+                        DDL - Generator default value untuk Primary Key
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/034-ddl-constraints">
+                        <span class="badge">02 Jan 20</span>
+                        DDL - Macam-macam Constraint pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/033-ddl-tables">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management Tabel di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/032-ddl-schema">
+                        <span class="badge">31 Dec 19</span>
+                        DDL - Management schema di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/031-ddl-users">
+                        <span class="badge">30 Dec 19</span>
+                        DDL - Membuat User pada Database PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/030-ddl">
+                        <span class="badge">30 Dec 19</span>
+                        Data Definition Language (DDL) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/029-tcl">
+                        <span class="badge">29 Dec 19</span>
+                        Transaction Control Language di PostgreSQL
+                    </a>
+                </li>
+                
+                
+                
+                <li class="collection-item avatar">
+                    <img src="/bootcamp/resources/images/psql.png" alt="" class="circle">
+                    <a href="/bootcamp/rdbms/postgresql/028-dml">
+                        <span class="badge">29 Dec 19</span>
+                        Data Manipulation Language (DML) di PostgreSQL
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+        <div class="row">
+            <div class="fixed-action-btn horizontal click-to-toggle">
+                <a class="btn-floating btn-large red">
+                    <i class="material-icons">share</i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating blue" href="https://twitter.com/intent/tweet?text=Software Development for Java Users&via=dimMaryanto93&url=http://localhost:4000/java/core/003-java-dev">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue darken-1" target="_blank" href="https://www.facebook.com/dialog/share?app_id=&display=popup&href=http://localhost:4000/java/core/003-java-dev&redirect_uri=http://localhost:4000/java/core/003-java-dev">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue" href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/java/core/003-java-dev&title=Software Development for Java Users&source=Bootcamp to be a Software Engineer">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating red" href="https://plus.google.com/share?url=http://localhost:4000/java/core/003-java-dev&hl=en-US"
+                            onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>
