@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mengenal class Statement"
+title: "Mengenal class java.sql.Statement"
 date: 2020-04-19T22:48:03+07:00
 lang: java-jdbc-psql
 categories:
@@ -8,6 +8,7 @@ categories:
 - JDBC
 - Postgresql
 refs: 
+- https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html
 - https://id.wikipedia.org/wiki/Injeksi_SQL
 - https://en.wikipedia.org/wiki/Software_design_pattern#Creational_patterns
 - https://en.wikipedia.org/wiki/Dependency_injection
