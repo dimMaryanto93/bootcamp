@@ -1,0 +1,180 @@
+---
+layout: post
+title: "Using Database Versioning with flyway"
+date: 2020-04-19T17:49:05+07:00
+lang: java-jdbc-psql
+categories:
+- Java
+- JDBC
+- Postgresql
+refs: 
+- https://dbmstools.com/categories/version-control-tools
+- https://flywaydb.org/getstarted/
+youtube: 
+comments: true
+---
+
+Database schema versioning ini bukanlah teknologi baru, udah ada semenjak dulu, dan juga flyway ini juga bukanlah satu-satunya. Ada beberapa schema database versionning yang popular untuk Bahasa pemograman Java seperti:
+
+- [Flyway](https://flywaydb.org)
+- [Liquidbase](https://www.liquibase.org)
+
+Nah tapi di pembahasan kali ini saya mau pake yang mostly kita pake di PT. Tabeldata yaitu flyway. Selain itu juga flyway ini support banyak sekali database engine contohnya PostgreSQL, Oracle 11g or later, SQL server 2017 or later, dan masih banyak lagi.
+
+Untuk menggunakan flyway kita bisa menginstall as standalone script atau menggunakan sebagai plugin seperti yang kita buat kali ini. 
+
+Ada beberapa fitur yang kita bisa gunakan yaitu 
+
+1. Migrate
+2. Info
+3. Clean
+5. Undo (Paid version)
+6. Repair
+
+## Using flyway migrate
+
+Untuk menggunakan flyway migrate kita siapkan dulu file `sql`, jadi setiap aplikasi bisnis pasti memiliki tabel dan data yang pre define seperti data master contohnya data master warna, data master category dan lain-lain. Nah disinilah peran database schema versioning karena dengan menggunakan versioning event kita deploy di host yang berbeda connectionnya kita tidak perlu melakukan migrasi secara manual.
+
+Contohnya buatlah file dengan nama `V2020_04_19_13_15_28__system-required.sql` dalam folder `src/main/resources/db/migration` sebagai berikut:
+
+```sql
+DROP extension if exists "uuid-ossp";
+CREATE EXTENSION if not exists "uuid-ossp";
+
+create table example_table
+(
+    id           character varying(64) not null primary key,
+    name         character varying(100),
+    created_date date                  not null default now(),
+    created_time timestamp             not null,
+    is_active    boolean                        default false,
+    counter      int                   not null default 0,
+    currency     decimal               not null,
+    description  text,
+    floating     double precision
+);
+
+insert into example_table(id, name, created_date, created_time, is_active, counter, currency, description, floating)
+values ('001', 'Dimas Maryanto', now(), now(), true, 0, 100000, null, 0.1),
+       ('002', 'Muhamad yusuf', now(), now(), true, 0, 100000, null, 10.1),
+       ('003', 'Prima', now(), now(), true, 0, 100000, null, 100),
+       ('004', 'Gufron', now(), now(), true, 0, 100000, null, 0.25),
+       ('005', 'Abdul', now(), now(), true, 0, 100000, null, 0);
+
+```
+
+kemudian kita migrasi dengan menggunakan perintah sebagai berikut:
+
+```bash
+mvn clean compile -Dflyway.user=bootcamp -Dflyway.password=bootcamp -Dflyway.url=jdbc:postgresql://localhost:5432/bootcamp flyway:migrate
+```
+
+berikut hasilnya:
+
+```bash
+[INFO] --- flyway-maven-plugin:6.3.3:migrate (default-cli) @ bootcamp-jdbc-psql ---
+[INFO] Flyway Community Edition 6.3.3 by Redgate
+[INFO] Database: jdbc:postgresql://localhost:5432/bootcamp (PostgreSQL 12.1)
+[INFO] Successfully validated 1 migration (execution time 00:00.029s)
+[INFO] Creating Schema History table "public"."flyway_schema_history" ...
+[INFO] Current version of schema "public": << Empty Schema >>
+[INFO] Migrating schema "public" to version 2020.04.19.13.15.28 - system-required
+[INFO] Successfully applied 1 migration to schema "public" (execution time 00:00.087s)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.683 s
+[INFO] Finished at: 2020-04-19T17:32:20+07:00
+[INFO] ------------------------------------------------------------------------
+```
+
+Maka klo kita croscheck ke database berikut hasilnya:
+
+![migrate-1]({{site.baseurl}}/resources/posts/jdbc-psql-flyway/migrate-1.png)
+
+## Using flyway clean
+
+Fitur clean adalah untuk membersihkann seluruh schema, tables, sequance, contraint yang ada atau sama seperti kita recreate database (drop then create database).
+
+Berikut perintahnya:
+
+```bash
+mvn clean compile -Dflyway.user=bootcamp -Dflyway.password=bootcamp -Dflyway.url=jdbc:postgresql://localhost:5432/bootcamp flyway:clean
+```
+
+Dan ini adalah hasilnya:
+
+```bash
+[INFO] --- flyway-maven-plugin:6.3.3:clean (default-cli) @ bootcamp-jdbc-psql ---
+[INFO] Flyway Community Edition 6.3.3 by Redgate
+[INFO] Database: jdbc:postgresql://localhost:5432/bootcamp (PostgreSQL 12.1)
+[INFO] Successfully dropped pre-schema database level objects (execution time 00:00.003s)
+[INFO] Successfully cleaned schema "public" (execution time 00:00.046s)
+[INFO] Successfully dropped post-schema database level objects (execution time 00:00.002s)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.101 s
+[INFO] Finished at: 2020-04-19T17:40:06+07:00
+[INFO] ------------------------------------------------------------------------
+```
+
+## Using flyway info
+
+Fitur info digunakan untuk melakukan pengecheckan apakah versinya ada yang belum di migrasi. berikut perintahnya:
+
+```bash
+mvn clean compile -Dflyway.user=bootcamp -Dflyway.password=bootcamp -Dflyway.url=jdbc:postgresql://localhost:5432/bootcamp flyway:info
+```
+
+Dan berikut hasilnya:
+
+```bash
+[INFO] Flyway Community Edition 6.3.3 by Redgate
+[INFO] Database: jdbc:postgresql://localhost:5432/bootcamp (PostgreSQL 12.1)
+[INFO] Schema version: 2020.04.19.13.15.28
+[INFO] 
+[INFO] 
++-----------+---------------------+-----------------+------+---------------------+---------+
+| Category  | Version             | Description     | Type | Installed On        | State   |
++-----------+---------------------+-----------------+------+---------------------+---------+
+| Versioned | 2020.04.19.13.15.28 | system-required | SQL  | 2020-04-19 17:42:32 | Success |
++-----------+---------------------+-----------------+------+---------------------+---------+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.312 s
+[INFO] Finished at: 2020-04-19T17:42:39+07:00
+[INFO] ------------------------------------------------------------------------
+```
+
+## Using flyway repair
+
+Fitur repair digunakan untuk menghapus record yang broken di table `flyway_history` (tidak untuk ddl). jadi kita bisa perbaikan file schema version yang salah saja. Berikut perintahnya:
+
+```bash
+mvn clean compile -Dflyway.user=bootcamp -Dflyway.password=bootcamp -Dflyway.url=jdbc:postgresql://localhost:5432/bootcamp flyway:repair
+```
+
+Berikut hasilnya:
+
+```bash
+[INFO] --- flyway-maven-plugin:6.3.3:repair (default-cli) @ bootcamp-jdbc-psql ---
+[INFO] Flyway Community Edition 6.3.3 by Redgate
+[INFO] Database: jdbc:postgresql://localhost:5432/bootcamp (PostgreSQL 12.1)
+[INFO] Repair of failed migration in Schema History table "public"."flyway_schema_history" not necessary. No failed migration detected.
+[INFO] Successfully repaired schema history table "public"."flyway_schema_history" (execution time 00:00.050s).
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.554 s
+[INFO] Finished at: 2020-04-19T17:46:33+07:00
+[INFO] ------------------------------------------------------------------------
+```
+
+## Using flyway undo
+
+Untuk fitur undo, maaf nih saya gak bisa coba karena ini fitur berbayar jadi mungkin segitu dulu ya pembahasan tentang Database Schema versioning.
+
+
