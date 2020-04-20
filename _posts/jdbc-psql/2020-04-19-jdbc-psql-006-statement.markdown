@@ -152,7 +152,7 @@ select  id           as id,
 from example_table
 ```
 
-yang di simpan dalam kelas String kemudian di execute menggunakan object `java.sql.Statement`. perintah menggunakan object statement biasanya digunakan untuk query yang tidak membutuhkan parameter / argument contohnya query seperti berikut:
+yang di simpan dalam kelas String kemudian di execute menggunakan API class `java.sql.Statement`. perintah menggunakan API class `Statement` biasanya digunakan untuk query yang tidak membutuhkan parameter / argument contohnya query seperti berikut:
 
 ```sql
 select  id           as id,
@@ -168,7 +168,7 @@ from example_table
 where id = '001'
 ```
 
-Nah dengan query tersebut klo misalnya nilai `id = '001'` bernilai statis itu tidak jadi masalah, tetapi jika  nilainya bisa ber-ubah-ubah sebaiknya jangan menggunakan object `Statement`. Terkadang saya menemukan koding yang klo di tulis di dengan menggunakan JDBC seperti berikut:
+Nah dengan query tersebut klo misalnya nilai `id = '001'` bernilai statis itu tidak jadi masalah, tetapi jika  nilainya bisa ber-ubah-ubah sebaiknya jangan menggunakan API class `Statement`. Terkadang saya menemukan koding yang klo di tulis di dengan menggunakan JDBC seperti berikut:
 
 ```java
 import java.sql.*;

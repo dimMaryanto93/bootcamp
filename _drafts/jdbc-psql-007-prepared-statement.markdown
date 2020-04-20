@@ -12,3 +12,4 @@ youtube:
 comments: true
 ---
 
+Hi, [sebelumnya]({{site.baseurl}}{% post_url jdbc-psql/2020-04-19-jdbc-psql-006-statement %}) kita udah bisa mengambil data dengan menggunakan API class `Statement`
