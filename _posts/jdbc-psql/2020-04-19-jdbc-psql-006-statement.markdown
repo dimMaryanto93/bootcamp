@@ -194,3 +194,80 @@ public class ExampleYangSalah  {
 ```
 
 Nah kenapa saya bilang salah, karena ini bisa kena serangan yang namanya SQL Injection. buat yang belum paham silahkan [baca di sini](https://id.wikipedia.org/wiki/Injeksi_SQL). Akan lebih baik jika kita menggunakan object `PreparedStatement`.
+
+Ok dan yang terakhir sekarang kita buat unit testing untuk method `findAll()` tersebut dengan cara membuat class di folder `src/test/java/` dengan nama `TestIntegrationExampleTable` dalam package `com.maryanto.dimas.bootcamp` seperti berikut:
+
+{% highlight java linenos %}
+package com.maryanto.dimas.bootcamp;
+
+import com.maryanto.dimas.bootcamp.config.DatasourceConfig;
+import com.maryanto.dimas.bootcamp.dao.ExampleTableDao;
+import com.maryanto.dimas.bootcamp.entity.ExampleTable;
+import junit.framework.TestCase;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+@Slf4j
+public class TestIntegrationExampleTable extends TestCase {
+
+    private DataSource dataSource;
+
+    private ExampleTableDao dao;
+
+    @Override
+    protected void setUp() throws Exception {
+        this.dataSource = new DatasourceConfig().getDataSource();
+    }
+
+    @Test
+    public void testFindAllData() {
+        try (Connection connection = this.dataSource.getConnection()) {
+            this.dao = new ExampleTableDao(connection);
+            List<ExampleTable> list = this.dao.findAll();
+            assertEquals("jumlah data example table", list.size(), 5);
+        } catch (SQLException ex) {
+            log.error("can't fetch data", ex);
+        }
+    }
+}
+
+{% endhighlight %}
+
+Kemudian jalankan perintah test seperti berikut:
+
+```bash
+mvn clean test
+```
+
+dan berikut hasilnya:
+
+```bash
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.maryanto.dimas.bootcamp.TestConnection
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[main] INFO com.maryanto.dimas.bootcamp.TestConnection - status connected
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 sec
+Running com.maryanto.dimas.bootcamp.TestIntegrationExampleTable
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.642 s
+[INFO] Finished at: 2020-04-20T19:00:17+07:00
+[INFO] ------------------------------------------------------------------------
+```
