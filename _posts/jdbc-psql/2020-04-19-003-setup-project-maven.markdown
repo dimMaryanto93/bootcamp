@@ -8,6 +8,7 @@ categories:
 - JDBC
 - Postgresql 
 refs: 
+- https://github.com/dimMaryanto93/jdbc-psql-example
 - https://flywaydb.org
 - https://search.maven.org/artifact/org.postgresql/postgresql/42.2.12.jre7/bundle
 - https://github.com/brettwooldridge/HikariCP

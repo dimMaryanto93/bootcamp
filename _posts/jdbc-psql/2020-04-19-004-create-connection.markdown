@@ -8,6 +8,7 @@ categories:
 - JDBC
 - Postgresql
 refs: 
+- https://github.com/dimMaryanto93/jdbc-psql-example
 - https://github.com/brettwooldridge/HikariCP
 - https://docs.oracle.com/javase/tutorial/jdbc/basics/connecting.html
 youtube: 

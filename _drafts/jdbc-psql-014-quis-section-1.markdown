@@ -5,7 +5,8 @@ lang: java-jdbc-psql
 categories:
 - Java
 - Core
-refs: []
+refs: 
+- https://github.com/dimMaryanto93/jdbc-psql-example
 youtube: 
 comments: true
 ---
@@ -55,7 +56,7 @@ Buatlah untuk menyimpan data berdasarkan perancangan data tersebut, sehingga ter
 
 | id    | nama_nasabah      | alamat                |
 | :---  | :------           | :----                 |
-| 1     | "Dimas Maryanto"  | "Jl.bukit indan"      |
+| 1     | "Dimas Maryanto"  | "Jl.bukit indah"      |
 | 2     | "Hilman Ramadhan" | "Ujung Berung"        |
 
 ### table mst_tabungan

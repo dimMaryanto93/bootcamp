@@ -8,6 +8,7 @@ categories:
 - JDBC
 - Postgresql  
 refs: 
+- https://github.com/dimMaryanto93/jdbc-psql-example
 - https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html
 youtube: 
 comments: true

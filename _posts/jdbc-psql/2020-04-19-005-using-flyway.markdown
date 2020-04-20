@@ -8,6 +8,7 @@ categories:
 - JDBC
 - Postgresql
 refs: 
+- https://github.com/dimMaryanto93/jdbc-psql-example
 - https://dbmstools.com/categories/version-control-tools
 - https://flywaydb.org/getstarted/
 youtube: 

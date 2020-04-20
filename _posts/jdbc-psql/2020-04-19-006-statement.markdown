@@ -8,6 +8,7 @@ categories:
 - JDBC
 - Postgresql
 refs: 
+- https://github.com/dimMaryanto93/jdbc-psql-example
 - https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html
 - https://id.wikipedia.org/wiki/Injeksi_SQL
 - https://en.wikipedia.org/wiki/Software_design_pattern#Creational_patterns

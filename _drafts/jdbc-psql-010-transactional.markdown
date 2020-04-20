@@ -6,7 +6,8 @@ categories:
 - Java
 - JDBC
 - Postgresql 
-refs: []
+refs: 
+- https://github.com/dimMaryanto93/jdbc-psql-example
 youtube: 
 comments: true
 ---
