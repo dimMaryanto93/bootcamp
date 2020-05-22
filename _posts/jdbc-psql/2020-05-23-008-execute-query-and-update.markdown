@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Perbedaan method executeQuery() dan executeUpdate()"
+date: 2020-05-23T04:33:04+07:00
 lang: java-jdbc-psql
 categories:
 - Java
