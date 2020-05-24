@@ -17,7 +17,7 @@ Hai, [Pada post sebelumnya]({{site.baseurl}}{% post_url jdbc-psql/2020-04-20-007
 
 ## Method `executeUpdate()`
 
-Method `executeUpdate()` biasanya digunakan untuk meng-eksekusi perintah `insert`, `update`, `delete`, `alter`, `create` initinya semua query yang tidak menghasilkan data pada perintah sqlnya.
+Method `executeUpdate()` biasanya digunakan untuk meng-eksekusi perintah `insert`, `update`, `delete`, `alter`, `create` initinya query yang melakukan penambahan, perubahan pada struktur atau data.
 
 Contoh penggunaanya seperti berikut:
 
