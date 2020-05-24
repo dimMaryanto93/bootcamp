@@ -13,4 +13,92 @@ youtube:
 comments: true
 ---
 
-Hai pada pembahasan kali ini, kita akan berkenalan lebih dalam dengan class [ResultSet](https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSet.html). 
+Hai pada pembahasan kali ini, kita akan berkenalan lebih dalam dengan class [ResultSet](https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSet.html). ResultSet berfungsi me-maintainance cursor untuk pointing ke setiap nodes. Setiap nodes merepresentasikan baris pada sebuah table. Seperti pada gambar berikut:
+
+![logic]({{site.baseurl}}/resources/posts/jdbc-resultset/resultset-pointer.png)
+
+Berikut contoh penggunaan single row response:
+
+```java
+ @Override
+public Optional<ExampleTable> findById(String value) throws SQLException {
+    //language=PostgreSQL
+    String query = "select id           as id,\n" +
+            "       name         as name,\n" +
+            "       created_date as createdDate,\n" +
+            "       created_time as createdTime,\n" +
+            "       is_active    as active,\n" +
+            "       counter      as counter,\n" +
+            "       currency     as currency,\n" +
+            "       description  as description,\n" +
+            "       floating     as floating\n" +
+            "from example_table\n" +
+            "where id = ?";
+    PreparedStatement preparedStatement = connection.prepareStatement(query);
+    preparedStatement.setString(1, value);
+    ResultSet resultSet = preparedStatement.executeQuery();
+    if (!resultSet.next()) {
+        preparedStatement.close();
+        return Optional.empty();
+    }
+
+    ExampleTable data = new ExampleTable(
+            resultSet.getString("id"),
+            resultSet.getString("name"),
+            resultSet.getDate("createdDate"),
+            resultSet.getTimestamp("createdTime"),
+            resultSet.getObject("active", Boolean.class),
+            resultSet.getLong("counter"),
+            resultSet.getBigDecimal("currency"),
+            resultSet.getString("description"),
+            resultSet.getFloat("floating")
+    );
+    resultSet.close();
+    preparedStatement.close();
+    return Optional.of(data);
+}
+```
+
+Jadi jika hasilnya hanya satu baris, kita cukup menggunakan if statement untuk melakukan check apakah response data dari database ada. jika ada kemudian kita tampung dalam object class. 
+
+Berikut contoh penggunaan multiple rows response:
+
+```java
+@Override
+public List<ExampleTable> findAll() throws SQLException {
+    List<ExampleTable> list = new ArrayList<>();
+    //language=PostgreSQL
+    String query = "select id           as id,\n" +
+            "       name         as name,\n" +
+            "       created_date as createdDate,\n" +
+            "       created_time as createdTime,\n" +
+            "       is_active    as active,\n" +
+            "       counter      as counter,\n" +
+            "       currency     as currency,\n" +
+            "       description  as description,\n" +
+            "       floating     as floating\n" +
+            "from example_table";
+    Statement statement = connection.createStatement();
+    ResultSet resultSet = statement.executeQuery(query);
+    while (resultSet.next()) {
+        ExampleTable data = new ExampleTable(
+                resultSet.getString("id"),
+                resultSet.getString("name"),
+                resultSet.getDate("createdDate"),
+                resultSet.getTimestamp("createdTime"),
+                resultSet.getObject("active", Boolean.class),
+                resultSet.getLong("counter"),
+                resultSet.getBigDecimal("currency"),
+                resultSet.getString("description"),
+                resultSet.getFloat("floating")
+        );
+        list.add(data);
+    }
+
+    resultSet.close();
+    statement.close();
+    return list;
+}
+```
+
+Berbeda dengan single row response, jika multiple rows response kita bisa menggunakan while statement untuk melakukan check apakah pointer masih menujuk node jika masih, lanjutkan iterasi kemudian simpan dalam object list.
