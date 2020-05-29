@@ -36,17 +36,11 @@ import junit.framework.TestCase;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
-import javax.sql.DataSource;
+import javax.sql.*;
 import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Slf4j
 public class TestIntegrationExampleTable extends TestCase {
@@ -112,5 +106,4 @@ public class TestIntegrationExampleTable extends TestCase {
         }
     }
 }
-
 {% endhighlight %}
