@@ -74,8 +74,8 @@ public class TestIntegrationExampleTable extends TestCase {
                     Date.valueOf(LocalDate.now()),
                     Timestamp.valueOf(LocalDateTime.now()),
                     true,
-                    0l, new
-                    BigDecimal(100000),
+                    0l, 
+                    new BigDecimal(100000),
                     "test data",
                     0f);
             ExampleTable save1 = this.dao.save(muhamadPurwadi);
