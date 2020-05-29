@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mengenal Transactional dengan JDBC"
+date: 2020-05-29T11:19:37+07:00
 lang: java-jdbc-psql
 categories:
 - Java
@@ -22,7 +23,7 @@ begin;
 commit;
 ```
 
-Jika menggunakan JDBC disarankan untuk tidak menggunakan `begin` dan `commmit` dalam query yang di execute. tetapi menggunakan method `statement.setAutoCommit(false)` dan `statemennt.commit()` seperti berikut contoh implementasinya:
+Jika menggunakan JDBC disarankan untuk tidak menggunakan `begin` dan `commmit` dalam query yang di execute. tetapi menggunakan method `statement.setAutoCommit(false)` dan `statement.commit()` seperti berikut contoh implementasinya:
 
 
 {% highlight java linenos %}
