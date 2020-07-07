@@ -43,6 +43,7 @@ Materi yang akan dibahas pada modul ini diantarnya sebagai berikut:
 11. Object dalam PostgreSQL
     1. Sequance
     2. View
+    3. Routine
 12. Advanced Query
     1. Menggabungkan data dengan `UNION`
     2. Menggabungkan data dengan `MERGE`
