@@ -1,0 +1,12 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: pgplsql
+categories:
+- RDBMS
+- PostgreSQL
+- PgPlSQL
+refs: []
+youtube: {{ youtube }}
+comments: true
+---

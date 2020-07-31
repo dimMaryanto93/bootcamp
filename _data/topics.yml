@@ -30,6 +30,23 @@
   github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/psql
   coming_soon: false
 
+- name: Advance Query dengan pg/plSQL
+  url: pgplsql
+  icon: "devicons devicons-postgresql"
+  language: Database
+  color:
+  tags:
+  - PostgreSQL
+  - Database
+  - pg/plSQL
+  descriptions:
+    Temen-temen akan belajar Advance Query atau fitur-fitur lainnya dalam database PostgreSQL yaitu seperti Function, Store Procedure, Cursor, Trigger dan lain-lain.
+  messages:
+    Temen-temen akan di pandu untuk menguasai dan memahami fungsi atau fitur lainnya di Database PostgreSQL dengan menggunakan pg/plSQL sintax yang bertujuan untuk menyempurnakan query yang sebelumnya telah temen-teman pelajari di materi SQL menggunakan PostgreSQL.
+  publish: 2017-10-16T20:51:50+07:00
+  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/pgplsql
+  coming_soon: false
+
 - name: VCS dengan GIT
   url: git
   icon: "devicons devicons-git"
