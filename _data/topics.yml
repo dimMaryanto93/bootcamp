@@ -47,40 +47,6 @@
   github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/pgplsql
   coming_soon: false
 
-- name: VCS dengan GIT
-  url: git
-  icon: "devicons devicons-git"
-  language: VCS
-  color:
-  tags:
-  - git
-  - logs
-  - version
-  descriptions:
-    Temen-temen akan belajar menggunakan salah satu implementation dari version of control system atau lebih sering dikenal vcs dengan menggunakan git.
-  messages:
-    Temen-temen diharapkan bisa mengimplementasikan dan menerapkan penggunaan git dalam system development baik single development maupun team works. Selain itu juga temen-temen belajar menggunakan dan menggunakan fitur dari central repository seperti github.com, bitbucket.com atau gitlab.com.
-  publish: 2017-10-21T20:50:50+07:00
-  github: 
-  coming_soon: true
-
-- name: Apache Maven
-  url: maven
-  icon: "devicons devicons-java"
-  language: Java
-  color:
-  tags:
-  - java
-  - buildtools
-  - maven
-  descriptions:
-    Temen-teman akan belajar tentang Optimalisasi sistem development menggunakan Project Apache Maven3, yaitu digunakan untuk Build Tools magsudnya kita melakukan compile, package, running dan testing menggunakan project Java di Maven.
-  messages:
-    Temen-temen diharapkan memahami cara penggunaan salah satu tools yang paling sering digunakan di dunia Java Programming yaitu maven atau di singkat mvn. Dengan maven ini kita dapat dengan mudah melakukan compile tanpa perlu pusing-pusing mikirin classpath, hapus hasil compilenya (.class), include lib ke classpath dll.
-  publish: 2017-10-22T20:50:50+07:00
-  github: 
-  coming_soon: true
-
 - name: JDBC with Postgresql
   url: java-jdbc-psql
   icon: "devicons devicons-java"
@@ -88,14 +54,36 @@
   color:
   tags:
   - java
-  - jdbc
   - maven
+  - maven-archetype-quickstart
+  - jdbc
   - PostgreSQL
   descriptions: 
     Temen-teman akan belajar tentang bagaimana koneksi ke database, interaksi dengan database menggunakan Java Database Connectivity (JDBC)
   messages:
     Temen-temen diharapkan mampu dan memahami fitur jdbc seperti fungsi-fungsi statement, prepared-statement, result-set, batch prcessiong, transactional dan lain-lain.
   publish: 2017-10-23T20:50:50+07:00
+  github: 
+  coming_soon: false
+
+- name: Java Web
+  url: java-web
+  icon: "devicons devicons-java"
+  language: Java
+  color:
+  tags:
+  - java
+  - maven
+  - maven-archetype-webapp
+  - tomcat-7
+  - html
+  - servlet
+  - jsp
+  descriptions:
+    Temen-teman akan belajar tentang Pemograman Web dengan Java, diantaranya yang akan di pelajari yaitu pemograman servlet, jsp, http request & response, http method, form submit handler, dan lain-lain.
+  messages:
+    Temen-temen diharapkan memahami konsep dan implementasi pemograman web dengan Java, seperti membuat page dengan jsp atau servlet, mengirimkan request, menerima request, dan lain-lain.
+  publish: 2017-10-24T20:50:50+07:00
   github: 
   coming_soon: false
 
@@ -114,7 +102,7 @@
     Temen-teman akan belajar tentang menggunakan hibernate, serta memahami konsep ORM
   messages:
     Temen-temen diharapkan mampu dan memahami fitur yang diberikan oleh ORM Hibernate seperti sebelumnya kita belajar JDBC yaitu CRUD, Transaction management, HQL, dan lain-lain.
-  publish: 2017-10-23T20:59:50+07:00
+  publish: 2017-10-25T20:59:50+07:00
   github: 
   coming_soon: true
 
