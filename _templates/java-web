@@ -1,11 +1,11 @@
 ---
 layout: {{ layout }}
 title: "{{ title }}"
-lang: servlet-api
+lang: java-web
 categories:
 - java
 - web
-- servlet
+- war
 refs: []
 youtube: {{ youtube }}
 comments: true
