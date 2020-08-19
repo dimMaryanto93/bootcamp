@@ -1,10 +1,11 @@
 ---
 layout: {{ layout }}
 title: "{{ title }}"
-lang: java8
+lang: java-web
 categories:
 - java
-- lamda
+- web
+- war
 refs: []
 youtube: {{ youtube }}
 comments: true
