@@ -19,5 +19,5 @@ Dengan menggunakan JDBC, kita bisa melakukan select, insert, update, delete dan 
 
 Before we jump in to it, this course requires some basic of Java Core and PostgreSQL database Query. We recommend you to checkout previous lesson.
 
-- [Tutorial Java Core]({{site.baseurl}}{% post_url /java-core/2017-10-16-001-java-intro %})
-- [Tutorial PostgreSQL]({{site.baseurl}}{% post_url /psql/2017-11-21-001-postgresql-intro %})
+- [Tutorial Java Core]({{site.baseurl}}{% post_url /java-core/2017-10-16-001-silabus-java %})
+- [Tutorial PostgreSQL]({{site.baseurl}}{% post_url /psql/2017-11-21-001-silabus-psql %})
