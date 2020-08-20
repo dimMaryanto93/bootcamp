@@ -96,9 +96,9 @@
   - web
   - js
   descriptions:
-    Temen-teman akan belajar tentang Pemograman Web dengan Java, diantaranya yang akan di pelajari yaitu pemograman servlet, jsp, http request & response, http method, form submit handler, dan lain-lain.
+    Temen-teman akan belajar tentang Pemograman scripting language menggunakan Javascript. 
   messages:
-    Temen-temen diharapkan memahami konsep dan implementasi pemograman web dengan Java, seperti membuat page dengan jsp atau servlet, mengirimkan request, menerima request, dan lain-lain.
+    Temen-temen diharapkan memahami dan mengimplementasikan pemograman Javascript di sebuah website yang teman-teman akan buat, sesuai dengan materi ini.
   publish: 2017-10-25T20:50:50+07:00
   github: 
   coming_soon: false
