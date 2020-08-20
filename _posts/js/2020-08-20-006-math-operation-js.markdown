@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Operator Matematika di JavaScript"
+date: 2020-08-20T16:48:03+07:00
 lang: js
 categories:
 - web

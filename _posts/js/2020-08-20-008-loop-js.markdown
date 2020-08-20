@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Perulangan atau Looping dengan JavaScript"
+date: 2020-08-20T16:48:07+07:00
 lang: js
 categories:
 - web

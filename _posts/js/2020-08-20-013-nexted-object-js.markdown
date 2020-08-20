@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Nested Object in Javascript"
+date: 2020-08-20T16:48:23+07:00
 lang: js
 categories:
 - web

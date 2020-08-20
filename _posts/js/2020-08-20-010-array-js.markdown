@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Array di JavaScript"
+date: 2020-08-20T16:48:11+07:00
 lang: js
 categories:
 - web

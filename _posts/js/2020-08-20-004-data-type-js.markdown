@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Data Type di JavaScript"
+date: 2020-08-20T16:47:58+07:00
 lang: js
 categories:
 - web

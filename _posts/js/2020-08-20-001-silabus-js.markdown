@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Silabus Belajar Javascript"
+date: 2020-08-20T16:47:45+07:00
 lang: js
 categories:
 - web

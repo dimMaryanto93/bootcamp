@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pengenalan scripting language dengan Javascript"
+date: 2020-08-20T16:47:51+07:00
 lang: js
 categories:
 - web
