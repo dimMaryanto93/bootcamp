@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "010-array-js"
+title: "Array di JavaScript"
 lang: js
 categories:
 - web
@@ -8,5 +8,26 @@ categories:
 refs: []
 youtube: 
 comments: true
+gist: dimMaryanto93/b956151354fb8a1454d3b36d22d61a63
+image_path: /resources/posts/js-5
 ---
 
+Tipe **data array** seperti yang anda ketahui kalo array ini pada dasarnya adalah sebuah variable yang bisa menampung data lebih dari satu.
+
+Ok langsung aja kita lihat bagaimana array ini bekerja, jadi contohnya disini saya memempunyai sample kode untuk tipe data array seperti berikut:
+
+{% gist page.gist "array-basic.js" %}
+
+Coba jika anda running di console firefox atau chrome maka hasilnya seperti berikut:
+
+![array basic]({{site.baseurl}}{{ page.image_path }}/array-1.png)
+
+Jadi kalo anda perhatikan dari output diatas variable `values` memiliki 2 element yaitu **index** dan **value**, **index dimulai dari 0** sedangkan value nilainya yang kita definisikan. tahap selanjutnya kita akan menampilkan array tersebut dengan menggunakan perulangan `for` seperti berikut kodingnya:
+
+{% gist page.gist "array-for.js" %}
+
+Jadi kesimpulannya, kita harus mengetahui dulu berapa jumlah arraylnya dengan menggunakan fungsi `length` seperti diatas kemudian diloop sebanyak array tersebut. selain menggunakan perulangan `for` kita juga bisa menggunakan perulangan `for-in` seperti berikut:
+
+{% gist page.gist "array-forin.js" %}
+
+Kalo di jalankan maka hasilnya kurang lebih sama seperti yang diatas cuman menggunakan `for-in` ini lebih mudah untuk dibaca dan digunakan.

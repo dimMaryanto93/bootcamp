@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "011-array-function-js"
+title: "Function pada Array"
 lang: js
 categories:
 - web
 - js
-refs: []
+refs: 
+- - https://developer.mozilla.org/en-US/docs/Web/JavaScript
 youtube: 
 comments: true
 ---
