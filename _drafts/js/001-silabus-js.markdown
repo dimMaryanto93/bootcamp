@@ -19,7 +19,7 @@ Ok jadi materi yang akan di bahas di section kali ini yaitu:
 2. Kenapa menggunakan bahasa pemograman Javascript?
 3. Setup Development Environtment
     - Install browser seperti firefox / google chrome / safari
-    - Text editor seperti Visual Studio Code | Jetbraint Web Strom / Vim / Atom / sublime
+    - Text editor seperti Visual Studio Code / Jetbraint Web Strom / Vim / Atom / sublime
 4. How to run javascript.
 5. Tipe data
 6. Variables
