@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "024-konsep-mvc-java-web"
+title: "Konsep Model View Controller (MVC) design pattern"
 lang: java-web
 categories:
 - java

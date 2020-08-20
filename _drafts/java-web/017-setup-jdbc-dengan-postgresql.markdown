@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "017-setup-jdbc-dengan-postgresql"
+title: "Setup JDBC Connection dengan Database PostgreSQL"
 lang: java-web
 categories:
 - java

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "025-implementasi-mvc-java-web"
+title: "Implementasi MVC menggunakan JSP dan Servlet"
 lang: java-web
 categories:
 - java
