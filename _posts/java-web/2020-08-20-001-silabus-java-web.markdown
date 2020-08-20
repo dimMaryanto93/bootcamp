@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pengenalan Java WEB"
+title: "Silabus belajar Java WEB"
 date: 2020-08-20T02:13:26+07:00
 lang: java-web
 categories:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pengenalan pg/plSQL dengan PostgreSQL"
+title: "Silabus Belajar pg/plSQL dengan PostgreSQL"
 date: 2017-11-21T21:16:38+07:00
 lang: pgplsql
 categories:

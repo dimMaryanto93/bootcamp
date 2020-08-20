@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pengenalan RDBMS PostgreSQL"
+title: "Silabus belajar RDBMS PostgreSQL"
 date: 2017-11-21T21:16:38+07:00
 lang: psql
 categories:
