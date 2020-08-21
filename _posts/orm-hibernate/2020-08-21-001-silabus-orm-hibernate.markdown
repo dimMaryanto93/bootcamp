@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Silabus Belajar JPA Hibernate"
+date: 2020-08-21T19:27:29+07:00
 lang: orm-hibernate
 categories:
 - Java
