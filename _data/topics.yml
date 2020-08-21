@@ -63,7 +63,23 @@
   messages:
     Temen-temen diharapkan mampu dan memahami fitur jdbc seperti fungsi-fungsi statement, prepared-statement, result-set, batch prcessiong, transactional dan lain-lain.
   publish: 2017-10-23T20:50:50+07:00
-  github: 
+  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/jdbc-psql
+  coming_soon: false
+
+- name: Javascript
+  url: js
+  icon: "devicons devicons-js"
+  language: Java
+  color:
+  tags:
+  - web
+  - js
+  descriptions:
+    Temen-teman akan belajar tentang Pemograman scripting language menggunakan Javascript. 
+  messages:
+    Temen-temen diharapkan memahami dan mengimplementasikan pemograman Javascript di sebuah website yang teman-teman akan buat, sesuai dengan materi ini.
+  publish: 2017-10-24T20:50:50+07:00
+  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/js-basic
   coming_soon: false
 
 - name: Java Web
@@ -83,28 +99,12 @@
     Temen-teman akan belajar tentang Pemograman Web dengan Java, diantaranya yang akan di pelajari yaitu pemograman servlet, jsp, http request & response, http method, form submit handler, dan lain-lain.
   messages:
     Temen-temen diharapkan memahami konsep dan implementasi pemograman web dengan Java, seperti membuat page dengan jsp atau servlet, mengirimkan request, menerima request, dan lain-lain.
-  publish: 2017-10-24T20:50:50+07:00
-  github: 
-  coming_soon: false
-
-- name: Javascript
-  url: js
-  icon: "devicons devicons-js"
-  language: Java
-  color:
-  tags:
-  - web
-  - js
-  descriptions:
-    Temen-teman akan belajar tentang Pemograman scripting language menggunakan Javascript. 
-  messages:
-    Temen-temen diharapkan memahami dan mengimplementasikan pemograman Javascript di sebuah website yang teman-teman akan buat, sesuai dengan materi ini.
   publish: 2017-10-25T20:50:50+07:00
   github: 
   coming_soon: false
 
 - name: ORM dengan Hibernate
-  url: java-orm-hibernate
+  url: orm-hibernate
   icon: "devicons devicons-java"
   language: Java
   color:
@@ -120,7 +120,7 @@
     Temen-temen diharapkan mampu dan memahami fitur yang diberikan oleh ORM Hibernate seperti sebelumnya kita belajar JDBC yaitu CRUD, Transaction management, HQL, dan lain-lain.
   publish: 2017-10-26T20:59:50+07:00
   github: 
-  coming_soon: true
+  coming_soon: false
 
 - name: Springframework Core
   url: spring-core

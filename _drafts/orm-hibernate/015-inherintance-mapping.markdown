@@ -1,6 +1,6 @@
 ---
-layout: {{ layout }}
-title: "{{ title }}"
+layout: post
+title: "016-inherintance-mapping"
 lang: orm-hibernate
 categories:
 - Java
@@ -10,7 +10,8 @@ categories:
 refs: 
 - http://docs.jboss.org/hibernate/orm/5.2/quickstart/html_single/
 - http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html
-youtube: {{ youtube }}
+youtube: 
 comments: true
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
+
