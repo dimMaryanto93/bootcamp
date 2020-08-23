@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Web Server untuk Development"
+title: "Text Editor / IDE untuk Project Java Web"
 lang: java-web
 categories:
 - java

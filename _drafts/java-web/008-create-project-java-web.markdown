@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setup Development Environtment for Java Web"
+title: "Membuat project Java Web dengan Apache Maven"
 lang: java-web
 categories:
 - java
