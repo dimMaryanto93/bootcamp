@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pengenalan Scripting language dengan HTML"
+date: 2020-08-23T22:11:42+07:00
 lang: java-web
 categories:
 - java

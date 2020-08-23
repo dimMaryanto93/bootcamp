@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Technology Java Enterprice Edition"
+date: 2020-08-23T22:11:38+07:00
 lang: java-web
 categories:
 - java
