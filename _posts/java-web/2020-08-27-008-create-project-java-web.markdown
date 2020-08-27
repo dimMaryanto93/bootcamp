@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Membuat project Java Web dengan Apache Maven"
+date: 2020-08-27T22:54:34+07:00
 lang: java-web
 categories:
 - java
