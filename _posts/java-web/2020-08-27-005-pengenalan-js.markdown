@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pengenalan Pemograman Client Side dengan JS"
+date: 2020-08-27T22:19:05+07:00
 lang: java-web
 categories:
 - java
