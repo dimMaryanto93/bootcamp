@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Memahami Struktur Project dengan maven-archetype-webapp"
+date: 2020-08-29T18:45:59+07:00
 lang: java-web
 categories:
 - java
