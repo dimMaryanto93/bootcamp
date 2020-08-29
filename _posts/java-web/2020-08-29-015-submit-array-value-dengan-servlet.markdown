@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Submit Array value menggunakan Servlet"
+date: 2020-08-29T19:28:54+07:00
 lang: java-web
 categories:
 - java

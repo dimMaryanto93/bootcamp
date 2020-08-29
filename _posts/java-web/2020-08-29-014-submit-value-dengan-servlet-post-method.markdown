@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Submit value dengan Servlet menggunakan Http POST Method"
+date: 2020-08-29T19:28:47+07:00
 lang: java-web
 categories:
 - java
