@@ -40,12 +40,12 @@ nah coba buka file ```web.xml``` seperti yang saya sebutkan tadi lokasinya. kemu
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>Halo</servlet-name>
+    <servlet-name>halo</servlet-name>
     <servlet-class>belajar.java.web.controller.HaloController</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>Halo</servlet-name>
+    <servlet-name>halo</servlet-name>
     <url-pattern>/selamat/datang</url-pattern>
   </servlet-mapping>
 
