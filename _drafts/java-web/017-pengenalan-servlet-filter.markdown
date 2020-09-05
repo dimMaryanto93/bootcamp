@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pengenalan Servlet Filter"
+title: "Logging incomming request dengan Servlet Filter"
 lang: java-web
 categories:
 - java
