@@ -13,15 +13,7 @@ gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 image_path: /resources/posts/java-web-020
 ---
 
-kali ini saya mau membahas tentang salah satu teknologi ServerSide di Java yaitu JSP (Java Server Pages) bukan Java Server Faces (JSF) itu beda ya!. JSP ini adalah Server Side programming yang digunakan untuk membangun halaman Web, basicnya kurang lebih sama kaya [PHP](http://php.net/) atau [ASP](http://www.asp.net/) karena kita bisa mengisipkan sintax PHP ke dalam [HTML](https://www.w3.org/html/) dengan menggunakan
-
-{% highlight php %}
-<?php
-  echo "Ini sintax PHP";  
-?>
-{% endhighlight %}
-
-nah JSP juga sama jadi kita bisa masukin sintax Java ke HTML menggunakan
+JavaServer Page, 
 
 {% highlight jsp %}
 <%  out.println("Ini sintax JSP"); %>
