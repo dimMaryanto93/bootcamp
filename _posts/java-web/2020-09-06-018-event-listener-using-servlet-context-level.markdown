@@ -26,3 +26,10 @@ Berikut adalah event servlet context listener untuk connection database:
 Berikut adalah contoh memanggil servlet context listner dari servlet:
 
 {% gist page.gist "ServletListenerRequest.java" %}
+
+Selain contoh di atas, kita juga bisa menggunakan beberapa fitur lainnya seperti:
+
+| Event Category        | Event Description | Java Interface    |
+| :---                  | :---              | :---              |
+| Lifecycle Change      | Servlet Context creation (deploy started), Imminent shutdown of the servlet context | `javax.servlet.ServletContextListner` |
+| Attribute Changes     | Addition, Removal, Replacement of servlet context attributes |  `javax.servlet.ServletContextAttributeListener` |
