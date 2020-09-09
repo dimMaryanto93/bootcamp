@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Event Listeners using Servlet Context Level"
-date: 2020-09-18T09:30:11+07:00
+date: 2020-09-06T09:30:11+07:00
 lang: java-web
 categories:
 - java
