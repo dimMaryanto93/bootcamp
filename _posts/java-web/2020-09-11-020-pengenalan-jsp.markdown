@@ -20,8 +20,6 @@ JSP ini berextensi ```.jsp``` bukan ```.html``` dan media internet typenya yaitu
 
 JSP component adalah sejenis dengan [Java Servlet](http://www.oracle.com/technetwork/java/index-jsp-135475.html) yang khusus di design supaya user membangun user interface dengan mudah untuk aplikasi java web. Dengan JSP kita bisa membuat halaman yang dinamis seperti input data, ngambil data dari database dan lain-lain.
 
-tag JSP dapat digunakan seperti mengambil data dari database, meng-akses komponent JavaBeans, bertukar informasi yang berbeda halaman, request dan lain-lain.
-
 {% highlight jsp %}
 <html>
 <head><title>Belajar Web Pages dengan JSP</title></head>
