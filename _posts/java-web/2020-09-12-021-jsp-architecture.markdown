@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "JSP Architecture"
+date: 2020-09-12T21:15:36+07:00
 lang: java-web
 categories:
 - java
