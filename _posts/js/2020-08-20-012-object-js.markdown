@@ -8,7 +8,7 @@ categories:
 - js
 refs: 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript
-youtube: 
+youtube: https://www.youtube.com/watch?v=7hwhXRghcUE&list=PLV1-tdmPblvyDBVppluBbB_4ryZvjDWvv&index=11
 comments: true
 gist: dimMaryanto93/b956151354fb8a1454d3b36d22d61a63
 image_path: /resources/posts/js-6
