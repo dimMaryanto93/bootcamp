@@ -9,7 +9,7 @@ categories:
 - Postgresql 
 refs: 
 - https://github.com/dimMaryanto93/jdbc-psql-example
-youtube: 
+youtube: https://www.youtube.com/watch?v=uA-APNWRXtA&list=PLV1-tdmPblvxVAb1P-CRsPraIv3ks3A16&index=14
 comments: true
 ---
 

@@ -10,7 +10,7 @@ categories:
 refs: 
 - https://github.com/dimMaryanto93/jdbc-psql-example
 - https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=QPo5D_XaK5Y&list=PLV1-tdmPblvxVAb1P-CRsPraIv3ks3A16&index=8
 comments: true
 ---
 

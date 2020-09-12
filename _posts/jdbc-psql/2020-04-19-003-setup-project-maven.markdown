@@ -14,7 +14,7 @@ refs:
 - https://github.com/brettwooldridge/HikariCP
 - https://maven.apache.org/plugins/maven-compiler-plugin/
 - https://projectlombok.org
-youtube: 
+youtube: https://www.youtube.com/watch?v=E3VWQssyf0Y&list=PLV1-tdmPblvxVAb1P-CRsPraIv3ks3A16&index=3
 comments: true
 ---
 
