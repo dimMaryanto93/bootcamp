@@ -8,7 +8,7 @@ categories:
 - PostgreSQL
 refs: 
 - https://www.postgresql.org/docs/9.1/functions-string.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=-Y7ASnS5bX8&list=PLV1-tdmPblvypZXSk2GC932nludT345xk&index=12
 comments: true
 ---
 

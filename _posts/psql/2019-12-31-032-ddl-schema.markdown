@@ -8,7 +8,7 @@ categories:
 - PostgreSQL
 refs: 
 - https://www.postgresql.org/docs/12/ddl-schemas.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=NMZrpBxkfRA&list=PLV1-tdmPblvypZXSk2GC932nludT345xk&index=25
 comments: true
 ---
 

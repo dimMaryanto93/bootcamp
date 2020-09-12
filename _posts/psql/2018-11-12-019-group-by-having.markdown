@@ -7,7 +7,7 @@ categories:
 - RDBMS
 - PostgreSQL
 refs: []
-youtube: 
+youtube: https://www.youtube.com/watch?v=jf6O6g0MaZc&list=PLV1-tdmPblvypZXSk2GC932nludT345xk&index=15
 comments: true
 ---
 
