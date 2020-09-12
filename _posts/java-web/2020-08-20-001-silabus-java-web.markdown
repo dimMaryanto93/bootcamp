@@ -8,7 +8,7 @@ categories:
 - web
 - war
 refs: []
-youtube: 
+youtube: https://www.youtube.com/watch?v=GAXGBJKZxnU&list=PLV1-tdmPblvyaCTcYR9u7k4G24uVDZT0v
 comments: true
 ---
 

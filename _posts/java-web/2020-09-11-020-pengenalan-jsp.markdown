@@ -20,8 +20,6 @@ JSP ini berextensi ```.jsp``` bukan ```.html``` dan media internet typenya yaitu
 
 JSP component adalah sejenis dengan [Java Servlet](http://www.oracle.com/technetwork/java/index-jsp-135475.html) yang khusus di design supaya user membangun user interface dengan mudah untuk aplikasi java web. Dengan JSP kita bisa membuat halaman yang dinamis seperti input data, ngambil data dari database dan lain-lain.
 
-tag JSP dapat digunakan seperti mengambil data dari database, meng-akses komponent JavaBeans, bertukar informasi yang berbeda halaman, request dan lain-lain.
-
 {% highlight jsp %}
 <html>
 <head><title>Belajar Web Pages dengan JSP</title></head>
@@ -48,8 +46,8 @@ atau anda juga bisa menggunakan gaya bahasa XML seperti berikut:
 
 Keuntungan menggunakan JSP adalah
 
-* JSP selalu melakukan kompilasi terlebih dahulu sebelum diproses, ini memang konsep java sejak dulu supaya menghasilkan koding yang mengurangi erorr yang disebabkan oleh sintax erorr.
-* JSP bisa mengakses semua fitur JavaEE seperti EJB, JavaBeans, JDBC, Persistance dan lain-lain.
-* JSP bisa dikombinasikan dengan Servlet untuk menghandle proses bisnis.
+1. JSP selalu melakukan kompilasi terlebih dahulu sebelum diproses, ini memang konsep java sejak dulu supaya menghasilkan koding yang mengurangi erorr yang disebabkan oleh sintax erorr.
+2. JSP bisa mengakses semua fitur JavaEE seperti EJB, JavaBeans, JDBC, Persistance dan lain-lain.
+3. JSP bisa dikombinasikan dengan Servlet untuk menghandle proses bisnis.
 
 Finally, JSP is an integral part of Java EE, a complete platform for enterprise class applications. This means that JSP can play a part in the simplest applications to the most complex and demanding.

@@ -11,7 +11,7 @@ refs:
 - https://github.com/dimMaryanto93/jdbc-psql-example
 - https://dbmstools.com/categories/version-control-tools
 - https://flywaydb.org/getstarted/
-youtube: 
+youtube: https://www.youtube.com/watch?v=LW-AoazuLz8&list=PLV1-tdmPblvxVAb1P-CRsPraIv3ks3A16&index=5
 comments: true
 ---
 

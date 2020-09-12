@@ -11,7 +11,7 @@ refs:
 - https://github.com/dimMaryanto93/jdbc-psql-example
 - https://github.com/brettwooldridge/HikariCP
 - https://docs.oracle.com/javase/tutorial/jdbc/basics/connecting.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=6LmohNreU74&list=PLV1-tdmPblvxVAb1P-CRsPraIv3ks3A16&index=4
 comments: true
 ---
 

@@ -8,7 +8,7 @@ categories:
 - PostgreSQL
 refs: 
 - https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL
-youtube: 
+youtube: https://www.youtube.com/watch?v=idlj5ox2cvU&list=PLV1-tdmPblvypZXSk2GC932nludT345xk&index=6
 comments: true
 ---
 

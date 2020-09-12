@@ -7,7 +7,7 @@ categories:
 - web
 - js
 refs: []
-youtube: 
+youtube: https://www.youtube.com/watch?v=PfdJKKzJV5Q&list=PLV1-tdmPblvyDBVppluBbB_4ryZvjDWvv&index=4
 comments: true
 ---
 

@@ -8,7 +8,7 @@ categories:
 - PostgreSQL
 refs: 
 - https://www.postgresql.org/docs/9.6/ddl-constraints.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=XI2EFI0pfJI&list=PLV1-tdmPblvypZXSk2GC932nludT345xk&index=27
 comments: true
 ---
 

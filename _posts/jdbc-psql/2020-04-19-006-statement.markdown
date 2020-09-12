@@ -15,7 +15,7 @@ refs:
 - https://en.wikipedia.org/wiki/Dependency_injection
 - https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm
 - https://www.oracle.com/technetwork/java/dataaccessobject-138824.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=DhF8cOc_1ww&list=PLV1-tdmPblvxVAb1P-CRsPraIv3ks3A16&index=6
 comments: true
 ---
 

@@ -9,7 +9,7 @@ categories:
 refs: 
 - https://www.postgresql.org/docs/9.1/datatype-uuid.html
 - https://www.postgresql.org/docs/9.5/sql-createsequence.html
-youtube: 
+youtube: https://www.youtube.com/watch?v=WFGyithp2SE&list=PLV1-tdmPblvypZXSk2GC932nludT345xk&index=28
 comments: true
 ---
 
