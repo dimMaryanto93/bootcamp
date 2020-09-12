@@ -46,8 +46,8 @@ atau anda juga bisa menggunakan gaya bahasa XML seperti berikut:
 
 Keuntungan menggunakan JSP adalah
 
-* JSP selalu melakukan kompilasi terlebih dahulu sebelum diproses, ini memang konsep java sejak dulu supaya menghasilkan koding yang mengurangi erorr yang disebabkan oleh sintax erorr.
-* JSP bisa mengakses semua fitur JavaEE seperti EJB, JavaBeans, JDBC, Persistance dan lain-lain.
-* JSP bisa dikombinasikan dengan Servlet untuk menghandle proses bisnis.
+1. JSP selalu melakukan kompilasi terlebih dahulu sebelum diproses, ini memang konsep java sejak dulu supaya menghasilkan koding yang mengurangi erorr yang disebabkan oleh sintax erorr.
+2. JSP bisa mengakses semua fitur JavaEE seperti EJB, JavaBeans, JDBC, Persistance dan lain-lain.
+3. JSP bisa dikombinasikan dengan Servlet untuk menghandle proses bisnis.
 
 Finally, JSP is an integral part of Java EE, a complete platform for enterprise class applications. This means that JSP can play a part in the simplest applications to the most complex and demanding.
