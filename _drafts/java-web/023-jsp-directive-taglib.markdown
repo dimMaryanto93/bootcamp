@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Menggunakan Standard Tag Library for JavaServer Pages (JSTL)"
+title: "JSP Directive Taglib (JSTL)"
 lang: java-web
 categories:
 - java

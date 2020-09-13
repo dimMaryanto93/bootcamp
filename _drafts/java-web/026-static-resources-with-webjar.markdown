@@ -11,7 +11,7 @@ refs:
 youtube: 
 comments: true
 gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
-image_path: /resources/posts/java-web-024
+image_path: /resources/posts/java-web-026
 ---
 
 Update your `pom.xml` dengan menambahkan [webjars](https://www.webjars.org/) library contohnya seperti [jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [DataTables](https://datatables.net/) seperti berikut:
