@@ -52,19 +52,19 @@ JSP Expration yaitu scription language yang biasanya digunakan untuk melakukan p
 
 JSP Directive biasanya digunakan untuk merubah struktural pada servlet class yang akan di generate setelah di render. JSP Directive terdiri dari beberapa tag diantaranya `page`, `include` dan `taglib`.
 
-### 4.1. Directive tag page
+### 4.1. Page Directive
 
 JSP Page Directive biasanya digunakan untuk menentukan behavior atau prilaku pada suatu jsp/servlet contohnya biasanya digunakan untuk import class, apakah kita mau mengaktifkan expression languge dan lain-lain. Contohnya seperti berikut
 
 {% gist page.gist "scriptlet-directive-page.jsp" %}
 
-### 4.2. Directive tag include
+### 4.2. Include Directive
 
 JSP Include Directive, untuk tag ini sesuai dengan namanya jadi kita bisa include file jsp lainnya dari jsp yang kita gunakan contoh penggunananya seperti berikut:
 
 {% gist page.gist "scriplet-directive-include.jsp" %}
 
-### 4.3. Directive tag taglib
+### 4.3. Taglib Directive
 
 JSP Taglib Directive, untuk tag ini kita akan bahas di materi selanjutnya ya... jadi kita skip dulu.
 
