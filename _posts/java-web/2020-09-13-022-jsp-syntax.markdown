@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "JSP Syntax"
+date: 2020-09-13T20:38:58+07:00
 lang: java-web
 categories:
 - java
