@@ -6,7 +6,8 @@ categories:
 - java
 - web
 - war
-refs: []
+refs: 
+- https://www.oracle.com/java/technologies/jstl-documentation.html
 youtube: 
 comments: true
 gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
