@@ -54,19 +54,19 @@ JSP Directive biasanya digunakan untuk merubah struktural pada servlet class yan
 
 ### 4.1. Directive tag page
 
-JSP Directive tag page biasanya digunakan untuk menentukan behavior atau prilaku pada suatu jsp/servlet contohnya biasanya digunakan untuk import class, apakah kita mau mengaktifkan expression languge dan lain-lain. Contohnya seperti berikut
+JSP Page Directive biasanya digunakan untuk menentukan behavior atau prilaku pada suatu jsp/servlet contohnya biasanya digunakan untuk import class, apakah kita mau mengaktifkan expression languge dan lain-lain. Contohnya seperti berikut
 
 {% gist page.gist "scriptlet-directive-page.jsp" %}
 
 ### 4.2. Directive tag include
 
-JSP Directive tag include, untuk tag ini sesuai dengan namanya jadi kita bisa include file jsp lainnya dari jsp yang kita gunakan contoh penggunananya seperti berikut:
+JSP Include Directive, untuk tag ini sesuai dengan namanya jadi kita bisa include file jsp lainnya dari jsp yang kita gunakan contoh penggunananya seperti berikut:
 
 {% gist page.gist "scriplet-directive-include.jsp" %}
 
 ### 4.3. Directive tag taglib
 
-JSP Directive tag taglib, untuk tag ini kita akan bahas di materi selanjutnya ya... jadi kita skip dulu.
+JSP Taglib Directive, untuk tag ini kita akan bahas di materi selanjutnya ya... jadi kita skip dulu.
 
 ## 5. JSP Action
 
