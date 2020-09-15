@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "JSP Taglib Directive (JSTL)"
+date: 2020-09-15T21:11:16+07:00
 lang: java-web
 categories:
 - java
