@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "JSP Scriptlet"
+date: 2020-09-26T20:31:29+07:00
 lang: java-web
 categories:
 - java
