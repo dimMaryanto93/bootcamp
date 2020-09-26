@@ -27,8 +27,8 @@ Declaration, sama seperti namanya declaration yaitu kita bisa mendeklarikan vari
 
 {% gist page.gist "scriplet-declaration.jsp" %}
 
-## 3. JSP Expration
+## 3. JSP Expression
 
-JSP Expration yaitu scription language yang biasanya digunakan untuk melakukan perhitungan, conversi ke `java.lang.String`, dan lain-lain. Contoh penggunaannya seperti berikut:
+JSP Expression yaitu scription language yang biasanya digunakan untuk melakukan perhitungan, conversi ke `java.lang.String`, dan lain-lain. Contoh penggunaannya seperti berikut:
 
 {% gist page.gist "scriptlet-expration.jsp" %}

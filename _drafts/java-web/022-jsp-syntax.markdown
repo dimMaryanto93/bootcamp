@@ -15,7 +15,19 @@ gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 image_path: /resources/posts/java-web-022
 ---
 
-Untuk menggunakan JSP kita perlu memahami beberapa syntax dari JavaServer Page, Element dari JSP terdiri dari 
+Untuk menggunakan JavaServer Pages (JSP) kita harus meletakan file `.jsp` di dalam folder `src/main/webapp` jika menggunakan template `maven-archetype-webapp`
+
+***noted: jika membuat project dari eclipse, netbeans akan berbeda lokasinya**
+
+Contohnya buka file `index.jsp` dalam folder `src/main/webapp/` maka isinya seperti berikut:
+
+{% gist page.gist index.jsp %}
+
+nah seperti yang temen-temen perhatikan pada sintax di atas yaitu sintax html biasa yang tulis di dalam file JSP. Jika project kita run bagaimana memanggil jsp tersebut dari browser atau mapping urlnya. Secara default kita kita simpan di root folder `webapp` maka kita bisa langsung sebut nama filenya contohnya seperti berikut:
+
+[http://localhost:8080/bootcamp-java-webapp/index.jsp](http://localhost:8080/bootcamp-java-webapp/index.jsp) or karena namanya adalah `index.jsp` kita bisa singkat jadi [http://localhost:8080/bootcamp-java-webapp/](http://localhost:8080/bootcamp-java-webapp/)
+
+Nah selanjutnya saya mau bahas tentang sintax JSP yang perlu temen-temen ketahui yaitu element of JSP, ada beberapa element sintax JSP diantaranya yaitu
 
 1. Scriptlet, 
 2. JSP Declaration, 
