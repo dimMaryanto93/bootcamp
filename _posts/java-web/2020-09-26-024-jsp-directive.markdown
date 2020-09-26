@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JSP Directive"
-date: 2020-09-26T20:31:50+07:00
+date: 2020-09-26T20:31:52+07:00
 lang: java-web
 categories:
 - java
