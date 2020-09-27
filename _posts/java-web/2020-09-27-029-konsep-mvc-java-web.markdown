@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Konsep Model View Controller (MVC) design pattern"
+date: 2020-09-27T13:54:42+07:00
 lang: java-web
 categories:
 - java
