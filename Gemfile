@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~> 3.8.3"
-gem 'octopress', '~> 3.0'
+gem "jekyll", '~> 3.9.0'
+gem 'octopress', '~> 3.0.11'
 
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.6'
