@@ -7,6 +7,8 @@ group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.6'
   gem 'jekyll-gist'
   gem "kramdown"
+  gem "github-pages"
+  gem "kramdown-parser-gfm"
   gem "rouge"
 end
 
