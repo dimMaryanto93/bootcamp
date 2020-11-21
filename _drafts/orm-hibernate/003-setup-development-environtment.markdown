@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "003-setup-development-environtment"
+title: "Setup Development Environment"
 lang: orm-hibernate
 categories:
 - Java
@@ -15,3 +15,8 @@ comments: true
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
 
+### Persiapan
+
+1. Install Java 1.8
+2. Install Apache Maven
+3. Install Database PostgreSql
