@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "009-embedded"
+title: "Hibernate ORM Relationship Mapping"
 date: 2020-11-21T16:10:56+07:00
 lang: orm-hibernate
 categories:
