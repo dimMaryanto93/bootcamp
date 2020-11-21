@@ -232,3 +232,9 @@ Setelah itu kita compile atau package agar semua package yang kita perlukan di r
 ```bash
 mvn clean package
 ```
+
+## Appendix
+
+1. `pom.xml`
+
+{% gist page.gist "pom.xml" %}
