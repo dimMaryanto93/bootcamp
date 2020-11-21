@@ -34,4 +34,5 @@ Mapping tersebut ya yang biasanya terjadi pada database relational, nah karena H
     2. MappedSuperClass
     3. Join Table
     4. Table Per Class
-4. Dynamic Model
+4. Enum Mapping
+5. Dynamic Model
