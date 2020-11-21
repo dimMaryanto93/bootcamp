@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pengenalan JPA dengan Hibernate Framework"
+date: 2020-11-21T11:44:22+07:00
 lang: orm-hibernate
 categories:
 - Java
