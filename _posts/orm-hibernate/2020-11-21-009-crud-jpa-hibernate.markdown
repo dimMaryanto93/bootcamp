@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CRUD menggunakan Hibernate"
+date: 2020-11-21T15:47:35+07:00
 lang: orm-hibernate
 categories:
 - Java
