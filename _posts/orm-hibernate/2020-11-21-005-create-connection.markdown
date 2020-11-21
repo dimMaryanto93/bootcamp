@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Membuat Connection ke Database PostgreSQL via Hibernate ORM"
+title: "Build Hibernate Session Factory"
+date: 2020-11-21T13:06:49+07:00
 lang: orm-hibernate
 categories:
 - Java
