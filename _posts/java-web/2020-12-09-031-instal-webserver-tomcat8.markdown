@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Persiapan untuk Deploy Java Webapp"
+date: 2020-12-09T15:24:04+07:00
 lang: java-web
 categories:
 - java
