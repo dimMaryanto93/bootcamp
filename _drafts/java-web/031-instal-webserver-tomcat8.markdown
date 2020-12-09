@@ -73,8 +73,17 @@ By default kita tidak di berikan akses untuk management GUI di tomcat, untuk men
               version="1.0">
     <!-- Uncomment & Ubah menjadi seperti berikut -->
     <role rolename="tomcat"/>
-    <user username="tomcat" password="tomcat" roles="tomcat, manager-gui, manager-script, manager-jmx"/>
+    <user username="tomcat" password="tomcat" roles="tomcat, manager-gui, manager-script, manager-jmx, manager-status, admin-gui, admin-script"/>
 </tomcat-users>
+{% endhighlight  %}
+
+By default juga management gui, tidak bisa dilakukan selain `localhost` jadi kita perlu allow connection dengan membuat file `conf/Catalina/localhost` dengan nama `manager.xml` seperti berikut:
+
+{% highlight xml %}
+<Context privileged="true" antiResourceLocking="false"
+        docBase="${catalina.home}/webapps/manager">
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
 {% endhighlight  %}
 
 ### Change JVM Heap
@@ -99,7 +108,7 @@ Untuk start web server kita bisa menggunakan perintah seperti berikut:
 
 {% highlight bash %}
 # path to tomcat, ex i have install in /opt/tomcat
-/opt/tomcat/bin/catalina.sh start
+/opt/apache-tomcat/bin/catalina.sh start
 
 # output
 Using CATALINA_BASE:   /opt/apache-tomcat
