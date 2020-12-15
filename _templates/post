@@ -8,4 +8,6 @@ categories:
 refs: []
 youtube: {{ youtube }}
 comments: true
+image_path: {{ image_path }}
+gist: {{ gist }}
 ---
