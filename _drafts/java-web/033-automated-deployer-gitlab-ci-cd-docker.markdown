@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Automated deploy with gitlab ci/cd"
+title: "Automated deploy with gitlab CI/CD"
 lang: java-web
 categories:
 - java
 - web
 - war
-- gitlab
-- CI/CD
 refs: 
 - http://tomcat.apache.org/
 - https://codehaus-cargo.github.io/cargo/Maven2+plugin.html
