@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Automated deploy with gitlab CI/CD"
+date: 2020-12-16T22:30:15+07:00
 lang: java-web
 categories:
 - java
