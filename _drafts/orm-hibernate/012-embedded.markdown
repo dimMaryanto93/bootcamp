@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "009-embedded"
+title: "Embbeded Mapping"
 lang: orm-hibernate
 categories:
 - Java
