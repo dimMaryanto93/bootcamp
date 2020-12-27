@@ -11,7 +11,7 @@ refs:
 - http://tomcat.apache.org/
 - https://codehaus-cargo.github.io/cargo/Maven2+plugin.html
 - https://docs.gitlab.com/ce/ci/
-youtube: 
+youtube: https://www.youtube.com/watch?v=jXJvyNVWsEM&list=PLV1-tdmPblvyaCTcYR9u7k4G24uVDZT0v&index=37
 comments: true
 gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 comments: true

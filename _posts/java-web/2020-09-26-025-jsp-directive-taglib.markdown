@@ -10,7 +10,7 @@ categories:
 refs: 
 - https://www.oracle.com/java/technologies/jstl-documentation.html
 - https://jcp.org/en/jsr/detail?xd_co_f=09ec3a41-b3f4-4b21-a917-90d5623c064d&id=52
-youtube: 
+youtube: https://www.youtube.com/watch?v=mzyk0xI3HLI&list=PLV1-tdmPblvyaCTcYR9u7k4G24uVDZT0v&index=26
 comments: true
 gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 image_path: /resources/posts/java-web-023

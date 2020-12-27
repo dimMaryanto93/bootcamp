@@ -10,7 +10,7 @@ categories:
 refs: 
 - http://tomcat.apache.org/
 - https://crunchify.com/how-to-change-jvm-heap-setting-xms-xmx-of-tomcat/
-youtube: 
+youtube: https://www.youtube.com/watch?v=HMck_EQJ55Y&list=PLV1-tdmPblvyaCTcYR9u7k4G24uVDZT0v&index=34
 gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 comments: true
 image_path: /resources/posts/java-web-031
