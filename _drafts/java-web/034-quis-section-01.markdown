@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Time is your to practice"
+lang: java-web
+categories:
+- java
+- web
+- war
+refs: []
+youtube: 
+comments: true
+gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
+comments: true
+image_path: /resources/posts/java-web-034
+---
+
+Berikut adalah Design / sketsa aplikasi yang akan kita buat:
+
+![master-nasabah]({{site.baseurl}}{{page.image_path}}/01-tambah-nasabah.png)
+
+![list-nasabah]({{site.baseurl}}{{page.image_path}}/02-list-nasabah.png)
+
+![aplikasi-deposito]({{site.baseurl}}{{page.image_path}}/03-tambah-deposito.png)
+
+![kartu-deposito]({{site.baseurl}}{{page.image_path}}/04-kartu-deposito.png)
+
+1. Buatlah project Java Web menggunakan Apache Maven dengan menggunakan archetype `maven-archetype-webapp` dengan konfigurasi:
+
+    ```markdown
+    artifactId: module-deposito
+    groupId: [isi email kamu contoh `com.maryanto.dimas`]
+    version: [isi tanggal pengerjaan contoh `2020.12.28`]
+    ```
+
+2. Buatlah database dan user schema dengan konfigurasi:
+
+    ```markdown
+    Database Name: module_deposito
+    Username: [isi dengan nama kamu contoh `dimas_maryanto`]
+    password: [isi boleh bebas]
+    ```
+
+3. Buatlah perancangan schema database, kemudian terapkan menggunakan flyway migration.
+
+4. Buatlah Tampilah berdasarkan UI pada gambar di atas menggunakan JSP (Java Server Pages).
+
+5. Buatlah Data Access Object untuk data Nasabah dan Deposito.
+    1. CRUD Data Nasabah berdasarkan schema tabel yang telah dibuat.
+    2. CRUD Deposito berdasarkan schema tabel yang telah dibuat.
+    3. CRUD Kartu Deposito berdasarkan schema tabel yang telah dibuat.
+    4. Buat service untuk membuat kartu deposito dengan perhitungan bunga bulanan = `jumlah hari dalam sebulan * nominal * bunga per tahun / 365` contoh : Aplikasi tgl `2017-10-04` jumlah harinya `30 hari`, nominal `10jt` dan bunga pertahun `10%` jadi bunga harinya adalah `30*10000000*0.1/365` jadi `Rp. 82,192.00`.
+
+6. Integrasikan UI dan Data Access Object tesebut menggunakan konsep MVC (Model View Controller).
