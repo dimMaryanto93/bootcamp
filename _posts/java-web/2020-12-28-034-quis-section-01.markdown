@@ -25,7 +25,7 @@ Setelah kita belajar materi Java Web, sekarang saatnya kita membuat aplikasi con
 
 ![kartu-deposito]({{site.baseurl}}{{page.image_path}}/04-kartu-deposito.png)
 
-Nah jadi di real live-nya untuk membuat aplikasi developer/programer akan diberikan berupa tampilan atau bahasa keren nya FSD (Function Specification Design) seperti diatas yang kemudian di terjemahkan ke sebuah program. Nah untuk latihan berikut adalah latihan soalnya:
+Nah jadi di real live-nya untuk membuat aplikasi developer/programer akan diberikan berupa tampilan atau bahasa keren nya FSD (Function Specification Design) seperti diatas yang kemudian di terjemahkan ke sebuah program. Nah untuk latihan berikut adalah soalnya:
 
 1. Buatlah project Java Web menggunakan Apache Maven dengan menggunakan archetype `maven-archetype-webapp` dengan konfigurasi:
 
