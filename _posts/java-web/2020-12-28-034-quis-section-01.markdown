@@ -52,3 +52,5 @@ Berikut adalah Design / sketsa aplikasi yang akan kita buat:
     4. Buat service untuk membuat kartu deposito dengan perhitungan bunga bulanan = `jumlah hari dalam sebulan * nominal * bunga per tahun / 365` contoh : Aplikasi tgl `2017-10-04` jumlah harinya `30 hari`, nominal `10jt` dan bunga pertahun `10%` jadi bunga harinya adalah `30*10000000*0.1/365` jadi `Rp. 82,192.00`.
 
 6. Integrasikan UI dan Data Access Object tesebut menggunakan konsep MVC (Model View Controller).
+
+7. Buatlah repository di gitlab / github, setelah itu push ke repository masing-masing.
