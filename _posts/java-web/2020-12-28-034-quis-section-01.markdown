@@ -47,14 +47,16 @@ Nah jadi di real live-nya untuk membuat aplikasi developer/programer akan diberi
 
 4. Buatlah Tampilah berdasarkan UI pada gambar di atas menggunakan JSP (Java Server Pages).
 
-5. Buatlah Data Access Object untuk data Nasabah dan Deposito.
+5. Buatlah koneksi ke database menggunakan JDBC.
+
+6. Buatlah Data Access Object untuk data Nasabah dan Deposito.
     1. CRUD Data Nasabah berdasarkan schema tabel yang telah dibuat.
     2. CRUD Deposito berdasarkan schema tabel yang telah dibuat.
     3. CRUD Kartu Deposito berdasarkan schema tabel yang telah dibuat.
     4. Buat service untuk membuat kartu deposito dengan perhitungan bunga bulanan = `jumlah hari dalam sebulan * nominal * bunga per tahun / 365` contoh : Aplikasi tgl `2017-10-04` jumlah harinya `30 hari`, nominal `10jt` dan bunga pertahun `10%` jadi bunga harinya adalah `30*10000000*0.1/365` jadi `Rp. 82,192.00`.
 
-6. Integrasikan UI dan Data Access Object tesebut menggunakan konsep MVC (Model View Controller).
+7. Integrasikan UI dan Data Access Object tesebut menggunakan konsep MVC (Model View Controller).
 
-7. Buatlah repository di gitlab / github, setelah itu push ke repository masing-masing.
+8. Buatlah repository di gitlab / github, setelah itu push ke repository masing-masing.
 
 Ok, silahkan di kerjakan dengan sebaik-baiknya ya. goodluck!
