@@ -26,15 +26,19 @@ Hi, in this section 'ORM Hibernate' ini temen-temen akan belajar dan memahami ko
 6. Membuat simple Entity
 7. CRUD Sederhana dengan Hibernate
 8. Mapping
-    - Embedded
-    - OneToOne
-    - ManyToOne
-    - OneToMany
-    - ManyToMany
-    - Inheritance Mapping
-    - Parent Child Mapping
+    1. Embedded
+    2. OneToOne
+    3. ManyToOne
+    4. OneToMany
+    5. ManyToMany
+    6. Inheritance Mapping
+    7. Parent Child Mapping
 9. Access data / Queriying
-    - HQL
-    - JPQL
-    - Criteria API
+    1. HQL
+    2. JPQL
+    3. Criteria API
 10. Audit dengan Hibernate Envers
+11. Hibernate Caching
+    1. First-Level Cache
+    2. Second-Level Cache
+    3. Query-Level Cace
