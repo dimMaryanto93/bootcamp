@@ -15,7 +15,7 @@ comments: true
 image_path: /resources/posts/java-web-034
 ---
 
-Berikut adalah Design / sketsa aplikasi yang akan kita buat:
+Setelah kita belajar materi Java Web, sekarang saatnya kita membuat aplikasi contohnya seperti Berikut:
 
 ![master-nasabah]({{site.baseurl}}{{page.image_path}}/01-tambah-nasabah.png)
 
@@ -24,6 +24,8 @@ Berikut adalah Design / sketsa aplikasi yang akan kita buat:
 ![aplikasi-deposito]({{site.baseurl}}{{page.image_path}}/03-tambah-deposito.png)
 
 ![kartu-deposito]({{site.baseurl}}{{page.image_path}}/04-kartu-deposito.png)
+
+Nah jadi di real live-nya untuk membuat aplikasi developer/programer akan diberikan berupa tampilan atau bahasa keren nya FSD (Function Specification Design) seperti diatas yang kemudian di terjemahkan ke sebuah program. Nah untuk latihan berikut adalah latihan soalnya:
 
 1. Buatlah project Java Web menggunakan Apache Maven dengan menggunakan archetype `maven-archetype-webapp` dengan konfigurasi:
 
@@ -54,3 +56,5 @@ Berikut adalah Design / sketsa aplikasi yang akan kita buat:
 6. Integrasikan UI dan Data Access Object tesebut menggunakan konsep MVC (Model View Controller).
 
 7. Buatlah repository di gitlab / github, setelah itu push ke repository masing-masing.
+
+Ok, silahkan di kerjakan dengan sebaik-baiknya ya. goodluck!
