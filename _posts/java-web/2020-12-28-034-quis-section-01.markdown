@@ -8,7 +8,7 @@ categories:
 - web
 - war
 refs: []
-youtube: 
+youtube: https://www.youtube.com/watch?v=WV00jAIZCcQ&list=PLV1-tdmPblvyaCTcYR9u7k4G24uVDZT0v&index=38
 comments: true
 gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 comments: true
@@ -31,7 +31,7 @@ Nah jadi di real live-nya untuk membuat aplikasi developer/programer akan diberi
 
     ```markdown
     artifactId: module-deposito
-    groupId: [isi email kamu contoh `com.maryanto.dimas`]
+    groupId: [isi email kamu contoh `com.maryanto.dimas.bootcamp`]
     version: [isi tanggal pengerjaan contoh `2020.12.28`]
     ```
 
@@ -58,5 +58,7 @@ Nah jadi di real live-nya untuk membuat aplikasi developer/programer akan diberi
 7. Integrasikan UI dan Data Access Object tesebut menggunakan konsep MVC (Model View Controller).
 
 8. Buatlah repository di gitlab / github, setelah itu push ke repository masing-masing.
+
+9. Deploy Aplikasi anda ke Server berbasis Web Server dengan Apache Tomcat.
 
 Ok, silahkan di kerjakan dengan sebaik-baiknya ya. goodluck!
