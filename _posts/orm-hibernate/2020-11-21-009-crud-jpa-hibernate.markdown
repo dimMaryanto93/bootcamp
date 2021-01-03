@@ -18,6 +18,17 @@ gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 
 Sekarang saya akan membuat CRUD dengan menggunakan Hibernate Framework. Untuk membuat CRUD di hibernate sebenarnya sangat mudah, karena kita tidak perlu menggunakan query tetapi pemograman SQLnya masih tetap ada tapi nanti kita akan bahas di materi yang namananya Hibernate Query language atau yang lebih dikenal HQL.
 
+Sebelum membuat CRUD Operation biasanya saya akan membuat interface seperti berikut:
+
+{% gist page.gist "ReadRepository.java" %}
+
+{% gist page.gist "CrudRepository.java" %}
+
+Setelah membuat interface, biasanya saya juga membuat DAO (Data Access Object) yang mengimplement dari Repository tersebut:
+
+{% gist page.gist "MahasiswaDao.java" %}
+
+
 ## Insert Data
 
 Ok sekarang kita buat unit testing dengan nama `TestSaveMahasiswa` dalam package `com.maryanto.dimas.bootcamp.test` seperti berikut:
@@ -27,23 +38,20 @@ Ok sekarang kita buat unit testing dengan nama `TestSaveMahasiswa` dalam package
 Setelah itu coba di run file, maka outpunya seperti berikut:
 
 ```bash
-Nov 21, 2020 2:50:19 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+Jan 03, 2021 12:34:23 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-Hibernate: 
-    select
-        nextval ('hibernate_sequence')
-[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa saved Mahasiswa(kode=1, nim=10511148, nama=Dimas Maryanto, thnMasuk=2015, tglLahir=1999-09-09, createdDate=2020-11-21T14:50:19.232315300, createdBy=admin, active=true, biodata=null) with id: 1
 Hibernate: 
     insert 
     into
-        master_mahasiswa
+        master.mahasiswa
         (is_active, bio, created_by, created_date, nama_mahasiswa, nim_mahasiswa, tanggal_lahir, tahun_masuk, kode) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa saved: Mahasiswa(kode=1, nim=10511148, nama=Dimas Maryanto, thnMasuk=2015, tglLahir=1999-09-09, createdDate=2021-01-03T12:34:23.840972, createdBy=admin, active=true, biodata=null)
 [main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - destroy hibernate session!
 ```
 
-Untuk mengecek datanya bener telah diinput, coba `select * from master_mahasiswa`
+Untuk mengecek datanya bener telah diinput, coba `select * from master.mahasiswa`
 
 ## Update Data
 
@@ -54,9 +62,11 @@ Ok sekarang kita buat unit testing dengan nama `TestUpdateMahasiswa` dalam packa
 Setelah itu coba di run file, maka outpunya seperti berikut:
 
 ```bash
+Jan 03, 2021 12:36:06 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Hibernate: 
     update
-        master_mahasiswa 
+        master.mahasiswa 
     set
         is_active=?,
         bio=?,
@@ -68,8 +78,10 @@ Hibernate:
         tahun_masuk=? 
     where
         kode=?
-[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa was updated: Mahasiswa(kode=1, nim=10511150, nama=Dimas Maryanto (updated), thnMasuk=2014, tglLahir=1999-09-09, createdDate=2020-11-21T15:34:50.448261800, createdBy=admin, active=true, biodata=null)
+[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa was updated: Mahasiswa(kode=1, nim=10511150, nama=Dimas Maryanto (updated), thnMasuk=2014, tglLahir=1999-09-09, createdDate=2021-01-03T12:36:06.973299900, createdBy=admin, active=true, biodata=null)
 [main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - destroy hibernate session!
+
+Process finished with exit code 0
 ```
 
 ## Find By Id
@@ -81,6 +93,8 @@ Ok sekarang kita buat unit testing dengan nama `TestFindByIdMahasiswa` dalam pac
 Setelah itu coba di run file, maka outpunya seperti berikut:
 
 ```bash
+Jan 03, 2021 12:36:43 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Hibernate: 
     select
         mahasiswa0_.kode as kode1_0_0_,
@@ -93,10 +107,10 @@ Hibernate:
         mahasiswa0_.tanggal_lahir as tanggal_8_0_0_,
         mahasiswa0_.tahun_masuk as tahun_ma9_0_0_ 
     from
-        master_mahasiswa mahasiswa0_ 
+        master.mahasiswa mahasiswa0_ 
     where
         mahasiswa0_.kode=?
-[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa by id: Mahasiswa(kode=1, nim=10511148, nama=Dimas Maryanto, thnMasuk=2015, tglLahir=1999-09-09, createdDate=2020-11-21T15:43:39.220661, createdBy=admin, active=true, biodata=null)
+[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa by id: Mahasiswa(kode=1, nim=10511150, nama=Dimas Maryanto (updated), thnMasuk=2014, tglLahir=1999-09-09, createdDate=2021-01-03T12:36:06.973300, createdBy=admin, active=true, biodata=null)
 [main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - destroy hibernate session!
 ```
 
@@ -109,6 +123,7 @@ dan yang terkahir kita buat unit testing dengan nama `TestDeleteMahasiswa` dalam
 Setelah itu coba di run file, maka outpunya seperti berikut:
 
 ```bash
+Jan 03, 2021 12:37:09 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Hibernate: 
     select
@@ -122,15 +137,15 @@ Hibernate:
         mahasiswa0_.tanggal_lahir as tanggal_8_0_0_,
         mahasiswa0_.tahun_masuk as tahun_ma9_0_0_ 
     from
-        master_mahasiswa mahasiswa0_ 
+        master.mahasiswa mahasiswa0_ 
     where
         mahasiswa0_.kode=?
 Hibernate: 
     delete 
     from
-        master_mahasiswa 
+        master.mahasiswa 
     where
         kode=?
-[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa was delete: Mahasiswa(kode=1, nim=10511148, nama=Dimas Maryanto, thnMasuk=2015, tglLahir=1999-09-09, createdDate=2020-11-21T15:39:49.421040, createdBy=admin, active=true, biodata=null)
+[main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - mahasiswa was delete: Mahasiswa(kode=1, nim=10511150, nama=Dimas Maryanto (updated), thnMasuk=2014, tglLahir=1999-09-09, createdDate=2021-01-03T12:36:06.973300, createdBy=admin, active=true, biodata=null)
 [main] INFO com.maryanto.dimas.bootcamp.test.TestSaveMahasiswa - destroy hibernate session!
 ```
