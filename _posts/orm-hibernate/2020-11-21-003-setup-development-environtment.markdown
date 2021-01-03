@@ -27,7 +27,7 @@ Halo di [postingan sebelumnya]({% post_url orm-hibernate/2020-11-21-002-pengenal
 
 ## Setup Java 1.8
 
-Untuk setup java 1.8 udah pernah saya bahas di materi [Java Core]({% post_url java-core/2017-10-16-001-silabus-java %})
+Untuk setup java 1.8 udah pernah saya bahas di materi [Java Core]({{site.baseurl}}{% post_url java-core/2017-10-16-001-silabus-java %})
 
 ## Setup Apache Maven
 
