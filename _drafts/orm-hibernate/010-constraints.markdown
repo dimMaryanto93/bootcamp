@@ -16,3 +16,9 @@ image_path:
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
 
+Constraint pada dasarnya bisa juga di terapkan di Hibernate Framework yaitu:
+
+1. Not Null (Column level)
+2. Unqiue (Column dan Entity level)
+3. Check (Entity level)
+4. Primary Key (Column dan Entity level)
