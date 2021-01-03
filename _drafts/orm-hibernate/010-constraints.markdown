@@ -21,8 +21,47 @@ Constraint pada dasarnya bisa juga di terapkan di Hibernate Framework yaitu:
 1. Not Null (Column level)
 2. Unqiue (Column dan Entity level)
 3. Check (Entity level)
-4. Primary Key (Column dan Entity level)
+4. Primary Key
+5. Foreign Key
 
 Ok mari kita bahas satu-per-satu, yang pertama kita bahas contraint `Not Null`
 
 ## Not Null
+
+Untuk contraint not null telah di jelaskan di materi sebelumnya, hanya bisa di terapkan pada annotation `@Column(nullable = trus / false)` jadi saya skip ja ya.
+
+## Unique Constraint
+
+Untuk unique constraint bisa di terapkan pada annotation `@Column(unique = true)` dan `@Table(uniqueConstraints = {})` contohnya seperti berikut:
+
+{% gist page.gist "ClassWithUniqueConstraints.java" %}
+
+Jika kita menggunakan annotation `@Column(unique = true)` secara default penamaannya akan di generate oleh hibernate / RDBMS. sedangkan jika kita menggunakan annotation `@Table(uniqueConstraints={})` kita harus assign nama constraint-nya contohya seperti `uq_kelas`.
+
+Untuk implementasinya kita coba buat test unitnya seperti berikut:
+
+{% gist page.gist "TestClassWIthUniqueConstraint.java" %}
+
+jika dirunning maka hasilnya seperti berikut:
+
+```bash
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "un_kelas"
+  Detail: Key (nama, angkatan)=(IPS 1, 1993) already exists.
+```
+
+## Check Constraint
+
+Untuk check contraint, kita bisa menambahkan dengan @Column(columnDefinition = {}). sebetulnya biasanya saya menggunakan annotation `@Check(constraints={})` tetapi di materi ini sepertinya ada bugs dari hibernate silahkan [check disini](https://hibernate.atlassian.net/browse/HHH-4315) jadi saya menggunakan `columnDefinintion` berikut contoh penggunaanya:
+
+{% gist page.gist "TestClassWIthCheckConstraint.java" %}
+
+jika dirunning maka hasilnya seperti berikut:
+
+```bash
+org.postgresql.util.PSQLException: ERROR: new row for relation "kelas_check" violates check constraint "kelas_check_angkatan_check"
+  Detail: Failing row contains (d1adddd0-91ae-4f1a-9e8e-b999de9ef75c, admin, 2021-01-03 15:23:28.508412, null, null, IPS 1, 1993).
+```
+
+## Primary Key & Foreign Key
+
+Untuk pembahasan primary key dan foreign key akan di bahas di materi selanjutnya ya...
