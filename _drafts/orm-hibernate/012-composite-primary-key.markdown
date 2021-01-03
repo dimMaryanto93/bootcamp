@@ -10,6 +10,8 @@ categories:
 refs: 
 - http://docs.jboss.org/hibernate/orm/5.2/quickstart/html_single/
 - http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html
+- https://www.baeldung.com/jpa-composite-primary-keys
+- https://stackoverflow.com/a/3588400
 youtube: 
 comments: true
 image_path: 
