@@ -18,3 +18,9 @@ image_path:
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
 
+terkadang didalam struktur sebuah tabel, tidak hanya memiliki 1 primary key tetapi juga bisa lebih dari 1 primary key itu dinamakan Composite Primary Key. apakah hibernate bisa handle composite primary key???
+
+tentu aja bisa, ada 2 cara yaitu:
+
+1. `@EmbeddedId`
+2. `@ClassId`
