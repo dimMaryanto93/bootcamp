@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mapping-enumeration"
+title: "Mapping Enum"
 lang: orm-hibernate
 categories:
 - Java
