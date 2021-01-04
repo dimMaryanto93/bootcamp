@@ -35,16 +35,16 @@ gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 3. Buatlah koneksi antara Java dengan Database sesuai dengan konfigurasi di atas
 
 4. Buatlah Entity sesuai dengan spesifikasi table seperti berikut:
-    1. Table name: `jobs`
+    **Table name: `jobs`**
 
     | Columns       | Data Type             | constraint    | default value         |
     | :---          | :---                  | :---          | :---                  |
     | kode          | serial                | primary key   | sequance generator    |
     | nama          | character varying(50) | not null      | -                     |
     | keterangan    | text                  | -             | -                     |
-
-    2. Table name: `employees`
-
+    {: .striped .highlight .responsive-table }
+    
+    **Table name: `employees`**
     | Columns       | Data Type             | constraint    | default value         |
     | :---          | :---                  | :---          | :---                  |
     | nip           | character varying(64) | primary key   | uuid generator        |
@@ -52,5 +52,6 @@ gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
     | tanggal_lahir | date                  | not null      | -                     |
     | gaji_sebulan  | decimal(8, 2)         | not null      | default 0             |
     | aktif         | boolean               | -             | default false         |
+    {: .striped .highlight .responsive-table }
 
 5. Buatlah CRUD sesuai dengan entity yang telah teman-teman buat dengan design pattern Data Access Object (DAO)
