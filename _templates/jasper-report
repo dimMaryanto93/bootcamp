@@ -1,0 +1,14 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+lang: jasper-report
+categories:
+- Java
+- JasperReport
+refs: 
+- https://community.jaspersoft.com/wiki/jaspersoft-community-wiki-0
+youtube: {{ youtube }}
+comments: true
+image_path: {{ image_path }}
+gist: 
+---
