@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Composite Primary Key"
+date: 2021-01-04T07:36:52+07:00
 lang: orm-hibernate
 categories:
 - Java
