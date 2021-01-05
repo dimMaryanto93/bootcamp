@@ -2,7 +2,7 @@
 layout: post
 title: "Time is your practice part 1"
 lang: orm-hibernate
-date: 2020-12-01T15:47:35+07:00
+date: 2021-01-04T08:36:52+07:00
 categories:
 - Java
 - ORM
