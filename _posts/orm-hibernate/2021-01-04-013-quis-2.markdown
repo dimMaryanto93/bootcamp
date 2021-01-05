@@ -28,7 +28,6 @@ Hi, setelah kita belajar materi tentang hibernate supaya temen-temen lebih memah
 
 2. Buatlah database dengan setting serbagai berikut:
     ```yaml
-    databaseEngine: PostgreSQL
     databaseName: `quis1_hibernate`
     userName: [isi dengan nama anda contoh 'dimas_maryanto']
     password: [isi bebas]
@@ -49,13 +48,16 @@ Hi, setelah kita belajar materi tentang hibernate supaya temen-temen lebih memah
 
     **Table name: `employees`**
     
-    | Columns       | Data Type             | constraint    | default value         |
-    | :---          | :---                  | :---          | :---                  |
-    | nip           | character varying(64) | primary key   | uuid generator        |
-    | nama          | character varying(100)| not null      | -                     |
-    | tanggal_lahir | date                  | not null      | -                     |
-    | gaji_sebulan  | decimal(8, 2)         | not null      | default 0             |
-    | aktif         | boolean               | -             | default false         |
+    | Columns       | Data Type             | constraint        | default value         | check                     |
+    | :---          | :---                  | :---              | :---                  | :---                      |
+    | kode          | character varying(64) | primary key       | uuid generator        | -                         |
+    | nip           | character varying(64) | not null, unique  | -                     | -                         |
+    | nama          | character varying(100)| not null          | -                     | -                         |
+    | tanggal_lahir | date                  | not null          | -                     | `tanggal_lahir <= now()`  |
+    | gaji_sebulan  | decimal(8, 2)         | not null          | default 0             | `gaji_sebulan >= 2000000` |
+    | aktif         | boolean               | -                 | default false         | -                         |
     {: .striped .highlight .responsive-table }
 
-5. Buatlah CRUD sesuai dengan entity yang telah teman-teman buat dengan design pattern Data Access Object (DAO)
+5. Buatlah CRUD dan sesuai dengan entity yang telah teman-teman buat dengan design pattern Data Access Object (DAO)
+
+6. Buatlah Unit Testing untuk semua method yang temen-teman buat pada no 5
