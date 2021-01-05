@@ -54,6 +54,14 @@ Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violate
 
 Untuk check contraint, kita bisa menambahkan dengan @Column(columnDefinition = {}). sebetulnya biasanya saya menggunakan annotation `@Check(constraints={})` tetapi di materi ini sepertinya ada bugs dari hibernate silahkan [check disini](https://hibernate.atlassian.net/browse/HHH-4315) jadi saya menggunakan `columnDefinintion` berikut contoh penggunaanya:
 
+{% gist page.gist "ClassWithCheckConstraints.java" %}
+
+Implementasi DAO:
+
+{% gist page.gist "ClassWithCheckDao.java" %}
+
+Implementasi Unit Testing:
+
 {% gist page.gist "TestClassWIthCheckConstraint.java" %}
 
 jika dirunning maka hasilnya seperti berikut:
