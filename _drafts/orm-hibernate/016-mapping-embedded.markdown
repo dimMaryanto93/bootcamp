@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Embbeded Mapping"
+title: "Transitive dependency dengan Embbeded Mapping"
 lang: orm-hibernate
 categories:
 - Java
