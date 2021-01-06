@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "010-embedded-2"
+title: "Embbeded Mapping dengan Override Attributes"
 lang: orm-hibernate
 categories:
 - Java

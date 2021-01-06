@@ -13,7 +13,7 @@ refs:
 - http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html
 youtube: 
 comments: true
-image_path: /resources/posts/orm-hibernate-14
+image_path: /resources/posts/orm-hibernate-15
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
 
