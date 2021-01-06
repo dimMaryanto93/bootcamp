@@ -39,7 +39,11 @@ Untuk unique constraint bisa di terapkan pada annotation `@Column(unique = true)
 
 Jika kita menggunakan annotation `@Column(unique = true)` secara default penamaannya akan di generate oleh hibernate / RDBMS. sedangkan jika kita menggunakan annotation `@Table(uniqueConstraints={})` kita harus assign nama constraint-nya contohya seperti `uq_kelas`.
 
-Untuk implementasinya kita coba buat test unitnya seperti berikut:
+Implementasi DAO:
+
+{% gist page.gist "ClassWithUniqueDao.java" %}
+
+Implementasi Unit Testing:
 
 {% gist page.gist "TestClassWIthUniqueConstraint.java" %}
 
