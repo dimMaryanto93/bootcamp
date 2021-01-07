@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "012-mapping-one-to-one"
+title: "Mapping dengan annotation @OneToOne"
 lang: orm-hibernate
 categories:
 - Java
