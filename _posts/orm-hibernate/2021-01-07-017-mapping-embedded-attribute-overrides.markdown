@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Embbeded Mapping dengan Override Attributes"
+date: 2021-01-07T12:57:36+07:00
 lang: orm-hibernate
 categories:
 - Java
