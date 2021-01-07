@@ -13,7 +13,7 @@ refs:
 - http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html
 - https://www.baeldung.com/jpa-composite-primary-keys
 - https://stackoverflow.com/a/3588400
-youtube: 
+youtube: https://www.youtube.com/watch?v=a3zFUPA_eks&list=PLV1-tdmPblvxHxNh867D1JR4u52LgzeIr&index=12
 comments: true
 image_path: 
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
