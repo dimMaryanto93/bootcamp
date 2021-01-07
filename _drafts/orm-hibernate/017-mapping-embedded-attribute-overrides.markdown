@@ -16,11 +16,11 @@ gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 image_path: /resources/posts/orm-hibernate-17
 ---
 
-Implementasi Embedded Model: 
+Hai, di materi kali ini saya mau ngebahas tentang mapping Embedded Override Attribute dengan model dari yang sebelumnya yaitu 
 
 {% gist page.gist "AlamatEmbeddable.java" %}
 
-Implementasi Entity: 
+Dengan penambahan property `alamatRumah` dan `alamatOrangTua` seperti berikut  Implementasi Entitynya: 
 
 {% gist page.gist "MahasiswaEmbeddedOverrideAttributes.java" %}
 
