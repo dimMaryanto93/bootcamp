@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "013-mapping-many-to-one"
+title: "Hibernate @ManyToOne Mapping"
 lang: orm-hibernate
 categories:
 - Java
@@ -13,5 +13,6 @@ refs:
 youtube: 
 comments: true
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
+image_path: /resources/posts/orm-hibernate-23
 ---
 
