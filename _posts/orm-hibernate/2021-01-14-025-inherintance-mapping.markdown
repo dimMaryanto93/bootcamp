@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Macam-Macam Inherintance Mapping"
+date: 2021-01-14T15:04:24+07:00
 lang: orm-hibernate
 categories:
 - Java
