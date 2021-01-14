@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "github-pages"
   gem "kramdown-parser-gfm"
   gem "rouge"
+  gem "titlecase"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
