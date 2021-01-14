@@ -15,7 +15,7 @@ comments: true
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
 
-Inheritance Mapping, di bagi menjadi 3 jenis yaitu 
+Hai, di materi kali ini kita akan membahas tentang Inheritance Mapping menggunakan ORM Hibernate Framework. nah FYI klo semua relational database tidak support inherintance ya! nah jadi di sini hibernate menawarkan beberapa solusi yaitu sebagai berikut: 
 
 1. MappedSupperclass
 2. Single Table

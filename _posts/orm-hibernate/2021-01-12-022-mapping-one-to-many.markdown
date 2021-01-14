@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hibernate @OneToMany Mapping"
+title: "OneToMany Mapping"
 date: 2021-01-12T19:55:36+07:00
 lang: orm-hibernate
 categories:
