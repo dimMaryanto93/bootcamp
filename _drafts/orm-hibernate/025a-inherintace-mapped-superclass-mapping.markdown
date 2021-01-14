@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Macam-Macam Inherintance Mapping"
+title: "Inherintance Mapping methode MappedSuperclass"
 lang: orm-hibernate
 categories:
 - Java
@@ -15,9 +15,3 @@ comments: true
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
 
-Inheritance Mapping, di bagi menjadi 3 jenis yaitu 
-
-1. MappedSupperclass
-2. Single Table
-3. Joined Table
-4. Table Per Class
