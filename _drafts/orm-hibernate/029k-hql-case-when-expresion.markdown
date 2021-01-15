@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hibernate Query Language (HQL-JPQL)"
+title: "Case When dengan HQL"
 lang: orm-hibernate
 categories:
 - Java

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "027-collections-mapping"
+title: "Collections Mapping"
 lang: orm-hibernate
 categories:
 - Java
