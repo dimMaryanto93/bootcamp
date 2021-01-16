@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Inherintance Mapping metode Join Table"
+date: 2021-01-16T18:51:36+07:00
 lang: orm-hibernate
 categories:
 - Java
