@@ -17,7 +17,11 @@ gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 image_path: /resources/posts/orm-hibernate-22
 ---
 
-Untuk mencoba mapping OneToMany kita membutuhkan 3 table, contohnya `mahasiswa`, `alamat`, relasi antara `mahasiswa` dan `alamat` misal namanya kita sebut `mahasiswa_alamat_list`. Untuk alamat kita masih menggunakan class yang sebelunya yaitu 
+Untuk mencoba mapping OneToMany kita membutuhkan 3 table, contohnya `mahasiswa`, `alamat`, relasi antara `mahasiswa` dan `alamat` misal namanya kita sebut `mahasiswa_alamat_list`, berikut adalah perancangan tabelnya:
+
+![erd]({{site.baseurl}}{{page.image_path}}/erd.png)
+
+Untuk alamat kita masih menggunakan class yang sebelunya yaitu 
 
 Implementasi Entity Alamat:
 

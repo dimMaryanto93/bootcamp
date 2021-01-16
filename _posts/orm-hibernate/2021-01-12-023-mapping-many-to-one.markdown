@@ -17,7 +17,11 @@ gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 image_path: /resources/posts/orm-hibernate-23
 ---
 
-Untuk menggunakan mapping @ManyToOne kita akan buat mapping baru yaitu `mahasiswa` dan `kelas`, contohnya seperti berikut:
+Untuk menggunakan mapping @ManyToOne kita akan buat mapping baru yaitu `mahasiswa` dan `kelas`, berikut adalah perancangannya databasenya:
+
+![erd]({{site.baseurl}}{{page.image_path}}/erd.png)
+
+contohnya seperti berikut:
 
 Implementasi Entity kelas:
 

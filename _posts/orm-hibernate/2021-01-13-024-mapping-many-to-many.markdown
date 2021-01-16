@@ -14,9 +14,12 @@ refs:
 youtube: 
 comments: true
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
+image_path: /resources/posts/orm-hibernate-24
 ---
 
-Untuk menggunakan mapping `@ManyToMany` kita akan buat table baru yaitu `mahasiswa` dan `matakuliah`, seperti berikut:
+Untuk menggunakan mapping `@ManyToMany` kita akan buat table baru yaitu `mahasiswa` dan `matakuliah`, berikut adalah perancangan databasenya:
+
+![erd]({{site.baseurl}}{{page.image_path}}/erd.png)
 
 Implementasi Entity `Matakuliah`:
 

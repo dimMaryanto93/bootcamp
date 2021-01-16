@@ -17,7 +17,11 @@ gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 image_path: /resources/posts/orm-hibernate-21
 ---
 
-Untuk mencoba mapping OneToOne kita perlu 2 table, contohnya disini kita buat antara `mahasiswa` dan `alamat`. pertama kita buat dulu entity untuk alamat seperti berikut
+Untuk mencoba mapping OneToOne kita perlu 2 table, contohnya disini kita buat antara `mahasiswa` dan `alamat`, berikut adalah contoh perancangan tablenya:
+
+![erd]({{site.baseurl}}{{page.image_path}}/erd.png)
+
+pertama kita buat dulu entity untuk alamat seperti berikut
 
 Implementasi Entity Alamat:
 
