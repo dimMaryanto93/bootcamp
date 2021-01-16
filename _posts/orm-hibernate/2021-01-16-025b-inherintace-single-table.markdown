@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Inherintance Mapping methode Single Table"
+date: 2021-01-16T13:22:35+07:00
 lang: orm-hibernate
 categories:
 - Java
