@@ -15,3 +15,4 @@ comments: true
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 ---
 
+Hai, di materi kali ini saya mau ngebahas tentang Inherintance Mapping dengan Metode MappedSuperclass.
