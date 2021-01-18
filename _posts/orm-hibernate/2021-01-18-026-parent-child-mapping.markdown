@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Parent-Child Mapping"
+date: 2021-01-18T20:33:15+07:00
 lang: orm-hibernate
 categories:
 - Java
