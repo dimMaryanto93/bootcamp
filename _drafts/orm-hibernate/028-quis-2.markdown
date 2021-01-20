@@ -12,8 +12,15 @@ refs:
 - http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html
 youtube: 
 comments: true
-image_path: 
 gist: dimMaryanto93/e8d2abb5361e811860d6a462270f119b
 image_path: /resources/posts/orm-hibernate-28
 ---
 
+Hai setelah temen-temen mempelajari mapping dengan ORM Hibernate, sekarang saatnya untuk temen-temen latihan ya supaya memahami semua materi yang telah kita bahas. Berikut adalah soalnya.
+
+1. Buatlah project Java dengan mengggunakan Apache Maven Archetype Quickstart dengan artifactId `quis2-hibernate`.
+    1. Buat database dengan nama `quis2_hibernate` dan user schema nama anda contoh `dimas_maryanto`, dengan menggunakan database PostgreSQL.
+    2. Buatlah koneksi database menggunakan object SessionFactory.
+    3. Buatlah unit testing untuk menguji koneksi antara database dengan hibernate.
+
+2. 
