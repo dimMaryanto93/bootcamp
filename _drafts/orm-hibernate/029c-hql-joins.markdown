@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Explicit Joins dengan HQL"
+title: "Join Entity dengan Hibernate Query Language (HQL)"
 lang: orm-hibernate
 categories:
 - Java
