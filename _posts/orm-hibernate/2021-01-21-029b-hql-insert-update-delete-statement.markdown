@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Insert, Update dan Delete Statement dengan HQL"
+date: 2021-01-21T12:54:57+07:00
 lang: orm-hibernate
 categories:
 - Java
