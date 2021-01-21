@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hibernate Query Language (HQL-JPQL)"
+date: 2021-01-21T11:14:37+07:00
 lang: orm-hibernate
 categories:
 - Java
