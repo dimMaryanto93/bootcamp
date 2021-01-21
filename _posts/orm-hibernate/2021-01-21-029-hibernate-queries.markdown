@@ -43,7 +43,7 @@ NativeQuery<Penerbit> query =
 
 Hibernate Query Language (HQL) hampir sama dengan SQL tetepi disini accessnya bukan ke table melainkan ke Entity, Berikut adalah contoh penggunaan HQL: 
 
-{% highlight java lineos %}
+{% highlight java linenos %}
 Query query = entityManager
     .createQuery("from AlamatEntity");
 {% endhighlight %}
@@ -52,7 +52,7 @@ Query query = entityManager
 
 Criteria API sama seperti HQL tpi disini query builder menggunakan Java, berikut adalah contoh penggunaan Criteria API:
 
-{% highlight java lineos %}
+{% highlight java linenos %}
 CriteriaBuilder builder = session.getCriteriaBuilder();
 CriteriaQuery<AlamatEntity> query = builder.createQuery(AlamatEntity.class);
 Root<AlamatEntity> root = query.from(AlamatEntity.class);
