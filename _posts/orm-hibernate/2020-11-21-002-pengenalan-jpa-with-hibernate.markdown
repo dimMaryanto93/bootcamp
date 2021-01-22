@@ -9,7 +9,6 @@ categories:
 - Hibernate
 - PostgreSQL
 refs: 
-- http://docs.jboss.org/hibernate/orm/5.2/quickstart/html_single/
 - http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html
 - https://dzone.com/articles/about-transparent-persistence
 youtube: https://www.youtube.com/watch?v=HlLrTQMX0E0&list=PLV1-tdmPblvxHxNh867D1JR4u52LgzeIr&index=2

@@ -9,7 +9,6 @@ categories:
 - Hibernate
 - PostgreSQL
 refs: 
-- http://docs.jboss.org/hibernate/orm/5.2/quickstart/html_single/
 - https://docs.jboss.org/hibernate/stable/orm/userguide/html_single/Hibernate_User_Guide.html#collections-synopsis
 comments: true
 youtube: https://www.youtube.com/watch?v=pqykSi6upg0&list=PLV1-tdmPblvxHxNh867D1JR4u52LgzeIr&index=31

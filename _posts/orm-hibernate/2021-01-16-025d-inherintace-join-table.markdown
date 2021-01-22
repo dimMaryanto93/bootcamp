@@ -9,7 +9,6 @@ categories:
 - Hibernate
 - PostgreSQL
 refs: 
-- http://docs.jboss.org/hibernate/orm/5.2/quickstart/html_single/
 - https://docs.jboss.org/hibernate/orm/5.4/userguide/html_single/Hibernate_User_Guide.html#entity-inheritance-joined-table
 youtube: https://www.youtube.com/watch?v=dMhism_6dXc&list=PLV1-tdmPblvxHxNh867D1JR4u52LgzeIr&index=27
 comments: true
