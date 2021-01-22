@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Aritmatic dengan HQL"
+date: 2021-01-22T15:29:02+07:00
 lang: orm-hibernate
 categories:
 - Java
