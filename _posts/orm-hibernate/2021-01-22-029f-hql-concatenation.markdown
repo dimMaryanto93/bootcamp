@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Concatnation dengan HQL"
+date: 2021-01-22T17:05:36+07:00
 lang: orm-hibernate
 categories:
 - Java
