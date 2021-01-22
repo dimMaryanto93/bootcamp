@@ -21,7 +21,7 @@ Hai, pada kesempatan kali ini saya mau ngebahas tentang operator arithmetic pada
 
 Ok langsung aja, berikut adalah implementasi menggunakan Arithmetic dengan HQL.
 
-Model Mapping non-Entity: 
+buat class DTO / Model seperti berikut: 
 
 {% gist page.gist "AritmaticModel.java" %}
 
