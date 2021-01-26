@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "030f-hql-predicate-collection"
+title: "SubQuery Qualifiers dengan HQL"
 lang: orm-hibernate
 categories:
 - Java
