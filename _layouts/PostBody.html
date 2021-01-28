@@ -166,21 +166,7 @@ layout: default
 
 <ul id="slide-out-materi" class="side-nav">
     <li>
-        <div class="user-view">
-            <div class="background">
-                <img src="{{ "/resources/pictures/art.png" | prepend: site.baseurl }}" width="100%">
-            </div>
-            <br>
-            <a href="#!">
-                <img class="circle" src="{{ "/resources/pictures/profile.jpeg" | prepend: site.baseurl }}">
-            </a>
-            <a href="#!name"><span class="white-text name">{{ site.name }}</span></a>
-            <a href="mailto:{{site.email}}">
-                <span class="white-text email">
-                    {{ site.email }}
-                </span>
-            </a>
-        </div>
+        {% include profile.html %}
     </li>
     <li>
         <a href="{{ "/" | prepend : site.baseurl }}">

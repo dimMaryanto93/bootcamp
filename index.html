@@ -7,7 +7,7 @@ layout: default
 </div>
 
 {% assign pages_list = site.data.topics | sort:"publish" %}
-<div class="row">
+<div class="row container">
     <br>
     {% assign pages_list_count = pages_list.size %}
     {% assign count_divided = pages_list_count | divided_by: 3 %}
