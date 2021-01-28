@@ -5,14 +5,11 @@ layout: default
 <div id="postBody" class="row container">
     <div class="col s12 m12 l8">
         <div>
-            <div class="row">
+            <div>
                 {{content}}
             </div>
-            <div class="row">
+            <div class="center">
                 {% if page.youtube %}
-                    <div>
-                        yuk simak juga videonya!!!
-                    </div>
                    {% include youtubePlayer.html id=page.youtube %}
                 {% endif %}
             </div>
