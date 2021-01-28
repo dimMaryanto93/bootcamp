@@ -45,7 +45,7 @@
     Temen-temen akan di pandu untuk menguasai dan memahami fungsi atau fitur lainnya di Database PostgreSQL dengan menggunakan pg/plSQL sintax yang bertujuan untuk menyempurnakan query yang sebelumnya telah temen-teman pelajari di materi SQL menggunakan PostgreSQL.
   publish: 2017-10-16T20:51:50+07:00
   github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/pgplsql
-  coming_soon: false
+  coming_soon: true
 
 - name: JDBC with Postgresql
   url: java-jdbc-psql
@@ -69,7 +69,7 @@
 - name: Javascript
   url: js
   icon: "devicons devicons-js"
-  language: Java
+  language: JavaScript
   color:
   tags:
   - web
@@ -137,7 +137,7 @@
     Temen-temen diharapkan mampu membuat reporting dengan menggunakan JasperReport Studio
   publish: 2017-10-27T20:59:50+07:00
   github: 
-  coming_soon: false
+  coming_soon: true
 
 - name: Springframework Core
   url: spring-core
