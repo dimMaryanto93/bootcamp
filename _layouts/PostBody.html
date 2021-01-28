@@ -166,13 +166,14 @@ layout: default
 
 <ul id="slide-out-materi" class="side-nav">
     <li>
-        {% include profile.html %}
+        {% include side-nav/profile.html %}
     </li>
     <li>
         <a href="{{ "/" | prepend : site.baseurl }}">
             <i class="material-icons left">home</i> {{site.title}}
         </a>
     </li>
+    
     {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}    
     {% if post_list.size >= 1 %}
         <li>
@@ -200,20 +201,12 @@ layout: default
     <li>
         <div class="divider"></div>
     </li>
-    <li><a class="subheader">Social Media</a></li>
-    {% for media in site.data.my-profile.sosials %}
-    <li>
-        <a href="{{ media.url}}" target="_blank"><i class="{{ media.icon }}"></i> {{media.name}}</a>
-    </li>
-    {% endfor %}
+    
+    {% include side-nav/socials.html %}
     
     <li>
         <div class="divider"></div>
     </li>
-    <li><a class="subheader">Lainnya...</a></li>
-    <li>
-        <a href="{{ site.url }}" target="_blank">
-            <i class="material-icons left">dashboard</i> {{ site.url }}
-        </a>
-    </li>
+
+    {% include side-nav/others.html %}
 </ul>

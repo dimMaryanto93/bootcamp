@@ -26,66 +26,24 @@
 
 <ul id="slide-out" class="side-nav">
     <li>
-        {% include profile.html %}
+        {% include side-nav/profile.html %}
     </li>
     <li>
         <a href="{{ "/" | prepend : site.baseurl }}">
             <i class="material-icons left">home</i> {{site.title}}
         </a>
     </li>
-    <li><a class="subheader">Daftar Materi</a></li>
-    <li class="no-padding">
-        {% for lang in languages %}
-        <ul class="collapsible collapsible-accordion">
-            <li>
-                <a class="collapsible-header">
-                    {{lang}}
-                    <i class="material-icons">arrow_drop_down</i>
-                </a>
-                <div class="collapsible-body">
-                    {% assign pages = site.data.topics | where: 'coming_soon', 'false' | where: 'language', lang | sort: "publish" %}
-                    <ul>
-                    {% for page in pages %}
-                        <li>
-                            {% assign posts = site.posts | where: 'lang', page.url | sort: 'date' %}
-                            {% assign post = posts.first %}
-                            {% if post %}
-                                <a href="{{ post.url | prepend: site.baseurl }}">
-                                    <i class="material-icons">pageview</i>
-                                    <span class="new badge" data-badge-caption="materi">{{ posts | size }}</span>
-                                    {{ page.name }}
-                                </a>
-                            {% else %}
-                                <a href="#!">
-                                    <i class="material-icons">pageview</i>
-                                    <span class="new badge" data-badge-caption="materi"> {{ posts | size }}</span> {{ page.name }}
-                                </a>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </li>
-        </ul>
-        {% endfor %}
-    </li>
-    <li>
-        <div class="divider"></div>
-    </li>
-    <li><a class="subheader">Social Media</a></li>
-    {% for media in site.data.my-profile.sosials %}
-    <li>
-        <a href="{{ media.url}}" target="_blank"><i class="{{ media.icon }}"></i> {{media.name}}</a>
-    </li>
-    {% endfor %}
+
+    {% include side-nav/categories.html %}
     
     <li>
         <div class="divider"></div>
     </li>
-    <li><a class="subheader">Lainnya...</a></li>
+    {% include side-nav/socials.html %}    
+    
     <li>
-        <a href="{{ site.url }}" target="_blank">
-            <i class="material-icons left">dashboard</i> {{ site.url }}
-        </a>
+        <div class="divider"></div>
     </li>
+    
+    {% include side-nav/others.html %}
 </ul>
