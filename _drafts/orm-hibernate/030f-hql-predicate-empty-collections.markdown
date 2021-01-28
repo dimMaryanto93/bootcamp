@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Collections Predicate dengan HQL"
+title: "Empty Collections Predicate dengan HQL"
 lang: orm-hibernate
 categories:
 - Java
