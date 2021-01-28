@@ -1,0 +1,26 @@
+{
+  "name": "bootcamp",
+  "version": "1.0.0",
+  "description": "materi bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@repository.dimas-maryanto.com:dimasm93/bootcamp-dimas-maryanto-com.git"
+  },
+  "keywords": [
+    "bootcamp",
+    "website",
+    "jekyll"
+  ],
+  "author": "Dimas Maryanto",
+  "license": "MIT",
+  "dependencies": {
+    "devicons": "^1.8.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "materialize-css": "^1.0.0"
+  }
+}

@@ -3,58 +3,6 @@ layout: default
 ---
 
 <div id="postBody" class="row container">
-    <div class="col s12 m12 l8">
-        <div>
-            <div>
-                {{content}}
-            </div>
-            <div class="center">
-                {% if page.youtube %}
-                   {% include youtubePlayer.html id=page.youtube %}
-                {% endif %}
-            </div>
-        </div>
-        <hr />
-        <div>
-            {% if page.refs.size >= 1 %}
-                <div>
-                    <ul class="collection with-header">
-                        <li class="collection-header">
-                            <h2>Referensi</h2>
-                        </li>
-                        {% for ref in page.refs %}                       
-                            <a class="collection-item" href="{{ref}}" target="_blank">{{ref}}</a>
-                        {% endfor %}
-                    </ul>                    
-                </div>
-            {% endif %}
-        </div>
-        <div>
-            {% if page.comments %}
-            <div id="disqus_thread"></div>
-            <script>
-
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                
-                var disqus_config = function () {
-                    this.page.url = '{{ site.url }}{{site.baseurl}}{{page.url}}';
-                    this.page.identifier = '{{site.baseurl}}{{ page.url }}';
-                    console.debug(this.page);
-                };
-                
-                (function () { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://materi-bootcamp.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            {% endif %}
-        </div>
-    </div>
     <div class="col s12 m12 l4">
         <div class="row">
             <h2>
@@ -67,14 +15,31 @@ layout: default
                     {{page.date | date: "%-d %B %Y" }}
                 </time>
             </h2>
-            <h2>
-                {% if page.youtube %}
-                <i class="fa fa-youtube-play"></i>
-                <a href="{{page.youtube}}" class="" target="_blank" rel="noopener noreferrer">
-                Play di youtube
-                </a>
-                {% endif %}
-            </h2>
+            <div>                
+                <ul id='follow-socials-collection' class='collection with-header'>
+                    <li class="collection-header">
+                        Follow Me:
+                    </li>
+                    {% for social in site.data.my-profile.sosials %}                    
+                        <a class="collection-item" href="{{ social.url }}" target="_blank" rel="{{ social.name }}">
+                            <i class="{{ social.icon }}"></i>
+                            {{ social.name }}
+                        </a>                    
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <ul id='donation-collection' class='collection with-header'>
+                    <li class="collection-header">
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+  Donasi via:</li>
+                    {% for donasi in site.data.my-profile.donations %}                    
+                        <a class="collection-item" href="{{ donasi.account }}" target="_blank" rel="{{ donasi.name }}">
+                            {{ donasi.name }} a/n {{ donasi.owner }}
+                        </a>                    
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
         {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}
         {% assign post_list_size = post_list.size %}
@@ -111,7 +76,7 @@ layout: default
             {% assign post_list = site.posts | sort:"date" | reverse %}
             <ul class="collection with-header">
                 <li class="collapsible-header">
-                    Last Posting
+                    Lastest Posts
                 </li>
                 {% for post in post_list limit:10 %}
                 {% if post.lang %}
@@ -162,6 +127,60 @@ layout: default
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <div class="col s12 m12 l8">
+        <div>
+            <div>
+                {{content}}
+            </div>
+            {% if page.youtube %}
+            <hr/>
+            <div>
+                <h3>Yuk simak juga videonya!!!</h3>
+                {% include youtubePlayer.html id=page.youtube %}
+            </div>
+            {% endif %}
+        </div>
+        <hr />
+        <div>
+            {% if page.refs.size >= 1 %}
+                <div>
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h2>Referensi</h2>
+                        </li>
+                        {% for ref in page.refs %}                       
+                            <a class="collection-item" href="{{ref}}" target="_blank">{{ref}}</a>
+                        {% endfor %}
+                    </ul>                    
+                </div>
+            {% endif %}
+        </div>
+        <div>
+            {% if page.comments %}
+            <div id="disqus_thread"></div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                
+                var disqus_config = function () {
+                    this.page.url = '{{ site.url }}{{site.baseurl}}{{page.url}}';
+                    this.page.identifier = '{{site.baseurl}}{{ page.url }}';
+                    console.debug(this.page);
+                };
+                
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://materi-bootcamp.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            {% endif %}
         </div>
     </div>
 </div>
