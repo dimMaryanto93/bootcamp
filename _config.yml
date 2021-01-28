@@ -24,6 +24,7 @@ plugins:
   - jekyll-gist
   - kramdown
   - rouge
+  - jekyll-youtube
   
 titlecase: false
 
