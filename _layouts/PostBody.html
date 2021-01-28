@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div id="postBody" class="row container">
-    <div class="col s12 m12 l4">
+    <div class="col s12 m12 l4 hide-on-med-and-down">
         <div class="row">
             <div>
                 <ul class='collection with-header'>
@@ -26,14 +26,15 @@ layout: default
                 <ul class='collection with-header'>
                     <li class="collection-header">
                         <i class="material-icons green">account_balance_wallet</i>
-  Donasi via:</li>
-                    {% for donasi in site.data.my-profile.donations %}      
-                        <li class="collection-item">
-                            <a href="{{ donasi.account }}" target="_blank">
-                                {{ donasi.name }} a/n {{ donasi.owner }}
-                            </a>
-                        </li>              
-                    {% endfor %}
+                        Donasi via:</li>
+                        {% for donasi in site.data.my-profile.donations %}      
+                            <li class="collection-item">
+                                <a href="{{ donasi.account }}" target="_blank">
+                                    {{ donasi.name }} a/n {{ donasi.owner }}
+                                </a>
+                            </li>              
+                        {% endfor %}
+                    </li>
                 </ul>
             </div>
         </div>
@@ -53,14 +54,15 @@ layout: default
                     </p>
                 </li>
                 {% for post in post_list %}
+                {% assign post_title = post.title | truncate: 40 |  prepend: '. ' | prepend: forloop.index %}
                 <li class="collection-item">
                     {% if post.url == page.url %}
                     <div>
-                        {{post.title}}
+                        {{post_title}}
                     </div>
                     {% else %}
                     <a href="{{post.url | prepend: site.baseurl }}">
-                        {{post.title}}
+                        {{post_title}}
                     </a>
                     {% endif %}
                 </li>
@@ -68,26 +70,27 @@ layout: default
             </ul>
         </div>
         {% endif %}
-        <div class="row">
+        <div class="row show-on-medium-and-down">
             {% assign post_list = site.posts | sort:"date" | reverse %}
             <ul class="collection with-header">
                 <li class="collapsible-header">
                     Lastest Posts
                 </li>
                 {% for post in post_list limit:10 %}
+                {% assign post_title = post.title | truncate: 40 %}
                 {% if post.lang %}
                 <li class="collection-item avatar">
                     <img src="{{ "/resources/images/" | prepend : site.baseurl }}{{post.lang}}.png" alt="" class="circle responsive-img">
                     <a href="{{post.url | prepend : site.baseurl }}">
                         <span class="badge">{{post.date | date: '%d %b %y'}}</span>
-                        {{post.title}}
+                        {{post_title}}
                     </a>
                 </li>
                 {% else %}
                 <li class="collection-item">
                     <a href="{{post.url | prepend : site.baseurl }}">
                         <span class="badge">{{post.date | date: '%d %b %y'}}</span>
-                        {{post.title}}
+                        {{post_title}}
                     </a>
                 </li>
                 {% endif %}
@@ -154,4 +157,77 @@ layout: default
             {% endif %}
         </div>
     </div>
+    <div class="fixed-action-btn click-to-toggle hide-on-large-only">
+        <a href="#" data-activates="slide-out-materi" class="btn-floating btn-large waves-effect waves-light red button-collapse">
+            <i class="large material-icons">apps</i>
+        </a>
+    </div>
 </div>
+
+<ul id="slide-out-materi" class="side-nav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="{{ "/resources/pictures/art.png" | prepend: site.baseurl }}" width="100%">
+            </div>
+            <br>
+            <a href="#!">
+                <img class="circle" src="{{ "/resources/pictures/profile.jpeg" | prepend: site.baseurl }}">
+            </a>
+            <a href="#!name"><span class="white-text name">{{ site.name }}</span></a>
+            <a href="mailto:{{site.email}}">
+                <span class="white-text email">
+                    {{ site.email }}
+                </span>
+            </a>
+        </div>
+    </li>
+    <li>
+        <a href="{{ "/" | prepend : site.baseurl }}">
+            <i class="material-icons left">home</i> {{site.title}}
+        </a>
+    </li>
+    {% assign post_list = site.posts | sort:"date" | where: "lang", page.lang %}    
+    {% if post_list.size >= 1 %}
+        <li>
+            <div class="divider"></div>
+        </li>        
+        <li>
+            <a class="subheader">Daftar Materi</a>
+        </li>
+
+        {% for post in post_list %}
+        <li>
+            {% assign post_title = post.title | truncate: 40 |  prepend: '. ' | prepend: forloop.index %}    
+            {% if post.url == page.url %}      
+            <a class="subheader">
+                {{ post_title }}
+            </a>            
+            {% else %}
+            <a href="{{post.url | prepend: site.baseurl }}">
+                {{ post_title }}
+            </a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    {% endif %}   
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Social Media</a></li>
+    {% for media in site.data.my-profile.sosials %}
+    <li>
+        <a href="{{ media.url}}" target="_blank"><i class="{{ media.icon }}"></i> {{media.name}}</a>
+    </li>
+    {% endfor %}
+    
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Lainnya...</a></li>
+    <li>
+        <a href="{{ site.url }}" target="_blank">
+            <i class="material-icons left">dashboard</i> {{ site.url }}
+        </a>
+    </li>
+</ul>

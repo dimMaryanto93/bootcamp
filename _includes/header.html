@@ -1,9 +1,9 @@
 {% assign languages = site.data.topics | where: 'coming_soon', 'false' | map: 'language' | join: ',' | split: ',' | uniq %}
 
-<nav class="red darken-3">
+<nav class="red darken-3 hide-on-med-and-down">
     <div class="nav-wrapper container">
         <a href="{{ "/" | prepend : site.baseurl }}" class="brand-logo">
-            <i class="material-icons left">home</i> <span class="hide-on-med-and-down">{{site.title}}</span>
+            <i class="material-icons left">home</i> {{site.title}}
         </a>
     </div>
 </nav>
@@ -18,7 +18,7 @@
     });
 </script>
 
-<div class="fixed-action-btn click-to-toggle show-on-large">
+<div class="fixed-action-btn click-to-toggle">
     <a href="#" data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light red button-collapse">
         <i class="large material-icons">menu</i>
     </a>
