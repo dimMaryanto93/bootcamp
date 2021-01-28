@@ -2,7 +2,7 @@
   url: java-core
   icon: "devicons devicons-java"
   language: Java
-  color:
+  color: yellow lighten-5
   tags:
   - java
   - basic
@@ -18,7 +18,7 @@
   url: psql
   icon: "devicons devicons-postgresql"
   language: Database
-  color:
+  color: light-blue lighten-3
   tags:
   - PostgreSQL
   - Database
@@ -34,7 +34,7 @@
   url: pgplsql
   icon: "devicons devicons-postgresql"
   language: Database
-  color:
+  color: light-blue lighten-2
   tags:
   - PostgreSQL
   - Database
@@ -51,7 +51,7 @@
   url: java-jdbc-psql
   icon: "devicons devicons-java"
   language: Java
-  color:
+  color: yellow lighten-3
   tags:
   - java
   - maven
@@ -70,7 +70,7 @@
   url: js
   icon: "devicons devicons-js"
   language: JavaScript
-  color:
+  color: lime lighten-5
   tags:
   - web
   - js
@@ -86,7 +86,7 @@
   url: java-web
   icon: "devicons devicons-java"
   language: Java
-  color:
+  color: orange lighten-4
   tags:
   - java
   - maven
@@ -105,7 +105,7 @@
   url: orm-hibernate
   icon: "devicons devicons-java"
   language: Java
-  color:
+  color: brown darken-1
   tags:
   - java
   - jdbc
@@ -143,7 +143,7 @@
   url: spring-core
   icon: "devicons devicons-java"
   language: Java
-  color:
+  color: green accent-2
   tags:
   - java
   - springframework
