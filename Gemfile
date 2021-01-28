@@ -11,6 +11,7 @@ group :jekyll_plugins do
   gem "kramdown-parser-gfm"
   gem "rouge"
   gem "titlecase"
+  gem "jekyll-youtube"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
