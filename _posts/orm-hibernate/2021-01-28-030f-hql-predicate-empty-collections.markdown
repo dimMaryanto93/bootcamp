@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Empty Collections Predicate dengan HQL"
+date: 2021-01-28T14:30:14+07:00
 lang: orm-hibernate
 categories:
 - Java
