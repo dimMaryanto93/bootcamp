@@ -1,0 +1,32 @@
+<footer class="page-footer blue lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.
+                </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <ul class="collection with-header">
+                    <li class="collection-header blue lighten-1">
+                        <i class="material-icons">account_box</i>
+                        <span class="white-text">Jangan Lupa follow aku ya guys!</span>
+                    </li>
+                    {% for social in site.data.my-profile.sosials %}
+                        <a class="collection-item blue lighten-2 black-text text-lighten-3" href="{{ social.url }}">
+                            <i class="{{ social.icon }}"></i> {{ social.name }}
+                        </a>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright blue darken-3">
+        <div class="container">
+            Dimas Maryanto © {{ 'now' | date: "%Y" }}
+            <a class="grey-text text-lighten-4 right" href="https://pages.github.com/">
+                powered by Github Pages & Jekyll
+            </a>
+        </div>
+    </div>
+</footer>
