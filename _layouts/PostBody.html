@@ -134,6 +134,8 @@ layout: default
             {% assign current_idx = 1 %}
             {% assign next_post = null %}
             {% assign prev_post = null %}
+            {% assign first_post = posts | first %}
+            {% assign last_post = posts | last %}
             {% for post in posts %}
                 {% if post.url == page.url %}
                     {% assign current_idx = forloop.index  %}
@@ -151,36 +153,71 @@ layout: default
                     {% assign prev_post = post %}
                 {% endif %}
             {% endfor %}
-
+            
             <ul class="pagination">
-                {% if prev_post %}
+                <!-- goto first page -->
+                {% if first_post and first_post.url != page.url %}
                 <li class="waves-effect">
-                    <a href="{{ prev_post.url | prepend: site.baseurl }}">
-                        <i class="material-icons left">chevron_left</i> Artikel Sebelumnya...
+                    <a href="{{ first_post.url | prepend: site.baseurl }}" class="tooltipped btn" data-position="bottom" data-delay="50" data-tooltip="Ke halaman 1...">
+                        <i class="material-icons left">fast_rewind</i> First
                     </a>
                 </li>
                 {% else %}
-                <li class="disabled">
-                    <a href="#!">
-                        <i class="material-icons left">chevron_left</i> Artikel Sebelumnya...
+                <li>
+                    <a href="#!" class="btn disabled">
+                        <i class="material-icons left">fast_rewind</i> First
+                    </a>
+                </li>
+                {% endif %}
+
+                <!-- goto before page -->
+                {% if prev_post %}
+                <li class="waves-effect">
+                    <a href="{{ prev_post.url | prepend: site.baseurl }}" class="tooltipped btn" data-position="bottom" data-delay="50" data-tooltip="Ke artikel sebelumnya...">
+                        <i class="material-icons left">chevron_left</i> Before
+                    </a>
+                </li>
+                {% else %}
+                <li>
+                    <a href="#!" class="btn disabled">
+                        <i class="material-icons left">chevron_left</i> Before
                     </a>
                 </li>
                 {% endif %}                
                 
+                <!-- current page info -->
                 <li class="active">
-                    <a href="#!">{{ current_idx }} s/d {{ posts | size }}</a>
+                    <a href="#!">{{ current_idx }} to {{ posts | size }}
+                        <span class="badge new blue" data-badge-caption="pages"></span>
+                    </a>
                 </li>
                    
+                <!-- goto next page -->
                 {% if next_post %}
                 <li class="waves-effect">
-                    <a href="{{ next_post.url | prepend: site.baseurl }}">
-                        <i class="material-icons right">chevron_right</i> Yuk lanjutin...
+                    <a href="{{ next_post.url | prepend: site.baseurl }}" class="tooltipped btn" data-position="bottom" data-delay="50" data-tooltip="Yuk lanjutin bacaanya...">
+                        <i class="material-icons right">chevron_right</i> Next
                     </a>
                 </li>
                 {% else %}
                 <li class="disabled">
                     <a href="#!">
-                        <i class="material-icons right">chevron_right</i> Yuk lanjutin...
+                        <i class="material-icons right">chevron_right</i> Next
+                    </a>
+                </li>
+                {% endif %}
+
+                <!-- goto last page -->
+                {% if last_post and last_post.url != page.url %}
+                <li class="waves-effect">
+                    <a href="{{ last_post.url | prepend: site.baseurl }}" class="tooltipped btn" data-position="bottom" data-delay="50" data-tooltip="Ke halaman terakhir...">
+                        <i class="material-icons left">fast_forward</i> Last
+                    </a>
+                </li>
+                {% else %}
+                <li>
+                    <a href="#!" class="btn disabled">
+                        <i class="material-icons left">fast_forward</i> Last
                     </a>
                 </li>
                 {% endif %}
