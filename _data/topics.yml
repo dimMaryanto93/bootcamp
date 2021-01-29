@@ -11,7 +11,7 @@
   messages:
     Temen-temen akan dipandu untuk mulai belajar bahasa pemograman Java dari nol sampai mahir untuk membuat aplikasi Java, selain itu juga sedikit-demi-sedikit akan belajar algoritma seleksi dan perulangan dan yang terakhir temen-temen di akhir materi akan diberikan soal yang harus dikerjakan agar materi yang diberikan dapat diserap dengan baik.
   publish: 2017-10-15T20:50:50+07:00
-  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/java-core
+  github: https://github.com/dimMaryanto93/youtube-java-core
   coming_soon: false
 
 - name: PostgreSQL
@@ -27,7 +27,7 @@
   messages:
     Temen-temen akan di pandu untuk menguasai perintah SQL dengan salah satu Relational Database Management System (RDBMS) yaitu dengan PostgreSQL. Dengan menggunakan Relational Database Management Sistem kita dengan mudah dapat melakukan baca-tulis data dengan mudah dan cepat tidak seperti menggunakan baca-tulis di file.
   publish: 2017-10-16T20:50:50+07:00
-  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/psql
+  github: https://github.com/dimMaryanto93/youtube-postgresql-query
   coming_soon: false
 
 - name: Advance Query dengan pg/plSQL
@@ -63,7 +63,7 @@
   messages:
     Temen-temen diharapkan mampu dan memahami fitur jdbc seperti fungsi-fungsi statement, prepared-statement, result-set, batch prcessiong, transactional dan lain-lain.
   publish: 2017-10-23T20:50:50+07:00
-  github: http://repository.dimas-maryanto.com/youtube/bootcamp-2019/jdbc-psql
+  github: https://github.com/dimMaryanto93/youtube-jdbc-postgres
   coming_soon: false
 
 - name: Javascript
@@ -98,7 +98,7 @@
   messages:
     Temen-temen diharapkan memahami konsep dan implementasi pemograman web dengan Java, seperti membuat page dengan jsp atau servlet, mengirimkan request, menerima request, dan lain-lain.
   publish: 2017-10-25T20:50:50+07:00
-  github: 
+  github: https://github.com/dimMaryanto93/youtube-java-web
   coming_soon: false
 
 - name: ORM dengan Hibernate
@@ -117,7 +117,7 @@
   messages:
     Temen-temen diharapkan mampu dan memahami fitur yang diberikan oleh ORM Hibernate seperti sebelumnya kita belajar JDBC yaitu CRUD, Transaction management, HQL, dan lain-lain.
   publish: 2017-10-26T20:59:50+07:00
-  github: 
+  github: https://github.com/dimMaryanto93/youtube-orm-hibernate
   coming_soon: false
 
 - name: Reporting with JasperReport
