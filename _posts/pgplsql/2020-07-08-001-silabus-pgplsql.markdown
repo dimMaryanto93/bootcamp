@@ -24,11 +24,12 @@ Materi yang akan dibahas pada modul ini diantarnya sebagai berikut:
 7. Function
     1. Parameter IN/OUT
     2. Function return Table
-10. Control Statement
+<!--more-->
+8. Control Statement
     1. IF Statement
     2. Case Statement
     3. Loop Statement
-11. Cursor
-12. Store Procedure
-13. Trigger
-14. View table
+9. Cursor
+10. Store Procedure
+10. Trigger
+11. View table

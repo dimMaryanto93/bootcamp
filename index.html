@@ -36,25 +36,38 @@ layout: default
             </div>
             <div class="col s12 m7">
                 <!-- youtube link -->
-                {% if modal_post and modal_post.youtube %}
-                <div>
-                    {% include youtubePlayer.html id=modal_post.youtube %}
+                <div class="row">
+                    {% if modal_post and modal_post.youtube %}
+                        {% include youtubePlayer.html id=modal_post.youtube %}
+                    {% else %}
+                        Embeded Video: <br>
+                        <a href="#!" class="disabled btn btn-flat">belum tersedia...</a>
+                    {% endif %}
                 </div>
-                {% else %}
-                    Embeded Video: <br>
-                    <a href="#!" class="disabled btn btn-flat">belum tersedia...</a>
-                {% endif %}
-                <br>
-                <!-- repository link -->
-                {% if page_modal.github %}
-                    Downloads : <br>
-                    <a href="{{ page_modal.github }}" target="_blank" class="btn black" rel="noopener noreferrer">
-                        <i class="fa fa-github"></i> Github
-                    </a>
-                {% else %}
-                    Download: <br>
-                    <a href="#!" class="disabled btn btn-flat">belum tersedia...</a>
-                {% endif %}
+                <!-- article -->
+                <div class="row">
+                    {% if modal_post.content contains '<!--more-->' %} 
+                        {{ modal_post.content | split:'<!--more-->' | first }}<br>
+                        <span>
+                            <a href="{{ modal_post.url | prepend: site.baseurl }}" class="right">
+                                Lanjut membaca...
+                            </a>
+                        </span>
+                    {% endif %}
+                </div>
+
+                <div class="row">
+                    <!-- repository link -->
+                    {% if page_modal.github %}
+                        Downloads : <br>
+                        <a href="{{ page_modal.github }}" target="_blank" class="btn black" rel="noopener noreferrer">
+                            <i class="fa fa-github"></i> Github
+                        </a>
+                    {% else %}
+                        Download: <br>
+                        <a href="#!" class="disabled btn btn-flat">belum tersedia...</a>
+                    {% endif %}
+                </div>
                 <br>
                 <!-- tags -->
                 <hr>

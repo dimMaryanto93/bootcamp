@@ -26,6 +26,7 @@ Ok jadi materi yang akan di bahas di section kali ini yaitu:
 6. Variables
 7. Matematic Operator
 8. Function
+<!--more-->
 9. Selection
 10. Looping
 11. Array

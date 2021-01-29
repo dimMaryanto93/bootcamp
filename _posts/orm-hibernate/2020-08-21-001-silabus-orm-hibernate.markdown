@@ -24,6 +24,7 @@ Hi, in this section 'ORM Hibernate' ini temen-temen akan belajar dan memahami ko
 5. Configurasi hibernate.cfg
 6. Membuat simple Entity
 7. CRUD Sederhana dengan Hibernate
+<!--more-->
 8. Mapping
     1. Embedded
     2. OneToOne

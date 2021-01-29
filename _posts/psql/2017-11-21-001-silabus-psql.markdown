@@ -32,6 +32,7 @@ Materi yang akan dibahas pada modul ini diantarnya sebagai berikut:
     7. Filter data dengan perintah `WHERE`
     8. Logical Condition
     9. Sorting Data dengan `ORDER BY`
+<!--more-->
 7. SQL Function
     1. Single Row Function
     2. Menglompokan data dengan `GROUP BY`

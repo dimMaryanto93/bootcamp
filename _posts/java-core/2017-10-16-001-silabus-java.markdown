@@ -23,6 +23,7 @@ Hi, in this section 'Java Core' ini temen-temen akan berkenalan dengan salah sat
 6. Membuat Class, Variables, Method
 7. Compiling java code & Run it
 8. Operation in Java
+<!--more-->
 9. Perbedaan Class dan Interfaces
 10. Package & Import
 11. Struktur Kendali

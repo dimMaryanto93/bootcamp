@@ -1,4 +1,4 @@
-{% assign post_list = site.posts | where: "lang", topic.url %}
+{% assign post_list = site.posts | where: "lang", {{ include.url }} %}
 {% assign post_list_counted = post_list.size %}
 {% if post_list_counted >= 1 %}
 <ul class="collection with-header">

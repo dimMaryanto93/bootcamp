@@ -27,6 +27,7 @@ Adapun materi yang akan kita bahas yaitu,
     2. Memahami fungsi dari object DataSource
 4. Select dengan object Statement
 5. Select dengan object PreparedStatement
+<!--more-->
 6. Transactional dengan JDBC
 7. Batch Processing
 8. Call store-procedure
