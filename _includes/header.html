@@ -15,6 +15,12 @@
             menuWidth: 400
         });
         $('.collapsible').collapsible();
+        $('.modal').modal({
+            dismissible: false,
+        });
+        $('.materialboxed').materialbox();
+        $('#article-body img').addClass('materialboxed').addClass('responsive-img');
+        $('.tooltipped').tooltip({delay: 50});
     });
 </script>
 

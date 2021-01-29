@@ -4,8 +4,8 @@
   language: Java
   color: yellow lighten-5
   tags:
-  - java
-  - basic
+  - Java
+  - Essential
   descriptions:
    Temen-teman akan belajar tentang Java Core diantaranya Data Types, Variables, Scope Variables, Class, Object Oritented Programming etc.
   messages:
