@@ -103,17 +103,7 @@ layout: default
             <div>
                 {{content}}
             </div>
-            <div>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- display-utama -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3067429629551793"
-                    data-ad-slot="9807004381" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
             {% if page.youtube %}
-            <hr/>
             <div>
                 <h3>
                     Yuk simak juga videonya,
@@ -125,7 +115,6 @@ layout: default
             </div>
             {% endif %}
         </div>
-        <hr />
         <div>
             {% if page.refs.size >= 1 %}
                 <div>
@@ -139,6 +128,64 @@ layout: default
                     </ul>                    
                 </div>
             {% endif %}
+        </div>
+        <div id="paginate ">
+            {% assign posts = site.posts | where: 'lang', page.lang | sort: 'date' %}
+            {% assign current_idx = 1 %}
+            {% assign next_post = null %}
+            {% assign prev_post = null %}
+            {% for post in posts %}
+                {% if post.url == page.url %}
+                    {% assign current_idx = forloop.index  %}
+                {% endif %}
+            {% endfor %}
+
+            {% assign prev_index = current_idx | plus: 1 %}
+            {% assign next_index = current_idx | minus: 1 %}
+
+            {% for post in posts %}
+                {% if forloop.index == prev_index %}
+                    {% assign next_post = post %}
+                {% endif %}
+                {% if forloop.index == next_index %}
+                    {% assign prev_post = post %}
+                {% endif %}
+            {% endfor %}
+
+            <ul class="pagination">
+                {% if prev_post %}
+                <li class="waves-effect">
+                    <a href="{{ prev_post.url | prepend: site.baseurl }}">
+                        <i class="material-icons left">chevron_left</i> Artikel Sebelumnya...
+                    </a>
+                </li>
+                {% else %}
+                <li class="disabled">
+                    <a href="#!">
+                        <i class="material-icons left">chevron_left</i> Artikel Sebelumnya...
+                    </a>
+                </li>
+                {% endif %}                
+                
+                <li class="active">
+                    <a href="#!">{{ current_idx }} s/d {{ posts | size }}</a>
+                </li>
+                   
+                {% if next_post %}
+                <li class="waves-effect">
+                    <a href="{{ next_post.url | prepend: site.baseurl }}">
+                        <i class="material-icons right">chevron_right</i> Yuk lanjutin...
+                    </a>
+                </li>
+                {% else %}
+                <li class="disabled">
+                    <a href="#!">
+                        <i class="material-icons right">chevron_right</i> Yuk lanjutin...
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+            <br>
         </div>
         <div>
             {% if page.comments %}
